@@ -32,8 +32,12 @@ def main():
 
     # Wywołujemy funkcję calculate_bmi i obsługujemy potencjalne wyjątki, które mogą wystąpić podczas obliczeń
     try:
-        moje_bmi = calculate_bmi(waga, wzrost)   # Wywołujemy funkcję calculate_bmi z przykładowymi danymi
+        
+        # Wywołujemy funkcję calculate_bmi z przykładowymi danymi
+        moje_bmi = calculate_bmi(waga, wzrost)   
 
+        print(f"Twoje BMI wynosi: {moje_bmi}")                          # Wyświetlamy wynik obliczeń BMI
+        print(f"Podany wzrost: {wzrost} m, podana waga: {waga} kg")     # Wyświetlamy podane dane wejściowe
     
 
 
