@@ -18,6 +18,10 @@ def main():
     Ograniczenia:
     - Funkcja przeznaczoa jest do działania w środowisku konsolowym
     
+    Podnoszenie wyjątków:
+    - Obsługuje potencjalne wyjątki typu ValueError, które mogą być podniesione przez funkcję calculate_bmi
+    - Wyświetla komunikat o błędzie, jeśli dane wejściowe są nieprawidłowe (np. waga lub wzrost mniejsze lub równe 0)
+
     """
 
     print("=" * 30)                                                             
@@ -39,7 +43,7 @@ def main():
         print(f"Twoje BMI wynosi: {moje_bmi}")                          # Wyświetlamy wynik obliczeń BMI
         print(f"Podany wzrost: {wzrost} m, podana waga: {waga} kg")     # Wyświetlamy podane dane wejściowe
     
-    
+
     # Obsługujemy wyjątki typu ValueError, które mogą być podniesione przez funkcję calculate_bmi
     except ValueError as e:     
         print(f"Błąd: {e}")     # Wyświetlamy komunikat o błędzie, jeśli dane wejściowe są nieprawidłowe
