@@ -26,3 +26,5 @@ def analyze_bmi(bmi_value: float) -> str:
     # Analizujemy wartość BMI i zwracamy odpowiednią kategorię zdrowotną na podstawie norm WHO
     if bmi_value < 18.5:
         return "Niedowaga"
+    elif bmi_value < 25.0:
+        return "Waga prawidłowa"
