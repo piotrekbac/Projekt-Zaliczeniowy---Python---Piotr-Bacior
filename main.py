@@ -37,6 +37,10 @@ def main():
     # Wywołujemy funkcję calculate_bmi i obsługujemy potencjalne wyjątki, które mogą wystąpić podczas obliczeń
     try:
 
+        # Pobieramy wpis od użytkownika i podmieniamy ewentualny przecinek na kropkę - aby umożliwić poprawne przetwarzanie danych typu float
+        waga_input = input("Podaj swoją wagę w kilogramach (np. 70.5): ").replace(",", ".")
+
+
         # Wywołujemy funkcję calculate_bmi z przykładowymi danymi
         moje_bmi = calculate_bmi(waga, wzrost)   
 
