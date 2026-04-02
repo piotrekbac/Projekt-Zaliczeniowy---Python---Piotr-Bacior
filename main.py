@@ -2,6 +2,7 @@ from src.calculator import calculate_bmi    # Importujemy funkcję calculate_bmi
 
 # Główna funkcja programu, która będzie wywoływana podczas uruchamiania skryptu
 def main():
+
     """
     Punkt wejścia programu Kalkulatora BMI
 
@@ -18,3 +19,9 @@ def main():
     - Funkcja przeznaczoa jest do działania w środowisku konsolowym
     
     """
+
+    print("=" * 30)                                                             
+    print("Witaj w Kalkulatorze BMI!")
+    print("Autor programu: Piotr Bacior - 15 722 - 2026")
+    print("Oblicz swoje BMI, podając wagę w kilogramach i wzrost w metrach.")
+    print("=" * 30)
