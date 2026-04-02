@@ -29,4 +29,11 @@ def main():
     waga = 70.0               # Przykładowa waga w kilogramach (float)
     wzrost = 1.75             # Przykładowy wzrost w metrach (float)
 
+
+    # Wywołujemy funkcję calculate_bmi i obsługujemy potencjalne wyjątki, które mogą wystąpić podczas obliczeń
+    try:
+        moje_bmi = calculate_bmi(waga, wzrost)   # Wywołujemy funkcję calculate_bmi z przykładowymi danymi
+
     
+
+
