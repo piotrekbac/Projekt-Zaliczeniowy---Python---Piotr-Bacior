@@ -19,5 +19,10 @@ def analyze_bmi(bmi_value: float) -> str:
 
     """
 
-if bmi_value <= 0:
-    raise ValueError("Wartość BMI musi być większa niż 0.")
+    # Sprawdzamy, czy wartość BMI jest większa niż 0, aby uniknąć nieprawidłowych analiz
+    if bmi_value <= 0:
+        raise ValueError("Wartość BMI musi być większa niż 0.")
+
+    # Analizujemy wartość BMI i zwracamy odpowiednią kategorię zdrowotną na podstawie norm WHO
+    if bmi_value < 18.5:
+        return "Niedowaga"
