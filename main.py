@@ -13,8 +13,9 @@ def main():
 
     Zachowanie funkcji:
     - Wyświetla interfejs powitalny dla użytkownika w konsoli
-    - Wywołuje funkcję obliczającą BMI z podanymi parametrami
-    - Formatuje i wyświetla wynik obliczeń BMI w czytelny sposób na ekranie
+    - Pobiera dane wejściowe od użytkownika (waga i wzrost) - w tym przypadku używamy przykładowych danych
+    - Wywołuje funkcje obliczające i analizujące BMI, a następnie wyświetla wyniki w konsoli
+    - Wyświetla pełne podsumowanie wyników
 
     Ograniczenia:
     - Funkcja przeznaczoa jest do działania w środowisku konsolowym
