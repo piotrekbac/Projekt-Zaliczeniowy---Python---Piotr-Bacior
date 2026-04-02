@@ -8,8 +8,8 @@ def main():
     Punkt wejścia programu Kalkulatora BMI
 
     Oczekiwane dane wejściowe:
-    - Brak bezpośrednich argumentów funkcji (na razie dane wpisywane będą na sztywno
-      w kodzie - docelowo będziemy je pobierać z klawiatury)
+    - Dane wprwadzone przez użytkownika (waga i wzrost) są typu float - z klawiatury
+    - Oczekiwane są liczby dodatnie dla wagi i wzrostu
 
     Zachowanie funkcji:
     - Wyświetla interfejs powitalny dla użytkownika w konsoli
