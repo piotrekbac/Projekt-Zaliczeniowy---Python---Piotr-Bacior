@@ -17,5 +17,12 @@ def calculate_bmi(weight_kg: float, height_m: float) -> float:
 
     """
 
+    # Sprawdzamy, czy waga i wzrost są większe niż 0, aby uniknąć błędów dzielenia przez zero lub negatywnych wartości
+    if weight_kg <= 0:
+        raise ValueError("Waga musi być większa niż 0.")
+    if height_m <= 0:
+        raise ValueError("Wzrost musi być większy niż 0.")
+    
+    
     bmi = weight_kg / (height_m ** 2)           # Obliczamy BMI jako wagę podzieloną przez kwadrat wzrostu
     return round(bmi, 2)                        # Zaokrąglamy wynik do dwóch miejsc po przecinku  
