@@ -16,3 +16,6 @@ def calculate_bmi(weight_kg: float, height_m: float) -> float:
     - Oczekiwane wartosci 'weight_kg' i 'height_m' muszą być dodatnie (> 0)
 
     """
+
+    bmi = weight_kg / (height_m ** 2)           # Obliczamy BMI jako wagę podzieloną przez kwadrat wzrostu
+    return round(bmi, 2)                        # Zaokrąglamy wynik do dwóch miejsc po przecinku  
