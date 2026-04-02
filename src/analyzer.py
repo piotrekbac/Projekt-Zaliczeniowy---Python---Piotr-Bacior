@@ -14,8 +14,9 @@ def analyze_bmi(bmi_value: float) -> str:
     Ograniczenia:
     - Wartość 'bmi_value' powinna być dodatnia (> 0)
 
-    
-    
+    Podnoszenie wyjątków:
+    - ValueError: jeśli 'bmi_value' jest mniejsze lub równe 0
+
     """
 
 if bmi_value <= 0:
