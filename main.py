@@ -1,0 +1,1 @@
+from src.calculator import calculate_bmi    # Importujemy funkcję calculate_bmi z modułu calculator
