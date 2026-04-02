@@ -25,3 +25,8 @@ def main():
     print("Autor programu: Piotr Bacior - 15 722 - 2026")
     print("Oblicz swoje BMI, podając wagę w kilogramach i wzrost w metrach.")
     print("=" * 30)
+
+    waga = 70.0               # Przykładowa waga w kilogramach (float)
+    wzrost = 1.75             # Przykładowy wzrost w metrach (float)
+
+    
