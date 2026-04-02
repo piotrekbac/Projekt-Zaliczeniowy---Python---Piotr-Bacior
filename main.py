@@ -48,3 +48,7 @@ def main():
     except ValueError as e:     
         print(f"Błąd: {e}")     # Wyświetlamy komunikat o błędzie, jeśli dane wejściowe są nieprawidłowe
 
+
+# Uruchamiamy główną funkcję programu
+if __name__ == "__main__":
+    main()          
