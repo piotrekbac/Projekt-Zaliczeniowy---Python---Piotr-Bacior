@@ -28,3 +28,5 @@ def analyze_bmi(bmi_value: float) -> str:
         return "Niedowaga"
     elif bmi_value < 25.0:
         return "Waga prawidłowa"
+    elif bmi_value < 30.0:
+        return "Nadwaga"
