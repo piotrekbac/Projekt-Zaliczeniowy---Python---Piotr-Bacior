@@ -40,6 +40,8 @@ def main():
         # Pobieramy wpis od użytkownika i podmieniamy ewentualny przecinek na kropkę - aby umożliwić poprawne przetwarzanie danych typu float
         waga_input = input("Podaj swoją wagę w kilogramach (np. 70.5): ").replace(",", ".")
 
+        # Konwertujemy tekst na liczbę typu float, aby można było przeprowadzić obliczenia BMI
+        waga = float(waga_input)
 
         # Wywołujemy funkcję calculate_bmi z przykładowymi danymi
         moje_bmi = calculate_bmi(waga, wzrost)   
