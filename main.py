@@ -26,14 +26,12 @@ def main():
 
     """
 
+    # Nagłówek powitalny dla użytkownika, informujący o autorze programu i jego funkcjonalności
     print("=" * 30)                                                             
     print("Witaj w Kalkulatorze BMI!")
     print("Autor programu: Piotr Bacior - 15 722 - 2026")
     print("Oblicz swoje BMI, podając wagę w kilogramach i wzrost w metrach.")
     print("=" * 30)
-
-    waga = 70.0               # Przykładowa waga w kilogramach (float)
-    wzrost = 1.75             # Przykładowy wzrost w metrach (float)
 
 
     # Wywołujemy funkcję calculate_bmi i obsługujemy potencjalne wyjątki, które mogą wystąpić podczas obliczeń
