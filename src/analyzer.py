@@ -14,4 +14,9 @@ def analyze_bmi(bmi_value: float) -> str:
     Ograniczenia:
     - Wartość 'bmi_value' powinna być dodatnia (> 0)
 
+    
+    
     """
+
+if bmi_value <= 0:
+    raise ValueError("Wartość BMI musi być większa niż 0.")
