@@ -30,3 +30,5 @@ def analyze_bmi(bmi_value: float) -> str:
         return "Waga prawidłowa"
     elif bmi_value < 30.0:
         return "Nadwaga"
+    else:
+        return "Otyłość"
