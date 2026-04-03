@@ -10,6 +10,7 @@ def main():
     Oczekiwane dane wejściowe:
     - Dane wprwadzone przez użytkownika (waga i wzrost) są typu float - z klawiatury
     - Oczekiwane są liczby dodatnie dla wagi i wzrostu
+    - Decyzja o kontynuacji działania programu (T/N)
 
     Zachowanie funkcji:
     - Wyświetla interfejs powitalny dla użytkownika w konsoli
