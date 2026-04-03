@@ -2,7 +2,7 @@ from datetime import datetime       # importujemy datetime, aby móc pracować z
 
 # Funkcja save_result_to_file zapisuje wynik obliczeń BMI do pliku tekstowego, wraz z datą i czasem, oraz informacjami o wadze, wzroście, wartości BMI i kategorii zdrowotnej.
 def save_result_to_file(weight_kg: float, height_m: float, bmi_value: float, category: str, filename: str = "bmi_results.txt") -> None:
-    
+
     """
     Zapisuje wynik obliczeń BMI do pliku tekstowego wraz z obecną datą i godziną 
 
@@ -12,5 +12,10 @@ def save_result_to_file(weight_kg: float, height_m: float, bmi_value: float, cat
     - bmi_value: obliczone BMI (float)
     - category: kategoria zdrowotna (str)
     - filename: nazwa pliku, do którego zostanie zapisany wynik (domyślnie "bmi_results.txt")
+
+    Zachowanie funkcji:
+    - Pobiera aktualną datę i czas systemowy 
+    - Otwiera plik w trybie dopisywania ("a" - append), aby nie nadpisywać starych wyników
+    - Zapisuje sformatowaną linijkę z wynikiem
 
     """
