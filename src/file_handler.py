@@ -28,3 +28,6 @@ def save_result_to_file(weight_kg: float, height_m: float, bmi_value: float, cat
 
     # Pobieramy aktualną datę i czas, formatując ją jako "YYYY-MM-DD HH:MM:SS"
     now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")    
+
+    # Przygotowujemy linijkę tekstu do zapisania, zawierającą datę, wagę, wzrost, wartość BMI i kategorię zdrowotną
+    line_to_save = f"{now} - Waga: {weight_kg} kg, Wzrost: {height_m} m, BMI: {bmi_value}, Kategoria: {category}\n"   
