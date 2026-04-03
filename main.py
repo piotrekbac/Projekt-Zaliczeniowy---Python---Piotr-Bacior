@@ -108,6 +108,10 @@ def main():
             print("Dziękujemy za skorzystanie z Kalkulatora BMI. Do zobaczenia!")       # Wyświetlamy komunikat pożegnalny
             break                                                                       # Kończymy działanie programu
 
+        # Jeżeli użytkownik wpisał 't' (tak), kontynuujemy działanie programu (wracamy do początku pętli while True)
+        elif wybor == 't':     
+            
+
 # Uruchamiamy główną funkcję programu
 if __name__ == "__main__":
     main()          
