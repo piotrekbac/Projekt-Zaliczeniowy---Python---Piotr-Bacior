@@ -105,7 +105,8 @@ def main():
 
         # Jeżeli użytkownik wpisał 'n' (nie), kończymy działanie programu
         if wybor == 'n':
-
+            print("Dziękujemy za skorzystanie z Kalkulatora BMI. Do zobaczenia!")       # Wyświetlamy komunikat pożegnalny
+            break                                                                       # Kończymy działanie programu
 
 # Uruchamiamy główną funkcję programu
 if __name__ == "__main__":
