@@ -57,10 +57,15 @@ def main():
 
 
         # Wyświetlamy pełne podsumowanie 
+
+        print("\n" + "=" * 30)                                              # Dodajemy odstęp i linię oddzielającą wyniki od reszty interfejsu
+
         print(f"Twoje BMI wynosi: {moje_bmi}")                              # Wyświetlamy wynik obliczeń BMI
         print(f"Podany wzrost: {wzrost} m, podana waga: {waga} kg")         # Wyświetlamy podane dane wejściowe
         print(f"BMI: {moje_bmi}")                                           # Wyświetlamy BMI
         print(f"Twoja kategoria zdrowotna: {kategoria}")                    # Wyświetlamy kategorię zdrowotną
+
+        print("=" * 30 + "\n")                                              # Dodajemy linię oddzielającą wyniki od reszty interfejsu
 
 
     # Obsługujemy wyjątki typu ValueError, które mogą być podniesione przez funkcję calculate_bmi
