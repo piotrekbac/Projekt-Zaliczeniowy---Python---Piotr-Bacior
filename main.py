@@ -1,5 +1,6 @@
-from src.calculator import calculate_bmi      # Importujemy funkcję calculate_bmi z modułu calculator
-from src.analyzer import analyze_bmi          # Importujemy funkcję analyze_bmi z modułu analyzer
+from src.calculator import calculate_bmi            # Importujemy funkcję calculate_bmi z modułu calculator
+from src.analyzer import analyze_bmi                # Importujemy funkcję analyze_bmi z modułu analyzer
+from src.file_handler import save_result_to_file    # Importujemy funkcję save_result_to_file z modułu file_handler
 
 # Piotr Bacior - 15 722 - 2026 - Python - MH
 
