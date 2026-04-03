@@ -27,11 +27,11 @@ def main():
     """
 
     # Nagłówek powitalny dla użytkownika, informujący o autorze programu i jego funkcjonalności
-    print("=" * 30)                                                             
+    print("\n" + "=" * 30 + "")                                                             
     print("Witaj w Kalkulatorze BMI!")
     print("Autor programu: Piotr Bacior - 15 722 - 2026")
     print("Oblicz swoje BMI, podając wagę w kilogramach i wzrost w metrach.")
-    print("=" * 30)
+    print("" + "=" * 30 + "\n")
 
 
     # Wywołujemy funkcję calculate_bmi i obsługujemy potencjalne wyjątki, które mogą wystąpić podczas obliczeń
@@ -58,14 +58,14 @@ def main():
 
         # Wyświetlamy pełne podsumowanie 
 
-        print("\n" + "=" * 30)                                              # Dodajemy odstęp i linię oddzielającą wyniki od reszty interfejsu
+        print("\n" + "=" * 30 + "\n")                                       # Dodajemy odstęp i linię oddzielającą wyniki od reszty interfejsu
 
         print(f"Twoje BMI wynosi: {moje_bmi}")                              # Wyświetlamy wynik obliczeń BMI
         print(f"Podany wzrost: {wzrost} m, podana waga: {waga} kg")         # Wyświetlamy podane dane wejściowe
         print(f"BMI: {moje_bmi}")                                           # Wyświetlamy BMI
         print(f"Twoja kategoria zdrowotna: {kategoria}")                    # Wyświetlamy kategorię zdrowotną
 
-        print("=" * 30 + "\n")                                              # Dodajemy linię oddzielającą wyniki od reszty interfejsu
+        print("\n" + "=" * 30 + "\n")                                       # Dodajemy linię oddzielającą wyniki od reszty interfejsu
 
 
     # Obsługujemy wyjątki typu ValueError, które mogą być podniesione przez funkcję calculate_bmi
