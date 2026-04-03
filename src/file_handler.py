@@ -1,5 +1,7 @@
 from datetime import datetime       # importujemy datetime, aby móc pracować z datami i czasem
 
+# Piotr Bacior - 15 722 - 2026 - Python - MH
+
 # Funkcja save_result_to_file zapisuje wynik obliczeń BMI do pliku tekstowego, wraz z datą i czasem, oraz informacjami o wadze, wzroście, wartości BMI i kategorii zdrowotnej.
 def save_result_to_file(weight_kg: float, height_m: float, bmi_value: float, category: str, filename: str = "bmi_results.txt") -> None:
 
@@ -49,6 +51,6 @@ def save_result_to_file(weight_kg: float, height_m: float, bmi_value: float, cat
 
     # Jeśli wystąpi błąd podczas operacji na pliku, przechwytujemy wyjątek IOError i wyświetlamy komunikat o błędzie wraz z informacją o przyczynie
     except IOError as e:
-        
+
         # Jeśli wystąpi błąd podczas operacji na pliku, wyświetlamy komunikat o błędzie wraz z informacją o przyczynie
         print(f"Nie można zapisać wyniku do pliku: {e}")
