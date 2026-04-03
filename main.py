@@ -37,6 +37,9 @@ def main():
     print("" + "=" * 30 + "\n")
 
 
+# Pętla nieskończona, która pozwala użytkownikowi na wielokrotne obliczanie BMI, dopóki nie zdecyduje o zakończeniu programu
+while True:    
+
     # Wywołujemy funkcję calculate_bmi i obsługujemy potencjalne wyjątki, które mogą wystąpić podczas obliczeń
     try:
 
