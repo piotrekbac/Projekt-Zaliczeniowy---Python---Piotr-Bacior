@@ -94,7 +94,15 @@ def main():
  
             # Sprawdzamy, czy użytkownik wpisał 'T' lub 'N' (po konwersji na małe litery)
             if wybor == 't' or wybor == 'n':                                                     
-                break                                       # Jeżeli wpisał t lub n, wychodzimy z tej pętli 
+
+                # Jeżeli wpisał t lub n, wychodzimy z tej pętli 
+                break                                       
+
+
+            else:
+                # Jeżeli wpisał coś innego, wyświetlamy komunikat o błędzie i pytamy ponownie
+                print("Nieprawidłowy wybór. Proszę wpisać 'T' (tak) lub 'N' (nie).")   
+
 
 
 # Uruchamiamy główną funkcję programu
