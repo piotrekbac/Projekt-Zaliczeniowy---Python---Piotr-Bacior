@@ -1,0 +1,1 @@
+from datetime import datetime       # importujemy datetime, aby móc pracować z datami i czasem
