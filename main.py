@@ -55,6 +55,12 @@ while True:
         # Konwertujemy tekst na liczbę typu float, aby można było przeprowadzić obliczenia BMI
         wzrost = float(wzrost_input)
 
+        # Jeśli użytkownik poda wzrost w centymetrach, konwertujemy go na metry
+        if wzrost >= 3.0:
+                
+
+
+
         # Wywołujemy funkcję calculate_bmi z przykładowymi danymi
         moje_bmi = calculate_bmi(waga, wzrost)   
 
