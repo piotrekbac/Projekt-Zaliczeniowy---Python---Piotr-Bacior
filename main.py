@@ -71,6 +71,8 @@ def main():
             # Wywołujemy funkcję analyze_bmi, aby uzyskać kategorię zdrowotną na podstawie obliczonego BMI
             kategoria = analyze_bmi(moje_bmi)   
 
+            # Wywołujemy funkcję save_result_to_file, aby zapisać wynik obliczeń do pliku tekstowego
+            save_result_to_file(waga, wzrost, moje_bmi, kategoria)
 
             # Wyświetlamy pełne podsumowanie 
 
