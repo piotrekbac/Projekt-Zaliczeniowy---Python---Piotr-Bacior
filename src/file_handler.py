@@ -36,6 +36,13 @@ def save_result_to_file(weight_kg: float, height_m: float, bmi_value: float, cat
 
     # Próbujemy otworzyć plik i zapisać linijkę z wynikiem, obsługując potencjalne wyjątki związane z operacjami na plikach
     try: 
+        
         # with open(...) to nasz bezpieczny sposób pracy z plikami w Pythonie
         # Tryb "a" (append) pozwala na dopisywanie nowych wyników do końca pliku, bez usuwania starych danych
         # encoding="utf-8" zapewnia, że plik będzie zapisany w formacie UTF-8, co jest ważne dla poprawnego wyświetlania polskich znaków
+
+        with open(filename, "a", encoding="utf-8") as file: 
+            
+            # Zapisujemy przygotowaną linijkę do pliku
+            file.write(line_to_save)                
+            
