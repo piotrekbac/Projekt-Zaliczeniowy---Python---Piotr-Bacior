@@ -85,6 +85,8 @@ while True:
     except ValueError as e:     
         print(f"Błąd: {e}")     # Wyświetlamy komunikat o błędzie, jeśli dane wejściowe są nieprawidłowe
 
+    # Pytamy użytkownika, czy chce kontynuować działanie programu, czy zakończyć - usuwamy spacje oraz zmieniamy na małe litery, aby ułatwić porównanie
+    wybor = input("Czy chcesz obliczyć BMI ponownie? (T/N): ").strip().lower()
 
 # Uruchamiamy główną funkcję programu
 if __name__ == "__main__":
