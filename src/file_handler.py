@@ -25,3 +25,6 @@ def save_result_to_file(weight_kg: float, height_m: float, bmi_value: float, cat
     - Obsługuje potencjalne wyjątki związane z operacjami na plikach (np. IOError) i wyświetla komunikat o błędzie, jeśli zapis do pliku się nie powiedzie
 
     """
+
+    # Pobieramy aktualną datę i czas, formatując ją jako "YYYY-MM-DD HH:MM:SS"
+    now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")    
