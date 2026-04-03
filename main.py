@@ -110,7 +110,9 @@ def main():
 
         # Jeżeli użytkownik wpisał 't' (tak), kontynuujemy działanie programu (wracamy do początku pętli while True)
         elif wybor == 't':     
-            
+            print("\n" + "=" * 30 + "\n")                                       # Dodajemy odstęp i linię oddzielającą wyniki od reszty interfejsu
+            print("Nowe obliczenie BMI")                                        # Informujemy użytkownika, że rozpoczynamy nowe obliczenie BMI
+            print("\n" + "=" * 30 + "\n")                                       # Dodajemy odstęp i linię oddzielającą wyniki od reszty interfejsu
 
 # Uruchamiamy główną funkcję programu
 if __name__ == "__main__":
