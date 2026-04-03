@@ -52,6 +52,10 @@ def main():
         # Wywołujemy funkcję calculate_bmi z przykładowymi danymi
         moje_bmi = calculate_bmi(waga, wzrost)   
 
+        # Wywołujemy funkcję analyze_bmi, aby uzyskać kategorię zdrowotną na podstawie obliczonego BMI
+        kategoria = analyze_bmi(moje_bmi)   
+
+
         print(f"Twoje BMI wynosi: {moje_bmi}")                          # Wyświetlamy wynik obliczeń BMI
         print(f"Podany wzrost: {wzrost} m, podana waga: {waga} kg")     # Wyświetlamy podane dane wejściowe
     
