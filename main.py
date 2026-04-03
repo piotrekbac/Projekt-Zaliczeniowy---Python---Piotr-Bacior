@@ -37,61 +37,61 @@ def main():
     print("" + "=" * 30 + "\n")
 
 
-# Pętla nieskończona, która pozwala użytkownikowi na wielokrotne obliczanie BMI, dopóki nie zdecyduje o zakończeniu programu
-while True:    
+    # Pętla nieskończona, która pozwala użytkownikowi na wielokrotne obliczanie BMI, dopóki nie zdecyduje o zakończeniu programu
+    while True:    
 
-    # Wywołujemy funkcję calculate_bmi i obsługujemy potencjalne wyjątki, które mogą wystąpić podczas obliczeń
-    try:
+        # Wywołujemy funkcję calculate_bmi i obsługujemy potencjalne wyjątki, które mogą wystąpić podczas obliczeń
+        try:
 
-        # Pobieramy wpis od użytkownika i podmieniamy ewentualny przecinek na kropkę - aby umożliwić poprawne przetwarzanie danych typu float
-        waga_input = input("Podaj swoją wagę w kilogramach (np. 70.5): ").replace(",", ".")
+            # Pobieramy wpis od użytkownika i podmieniamy ewentualny przecinek na kropkę - aby umożliwić poprawne przetwarzanie danych typu float
+            waga_input = input("Podaj swoją wagę w kilogramach (np. 70.5): ").replace(",", ".")
 
-        # Konwertujemy tekst na liczbę typu float, aby można było przeprowadzić obliczenia BMI
-        waga = float(waga_input)
+            # Konwertujemy tekst na liczbę typu float, aby można było przeprowadzić obliczenia BMI
+            waga = float(waga_input)
 
-        # Pobieramy wpis od użytkownika i podmieniamy ewentualny przecinek na kropkę - aby umożliwić poprawne przetwarzanie danych typu float
-        wzrost_input = input("Podaj swój wzrost w metrach (np. 1.75): ").replace(",", ".")
+            # Pobieramy wpis od użytkownika i podmieniamy ewentualny przecinek na kropkę - aby umożliwić poprawne przetwarzanie danych typu float
+            wzrost_input = input("Podaj swój wzrost w metrach (np. 1.75): ").replace(",", ".")
 
-        # Konwertujemy tekst na liczbę typu float, aby można było przeprowadzić obliczenia BMI
-        wzrost = float(wzrost_input)
-
-
-        # Jeśli użytkownik poda wzrost w centymetrach, konwertujemy go na metry
-        if wzrost >= 3.0:
-            print(f"Infomracja: Wykryto wzrost podany w centrymetrach ({wzrost} cm). Konwertuję na metry...")
-            wzrost = wzrost / 100
+            # Konwertujemy tekst na liczbę typu float, aby można było przeprowadzić obliczenia BMI
+            wzrost = float(wzrost_input)
 
 
-        # Wywołujemy funkcję calculate_bmi z przykładowymi danymi
-        moje_bmi = calculate_bmi(waga, wzrost)   
-
-        # Wywołujemy funkcję analyze_bmi, aby uzyskać kategorię zdrowotną na podstawie obliczonego BMI
-        kategoria = analyze_bmi(moje_bmi)   
-
-
-        # Wyświetlamy pełne podsumowanie 
-
-        print("\n" + "=" * 30 + "\n")                                       # Dodajemy odstęp i linię oddzielającą wyniki od reszty interfejsu
-
-        print(f"Twoje BMI wynosi: {moje_bmi}")                              # Wyświetlamy wynik obliczeń BMI
-        print(f"Podany wzrost: {wzrost} m, podana waga: {waga} kg")         # Wyświetlamy podane dane wejściowe
-        print(f"BMI: {moje_bmi}")                                           # Wyświetlamy BMI
-        print(f"Twoja kategoria zdrowotna: {kategoria}")                    # Wyświetlamy kategorię zdrowotną
-
-        print("\n" + "=" * 30 + "\n")                                       # Dodajemy linię oddzielającą wyniki od reszty interfejsu
+            # Jeśli użytkownik poda wzrost w centymetrach, konwertujemy go na metry
+            if wzrost >= 3.0:
+                print(f"Infomracja: Wykryto wzrost podany w centrymetrach ({wzrost} cm). Konwertuję na metry...")
+                wzrost = wzrost / 100
 
 
-    # Obsługujemy wyjątki typu ValueError, które mogą być podniesione przez funkcję calculate_bmi
-    except ValueError as e:     
-        print(f"Błąd: {e}")     # Wyświetlamy komunikat o błędzie, jeśli dane wejściowe są nieprawidłowe
+            # Wywołujemy funkcję calculate_bmi z przykładowymi danymi
+            moje_bmi = calculate_bmi(waga, wzrost)   
 
-    # Pytamy użytkownika, czy chce kontynuować działanie programu, czy zakończyć - usuwamy spacje oraz zmieniamy na małe litery, aby ułatwić porównanie
-    wybor = input("Czy chcesz obliczyć BMI ponownie? (T/N): ").strip().lower()
+            # Wywołujemy funkcję analyze_bmi, aby uzyskać kategorię zdrowotną na podstawie obliczonego BMI
+            kategoria = analyze_bmi(moje_bmi)   
 
-    # Jeżeli użytkownik wpisze cokolwiek innego niż 'T', przerywamy pętlę while i kończymy program
-    if wybor != 't':
-        print("Dziękujemy za skorzystanie z Kalkulatora BMI. Do zobaczenia!")       # Wyświetlamy komunikat pożegnalny
-        break                                                                       # Przerywamy pętlę while, co kończy działanie programu
+
+            # Wyświetlamy pełne podsumowanie 
+
+            print("\n" + "=" * 30 + "\n")                                       # Dodajemy odstęp i linię oddzielającą wyniki od reszty interfejsu
+
+            print(f"Twoje BMI wynosi: {moje_bmi}")                              # Wyświetlamy wynik obliczeń BMI
+            print(f"Podany wzrost: {wzrost} m, podana waga: {waga} kg")         # Wyświetlamy podane dane wejściowe
+            print(f"BMI: {moje_bmi}")                                           # Wyświetlamy BMI
+            print(f"Twoja kategoria zdrowotna: {kategoria}")                    # Wyświetlamy kategorię zdrowotną
+
+            print("\n" + "=" * 30 + "\n")                                       # Dodajemy linię oddzielającą wyniki od reszty interfejsu
+
+
+        # Obsługujemy wyjątki typu ValueError, które mogą być podniesione przez funkcję calculate_bmi
+        except ValueError as e:     
+            print(f"Błąd: {e}")     # Wyświetlamy komunikat o błędzie, jeśli dane wejściowe są nieprawidłowe
+
+        # Pytamy użytkownika, czy chce kontynuować działanie programu, czy zakończyć - usuwamy spacje oraz zmieniamy na małe litery, aby ułatwić porównanie
+        wybor = input("Czy chcesz obliczyć BMI ponownie? (T/N): \n").strip().lower()
+
+        # Jeżeli użytkownik wpisze cokolwiek innego niż 'T', przerywamy pętlę while i kończymy program
+        if wybor != 't':
+            print("Dziękujemy za skorzystanie z Kalkulatora BMI. Do zobaczenia!")       # Wyświetlamy komunikat pożegnalny
+            break                                                                       # Przerywamy pętlę while, co kończy działanie programu
 
 
 # Uruchamiamy główną funkcję programu
