@@ -88,6 +88,12 @@ while True:
     # Pytamy użytkownika, czy chce kontynuować działanie programu, czy zakończyć - usuwamy spacje oraz zmieniamy na małe litery, aby ułatwić porównanie
     wybor = input("Czy chcesz obliczyć BMI ponownie? (T/N): ").strip().lower()
 
+    # Jeżeli użytkownik wpisze cokolwiek innego niż 'T', przerywamy pętlę while i kończymy program
+    if wybor != 't':
+        print("Dziękujemy za skorzystanie z Kalkulatora BMI. Do zobaczenia!")       # Wyświetlamy komunikat pożegnalny
+        break                                                                       # Przerywamy pętlę while, co kończy działanie programu
+
+
 # Uruchamiamy główną funkcję programu
 if __name__ == "__main__":
     main()          
