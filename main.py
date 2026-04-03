@@ -56,9 +56,12 @@ def main():
         kategoria = analyze_bmi(moje_bmi)   
 
 
-        print(f"Twoje BMI wynosi: {moje_bmi}")                          # Wyświetlamy wynik obliczeń BMI
-        print(f"Podany wzrost: {wzrost} m, podana waga: {waga} kg")     # Wyświetlamy podane dane wejściowe
-    
+        # Wyświetlamy pełne podsumowanie 
+        print(f"Twoje BMI wynosi: {moje_bmi}")                              # Wyświetlamy wynik obliczeń BMI
+        print(f"Podany wzrost: {wzrost} m, podana waga: {waga} kg")         # Wyświetlamy podane dane wejściowe
+        print(f"BMI: {moje_bmi}")                                           # Wyświetlamy BMI
+        print(f"Twoja kategoria zdrowotna: {kategoria}")                    # Wyświetlamy kategorię zdrowotną
+
 
     # Obsługujemy wyjątki typu ValueError, które mogą być podniesione przez funkcję calculate_bmi
     except ValueError as e:     
