@@ -18,4 +18,7 @@ def save_result_to_file(weight_kg: float, height_m: float, bmi_value: float, cat
     - Otwiera plik w trybie dopisywania ("a" - append), aby nie nadpisywać starych wyników
     - Zapisuje sformatowaną linijkę z wynikiem
 
+    Ograniczenia:
+    - Funkcja przeznaczona jest do działania w środowisku konsolowym, gdzie użytkownik może mieć dostęp do plików tekstowych
+
     """
