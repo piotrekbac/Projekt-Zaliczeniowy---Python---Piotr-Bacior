@@ -55,10 +55,11 @@ while True:
         # Konwertujemy tekst na liczbę typu float, aby można było przeprowadzić obliczenia BMI
         wzrost = float(wzrost_input)
 
+
         # Jeśli użytkownik poda wzrost w centymetrach, konwertujemy go na metry
         if wzrost >= 3.0:
-                
-
+            print(f"Infomracja: Wykryto wzrost podany w centrymetrach ({wzrost} cm). Konwertuję na metry...")
+            wzrost = wzrost / 100
 
 
         # Wywołujemy funkcję calculate_bmi z przykładowymi danymi
