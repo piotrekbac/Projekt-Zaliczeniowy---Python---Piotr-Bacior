@@ -46,6 +46,8 @@ def main():
         # Pobieramy wpis od użytkownika i podmieniamy ewentualny przecinek na kropkę - aby umożliwić poprawne przetwarzanie danych typu float
         wzrost_input = input("Podaj swój wzrost w metrach (np. 1.75): ").replace(",", ".")
 
+        # Konwertujemy tekst na liczbę typu float, aby można było przeprowadzić obliczenia BMI
+        wzrost = float(wzrost_input)
 
         # Wywołujemy funkcję calculate_bmi z przykładowymi danymi
         moje_bmi = calculate_bmi(waga, wzrost)   
