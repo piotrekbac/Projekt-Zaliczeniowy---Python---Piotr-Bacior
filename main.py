@@ -1,6 +1,8 @@
 from src.calculator import calculate_bmi      # Importujemy funkcję calculate_bmi z modułu calculator
 from src.analyzer import analyze_bmi          # Importujemy funkcję analyze_bmi z modułu analyzer
 
+# Piotr Bacior - 15 722 - 2026 - Python - MH
+
 # Główna funkcja programu, która będzie wywoływana podczas uruchamiania skryptu
 def main():
 
