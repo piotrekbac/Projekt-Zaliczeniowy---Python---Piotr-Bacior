@@ -21,4 +21,7 @@ def save_result_to_file(weight_kg: float, height_m: float, bmi_value: float, cat
     Ograniczenia:
     - Funkcja przeznaczona jest do działania w środowisku konsolowym, gdzie użytkownik może mieć dostęp do plików tekstowych
 
+    Podnoszenie wyjątków:
+    - Obsługuje potencjalne wyjątki związane z operacjami na plikach (np. IOError) i wyświetla komunikat o błędzie, jeśli zapis do pliku się nie powiedzie
+
     """
