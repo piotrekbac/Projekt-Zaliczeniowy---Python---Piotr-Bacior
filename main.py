@@ -98,11 +98,13 @@ def main():
                 # Jeżeli wpisał t lub n, wychodzimy z tej pętli 
                 break                                       
 
-
+            # W przeciwnym razie, jeżeli wpisał coś innego, wyświetlamy komunikat o błędzie i pytamy ponownie
             else:
                 # Jeżeli wpisał coś innego, wyświetlamy komunikat o błędzie i pytamy ponownie
                 print("Nieprawidłowy wybór. Proszę wpisać 'T' (tak) lub 'N' (nie).")   
 
+        # Jeżeli użytkownik wpisał 'n' (nie), kończymy działanie programu
+        if wybor == 'n':
 
 
 # Uruchamiamy główną funkcję programu
