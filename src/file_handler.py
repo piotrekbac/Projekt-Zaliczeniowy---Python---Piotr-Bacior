@@ -29,5 +29,13 @@ def save_result_to_file(weight_kg: float, height_m: float, bmi_value: float, cat
     # Pobieramy aktualną datę i czas, formatując ją jako "YYYY-MM-DD HH:MM:SS"
     now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")    
 
+
     # Przygotowujemy linijkę tekstu do zapisania, zawierającą datę, wagę, wzrost, wartość BMI i kategorię zdrowotną
     line_to_save = f"{now} - Waga: {weight_kg} kg, Wzrost: {height_m} m, BMI: {bmi_value}, Kategoria: {category}\n"   
+
+
+    # Próbujemy otworzyć plik i zapisać linijkę z wynikiem, obsługując potencjalne wyjątki związane z operacjami na plikach
+    try: 
+        # with open(...) to nasz bezpieczny sposób pracy z plikami w Pythonie
+        # Tryb "a" (append) pozwala na dopisywanie nowych wyników do końca pliku, bez usuwania starych danych
+        # encoding="utf-8" zapewnia, że plik będzie zapisany w formacie UTF-8, co jest ważne dla poprawnego wyświetlania polskich znaków
