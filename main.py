@@ -17,6 +17,8 @@ def main():
     - Pobiera dane wejściowe od użytkownika (waga i wzrost) - w tym przypadku używamy przykładowych danych
     - Wywołuje funkcje obliczające i analizujące BMI, a następnie wyświetla wyniki w konsoli
     - Wyświetla pełne podsumowanie wyników
+    - Działa w nieskończonej pętli, dopóki użytkownik nie zdecyduje o zakończeniu programu (np. poprzez wpisanie 'N' lub 'n')
+    - Inteligentnie konwertuje wzrost podany w centymetrach na metry
 
     Ograniczenia:
     - Funkcja przeznaczoa jest do działania w środowisku konsolowym
