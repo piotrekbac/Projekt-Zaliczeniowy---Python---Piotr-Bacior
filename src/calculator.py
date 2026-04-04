@@ -42,5 +42,8 @@ def calculate_ideal_weight(height_m: float) -> tuple[float, float]:
     Oczekiwane dane wejściowe:
     - height_m: wzrost w metrach (float)
 
+    Zachowanie funkcji:
+    - Wykorzystuje minimalne (18.5) i maksymalne (24.9) wartości BMI, aby obliczyć dolną i górną granicę idealnej wagi
+    - Zwraca dwuelementową krotkę (tuple) zawierającą dolną i górną granicę idealnej wagi w kilogramach (float)
     
     """
