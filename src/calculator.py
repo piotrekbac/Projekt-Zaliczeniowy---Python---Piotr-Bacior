@@ -58,8 +58,12 @@ def calculate_ideal_weight(height_m: float) -> tuple[float, float]:
     if height_m <= 0:
         raise ValueError("Wzrost musi być większy niż 0.")
     
-    
+
     # Wzór: Waga = BMI * (wzrost^2), gdzie BMI minimalne to 18.5, a maksymalne to 24.9
 
     min_weight = 18.5 * (height_m ** 2)   # Obliczamy dolną granicę idealnej wagi
     max_weight = 24.9 * (height_m ** 2)   # Obliczamy górną granicę idealnej wagi
+
+
+    # Zwracamy krotkę z zaokrąglonymi wartościami idealnej wagi
+    return round(min_weight, 2), round(max_weight, 2)   
