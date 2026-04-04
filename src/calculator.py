@@ -53,3 +53,7 @@ def calculate_ideal_weight(height_m: float) -> tuple[float, float]:
     - ValueError: jeśli 'height_m' jest mniejsze lub równe 0
 
     """
+
+    # Sprawdzamy, czy wzrost jest większy niż 0, aby uniknąć błędów dzielenia przez zero lub negatywnych wartości
+    if height_m <= 0:
+        raise ValueError("Wzrost musi być większy niż 0.")
