@@ -35,3 +35,9 @@ def calculate_bmi(weight_kg: float, height_m: float) -> float:
 
 # Definiuję funkcję do obliczania idealnej wagi na podstawie wzrostu - dane wejściowe są typu float, oczekujemy wyniku typu tuple[float, float]
 def calculate_ideal_weight(height_m: float) -> tuple[float, float]:
+    
+    """
+    Oblicza zakres idealnej wagi dla danego wzrostu w metrach
+
+    
+    """
