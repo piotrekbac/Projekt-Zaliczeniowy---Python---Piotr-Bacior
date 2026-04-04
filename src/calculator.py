@@ -31,3 +31,7 @@ def calculate_bmi(weight_kg: float, height_m: float) -> float:
 
     bmi = weight_kg / (height_m ** 2)           # Obliczamy BMI jako wagę podzieloną przez kwadrat wzrostu
     return round(bmi, 2)                        # Zaokrąglamy wynik do dwóch miejsc po przecinku  
+
+
+# Definiuję funkcję do obliczania idealnej wagi na podstawie wzrostu - dane wejściowe są typu float, oczekujemy wyniku typu tuple[float, float]
+def calculate_ideal_weight(height_m: float) -> tuple[float, float]:

@@ -74,6 +74,7 @@ def main():
             # Wywołujemy funkcję save_result_to_file, aby zapisać wynik obliczeń do pliku tekstowego
             save_result_to_file(waga, wzrost, moje_bmi, kategoria)
 
+
             # Wyświetlamy pełne podsumowanie 
 
             print("\n" + "=" * 30 + "\n")                                       # Dodajemy odstęp i linię oddzielającą wyniki od reszty interfejsu

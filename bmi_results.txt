@@ -1,0 +1,2 @@
+2026-04-04 01:58:59 - Waga: 105.0 kg, Wzrost: 1.88 m, BMI: 29.71, Kategoria: Nadwaga
+2026-04-04 01:59:15 - Waga: 65.0 kg, Wzrost: 1.78 m, BMI: 20.52, Kategoria: Waga prawidłowa
