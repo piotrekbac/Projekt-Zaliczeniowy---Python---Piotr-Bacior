@@ -39,5 +39,8 @@ def calculate_ideal_weight(height_m: float) -> tuple[float, float]:
     """
     Oblicza zakres idealnej wagi dla danego wzrostu w metrach
 
+    Oczekiwane dane wejściowe:
+    - height_m: wzrost w metrach (float)
+
     
     """
