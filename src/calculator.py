@@ -49,4 +49,7 @@ def calculate_ideal_weight(height_m: float) -> tuple[float, float]:
     Ograniczenia:
     - Oczekiwana wartość 'height_m' musi być dodatnia (> 0)
 
+    Podnoszenie wyjątków:
+    - ValueError: jeśli 'height_m' jest mniejsze lub równe 0
+
     """
