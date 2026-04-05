@@ -13,6 +13,8 @@ def save_result_to_file(weight_kg: float, height_m: float, bmi_value: float, cat
     - height_m: wzrost w metrach (float)
     - bmi_value: obliczone BMI (float)
     - category: kategoria zdrowotna (str)
+    - min_ideal: minimalna idealna waga (float)
+    - max_ideal: maksymalna idealna waga (float)
     - filename: nazwa pliku, do którego zostanie zapisany wynik (domyślnie "bmi_results.txt")
 
     Zachowanie funkcji:
