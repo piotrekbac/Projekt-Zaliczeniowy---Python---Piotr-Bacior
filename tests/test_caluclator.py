@@ -34,3 +34,7 @@ class TestCalculator(unittest.TestCase):
 
         with self.assertRaises(ValueError):
             calculate_bmi(75.0, 0.0)            # Wzrost zerowy - powinno wyrzucić ValueError
+
+
+    # Definiujemy metodę testową, która sprawdza poprawność obliczeń idealnej wagi dla różnych wartości wzrostu
+    def test_calculate_ideal_weight(self):
