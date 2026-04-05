@@ -10,6 +10,7 @@ class TestCalculator(unittest.TestCase):
 
     # Definiujemy metodę testową, która sprawdza poprawność obliczeń BMI dla różnych zestawów danych wejściowych
     def test_calculate_bmi_correct_values(self):
+        
         """ Sprawdza, czy funkcja prawidłowo oblicza BMI dla poprawnych wartości wagi i wzrostu """
 
         # Wzór: self.assertEqual(A, B) - sprawdza, czy A jest równe B
@@ -23,6 +24,7 @@ class TestCalculator(unittest.TestCase):
 
     # Definiujemy metodę testową, która sprawdza, czy funkcja calculate_bmi podnosi odpowiednie wyjątki, gdy waga lub wzrost są równe lub mniejsze od zera
     def test_calculate_bmi_zero_or_negative(self):
+
         """ Sprawdza, czy funkcja wyrzuca błąd ValueError przy błędnych danych wejściowych (waga lub wzrost <= 0) """
 
         # self.assertRaises(ValueError) sprawdza, czy kod poniżej wyrzuci ten konkretny wyjątek (ValueError)
