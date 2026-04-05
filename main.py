@@ -9,6 +9,7 @@ def main():
 
     """
     Punkt wejścia programu Kalkulatora BMI
+    Pobiera dane od użytkownika, oblicza BMI oraz idealną wagę, wyświetla wyniki i zapisuje je do pliku tekstowego
 
     Oczekiwane dane wejściowe:
     - Dane wprwadzone przez użytkownika (waga i wzrost) są typu float - z klawiatury
