@@ -46,4 +46,6 @@ class TestCalculator(unittest.TestCase):
         min_weight, max_weight = calculate_ideal_weight(1.80)
 
         # Wiemy, że idealna waga dla wzrostu 1.80m powinna być w zakresie 59.94 kg - 80.68 kg, więc sprawdzamy, czy obliczone wartości mieszczą się w tym zakresie
+        
         self.assertEqual(min_weight, 59.94)    # Sprawdzamy, czy minimalna idealna waga jest równa 59.94 kg
+        self.assertEqual(max_weight, 80.68)    # Sprawdzamy, czy maksymalna idealna waga jest równa 80.68 kg
