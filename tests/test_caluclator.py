@@ -12,5 +12,9 @@ class TestCalculator(unittest.TestCase):
         """ Sprawdza, czy funkcja prawidłowo oblicza BMI dla poprawnych wartości wagi i wzrostu """
 
         # Wzór: self.assertEqual(A, B) - sprawdza, czy A jest równe B
+        
         # Sprawdzimy: waga 75 kg i wzrost 1.80m. Oczekiwany wynik BMI: 23.15
         self.assertEqual(calculate_bmi(75, 1.80), 23.15)
+
+        # Sprawdzimy: waga 50 kg i wzrost 1.60m. Oczekiwany wynik BMI: 19.53
+        self.assertEqual(calculate_bmi(50, 1.60), 19.53)
