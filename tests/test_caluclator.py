@@ -1,1 +1,2 @@
-import unittest             # Importujemy moduł unittest, który służy do tworzenia i uruchamiania testów jednostkowych
+import unittest                                                     # Importujemy moduł unittest, który służy do tworzenia i uruchamiania testów jednostkowych
+from src.calculator import calculate_bmi, calculate_ideal_weight    # Importujemy funkcje calculate_bmi i calculate_ideal_weight z modułu calculator
