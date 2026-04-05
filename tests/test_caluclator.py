@@ -1,0 +1,1 @@
+import unittest             # Importujemy moduł unittest, który służy do tworzenia i uruchamiania testów jednostkowych
