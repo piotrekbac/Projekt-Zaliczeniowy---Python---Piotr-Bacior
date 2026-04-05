@@ -38,5 +38,9 @@ class TestCalculator(unittest.TestCase):
 
     # Definiujemy metodę testową, która sprawdza poprawność obliczeń idealnej wagi dla różnych wartości wzrostu
     def test_calculate_ideal_weight(self):
-        
+
         """ Sprawdza, czy funkcja poprawnie oblicza idealną wagę dla różnych wartości wzrostu """
+
+        # Wywołujemy fumkcję dla wzrostu 1.80m. Oczekiwany wynik: (59.94, 80.68)
+
+        min_weight, max_weight = calculate_ideal_weight(1.80)
