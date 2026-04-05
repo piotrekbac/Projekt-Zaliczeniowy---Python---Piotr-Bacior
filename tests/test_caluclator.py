@@ -6,3 +6,7 @@ from src.calculator import calculate_bmi, calculate_ideal_weight    # Importujem
 # Tworzymy klasę TestCalculator, która dziedziczy po unittest.TestCase, co pozwala nam definiować metody testowe 
 class TestCalculator(unittest.TestCase): 
     """ Klasa zawierająca testy jednostkowe dla funkcji calculate_bmi i calculate_ideal_weight z modułu calculator """
+
+
+    def test_calculate_bmi_correct_values(self):
+        """ Sprawdza, czy funkcja prawidłowo oblicza BMI dla poprawnych wartości wagi i wzrostu """
