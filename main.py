@@ -118,7 +118,7 @@ def main():
 
         # Jeżeli użytkownik wpisał 'n' (nie), kończymy działanie programu
         if wybor == 'n':
-            print("Dziękujemy za skorzystanie z Kalkulatora BMI. Do zobaczenia!")       # Wyświetlamy komunikat pożegnalny
+            print("\nDziękujemy za skorzystanie z Kalkulatora BMI. Do zobaczenia!")       # Wyświetlamy komunikat pożegnalny
             break                                                                       # Kończymy działanie programu
 
         # Jeżeli użytkownik wpisał 't' (tak), kontynuujemy działanie programu (wracamy do początku pętli while True)
