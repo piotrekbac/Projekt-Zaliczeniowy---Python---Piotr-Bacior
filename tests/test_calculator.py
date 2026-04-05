@@ -21,6 +21,9 @@ class TestCalculator(unittest.TestCase):
         # Sprawdzimy: waga 50 kg i wzrost 1.60m. Oczekiwany wynik BMI: 19.53
         self.assertEqual(calculate_bmi(50, 1.60), 19.53)
 
+        # Sprawdzimy: waga 90 kg i wzrost 1.75m. Oczekiwany wynik BMI: 29.39
+        self.assertEqual(calculate_bmi(90, 1.75), 29.39)
+
 
     # Definiujemy metodę testową, która sprawdza, czy funkcja calculate_bmi podnosi odpowiednie wyjątki, gdy waga lub wzrost są równe lub mniejsze od zera
     def test_calculate_bmi_zero_or_negative(self):
