@@ -78,6 +78,7 @@ def main():
             # Wywołujemy funkcję save_result_to_file, aby zapisać wynik obliczeń do pliku tekstowego
             save_result_to_file(waga, wzrost, moje_bmi, kategoria, min_waga, max_waga)
 
+
             # Wyświetlamy pełne podsumowanie 
 
             print("\n" + "=" * 30 + "\n")                                       # Dodajemy odstęp i linię oddzielającą wyniki od reszty interfejsu
@@ -86,6 +87,9 @@ def main():
             print(f"Podany wzrost: {wzrost} m, podana waga: {waga} kg")         # Wyświetlamy podane dane wejściowe
             print(f"BMI: {moje_bmi}")                                           # Wyświetlamy BMI
             print(f"Twoja kategoria zdrowotna: {kategoria}")                    # Wyświetlamy kategorię zdrowotną
+
+            # Wyświetlamy zakres idealnej wagi dla podanego wzrostu
+            print(f"Zakres idealnej wagi dla Twojego wzrostu: {min_waga} - {max_waga} kg")   
 
             print("\n" + "=" * 30 + "\n")                                       # Dodajemy linię oddzielającą wyniki od reszty interfejsu
 
