@@ -23,3 +23,4 @@ class TestCalculator(unittest.TestCase):
 
     # Definiujemy metodę testową, która sprawdza, czy funkcja calculate_bmi podnosi odpowiednie wyjątki, gdy waga lub wzrost są równe lub mniejsze od zera
     def test_calculate_bmi_zero_or_negative(self):
+        """ Sprawdza, czy funkcja wyrzuca błąd ValueError przy błędnych danych wejściowych (waga lub wzrost <= 0) """
