@@ -1,4 +1,4 @@
-from src.calculator import calculate_bmi            # Importujemy funkcję calculate_bmi z modułu calculator
+from src.calculator import calculate_bmi, calculate_ideal_weight            # Importujemy funkcję calculate_bmi z modułu calculator
 from src.analyzer import analyze_bmi                # Importujemy funkcję analyze_bmi z modułu analyzer
 from src.file_handler import save_result_to_file    # Importujemy funkcję save_result_to_file z modułu file_handler
 
@@ -72,9 +72,11 @@ def main():
             # Wywołujemy funkcję analyze_bmi, aby uzyskać kategorię zdrowotną na podstawie obliczonego BMI
             kategoria = analyze_bmi(moje_bmi)   
 
-            # Wywołujemy funkcję save_result_to_file, aby zapisać wynik obliczeń do pliku tekstowego
-            save_result_to_file(waga, wzrost, moje_bmi, kategoria)
+            # Wywołujemy funkcję calculate_ideal_weight, aby obliczyć zakres idealnej wagi dla podanego wzrostu
+            min_waga, max_waga = calculate_ideal_weight(wzrost)   
 
+            # Wywołujemy funkcję save_result_to_file, aby zapisać wynik obliczeń do pliku tekstowego
+            save_result_to_file(waga, wzrost, moje_bmi, kategoria, min_waga, max_waga)
 
             # Wyświetlamy pełne podsumowanie 
 
