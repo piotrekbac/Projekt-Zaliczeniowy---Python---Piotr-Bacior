@@ -153,3 +153,6 @@ def save_to_csv(weight_kg: float, height_m: float, bmi_value: float, category: s
 
             if not file_exists:                            # Jeśli plik nie istnieje, zapisujemy nagłówki kolumn
                 writer.writerow(["Data i czas", "Waga (kg)", "Wzrost (m)", "BMI", "Kategoria", "Idealna waga min (kg)", "Idealna waga max (kg)"])
+
+            # Zapisujemy dane jako czysty wiersz w tabeli, oddzielając wartosci średnikiem
+            writer.writerow([now, weight_kg, height_m, bmi_value, category, min_ideal, max_ideal])    
