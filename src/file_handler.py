@@ -73,4 +73,8 @@ def read_history_from_file(filanem: str = "historia_bmi.txt") -> list:
     - Jeżeli istnieje, odczytuje wszystkie linie i zwraca je jako listę
     - Jeżeli nie istnieje, zwraca pustą listę
 
+    Ograniczenia:
+    - Funkcja przeznaczona jest do działania w środowisku konsolowym, gdzie użytkownik może mieć dostęp do plików tekstowych
+
+    
     """
