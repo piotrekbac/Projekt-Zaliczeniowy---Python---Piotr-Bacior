@@ -60,13 +60,13 @@ def save_result_to_file(weight_kg: float, height_m: float, bmi_value: float, cat
 
 
 # Funkcja read_history_from_file odczytuje zawartość pliku z historią wyników BMI i zwraca ją jako listę linijek tekstu.
-def read_history_from_file(filename: str = "historia_bmi.txt") -> list:
+def read_history_from_file(filename: str = "bmi_results.txt") -> list:
 
     """ 
     Odczytuje historię pomiarów z pliku tekstowego
 
     Oczekiwane dane wejściowe:
-    - filename: nazwa pliku, z którego zostanie odczytana historia (domyślnie "historia_bmi.txt")
+    - filename: nazwa pliku, z którego zostanie odczytana historia (domyślnie "bmi_results.txt")
 
     Zachowanie funkcji:
     - Sprawdza, czy plik istnieje na dysku
@@ -97,7 +97,7 @@ def read_history_from_file(filename: str = "historia_bmi.txt") -> list:
 
             return file.readlines()          # Zwracamy listę linijek odczytanych z pliku
         
-        
+
     # Jeśli wystąpi błąd podczas operacji na pliku, przechwytujemy wyjątek IOError i wyświetlamy komunikat o błędzie wraz z informacją o przyczynie
     except IOError as e:
 
