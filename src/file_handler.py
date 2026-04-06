@@ -1,4 +1,5 @@
-from datetime import datetime       # importujemy datetime, aby móc pracować z datami i czasem
+import os                                       # importujemy moduł os, aby móc pracować z plikami i ścieżkami
+from datetime import datetime                   # importujemy datetime, aby móc pracować z datami i czasem
 
 # Piotr Bacior - 15 722 - 2026 - Python - MH
 
