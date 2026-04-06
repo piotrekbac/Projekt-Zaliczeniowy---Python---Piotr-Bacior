@@ -52,6 +52,10 @@ def main():
         print("Historia Twoich pomiarów BMI:")             # Wyświetlamy nagłówek dla historii pomiarów BMI
         print("-" * 60 + "\n")
 
+        # Sprawdzamy, czy historia pomiarów jest pusta (brak zapisanych pomiarów) i wyświetlamy odpowiedni komunikat
+        if not historia:
+            print("Brak zapisanych pomiarów BMI. Zacznij obliczać swoje BMI, aby zobaczyć historię pomiarów!")
+
     # Pętla nieskończona, która pozwala użytkownikowi na wielokrotne obliczanie BMI, dopóki nie zdecyduje o zakończeniu programu
     while True:    
 
