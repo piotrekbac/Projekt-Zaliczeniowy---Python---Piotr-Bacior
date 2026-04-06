@@ -58,3 +58,7 @@ def generate_bmi_bar(bmi_value: float) -> str:
 
     # Upewniamy się, że wskaźnik nie wyjdzie fizycznie poza narysowany pasek 
     clamped_bmi = max(min_scale, min(bmi_value, max_scale))
+
+    # Obliczamy pozycję na pasku 
+    position = int((clamped_bmi - min_scale) / (max_scale - min_scale) * bar_length)
+    
