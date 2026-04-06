@@ -111,4 +111,17 @@ def read_history_from_file(filename: str = "bmi_results.txt") -> list:
 # Funkcja save_to_csv zapisuje wynik obliczeń BMI do pliku CSV, wraz z datą i czasem, oraz informacjami o wadze, wzroście, wartości BMI i kategorii zdrowotnej.
 def save_to_csv(weight_kg: float, height_m: float, bmi_value: float, category: str, min_ideal: float, max_ideal: float, filename: str = "historia_bmi.csv") -> None:
 
+    """
+    Zapisuje wynik obliczeń BMI do pliku CSV
+
+    Oczekiwane dane wejściowe:
+    - weight_kg: waga w kilogramach (float)
+    - height_m: wzrost w metrach (float)
+    - bmi_value: obliczone BMI (float)
+    - category: kategoria zdrowotna (str)
+    - min_ideal: minimalna idealna waga (float)
+    - max_ideal: maksymalna idealna waga (float)
+    - filename: nazwa pliku CSV, do którego zostanie zapisany wynik (domyślnie "historia_bmi.csv")
+
     
+    """
