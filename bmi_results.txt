@@ -2,3 +2,6 @@
 2026-04-04 01:59:15 - Waga: 65.0 kg, Wzrost: 1.78 m, BMI: 20.52, Kategoria: Waga prawidłowa
 2026-04-05 18:17:49 - Waga: 1.8 kg, Wzrost: 0.5993999999999999 m, BMI: 5.01, Kategoria: Niedowaga | Idealna waga: 6.65 - 8.95 kg
 2026-04-05 18:18:17 - Waga: 95.0 kg, Wzrost: 1.8 m, BMI: 29.32, Kategoria: Nadwaga | Idealna waga: 59.94 - 80.68 kg
+2026-04-06 14:08:41 - Waga: 50.0 kg, Wzrost: 1.8 m, BMI: 15.43, Kategoria: Niedowaga | Idealna waga: 59.94 - 80.68 kg
+2026-04-06 14:08:54 - Waga: 120.0 kg, Wzrost: 1.8 m, BMI: 37.04, Kategoria: Otyłość | Idealna waga: 59.94 - 80.68 kg
+2026-04-06 14:09:21 - Waga: 120.0 kg, Wzrost: 1.8 m, BMI: 37.04, Kategoria: Otyłość | Idealna waga: 59.94 - 80.68 kg
