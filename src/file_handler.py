@@ -136,3 +136,5 @@ def save_to_csv(weight_kg: float, height_m: float, bmi_value: float, category: s
     - Obsługuje potencjalne wyjątki związane z operacjami na plikach (np. IOError) i wyświetla komunikat o błędzie, jeśli zapis do pliku się nie powiedzie
 
     """
+
+    file_exists = os.path.isfile(filename)    # Sprawdzamy, czy plik CSV już istnieje, aby zdecydować, czy należy dodać nagłówki kolumn
