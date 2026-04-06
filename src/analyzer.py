@@ -61,4 +61,7 @@ def generate_bmi_bar(bmi_value: float) -> str:
 
     # Obliczamy pozycję na pasku 
     position = int((clamped_bmi - min_scale) / (max_scale - min_scale) * bar_length)
-    
+
+    # Zapewniamy, że pozycja nie przekroczy długości paska
+    if position >= bar_length:
+        position = bar_length - 1   # Zapewniamy, że pozycja nie przekroczy długości paska
