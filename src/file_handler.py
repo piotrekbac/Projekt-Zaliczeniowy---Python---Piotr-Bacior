@@ -156,3 +156,8 @@ def save_to_csv(weight_kg: float, height_m: float, bmi_value: float, category: s
 
             # Zapisujemy dane jako czysty wiersz w tabeli, oddzielając wartosci średnikiem
             writer.writerow([now, weight_kg, height_m, bmi_value, category, min_ideal, max_ideal])    
+
+    except IOError as e:
+        
+        # Jeśli wystąpi błąd podczas operacji na pliku, wyświetlamy komunikat o błędzie wraz z informacją o przyczynie
+        print(f"Nie można zapisać wyniku do pliku CSV: {e}")
