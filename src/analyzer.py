@@ -44,5 +44,9 @@ def generate_bmi_bar(bmi_value: float) -> str:
         Oczekiwane dane wejściowe:
         - bmi_value: wartość wskaźnika BMI (float)
 
+        Zachowanie funkcji:
+        - Rysuje 40-znakowy pasek (skala od 15.0 do 40.0)
+        - Oblicza proporcjonalną pozycję dla podanego BMI 
+        - Wstawia znacznik 'O' w odpowiednim miejscu na osi
         
     """
