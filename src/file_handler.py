@@ -137,6 +137,8 @@ def save_to_csv(weight_kg: float, height_m: float, bmi_value: float, category: s
 
     """
 
+    # Sprawdzamy, czy plik CSV już istnieje, aby zdecydować, czy należy dodać nagłówki kolumn
+
     file_exists = os.path.isfile(filename)                   # Sprawdzamy, czy plik CSV już istnieje, aby zdecydować, czy należy dodać nagłówki kolumn
     now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")       # Pobieramy aktualną datę i czas, formatując ją jako "YYYY-MM-DD HH:MM:SS"
 
