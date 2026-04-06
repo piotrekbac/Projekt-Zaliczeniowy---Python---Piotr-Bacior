@@ -1,1 +1,2 @@
 import os                                      # importujemy moduł os, aby móc pracować z plikami i ścieżkami
+import pandas as pd                            # importujemy pandas, aby móc pracować z danymi w formacie DataFrame
