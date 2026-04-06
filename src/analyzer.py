@@ -74,3 +74,7 @@ def generate_bmi_bar(bmi_value: float) -> str:
     left_part = '-' * position
     marker = 'O'                                            # Znacznik reprezentujący aktualną wartość BMI
     right_part = '-' * (bar_length - position - 1)
+
+
+    # Składamy cały pasek i zwracamy go jako string
+    return f"15.0[{left_part}{marker}{right_part}]40.0+"
