@@ -75,6 +75,9 @@ def main():
             # Wywołujemy funkcję calculate_ideal_weight, aby obliczyć zakres idealnej wagi dla podanego wzrostu
             min_waga, max_waga = calculate_ideal_weight(wzrost)   
 
+            # Tworzymy graficzny pasek wizualizujący wartość BMI, wywołując funkcję generate_bmi_bar z modułu analyzer
+            pasek_wizualny = generate_bmi_bar(moje_bmi)
+
             # Wywołujemy funkcję save_result_to_file, aby zapisać wynik obliczeń do pliku tekstowego
             save_result_to_file(waga, wzrost, moje_bmi, kategoria, min_waga, max_waga)
 
