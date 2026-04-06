@@ -64,6 +64,7 @@ def main():
         # Dodajemy odstęp i linię oddzielającą historię pomiarów od reszty interfejsu
         print("\n" + "-" * 60 + "\n")    
 
+
     # Pętla nieskończona, która pozwala użytkownikowi na wielokrotne obliczanie BMI, dopóki nie zdecyduje o zakończeniu programu
     while True:    
 
@@ -158,6 +159,7 @@ def main():
             print("\n" + "=" * 30 + "\n")                                       # Dodajemy odstęp i linię oddzielającą wyniki od reszty interfejsu
             print("Nowe obliczenie BMI")                                        # Informujemy użytkownika, że rozpoczynamy nowe obliczenie BMI
             print("\n" + "=" * 30 + "\n")                                       # Dodajemy odstęp i linię oddzielającą wyniki od reszty interfejsu
+
 
 # Uruchamiamy główną funkcję programu
 if __name__ == "__main__":
