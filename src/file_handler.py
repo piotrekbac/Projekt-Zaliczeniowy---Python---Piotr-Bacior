@@ -145,3 +145,5 @@ def save_to_csv(weight_kg: float, height_m: float, bmi_value: float, category: s
         
         # Otwieramy plik CSV w trybie dopisywania ("a" - append) i encoding="utf-8", aby poprawnie zapisać polskie znaki
         with open(filename, "a", newline='', encoding="utf-8") as csvfile:
+
+            writer = csv.writer(csvfile, delimiter=';')    # Tworzymy obiekt writer z modułu csv, używając średnika jako separatora
