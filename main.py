@@ -102,9 +102,11 @@ def main():
             # Tworzymy graficzny pasek wizualizujący wartość BMI, wywołując funkcję generate_bmi_bar z modułu analyzer
             pasek_wizualny = generate_bmi_bar(moje_bmi)
 
-            # Wywołujemy funkcję save_result_to_file, aby zapisać wynik obliczeń do pliku tekstowego
-            save_result_to_file(waga, wzrost, moje_bmi, kategoria, min_waga, max_waga)
+            # # Wywołujemy funkcję save_result_to_file, aby zapisać wynik obliczeń do pliku tekstowego
+            # save_result_to_file(waga, wzrost, moje_bmi, kategoria, min_waga, max_waga)
 
+            # Wywołujemy funkcję save_to_csv, aby zapisać wynik obliczeń do pliku CSV
+            save_to_csv(waga, wzrost, moje_bmi, kategoria, min_waga, max_waga)
 
             # Wyświetlamy pełne podsumowanie 
 
