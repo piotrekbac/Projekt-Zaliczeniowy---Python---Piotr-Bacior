@@ -48,6 +48,9 @@ def main():
     if czy_historia == 't':                                 # Sprawdzamy, czy użytkownik wpisał 'T' (tak)
         historia = read_history_from_file()                 # Wywołujemy funkcję read_history_from_file, aby odczytać historię pomiarów z pliku tekstowego                                                   
 
+        print("\n" + "-" * 60)
+        print("Historia Twoich pomiarów BMI:")             # Wyświetlamy nagłówek dla historii pomiarów BMI
+        print("-" * 60 + "\n")
 
     # Pętla nieskończona, która pozwala użytkownikowi na wielokrotne obliczanie BMI, dopóki nie zdecyduje o zakończeniu programu
     while True:    
