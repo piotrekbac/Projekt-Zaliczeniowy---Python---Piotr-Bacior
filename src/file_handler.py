@@ -68,5 +68,9 @@ def read_history_from_file(filanem: str = "historia_bmi.txt") -> list:
     Oczekiwane dane wejściowe:
     - filename: nazwa pliku, z którego zostanie odczytana historia (domyślnie "historia_bmi.txt")
 
-    
+    Zachowanie funkcji:
+    - Sprawdza, czy plik istnieje na dysku
+    - Jeżeli istnieje, odczytuje wszystkie linie i zwraca je jako listę
+    - Jeżeli nie istnieje, zwraca pustą listę
+
     """
