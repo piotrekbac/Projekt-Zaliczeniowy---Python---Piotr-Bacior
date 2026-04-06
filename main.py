@@ -56,6 +56,11 @@ def main():
         if not historia:
             print("Brak zapisanych pomiarów BMI. Zacznij obliczać swoje BMI, aby zobaczyć historię pomiarów!")
 
+        # Jeżeli historia pomiarów nie jest pusta, wyświetlamy każdy zapisany pomiar BMI, usuwając ewentualne białe znaki z początku i końca linii
+        else:
+            for linia in historia:
+                print(linia.strip())
+
     # Pętla nieskończona, która pozwala użytkownikowi na wielokrotne obliczanie BMI, dopóki nie zdecyduje o zakończeniu programu
     while True:    
 
