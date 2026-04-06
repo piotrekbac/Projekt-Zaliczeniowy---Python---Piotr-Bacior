@@ -56,12 +56,21 @@ def generate_bmi_bar(bmi_value: float) -> str:
     max_scale = 40.0
     bar_length = 40
 
+
     # Upewniamy się, że wskaźnik nie wyjdzie fizycznie poza narysowany pasek 
     clamped_bmi = max(min_scale, min(bmi_value, max_scale))
+
 
     # Obliczamy pozycję na pasku 
     position = int((clamped_bmi - min_scale) / (max_scale - min_scale) * bar_length)
 
+
     # Zapewniamy, że pozycja nie przekroczy długości paska
     if position >= bar_length:
-        position = bar_length - 1   # Zapewniamy, że pozycja nie przekroczy długości paska
+        position = bar_length - 1       # Zapewniamy, że pozycja nie przekroczy długości paska
+
+
+    # Tworzymy części paska: lewą stronę, nasz znacznik i prawą stronę 
+    left_part = '-' * position
+    marker = 'O'                                            # Znacznik reprezentujący aktualną wartość BMI
+    right_part = '-' * (bar_length - position - 1)
