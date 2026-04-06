@@ -96,6 +96,12 @@ def main():
 
             print("\n" + "=" * 30 + "\n")                                       # Dodajemy linię oddzielającą wyniki od reszty interfejsu
 
+            # Wyświetlamy graficzny pasek wizualizujący wartość BMI
+            print("Wizualizacja Twojego BMI na skali:")
+            print(pasek_wizualny)                                               # Wyświetlamy graficzny pasek wizualizujący wartość BMI
+            print("    (Niedowaga | Norma | Nadwaga | Otyłość)")
+            print("\n" + "=" * 30 + "\n")                                       # Dodajemy linię oddzielającą wyniki od reszty interfejsu
+
 
         # Obsługujemy wyjątki typu ValueError, które mogą być podniesione przez funkcję calculate_bmi
         except ValueError as e:     
