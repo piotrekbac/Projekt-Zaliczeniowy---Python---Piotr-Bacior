@@ -61,6 +61,9 @@ def main():
             for linia in historia:
                 print(linia.strip())
 
+        # Dodajemy odstęp i linię oddzielającą historię pomiarów od reszty interfejsu
+        print("\n" + "-" * 60 + "\n")    
+
     # Pętla nieskończona, która pozwala użytkownikowi na wielokrotne obliczanie BMI, dopóki nie zdecyduje o zakończeniu programu
     while True:    
 
