@@ -50,8 +50,11 @@ def generate_bmi_bar(bmi_value: float) -> str:
         - Wstawia znacznik 'O' w odpowiednim miejscu na osi
         
     """
-    
+
     # Definiujemy zakres skali BMI i długość paska
     min_scale = 15.0
     max_scale = 40.0
     bar_length = 40
+
+    # Upewniamy się, że wskaźnik nie wyjdzie fizycznie poza narysowany pasek 
+    clamped_bmi = max(min_scale, min(bmi_value, max_scale))
