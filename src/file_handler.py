@@ -131,5 +131,8 @@ def save_to_csv(weight_kg: float, height_m: float, bmi_value: float, category: s
     
     Ograniczenia:
     - Funkcja przeznaczona jest do działania w środowisku konsolowym, gdzie użytkownik może mieć dostęp do plików CSV
-    
+
+    Podnoszenie wyjątków:
+    - Obsługuje potencjalne wyjątki związane z operacjami na plikach (np. IOError) i wyświetla komunikat o błędzie, jeśli zapis do pliku się nie powiedzie
+
     """
