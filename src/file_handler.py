@@ -115,6 +115,7 @@ def save_to_csv(weight_kg: float, height_m: float, bmi_value: float, category: s
     Zapisuje wynik obliczeń BMI do pliku CSV
 
     Oczekiwane dane wejściowe:
+
     - weight_kg: waga w kilogramach (float)
     - height_m: wzrost w metrach (float)
     - bmi_value: obliczone BMI (float)
@@ -123,5 +124,9 @@ def save_to_csv(weight_kg: float, height_m: float, bmi_value: float, category: s
     - max_ideal: maksymalna idealna waga (float)
     - filename: nazwa pliku CSV, do którego zostanie zapisany wynik (domyślnie "historia_bmi.csv")
 
+    Zachowanie funkcji:
+    - Sprawdza, czy plik CSV już istnieje, aby zdecydować, czy należy dodać nagłówki kolumn
+    - Zapisuje dane jako czysty wiersz w tabeli, oddzielając wartosci średnikiem 
+    - Używamy średnika jako separatora, ponieważ excel tak dzieli kolumny 
     
     """
