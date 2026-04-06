@@ -57,3 +57,7 @@ def save_result_to_file(weight_kg: float, height_m: float, bmi_value: float, cat
 
         # Jeśli wystąpi błąd podczas operacji na pliku, wyświetlamy komunikat o błędzie wraz z informacją o przyczynie
         print(f"Nie można zapisać wyniku do pliku: {e}")
+
+
+# Funkcja read_history_from_file odczytuje zawartość pliku z historią wyników BMI i zwraca ją jako listę linijek tekstu.
+def read_history_from_file(filanem: str = "historia_bmi.txt") -> list:
