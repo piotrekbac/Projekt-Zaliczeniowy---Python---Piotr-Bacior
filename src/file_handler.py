@@ -141,6 +141,7 @@ def save_to_csv(weight_kg: float, height_m: float, bmi_value: float, category: s
     now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")       # Pobieramy aktualną datę i czas, formatując ją jako "YYYY-MM-DD HH:MM:SS"
 
     
+    # Próbujemy otworzyć plik CSV i zapisać dane, obsługując potencjalne wyjątki związane z operacjami na plikach
     try:
         
         # Otwieramy plik CSV w trybie dopisywania ("a" - append) i encoding="utf-8", aby poprawnie zapisać polskie znaki
@@ -157,7 +158,9 @@ def save_to_csv(weight_kg: float, height_m: float, bmi_value: float, category: s
             # Zapisujemy dane jako czysty wiersz w tabeli, oddzielając wartosci średnikiem
             writer.writerow([now, weight_kg, height_m, bmi_value, category, min_ideal, max_ideal])    
 
+
+    # Jeśli wystąpi błąd podczas operacji na pliku, przechwytujemy wyjątek IOError i wyświetlamy komunikat o błędzie wraz z informacją o przyczynie
     except IOError as e:
-        
+
         # Jeśli wystąpi błąd podczas operacji na pliku, wyświetlamy komunikat o błędzie wraz z informacją o przyczynie
         print(f"Nie można zapisać wyniku do pliku CSV: {e}")
