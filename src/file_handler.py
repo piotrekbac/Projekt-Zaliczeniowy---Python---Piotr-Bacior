@@ -76,5 +76,7 @@ def read_history_from_file(filanem: str = "historia_bmi.txt") -> list:
     Ograniczenia:
     - Funkcja przeznaczona jest do działania w środowisku konsolowym, gdzie użytkownik może mieć dostęp do plików tekstowych
 
-    
+    Podnoszenie wyjątków:
+    - Obsługuje potencjalne wyjątki związane z operacjami na plikach (np. IOError) i wyświetla komunikat o błędzie, jeśli odczyt z pliku się nie powiedzie
+
     """
