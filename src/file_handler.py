@@ -1,4 +1,5 @@
 import os                                       # importujemy moduł os, aby móc pracować z plikami i ścieżkami
+import csv                                      # importujemy moduł csv, aby móc pracować z plikami CSV
 from datetime import datetime                   # importujemy datetime, aby móc pracować z datami i czasem
 
 # Piotr Bacior - 15 722 - 2026 - Python - MH
