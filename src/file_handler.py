@@ -129,4 +129,7 @@ def save_to_csv(weight_kg: float, height_m: float, bmi_value: float, category: s
     - Zapisuje dane jako czysty wiersz w tabeli, oddzielając wartosci średnikiem 
     - Używamy średnika jako separatora, ponieważ excel tak dzieli kolumny 
     
+    Ograniczenia:
+    - Funkcja przeznaczona jest do działania w środowisku konsolowym, gdzie użytkownik może mieć dostęp do plików CSV
+    
     """
