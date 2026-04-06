@@ -40,6 +40,8 @@ def main():
     print("Oblicz swoje BMI, podając wagę w kilogramach i wzrost w metrach.")
     print("" + "=" * 30 + "\n")
 
+    czy_historia = input("Czy chcesz zobaczyć historię swoich pomiarów BMI? (T/N): ").strip().lower()    # Pytamy użytkownika, czy chce zobaczyć historię swoich pomiarów BMI
+
 
     # Pętla nieskończona, która pozwala użytkownikowi na wielokrotne obliczanie BMI, dopóki nie zdecyduje o zakończeniu programu
     while True:    
