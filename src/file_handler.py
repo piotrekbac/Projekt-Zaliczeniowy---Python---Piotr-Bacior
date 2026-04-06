@@ -106,3 +106,9 @@ def read_history_from_file(filename: str = "bmi_results.txt") -> list:
         print(f"Nie można odczytać historii z pliku: {e}")
 
         return                                # W przypadku błędu zwracamy pustą listę
+    
+
+# Funkcja save_to_csv zapisuje wynik obliczeń BMI do pliku CSV, wraz z datą i czasem, oraz informacjami o wadze, wzroście, wartości BMI i kategorii zdrowotnej.
+def save_to_csv(weight_kg: float, height_m: float, bmi_value: float, category: str, min_ideal: float, max_ideal: float, filename: str = "historia_bmi.csv") -> None:
+
+    
