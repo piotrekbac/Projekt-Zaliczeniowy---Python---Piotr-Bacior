@@ -82,7 +82,17 @@ def read_history_from_file(filename: str = "historia_bmi.txt") -> list:
     """
 
     # Sprawdzamy, czy plik istnieje na dysku, aby uniknąć błędów podczas próby odczytu nieistniejącego pliku
-    
+
     if not os.path.exists(filename):        # Sprawdzamy, czy plik istnieje na dysku
 
         return []                           # Jeżeli plik nie istnieje, zwracamy pustą listę
+    
+    
+    # Jeżeli plik istnieje, próbujemy go otworzyć i odczytać wszystkie linie, obsługując potencjalne wyjątki związane z operacjami na plikach
+    try:
+        # Otwieramy plik w trybie odczytu ("r" - read) i encoding="utf-8", aby poprawnie odczytać polskie znaki
+        with open(filename, "r", encoding="utf-8") as file: 
+
+            # Odczytujemy wszystkie linie z pliku i zwracamy je jako listę
+
+            return file.readlines()          # Zwracamy listę linijek odczytanych z pliku
