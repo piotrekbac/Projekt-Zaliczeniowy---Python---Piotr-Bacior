@@ -34,3 +34,6 @@ def analyze_bmi(bmi_value: float) -> str:
         return "Nadwaga"
     else:
         return "Otyłość"
+
+# Definiuję funkcję do generowania wizualnej reprezentacji BMI w formie paska - dane wejściowe są typu float, oczekujemy wyniku typu str
+def generate_bmi_bar(bmi_value: float) -> str:
