@@ -96,3 +96,12 @@ def read_history_from_file(filename: str = "historia_bmi.txt") -> list:
             # Odczytujemy wszystkie linie z pliku i zwracamy je jako listę
 
             return file.readlines()          # Zwracamy listę linijek odczytanych z pliku
+        
+        
+    # Jeśli wystąpi błąd podczas operacji na pliku, przechwytujemy wyjątek IOError i wyświetlamy komunikat o błędzie wraz z informacją o przyczynie
+    except IOError as e:
+
+        # Jeśli wystąpi błąd podczas operacji na pliku, wyświetlamy komunikat o błędzie wraz z informacją o przyczynie
+        print(f"Nie można odczytać historii z pliku: {e}")
+
+        return                                # W przypadku błędu zwracamy pustą listę
