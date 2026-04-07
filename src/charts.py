@@ -94,3 +94,6 @@ def show_bmi_trend_chart(csv_filename: str = "historia_bmi.csv") -> None:
 
         # Etykieta osi Y dla drugiego wykresu
         ax2.set_ylabel('Wartość BMI')
+
+        # Dodajemy siatkę do drugiego wykresu
+        ax2.grid(True, linestyle='--', alpha=0.7)   
