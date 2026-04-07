@@ -77,4 +77,7 @@ def show_bmi_trend_chart(csv_filename: str = "historia_bmi.csv") -> None:
         ax1.set_title('Trend wagi w czasie', fontsize=12)                   
 
         # Etykieta osi Y dla pierwszego wykresu
-        ax1.set_ylabel('Waga (kg)')                                                   
+        ax1.set_ylabel('Waga (kg)')            
+
+        # Dodajemy siatkę do pierwszego wykresu                        
+        ax1.grid(True, linestyle='--', alpha=0.7)          
