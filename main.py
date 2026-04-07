@@ -50,11 +50,12 @@ def main():
         historia = read_history_from_file()                 # Wywołujemy funkcję read_history_from_file, aby odczytać historię pomiarów z pliku tekstowego                                                   
 
         print("\n" + "-" * 60)
-        print("Historia Twoich pomiarów BMI:")             # Wyświetlamy nagłówek dla historii pomiarów BMI
+        print("Historia Twoich pomiarów BMI:")              # Wyświetlamy nagłówek dla historii pomiarów BMI
         print("-" * 60 + "\n")
 
         # Sprawdzamy, czy historia pomiarów jest pusta (brak zapisanych pomiarów) i wyświetlamy odpowiedni komunikat
         if not historia:
+            
             print("Brak zapisanych pomiarów BMI. Zacznij obliczać swoje BMI, aby zobaczyć historię pomiarów!")
 
         # Jeżeli historia pomiarów nie jest pusta, wyświetlamy każdy zapisany pomiar BMI, usuwając ewentualne białe znaki z początku i końca linii
@@ -66,6 +67,12 @@ def main():
         # Pytamy użytkownika, czy chce zobaczyć wykres trendu swoich pomiarów BMI, i przechowujemy jego odpowiedź w zmiennej 'czy_wykres'
         czy_wykres = input("\nCzy chcesz zobaczyć wykres trendu swoich pomiarów BMI? (T/N): ").strip().lower()    
 
+        if czy_wykres == 't':                                           # Sprawdzamy, czy użytkownik wpisał 'T' (tak)
+            print("\nGeneruję wykres trendu Twoich pomiarów BMI...")    # Informujemy użytkownika, że generujemy wykres trendu BMI
+            show_bmi_trend_chart()                                      # Wywołujemy funkcję show_bmi_trend_chart, aby wygenerować i wyświetlić wykres trendu BMI
+
+            # Po wygenerowaniu wykresu, informujemy użytkownika, że wykres został wygenerowany i można go zobaczyć w nowym oknie
+            print("\nWykres trendu BMI został wygenerowany. Możesz go zobaczyć w nowym oknie.")   
 
 
         # Dodajemy odstęp i linię oddzielającą historię pomiarów od reszty interfejsu
