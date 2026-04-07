@@ -52,4 +52,8 @@ def show_bmi_trend_chart(csv_filename: str = "historia_bmi.csv") -> None:
             print(f"Plik {csv_filename} jest pusty. Nie można wygenerować wykresu trendu BMI.")         
 
             # Kończymy działanie funkcji, ponieważ nie można wygenerować wykresu bez danych
-            return                                                                                  
+            return                 
+
+
+        # Konwertujemy kolumnę 'Data i czas' na format daty i czasu                                                                
+        df['Data i czas'] = pd.to_datetime(df['Data i czas'])  
