@@ -88,3 +88,6 @@ def show_bmi_trend_chart(csv_filename: str = "historia_bmi.csv") -> None:
 
         # Tytuł dla drugiego wykresu
         ax2.set_title('Trend BMI w czasie', fontsize=12)
+
+        # Etykieta osi X dla drugiego wykresu
+        ax2.set_xlabel('Data pomiaru')              
