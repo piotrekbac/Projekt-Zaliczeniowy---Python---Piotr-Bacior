@@ -6,3 +6,9 @@ import matplotlib.pyplot as plt                # importujemy matplotlib, aby mó
 
 # Funkcja show_bmi_trend_chart przyjmuje nazwę pliku CSV jako argument i wyświetla wykres trendu BMI na podstawie danych z tego pliku.
 def show_bmi_trend_chart(csv_filename: str = "historia_bmi.csv") -> None:
+
+    """
+    Generuje i wyświetla wykres trendu BMI na podstawie danych z pliku CSV z historią pomiarów BMI
+    Wykorzystuje biblioteki Pandas (do analizy danych) i Matplotlib (do tworzenia wykresów)
+    
+    """
