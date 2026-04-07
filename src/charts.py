@@ -107,3 +107,6 @@ def show_bmi_trend_chart(csv_filename: str = "historia_bmi.csv") -> None:
 
         # Dostosowanie odstępu, aby napisy na siebie nie nachodziły 
         plt.tight_layout()
+
+        # Otwieranie wykresu w nowym oknie
+        plt.show()
