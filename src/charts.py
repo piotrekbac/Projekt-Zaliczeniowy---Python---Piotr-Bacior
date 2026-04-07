@@ -97,3 +97,7 @@ def show_bmi_trend_chart(csv_filename: str = "historia_bmi.csv") -> None:
 
         # Dodajemy siatkę do drugiego wykresu
         ax2.grid(True, linestyle='--', alpha=0.7)   
+
+
+        # Rysujemy czerwoną przerywaną linię oznaczającą górną granicę prawidłwoego BMI (25.0)
+        ax2.axhline(y=25.0, color='red', linestyle='--', label='Górna granica prawidłowego BMI (25.0)')
