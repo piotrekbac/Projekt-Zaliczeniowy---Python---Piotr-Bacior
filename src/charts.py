@@ -110,3 +110,10 @@ def show_bmi_trend_chart(csv_filename: str = "historia_bmi.csv") -> None:
 
         # Otwieranie wykresu w nowym oknie
         plt.show()
+
+
+    # Jeśli wystąpi błąd podczas generowania wykresu, przechwytujemy wyjątek i wyświetlamy komunikat o błędzie wraz z informacją o przyczynie
+    except Exception as e:
+
+        # Jeśli wystąpi błąd podczas generowania wykresu, wyświetlamy komunikat o błędzie wraz z informacją o przyczynie
+        print(f"Wystąpił błąd podczas generowania wykresu trendu BMI: {e}")
