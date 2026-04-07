@@ -19,4 +19,7 @@ def show_bmi_trend_chart(csv_filename: str = "historia_bmi.csv") -> None:
     - Odczytuje dane z pliku CSV do obiektu DataFrame
     - Generuje wykres liniowy przedstawiający trend wartości BMI w czasie
     
+    Ograniczenia:
+    - Funkcja przeznaczona jest do działania w środowisku, gdzie możliwe jest wyświetlanie wykresów (np. Jupyter Notebook, środowisko graficzne)
+    
     """
