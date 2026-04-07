@@ -22,4 +22,7 @@ def show_bmi_trend_chart(csv_filename: str = "historia_bmi.csv") -> None:
     Ograniczenia:
     - Funkcja przeznaczona jest do działania w środowisku, gdzie możliwe jest wyświetlanie wykresów (np. Jupyter Notebook, środowisko graficzne)
     
+    Podnoszenie wyjątków:
+    - Obsługuje potencjalne błędy przy generowaniu wykresu
+
     """
