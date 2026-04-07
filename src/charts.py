@@ -85,3 +85,6 @@ def show_bmi_trend_chart(csv_filename: str = "historia_bmi.csv") -> None:
 
         # Wykres 2 - Zmiana BMI w czasie    
         ax2.plot(df['Data i Czas'], df['BMI'], 'o-', color='green', linewidth=2)
+
+        # Tytuł dla drugiego wykresu
+        ax2.set_title('Trend BMI w czasie', fontsize=12)
