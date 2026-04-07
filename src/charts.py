@@ -36,3 +36,9 @@ def show_bmi_trend_chart(csv_filename: str = "historia_bmi.csv") -> None:
 
         # Kończymy działanie funkcji, ponieważ nie można wygenerować wykresu bez danych
         return                                                                                  
+    
+    # Jeżeli plik istnieje, próbujemy go odczytać i wygenerować wykres, obsługując potencjalne błędy przy generowaniu wykresu
+    try: 
+        
+        # Pandas - odczytuje całego excela dzięki DataFrame - średnik jako separator, ponieważ w pliku CSV używamy średnika do oddzielania wartości
+        df = pd.read_csv(csv_filename, sep=";")
