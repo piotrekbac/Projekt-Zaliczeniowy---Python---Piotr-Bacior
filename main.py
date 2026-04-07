@@ -44,7 +44,7 @@ def main():
 
     # Pytamy użytkownika, czy chce zobaczyć historię swoich pomiarów BMI, i przechowujemy jego odpowiedź w zmiennej 'czy_historia'
 
-    czy_historia = input("Czy chcesz zobaczyć historię swoich pomiarów BMI? (T/N): ").strip().lower()    # Pytamy użytkownika, czy chce zobaczyć historię swoich pomiarów BMI
+    czy_historia = input("Czy chcesz zobaczyć historię swoich pomiarów BMI? (T/N): ").strip().lower()    
             
     if czy_historia == 't':                                 # Sprawdzamy, czy użytkownik wpisał 'T' (tak)
         historia = read_history_from_file()                 # Wywołujemy funkcję read_history_from_file, aby odczytać historię pomiarów z pliku tekstowego                                                   
@@ -61,6 +61,12 @@ def main():
         else:
             for linia in historia:
                 print(linia.strip())
+
+
+        # Pytamy użytkownika, czy chce zobaczyć wykres trendu swoich pomiarów BMI, i przechowujemy jego odpowiedź w zmiennej 'czy_wykres'
+        czy_wykres = input("\nCzy chcesz zobaczyć wykres trendu swoich pomiarów BMI? (T/N): ").strip().lower()    
+
+
 
         # Dodajemy odstęp i linię oddzielającą historię pomiarów od reszty interfejsu
         print("\n" + "-" * 60 + "\n")    
