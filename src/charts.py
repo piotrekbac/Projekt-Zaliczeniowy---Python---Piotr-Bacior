@@ -104,3 +104,6 @@ def show_bmi_trend_chart(csv_filename: str = "historia_bmi.csv") -> None:
 
         # Pokazujemy legendę dla tej czerwonej, przerywanej lini oznaczającej górną granicę prawidłowego BMI
         ax2.legend()
+
+        # Dostosowanie odstępu, aby napisy na siebie nie nachodziły 
+        plt.tight_layout()
