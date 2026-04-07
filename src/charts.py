@@ -57,3 +57,10 @@ def show_bmi_trend_chart(csv_filename: str = "historia_bmi.csv") -> None:
 
         # Konwertujemy kolumnę 'Data i czas' na format daty i czasu                                                                
         df['Data i czas'] = pd.to_datetime(df['Data i czas'])  
+
+
+        # Tworzymy wykres - matplotlib - wykres liniowy z datą na osi X i wartością BMI na osi Y
+        # Zaczynamy od obszaru roboczego - z dwoma wykresami jeden pod drugim
+
+        # Tworzymy obszar roboczy z dwoma wykresami (2 wiersze, 1 kolumna) o rozmiarze 10x8 cali
+        fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(10, 8))   
