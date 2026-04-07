@@ -13,6 +13,10 @@ def show_bmi_trend_chart(csv_filename: str = "historia_bmi.csv") -> None:
 
     Oczekiwane dane wejściowe:
     - csv_filename: nazwa pliku CSV zawierającego historię pomiarów BMI (domyślnie "historia_bmi.csv")
-    
 
+    Zachowanie funkcji:
+    - Sprawdza, czy plik CSV istnieje i jest dostępny do odczytu
+    - Odczytuje dane z pliku CSV do obiektu DataFrame
+    - Generuje wykres liniowy przedstawiający trend wartości BMI w czasie
+    
     """
