@@ -26,3 +26,13 @@ def show_bmi_trend_chart(csv_filename: str = "historia_bmi.csv") -> None:
     - Obsługuje potencjalne błędy przy generowaniu wykresu
 
     """
+
+
+    # Sprawdzamy, czy plik CSV istnieje na dysku
+    if not os.path.exists(csv_filename):        
+
+        # Informujemy użytkownika, że plik nie istnieje
+        print(f"Plik {csv_filename} nie istnieje. Nie można wygenerować wykresu trendu BMI.")   
+
+        # Kończymy działanie funkcji, ponieważ nie można wygenerować wykresu bez danych
+        return                                                                                  
