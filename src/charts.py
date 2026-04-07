@@ -64,3 +64,7 @@ def show_bmi_trend_chart(csv_filename: str = "historia_bmi.csv") -> None:
 
         # Tworzymy obszar roboczy z dwoma wykresami (2 wiersze, 1 kolumna) o rozmiarze 10x8 cali
         fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(10, 8))   
+
+        # Wykres 1 - Zmiana wagi w czasie 
+        # 'o' oznacza, że chcemy kropki w punktach pomiarowych połączonych linią
+        ax1.plot(df['Data i czas'], df['Waga (kg)'], marker='o', color='blue', linewidth=2)
