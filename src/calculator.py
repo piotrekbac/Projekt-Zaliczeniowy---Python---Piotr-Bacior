@@ -75,5 +75,10 @@ def calculate_bmr(weight_kg: float, height_m: float, age: int, gender: str) -> f
     """
     Oblicza BMR (Basal Metabolic Rate) na podstawie wagi, wzrostu, wieku i płci - wzorem Mifflin-St Jeor
     
-    
+    Oczekiwane dane wejściowe:
+    - weight_kg: waga w kilogramach (float)
+    - height_m: wzrost w metrach (float)
+    - age: wiek w latach (int)
+    - gender: płeć (str), oczekiwane wartości to "mężczyzna" lub "kobieta"
+
     """
