@@ -136,5 +136,9 @@ def calculate_tdee(bmr: float, activity_level: str) -> float:
     """
     Oblicza całkowite dzienne zapotrzebowanie kaloryczne (TDEE) na podstawie BMR i poziomu aktywności fizycznej
 
+    Oczekiwane dane wejściowe:
+    - bmr: BMR (Basal Metabolic Rate) w kaloriach (float)
+    - activity_level: poziom aktywności fizycznej (str), oczekiwane wartości to "siedzący", "lekko aktywny", "umiarkowanie aktywny", "bardzo aktywny"
+    
     
     """
