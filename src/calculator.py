@@ -172,3 +172,6 @@ def calculate_tdee(bmr: float, activity_level: str) -> float:
 
     # Sprawdzamy czy poziom aktywności jest poprawny, aby uniknąć błędów przy obliczaniu TDEE
     if activity_level not in multipliers:
+        
+        # Informujemy użytkownika, że poziom aktywności musi być jednym z określonych wartości
+        raise ValueError("Poziom aktywności musi być jednym z następujących: 1, 2, 3, 4, 5.")
