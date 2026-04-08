@@ -87,4 +87,8 @@ def calculate_bmr(weight_kg: float, height_m: float, age: int, gender: str) -> f
       - Dla kobiet: BMR = 10 * waga + 6.25 * wzrost_cm - 5 * wiek - 161
     - Zwraca wartość BMR jako zmiennoprzecinkową (float)
 
+    Ograniczenia:
+    - Oczekiwane wartości 'weight_kg', 'height_m' i 'age' muszą być dodatnie (> 0)
+    
+
     """
