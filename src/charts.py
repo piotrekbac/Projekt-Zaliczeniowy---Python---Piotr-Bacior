@@ -55,8 +55,8 @@ def show_bmi_trend_chart(csv_filename: str = "historia_bmi.csv") -> None:
             return                 
 
 
-        # Konwertujemy kolumnę 'Data i Czas' na format daty i czasu                                                                
-        df['Data i Czas'] = pd.to_datetime(df['Data i Czas'])  
+        # Konwertujemy kolumnę 'Data i czas' na format daty i czasu                                                                
+        df['Data i czas'] = pd.to_datetime(df['Data i czas']) 
 
 
         # Tworzymy wykres - matplotlib - wykres liniowy z datą na osi X i wartością BMI na osi Y
@@ -71,7 +71,7 @@ def show_bmi_trend_chart(csv_filename: str = "historia_bmi.csv") -> None:
 
         # Wykres 1 - Zmiana wagi w czasie 
         # 'o' oznacza, że chcemy kropki w punktach pomiarowych połączonych linią
-        ax1.plot(df['Data i Czas'], df['Waga (kg)'], marker='o', color='blue', linewidth=2)
+        ax1.plot(df['Data i czas'], df['Waga (kg)'], marker='o', color='blue', linewidth=2)
         
         # Tytuł dla pierwszego wykresu
         ax1.set_title('Trend wagi w czasie', fontsize=12)                   
@@ -84,7 +84,7 @@ def show_bmi_trend_chart(csv_filename: str = "historia_bmi.csv") -> None:
 
 
         # Wykres 2 - Zmiana BMI w czasie    
-        ax2.plot(df['Data i Czas'], df['BMI'], 'o-', color='green', linewidth=2)
+        ax2.plot(df['Data i czas'], df['BMI'], 'o-', color='green', linewidth=2)
 
         # Tytuł dla drugiego wykresu
         ax2.set_title('Trend BMI w czasie', fontsize=12)
