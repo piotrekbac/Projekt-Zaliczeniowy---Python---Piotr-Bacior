@@ -140,5 +140,11 @@ def calculate_tdee(bmr: float, activity_level: str) -> float:
     - bmr: BMR (Basal Metabolic Rate) w kaloriach (float)
     - activity_level: poziom aktywności fizycznej (str), oczekiwane wartości to "siedzący", "lekko aktywny", "umiarkowanie aktywny", "bardzo aktywny"
     
-    
+    Zachowanie funkcji:
+    - Mnoży BMR przez odpowiedni współczynnik aktywności fizycznej:
+      - Siedzący (brak lub minimalna aktywność): TDEE = BMR * 1.2
+      - Lekko aktywny (lekkie ćwiczenia/sport 1-3 dni w tygodniu): TDEE = BMR * 1.375
+      - Umiarkowanie aktywny (umiarkowane ćwiczenia/sport 3-5 dni w tygodniu): TDEE = BMR * 1.55
+      - Bardzo aktywny (intensywne ćwiczenia/sport 6-7 dni w tygodniu): TDEE = BMR * 1.725
+
     """
