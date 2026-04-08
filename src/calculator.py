@@ -176,6 +176,8 @@ def calculate_tdee(bmr: float, activity_level: str) -> float:
         # Informujemy użytkownika, że poziom aktywności musi być jednym z określonych wartości
         raise ValueError("Poziom aktywności musi być jednym z następujących: 1, 2, 3, 4, 5.")
     
-
     # Obliczamy TDEE, mnożąc BMR przez odpowiedni współczynnik aktywności
     tdee = bmr * multipliers[activity_level]   
+
+    # Zaokrąglamy wynik do dwóch miejsc po przecinku
+    return round(tdee, 2)
