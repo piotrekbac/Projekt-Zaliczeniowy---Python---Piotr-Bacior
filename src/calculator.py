@@ -151,4 +151,7 @@ def calculate_tdee(bmr: float, activity_level: str) -> float:
     - Oczekiwana wartość 'bmr' musi być dodatnia (> 0)
     - Oczekiwana wartość 'activity_level' musi być jedną z określonych wartości
 
+    Podnoszenie wyjątków:
+    - ValueError: jeśli 'bmr' jest mniejsze lub równe 0, lub jeśli 'activity_level' nie jest jedną z określonych wartości
+
     """
