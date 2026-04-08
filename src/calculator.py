@@ -100,3 +100,9 @@ def calculate_bmr(weight_kg: float, height_m: float, age: int, gender: str) -> f
 
         # Informujemy użytkownika, że waga, wzrost i wiek muszą być większe niż 0
         raise ValueError("Waga, wzrost i wiek muszą być większe niż 0.")
+    
+    # Sprawdzamy poprawność wartości płci, aby uniknąć błędów przy obliczaniu BMR - 'm' dla mężczyzn, 'k' dla kobiet
+    if gender not in ["m", "k"]:
+
+        # Informujemy użytkownika, że płeć musi być 'm' lub 'k'
+        raise ValueError("Płeć musi być 'm' lub 'k'.")
