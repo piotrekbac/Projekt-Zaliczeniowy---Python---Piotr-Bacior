@@ -111,3 +111,8 @@ def calculate_bmr(weight_kg: float, height_m: float, age: int, gender: str) -> f
 
     # Konwertujemy wzrost z metrów na centymetry, ponieważ wzór Mifflin-St Jeor używa centymetrów
     height_cm = height_m * 100   
+
+
+    # Wzór dla mężczyzn 
+    if gender == 'M':
+         bmr = (10 * weight_kg) + (6.25 * height_cm) - (5 * age) + 5    
