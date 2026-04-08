@@ -128,3 +128,9 @@ def calculate_bmr(weight_kg: float, height_m: float, age: int, gender: str) -> f
 
     # Zaokrąglamy wynik do dwóch miejsc po przecinku
     return round(bmr, 2)    
+
+
+# Definiuję funkcję do obliczania TDEE (Total Daily Energy Expenditure) na podstawie BMR i poziomu aktywności fizycznej 
+def calculate_tdee(bmr: float, activity_level: str) -> float:
+
+    
