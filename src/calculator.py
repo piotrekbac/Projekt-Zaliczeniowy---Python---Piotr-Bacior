@@ -168,3 +168,7 @@ def calculate_tdee(bmr: float, activity_level: str) -> float:
         4: 1.725,       # Wysoka aktywność (trening 6-7 razy w tyg.)
         5: 1.9          # Bardzo wysoka aktywność (praca fizyczna)
     }    
+
+
+    # Sprawdzamy czy poziom aktywności jest poprawny, aby uniknąć błędów przy obliczaniu TDEE
+    if activity_level not in multipliers:
