@@ -67,3 +67,8 @@ def calculate_ideal_weight(height_m: float) -> tuple[float, float]:
 
     # Zwracamy krotkę z zaokrąglonymi wartościami idealnej wagi
     return round(min_weight, 2), round(max_weight, 2)   
+
+
+# Definiuję funkcję do obliczania BMR (Basal Metabolic Rate) - dane wejściowe są typu float, oczekujemy wyniku typu float
+def calculate_bmr(weight_kg: float, height_m: float, age: int, gender: str) -> float:
+    
