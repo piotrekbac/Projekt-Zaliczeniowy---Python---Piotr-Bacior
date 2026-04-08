@@ -94,3 +94,9 @@ def calculate_bmr(weight_kg: float, height_m: float, age: int, gender: str) -> f
     - ValueError: jeśli 'weight_kg', 'height_m' lub 'age' jest mniejsze lub równe 0
 
     """
+
+    # Sprawdzamy, czy waga, wzrost i wiek są większe niż 0, aby uniknąć błędów dzielenia przez zero lub negatywnych wartości
+    if weight_kg <= 0 or height_m <= 0 or age <= 0:
+
+        # Informujemy użytkownika, że waga, wzrost i wiek muszą być większe niż 0
+        raise ValueError("Waga, wzrost i wiek muszą być większe niż 0.")
