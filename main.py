@@ -103,6 +103,9 @@ def main():
                 print(f"Infomracja: Wykryto wzrost podany w centrymetrach ({wzrost} cm). Konwertuję na metry...")
                 wzrost = wzrost / 100
 
+            # Pobieramy wpis od użytkownika i podmieniamy ewentualny przecinek na kropkę - aby umożliwić poprawne przetwarzanie danych typu float
+            wiek_input = input("Podaj swój wiek w latach (np. 30): ").replace(",", ".")   
+
 
             # Wywołujemy funkcję calculate_bmi z przykładowymi danymi
             moje_bmi = calculate_bmi(waga, wzrost)   
