@@ -141,11 +141,13 @@ def calculate_tdee(bmr: float, activity_level: str) -> float:
     - activity_level: poziom aktywności fizycznej (str), oczekiwane wartości to "siedzący", "lekko aktywny", "umiarkowanie aktywny", "bardzo aktywny"
     
     Zachowanie funkcji:
-    - Mnoży BMR przez odpowiedni współczynnik aktywności fizycznej:
-      - Siedzący (brak lub minimalna aktywność): TDEE = BMR * 1.2
-      - Lekko aktywny (lekkie ćwiczenia/sport 1-3 dni w tygodniu): TDEE = BMR * 1.375
-      - Umiarkowanie aktywny (umiarkowane ćwiczenia/sport 3-5 dni w tygodniu): TDEE = BMR * 1.55
-      - Bardzo aktywny (intensywne ćwiczenia/sport 6-7 dni w tygodniu): TDEE = BMR * 1.725
+    - Oblicza TDEE, mnożąc BMR przez odpowiedni współczynnik aktywności fizycznej:
+      - 1. Siedzący (brak aktywności): TDEE = BMR * 1.2
+      - 2. Lekko aktywny (trening 1-3 razy w tygodniu): TDEE = BMR * 1.375
+      - 3. Umiarkowanie aktywny (trening 3-5 razy w tygodniu): TDEE = BMR * 1.55
+      - 4. Bardzo aktywny (trening 6-7 razy w tygodniu): TDEE = BMR * 1.725
+      - 5. Ekstremalnie aktywny (bardzo ciężka praca fizyczna lub trening dwa razy dziennie): TDEE = BMR * 1.9
+
 
     Ograniczenia:
     - Oczekiwana wartość 'bmr' musi być dodatnia (> 0)
@@ -155,3 +157,7 @@ def calculate_tdee(bmr: float, activity_level: str) -> float:
     - ValueError: jeśli 'bmr' jest mniejsze lub równe 0, lub jeśli 'activity_level' nie jest jedną z określonych wartości
 
     """
+
+
+    # Tworzymy słownik z poziomami aktywności i odpowiadającymi im współczynnikami
+
