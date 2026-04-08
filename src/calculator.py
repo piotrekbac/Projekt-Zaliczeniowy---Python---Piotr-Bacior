@@ -147,4 +147,8 @@ def calculate_tdee(bmr: float, activity_level: str) -> float:
       - Umiarkowanie aktywny (umiarkowane ćwiczenia/sport 3-5 dni w tygodniu): TDEE = BMR * 1.55
       - Bardzo aktywny (intensywne ćwiczenia/sport 6-7 dni w tygodniu): TDEE = BMR * 1.725
 
+    Ograniczenia:
+    - Oczekiwana wartość 'bmr' musi być dodatnia (> 0)
+    - Oczekiwana wartość 'activity_level' musi być jedną z określonych wartości
+
     """
