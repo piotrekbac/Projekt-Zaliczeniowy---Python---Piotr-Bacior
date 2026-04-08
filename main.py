@@ -106,6 +106,9 @@ def main():
             # Pobieramy wpis od użytkownika i podmieniamy ewentualny przecinek na kropkę - aby umożliwić poprawne przetwarzanie danych typu float
             wiek_input = input("Podaj swój wiek w latach (np. 30): ").replace(",", ".")   
 
+            # Konwertujemy tekst na liczbę typu int, aby można było przeprowadzić obliczenia BMR i TDEE
+            wiek = int(wiek_input)   
+
 
             # Wywołujemy funkcję calculate_bmi z przykładowymi danymi
             moje_bmi = calculate_bmi(waga, wzrost)   
