@@ -161,3 +161,10 @@ def calculate_tdee(bmr: float, activity_level: str) -> float:
 
     # Tworzymy słownik z poziomami aktywności i odpowiadającymi im współczynnikami
 
+    multipliers = {
+        1: 1.2,         # Brak aktywności (praca siedząca)
+        2: 1.375,       # Lekka aktywność (trening 1-3 razy w tyg.)
+        3: 1.55,        # Średnia aktywność (trening 3-5 razy w tyg.)
+        4: 1.725,       # Wysoka aktywność (trening 6-7 razy w tyg.)
+        5: 1.9          # Bardzo wysoka aktywność (praca fizyczna)
+    }    
