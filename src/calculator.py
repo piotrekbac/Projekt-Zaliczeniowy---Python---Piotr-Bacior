@@ -115,8 +115,12 @@ def calculate_bmr(weight_kg: float, height_m: float, age: int, gender: str) -> f
 
     # Wzór dla mężczyzn 
     if gender == 'M':
-         bmr = (10 * weight_kg) + (6.25 * height_cm) - (5 * age) + 5    
+         
+        # Obliczamy BMR dla mężczyzn według wzoru Mifflin-St Jeor
+        bmr = (10 * weight_kg) + (6.25 * height_cm) - (5 * age) + 5    
 
     # Wzór dla kobiet
     else:
+
+        # Obliczamy BMR dla kobiet według wzoru Mifflin-St Jeor
         bmr = (10 * weight_kg) + (6.25 * height_cm) - (5 * age) - 161
