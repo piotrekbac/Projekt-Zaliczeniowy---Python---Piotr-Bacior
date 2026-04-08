@@ -130,7 +130,11 @@ def calculate_bmr(weight_kg: float, height_m: float, age: int, gender: str) -> f
     return round(bmr, 2)    
 
 
-# Definiuję funkcję do obliczania TDEE (Total Daily Energy Expenditure) na podstawie BMR i poziomu aktywności fizycznej 
+# Definiuję funkcję do obliczania TDEE (Total Daily Energy Expenditure) na podstawie BMR i poziomu aktywności fizycznej - zapotrzebowanie kaloryczne
 def calculate_tdee(bmr: float, activity_level: str) -> float:
 
+    """
+    Oblicza całkowite dzienne zapotrzebowanie kaloryczne (TDEE) na podstawie BMR i poziomu aktywności fizycznej
+
     
+    """
