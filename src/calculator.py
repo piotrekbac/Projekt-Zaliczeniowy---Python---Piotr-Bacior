@@ -124,3 +124,7 @@ def calculate_bmr(weight_kg: float, height_m: float, age: int, gender: str) -> f
 
         # Obliczamy BMR dla kobiet według wzoru Mifflin-St Jeor
         bmr = (10 * weight_kg) + (6.25 * height_cm) - (5 * age) - 161
+
+
+    # Zaokrąglamy wynik do dwóch miejsc po przecinku
+    return round(bmr, 2)    
