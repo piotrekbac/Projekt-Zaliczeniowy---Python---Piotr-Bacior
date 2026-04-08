@@ -89,6 +89,8 @@ def calculate_bmr(weight_kg: float, height_m: float, age: int, gender: str) -> f
 
     Ograniczenia:
     - Oczekiwane wartości 'weight_kg', 'height_m' i 'age' muszą być dodatnie (> 0)
-    
+
+    Podnoszenie wyjątków:
+    - ValueError: jeśli 'weight_kg', 'height_m' lub 'age' jest mniejsze lub równe 0
 
     """
