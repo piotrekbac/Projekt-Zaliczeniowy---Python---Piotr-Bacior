@@ -82,6 +82,13 @@ def main():
     # Pętla nieskończona, która pozwala użytkownikowi na wielokrotne obliczanie BMI, dopóki nie zdecyduje o zakończeniu programu
     while True:    
 
+        # Wypisujemy w konsoli komunikat o podaniu danych wejściowych (waga i wzrost) przez użytkownika, które będą używane do obliczenia BMI
+        print("\n" + "=" * 60 + "\n")                                       # Dodajemy odstęp i linię oddzielającą wyniki od reszty interfejsu
+        print("Podaj swoje dane, aby obliczyć BMI:")                        # Wyświetlamy komunikat o podaniu danych wejściowych 
+        print("\n" + "=" * 60 + "\n")                                       # Dodajemy odstęp i linię oddzielającą wyniki od reszty interfejsu
+
+
+
         # Wywołujemy funkcję calculate_bmi i obsługujemy potencjalne wyjątki, które mogą wystąpić podczas obliczeń
         try:
 
