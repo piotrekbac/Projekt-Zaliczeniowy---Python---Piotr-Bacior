@@ -174,6 +174,9 @@ def main():
             print(f"Podstawowa przemiana materii (BMR): {bmr} kcal")
             print(f"Całkowite dzienne zapotrzebowanie (TDEE): {tdee} kcal")
 
+            # Porady dietetyczne na podstawie kategorii zdrowotnej
+            print("\n -- Porady dietetyczne --\n")
+
 
         # Obsługujemy wyjątki typu ValueError, które mogą być podniesione przez funkcję calculate_bmi
         except ValueError as e:     
