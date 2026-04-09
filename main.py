@@ -215,7 +215,8 @@ def main():
 
         # Obsługujemy wyjątki typu ValueError, które mogą być podniesione przez funkcję calculate_bmi
         except ValueError as e:     
-            print(f"Błąd: {e}")     # Wyświetlamy komunikat o błędzie, jeśli dane wejściowe są nieprawidłowe
+            print(f"\nBłąd: {e}")           # Wyświetlamy komunikat o błędzie, jeśli dane wejściowe są nieprawidłowe
+            print("Spróbuj ponownie.\n")    # Kontynuujemy działanie programu, wracając do początku pętli while True
 
 
         # Ta pętla odpowiada za pytanie użytkownika, czy chce kontynuować działanie programu, czy zakończyć 
