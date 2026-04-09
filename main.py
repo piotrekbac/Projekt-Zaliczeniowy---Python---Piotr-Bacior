@@ -192,6 +192,14 @@ def main():
                 # Wyświetlamy porady dla osób z nadwagą, które mają na celu pomóc im schudnąć w zdrowy sposób
                 print(f"Aby schudnąć jedz około {tdee - 500} kcal dziennie (-500 kcal).")
 
+            # Porady dla kategorii "Otyłość"
+            elif kategoria == "Otyłość":
+
+                # Wyświetlamy porady dla osób z otyłością, które mają na celu pomóc im schudnąć w zdrowy sposób
+                print(f"Aby schudnąć jedz około {tdee - 650} kcal dziennie (-650 kcal).")
+                print("W tym przypadku zalecam konsultację z lekarzem lub dietetykiem, aby opracować bezpieczny i skuteczny plan odchudzania.")
+                print("Pamiętaj, że zdrowe odchudzanie to proces stopniowy, a szybka utrata wagi może być niezdrowa i trudna do utrzymania.")
+
 
         # Obsługujemy wyjątki typu ValueError, które mogą być podniesione przez funkcję calculate_bmi
         except ValueError as e:     
