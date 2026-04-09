@@ -178,6 +178,15 @@ def main():
             print("\n -- Porady dietetyczne --\n")
 
 
+            # Wyświetlamy odpowiednie porady dietetyczne w zależności od kategorii zdrowotnej, do której należy użytkownik
+
+            # Porady dla kategorii "Niedowaga"
+            if kategoria == "Niedowaga":
+
+                # Wyświetlamy porady dla osób z niedowagą, które mają na celu pomóc im przybrać na wadze w zdrowy sposób
+                print(f"Aby przybrać na wadze jedz około {tdee + 500} kcal dziennie (+500 kcal).")
+
+
         # Obsługujemy wyjątki typu ValueError, które mogą być podniesione przez funkcję calculate_bmi
         except ValueError as e:     
             print(f"Błąd: {e}")     # Wyświetlamy komunikat o błędzie, jeśli dane wejściowe są nieprawidłowe
