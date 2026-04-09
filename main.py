@@ -35,11 +35,11 @@ def main():
     """
 
     # Nagłówek powitalny dla użytkownika, informujący o autorze programu i jego funkcjonalności
-    print("\n" + "=" * 30 + "")                                                             
+    print("\n" + "=" * 60 + "")                                                             
     print("Witaj w Kalkulatorze BMI!")
     print("Autor programu: Piotr Bacior - 15 722 - 2026")
     print("Oblicz swoje BMI, podając wagę w kilogramach i wzrost w metrach.")
-    print("" + "=" * 30 + "\n")
+    print("" + "=" * 60 + "\n")
 
 
     # Pytamy użytkownika, czy chce zobaczyć historię swoich pomiarów BMI, i przechowujemy jego odpowiedź w zmiennej 'czy_historia'
@@ -206,6 +206,7 @@ def main():
                 # Wyświetlamy porady dla osób z normą, które mają na celu pomóc im utrzymać zdrową wagę
                 print(f"Twoje BMI jest w normie. Aby utrzymać zdrową wagę, jedz tyle kalorii, ile wynosi Twoje TDEE, czyli: {tdee} kcal dziennie.")
                 print("Pamiętaj o zrównoważonej diecie i regularnej aktywności fizycznej, aby utrzymać zdrowy styl życia.")
+
 
         # Obsługujemy wyjątki typu ValueError, które mogą być podniesione przez funkcję calculate_bmi
         except ValueError as e:     
