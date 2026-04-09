@@ -200,6 +200,12 @@ def main():
                 print("W tym przypadku zalecam konsultację z lekarzem lub dietetykiem, aby opracować bezpieczny i skuteczny plan odchudzania.")
                 print("Pamiętaj, że zdrowe odchudzanie to proces stopniowy, a szybka utrata wagi może być niezdrowa i trudna do utrzymania.")
 
+            # Porady dla normy wagowej - nasza waga jest w normie
+            else:
+
+                # Wyświetlamy porady dla osób z normą, które mają na celu pomóc im utrzymać zdrową wagę
+                print(f"Twoje BMI jest w normie. Aby utrzymać zdrową wagę, jedz tyle kalorii, ile wynosi Twoje TDEE, czyli: {tdee} kcal dziennie.")
+                print("Pamiętaj o zrównoważonej diecie i regularnej aktywności fizycznej, aby utrzymać zdrowy styl życia.")
 
         # Obsługujemy wyjątki typu ValueError, które mogą być podniesione przez funkcję calculate_bmi
         except ValueError as e:     
