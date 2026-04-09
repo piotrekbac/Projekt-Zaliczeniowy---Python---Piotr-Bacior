@@ -142,7 +142,7 @@ def main():
             bmr = calculate_bmr(waga, wzrost, wiek, plec)   
 
             # Wywołujemy funkcję calculate_tdee, aby obliczyć całkowite dzienne zapotrzebowanie kaloryczne (TDEE) na podstawie obliczonego BMR i poziomu aktywności fizycznej
-            tdee = calculate_tdee(bmr, aktywnosc)
+            
 
             # Wywołujemy funkcję save_result_to_file, aby zapisać wynik obliczeń do pliku tekstowego
             save_result_to_file(waga, wzrost, moje_bmi, kategoria, min_waga, max_waga)
@@ -154,7 +154,6 @@ def main():
 
             print("\n" + "=" * 30 + "\n")                                       # Dodajemy odstęp i linię oddzielającą wyniki od reszty interfejsu
 
-            print(f"Twoje BMI wynosi: {moje_bmi}")                              # Wyświetlamy wynik obliczeń BMI
             print(f"Podany wzrost: {wzrost} m, podana waga: {waga} kg")         # Wyświetlamy podane dane wejściowe
             print(f"BMI: {moje_bmi}")                                           # Wyświetlamy BMI
             print(f"Twoja kategoria zdrowotna: {kategoria}")                    # Wyświetlamy kategorię zdrowotną
