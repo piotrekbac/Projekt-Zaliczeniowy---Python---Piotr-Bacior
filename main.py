@@ -141,6 +141,9 @@ def main():
             # Wywołujemy funkcję calculate_bmr, aby obliczyć podstawową przemianę materii (BMR) na podstawie wagi, wzrostu, wieku i płci
             bmr = calculate_bmr(waga, wzrost, wiek, plec)   
 
+            # Wywołujemy funkcję calculate_tdee, aby obliczyć całkowite dzienne zapotrzebowanie kaloryczne (TDEE) na podstawie obliczonego BMR i poziomu aktywności fizycznej
+            tdee = calculate_tdee(bmr, aktywnosc)
+
             # Wywołujemy funkcję save_result_to_file, aby zapisać wynik obliczeń do pliku tekstowego
             save_result_to_file(waga, wzrost, moje_bmi, kategoria, min_waga, max_waga)
 
