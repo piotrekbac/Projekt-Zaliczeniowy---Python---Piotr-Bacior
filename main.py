@@ -116,6 +116,7 @@ def main():
             print('\n-- Poziomy aktywności fizycznej --\n')  
             print('1. Siedzący tryb życia (brak lub minimalna aktywność fizyczna)')
             print('2. Lekko aktywny (lekkie ćwiczenia/sport 1-3 dni w tygodniu)')
+            print('3. Umiarkowanie aktywny (umiarkowane ćwiczenia/sport 3-5 dni w tygodniu)')
             
 
             # Wywołujemy funkcję calculate_bmi z przykładowymi danymi
