@@ -109,6 +109,8 @@ def main():
             # Konwertujemy tekst na liczbę typu int, aby można było przeprowadzić obliczenia BMR i TDEE
             wiek = int(wiek_input)   
 
+            # Pobieramy wpis od użytkownika i usuwamy ewentualne spacje oraz konwertujemy na wielkie litery, aby ułatwić porównanie
+            plec = input("Podaj swoją płeć (M/K): ").strip().upper()   
 
             # Wywołujemy funkcję calculate_bmi z przykładowymi danymi
             moje_bmi = calculate_bmi(waga, wzrost)   
