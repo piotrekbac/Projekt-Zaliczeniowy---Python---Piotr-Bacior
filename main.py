@@ -142,7 +142,7 @@ def main():
             bmr = calculate_bmr(waga, wzrost, wiek, plec)   
 
             # Wywołujemy funkcję calculate_tdee, aby obliczyć całkowite dzienne zapotrzebowanie kaloryczne (TDEE) na podstawie obliczonego BMR i poziomu aktywności fizycznej
-            
+            tdee = calculate_tdee(bmr, aktywnosc)
 
             # Wywołujemy funkcję save_result_to_file, aby zapisać wynik obliczeń do pliku tekstowego
             save_result_to_file(waga, wzrost, moje_bmi, kategoria, min_waga, max_waga)
@@ -168,6 +168,11 @@ def main():
             print(pasek_wizualny)                                               # Wyświetlamy graficzny pasek wizualizujący wartość BMI
             print("      (Niedowaga | Norma | Nadwaga | Otyłość)")
             print("\n" + "=" * 30 + "\n")                                       # Dodajemy linię oddzielającą wyniki od reszty interfejsu
+
+            # Wyświetlamy obliczone BMR i TDEE
+            print("\n -- Twoje zapotrzebowanie kaloryczne --\n")
+            print(f"Podstawowa przemiana materii (BMR): {bmr} kcal")
+            print(f"Całkowite dzienne zapotrzebowanie (TDEE): {tdee} kcal")
 
 
         # Obsługujemy wyjątki typu ValueError, które mogą być podniesione przez funkcję calculate_bmi
