@@ -53,7 +53,7 @@ def main():
         historia = read_history_from_file()                 # Wywołujemy funkcję read_history_from_file, aby odczytać historię pomiarów z pliku tekstowego                                                   
 
         print("\n" + "-" * 60)
-        print("Historia Twoich pomiarów BMI:")              # Wyświetlamy nagłówek dla historii pomiarów BMI
+        print(f"{'Historia Twoich pomiarów BMI:':^60}")     # Wyświetlamy nagłówek dla historii pomiarów BMI
         print("-" * 60 + "\n")
 
         # Sprawdzamy, czy historia pomiarów jest pusta (brak zapisanych pomiarów) i wyświetlamy odpowiedni komunikat
