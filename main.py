@@ -120,6 +120,8 @@ def main():
             print('4. Bardzo aktywny (intensywne ćwiczenia/sport 6-7 dni w tygodniu)')
             print('5. Ekstremalnie aktywny (bardzo intensywne ćwiczenia/sport, praca fizyczna lub trening dwa razy dziennie)\n')
             
+            # Pobieramy wpis od użytkownika i usuwamy ewentualne spacje
+            aktywnosc_input = input("Wybierz poziom swojej aktywności fizycznej (1-5): ").strip()  
 
             # Wywołujemy funkcję calculate_bmi z przykładowymi danymi
             moje_bmi = calculate_bmi(waga, wzrost)   
