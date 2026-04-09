@@ -52,9 +52,16 @@ def main():
     if czy_historia == 't':                                 # Sprawdzamy, czy użytkownik wpisał 'T' (tak)
         historia = read_history_from_file()                 # Wywołujemy funkcję read_history_from_file, aby odczytać historię pomiarów z pliku tekstowego                                                   
 
-        print("\n" + "-" * 60)
-        print(f"{'Historia Twoich pomiarów BMI:':^60}")     # Wyświetlamy nagłówek dla historii pomiarów BMI
-        print("-" * 60 + "\n")
+
+        # Dodajemy odstęp i linię oddzielającą historię pomiarów od reszty interfejsu, aby poprawić czytelność w konsoli
+        print("\n" + "-" * 70)
+
+        # Wyświetlamy nagłówek dla historii pomiarów BMI
+        print(f"{'Historia Twoich pomiarów BMI:':^70}")     
+
+        # Dodajemy odstęp i linię oddzielającą nagłówek od reszty historii pomiarów, aby poprawić czytelność w konsoli
+        print("-" * 70 + "\n")
+
 
         # Sprawdzamy, czy historia pomiarów jest pusta (brak zapisanych pomiarów) i wyświetlamy odpowiedni komunikat
         if not historia:
