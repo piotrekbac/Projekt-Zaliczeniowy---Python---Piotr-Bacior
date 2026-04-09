@@ -126,7 +126,7 @@ def main():
             print('5. Ekstremalnie aktywny (bardzo intensywne ćwiczenia/sport, praca fizyczna lub trening dwa razy dziennie)\n')
             
             # Pobieramy wpis od użytkownika i usuwamy ewentualne spacje
-            aktywnosc_input = input("Wybierz poziom swojej aktywności fizycznej (1-5): ").strip()  
+            aktywnosc_input = input("\nWybierz poziom swojej aktywności fizycznej (1-5): ").strip()  
 
             # Konwertujemy tekst na liczbę typu int, aby można było przeprowadzić obliczenia TDEE
             aktywnosc = int(aktywnosc_input)
