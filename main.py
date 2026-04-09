@@ -110,7 +110,11 @@ def main():
             wiek = int(wiek_input)   
 
             # Pobieramy wpis od użytkownika i usuwamy ewentualne spacje oraz konwertujemy na wielkie litery, aby ułatwić porównanie
-            plec = input("Podaj swoją płeć (M/K): ").strip().upper()   
+            plec = input("Podaj swoją płeć (M/K): ").strip().upper() 
+
+            # Wypisujemy w konsoli odpowiednie komunikaty informujące o poziomach aktywności fizycznej, które użytkownik może wybrać, aby obliczyć swoje TDEE
+            print('\n-- Poziomy aktywności fizycznej --\n')  
+            
 
             # Wywołujemy funkcję calculate_bmi z przykładowymi danymi
             moje_bmi = calculate_bmi(waga, wzrost)   
