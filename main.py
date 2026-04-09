@@ -186,6 +186,12 @@ def main():
                 # Wyświetlamy porady dla osób z niedowagą, które mają na celu pomóc im przybrać na wadze w zdrowy sposób
                 print(f"Aby przybrać na wadze jedz około {tdee + 500} kcal dziennie (+500 kcal).")
 
+            # Porady dla kategorii "Nadwaga"
+            elif kategoria == "Nadwaga":
+
+                # Wyświetlamy porady dla osób z nadwagą, które mają na celu pomóc im schudnąć w zdrowy sposób
+                print(f"Aby schudnąć jedz około {tdee - 500} kcal dziennie (-500 kcal).")
+
 
         # Obsługujemy wyjątki typu ValueError, które mogą być podniesione przez funkcję calculate_bmi
         except ValueError as e:     
