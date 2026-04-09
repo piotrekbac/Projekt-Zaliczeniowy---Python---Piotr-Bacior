@@ -175,7 +175,7 @@ def main():
             print("\n" + "=" * 60 + "\n")                                       # Dodajemy linię oddzielającą wyniki od reszty interfejsu
 
             # Wyświetlamy obliczone BMR i TDEE
-            print("\n -- Twoje zapotrzebowanie kaloryczne --\n")
+            print("-- Twoje zapotrzebowanie kaloryczne --\n")
             print(f"Podstawowa przemiana materii (BMR): {bmr} kcal")
             print(f"Całkowite dzienne zapotrzebowanie (TDEE): {tdee} kcal")
 
@@ -223,7 +223,7 @@ def main():
         while True:
 
             # Pytamy użytkownika, czy chce kontynuować działanie programu, czy zakończyć - usuwamy spacje oraz zmieniamy na małe litery, aby ułatwić porównanie
-            wybor = input("Czy chcesz obliczyć BMI ponownie? (T/N): \n").strip().lower()
+            wybor = input("\nCzy chcesz obliczyć BMI ponownie? (T/N): \n").strip().lower()
  
             # Sprawdzamy, czy użytkownik wpisał 'T' lub 'N' (po konwersji na małe litery)
             if wybor == 't' or wybor == 'n':                                                     
