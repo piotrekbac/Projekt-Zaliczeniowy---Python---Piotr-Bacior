@@ -35,10 +35,13 @@ def main():
     """
 
     # Nagłówek powitalny dla użytkownika, informujący o autorze programu i jego funkcjonalności
-    print("\n" + "=" * 60 + "")                                                             
-    print("Witaj w Kalkulatorze BMI!")
-    print("Autor programu: Piotr Bacior - 15 722 - 2026")
-    print("Oblicz swoje BMI, podając wagę w kilogramach i wzrost w metrach.")
+    print("\n" + "=" * 60 + "")   
+
+    # Przesuwamy tekst do środka, aby był bardziej estetyczny i czytelny dla użytkownika w konsoli
+    print(f"{'Witaj w Kalkulatorze BMI!':^60}")
+    print(f"{'Autor programu: Piotr Bacior - 15 722 - 2026':^60}")
+    print(f"{'Oblicz swoje BMI, podając wagę w kilogramach i wzrost w metrach.':^60}")
+
     print("" + "=" * 60 + "\n")
 
 
