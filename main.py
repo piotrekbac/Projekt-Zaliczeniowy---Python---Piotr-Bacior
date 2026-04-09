@@ -114,8 +114,8 @@ def main():
             # Konwertujemy tekst na liczbę typu int, aby można było przeprowadzić obliczenia BMR i TDEE
             wiek = int(wiek_input)   
 
-            # Pobieramy wpis od użytkownika i usuwamy ewentualne spacje oraz konwertujemy na wielkie litery, aby ułatwić porównanie
-            plec = input("Podaj swoją płeć (M/K): ").strip().upper() 
+            # Pobieramy wpis od użytkownika i usuwamy ewentualne spacje oraz konwertujemy na małe litery, aby ułatwić porównanie
+            plec = input("Podaj swoją płeć (M/K): ").strip().lower() 
 
             # Wypisujemy w konsoli odpowiednie komunikaty informujące o poziomach aktywności fizycznej, które użytkownik może wybrać, aby obliczyć swoje TDEE
             print('\n-- Poziomy aktywności fizycznej --\n')  
