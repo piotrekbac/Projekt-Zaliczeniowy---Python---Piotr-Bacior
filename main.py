@@ -87,8 +87,6 @@ def main():
         print("Podaj swoje dane, aby obliczyć BMI:")                        # Wyświetlamy komunikat o podaniu danych wejściowych 
         print("\n" + "=" * 60 + "\n")                                       # Dodajemy odstęp i linię oddzielającą wyniki od reszty interfejsu
 
-
-
         # Wywołujemy funkcję calculate_bmi i obsługujemy potencjalne wyjątki, które mogą wystąpić podczas obliczeń
         try:
 
@@ -107,7 +105,7 @@ def main():
 
             # Jeśli użytkownik poda wzrost w centymetrach, konwertujemy go na metry
             if wzrost >= 3.0:
-                print(f"Infomracja: Wykryto wzrost podany w centrymetrach ({wzrost} cm). Konwertuję na metry...")
+                print(f"Informacja: Wykryto wzrost podany w centrymetrach ({wzrost} cm). Konwertuję na metry...")
                 wzrost = wzrost / 100
 
             # Pobieramy wpis od użytkownika i podmieniamy ewentualny przecinek na kropkę - aby umożliwić poprawne przetwarzanie danych typu float
