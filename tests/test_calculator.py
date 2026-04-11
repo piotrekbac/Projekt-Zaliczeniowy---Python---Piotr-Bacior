@@ -130,13 +130,16 @@ class TestCalculator(unittest.TestCase):
             calculate_tdee(2000, 0)             # Mnożnik aktywności zerowy - powinno wyrzucić ValueError
 
         with self.assertRaises(ValueError):
-            calculate_tdee(0, 1.2)             # BMR zerowe - powinno wyrzucić ValueError
+            calculate_tdee(0, 1.2)              # BMR zerowe - powinno wyrzucić ValueError
 
         with self.assertRaises(ValueError):
-            calculate_tdee(0, 0)               # BMR i mnożnik aktywności zerowe - powinno wyrzucić ValueError
+            calculate_tdee(0, 0)                # BMR i mnożnik aktywności zerowe - powinno wyrzucić ValueError
 
         with self.assertRaises(ValueError):
-            calculate_tdee(-2000, -1.2)        # BMR i mnożnik aktywności ujemne - powinno wyrzucić ValueError
+            calculate_tdee(-2000, -1.2)         # BMR i mnożnik aktywności ujemne - powinno wyrzucić ValueError
 
         with self.assertRaises(ValueError):
-            calculate_tdee(-2000, 0)           # BMR ujemne i mnożnik aktywności zerowy - powinno wyrzucić ValueError
+            calculate_tdee(-2000, 0)            # BMR ujemne i mnożnik aktywności zerowy - powinno wyrzucić ValueError
+
+        with self.assertRaises(ValueError):
+            calculate_tdee(0, -1.2)             # BMR zerowe i mnożnik aktywności ujemny - powinno wyrzucić ValueError
