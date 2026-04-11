@@ -102,3 +102,6 @@ class TestCalculator(unittest.TestCase):
         # BMR = 2000, Aktywność 1 (x1.2) (siedzący tryb życia) - oczekiwany wynik: 2000 * 1.2 = 2400
         self.assertEqual(calculate_tdee(2000, 1.2), 2400)
 
+        # BMR = 2000, Aktywność 2 (x1.375) (lekka aktywność) - oczekiwany wynik: 2000 * 1.375 = 2750
+        self.assertEqual(calculate_tdee(2000, 1.375), 2750)
+
