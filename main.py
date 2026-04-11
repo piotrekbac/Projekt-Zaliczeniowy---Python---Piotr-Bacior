@@ -171,7 +171,7 @@ def main():
             # Wywołujemy funkcję save_to_csv, aby zapisać wynik obliczeń do pliku CSV
             save_to_csv(waga, wzrost, moje_bmi, kategoria, min_waga, max_waga)
 
-            # Wyświetlamy pełne podsumowanie 
+            # Wyświetlamy pełne podsumowanie - sekcja wyświetlania wyników
 
             print("\n" + "=" * 60 + "\n")                                       # Dodajemy odstęp i linię oddzielającą wyniki od reszty interfejsu
 
