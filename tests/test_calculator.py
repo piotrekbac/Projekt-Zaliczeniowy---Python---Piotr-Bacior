@@ -116,3 +116,6 @@ class TestCalculator(unittest.TestCase):
 
         with self.assertRaises(ValueError):
             calculate_tdee(2000, 6)             # Zbyt wysoki mnożnik aktywności - powinno wyrzucić ValueError
+
+        with self.assertRaises(ValueError):
+            calculate_tdee(2000, 0.5)           # Zbyt niski mnożnik aktywności - powinno wyrzucić ValueError
