@@ -94,5 +94,7 @@ class TestCalculator(unittest.TestCase):
         with self.assertRaises(ValueError):
             calculate_bmr(70.0, 1.70, -26, 'k')     # Wiek ujemny - kobieta
         
-        
+
     def test_calculate_tdee(self):
+
+        """ Sprawdza mnożniki aktywności dla całkowitego zapotrzebowania kalorycznego (TDEE - Total Daily Energy Expenditure) """
