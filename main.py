@@ -207,8 +207,8 @@ def main():
             # Porady dietetyczne na podstawie kategorii zdrowotnej
             print(f"{'PORADA DIETETYCZNA':^60}")
 
-            print("-" * 60)
-            
+            print("=" * 70)                                                     # Dodajemy linię oddzielającą wyniki od reszty interfejsu
+
             # Wyświetlamy odpowiednie porady dietetyczne w zależności od kategorii zdrowotnej, do której należy użytkownik
 
             # Porady dla kategorii "Niedowaga"
@@ -238,6 +238,7 @@ def main():
                 print(f"Twoje BMI jest w normie. Aby utrzymać zdrową wagę, jedz tyle kalorii, ile wynosi Twoje TDEE, czyli: {tdee} kcal dziennie.")
                 print("Pamiętaj o zrównoważonej diecie i regularnej aktywności fizycznej, aby utrzymać zdrowy styl życia.")
 
+            print("\n" + "=" * 70 + "\n")                                       # Dodajemy linię oddzielającą wyniki od reszty interfejsu
 
         # Obsługujemy wyjątki typu ValueError, które mogą być podniesione przez funkcję calculate_bmi
         except ValueError as e:     
