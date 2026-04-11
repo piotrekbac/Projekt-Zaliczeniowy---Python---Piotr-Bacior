@@ -58,3 +58,6 @@ class TestCalculator(unittest.TestCase):
         
         self.assertEqual(min_weight, 59.94)    # Sprawdzamy, czy minimalna idealna waga jest równa 59.94 kg
         self.assertEqual(max_weight, 80.68)    # Sprawdzamy, czy maksymalna idealna waga jest równa 80.68 kg
+
+    
+    def test_calculate_bmr(self):
