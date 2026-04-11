@@ -61,3 +61,5 @@ class TestCalculator(unittest.TestCase):
 
     
     def test_calculate_bmr(self):
+
+        """ Sprawdza poprawność obliczeń BMR dla różnych zestawów danych wejściowych = podstawowa przemiana materii (Basal Metabolic Rate) """
