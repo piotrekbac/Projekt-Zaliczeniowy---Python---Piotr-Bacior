@@ -117,6 +117,8 @@ def main():
 
             # Jeśli użytkownik poda wzrost w centymetrach, konwertujemy go na metry
             if wzrost >= 3.0:
+                
+                # Wyświetlamy komunikat informujący użytkownika, że wykryto wzrost podany w centymetrach i że konwertujemy go na metry
                 print(f"Informacja: Wykryto wzrost podany w centrymetrach ({wzrost} cm). Konwertuję na metry...")
 
                 # Konwertujemy centymetry na metry i zaokrąglamy do 2 miejsc po przecinku
