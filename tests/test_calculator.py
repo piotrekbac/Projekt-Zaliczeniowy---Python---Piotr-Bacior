@@ -64,5 +64,5 @@ class TestCalculator(unittest.TestCase):
 
         """ Sprawdza poprawność obliczeń BMR dla różnych zestawów danych wejściowych = podstawowa przemiana materii (Basal Metabolic Rate) """
 
-        # Test: Mężczyzna, 90 kg, 180cm wzrostu i 30 lat - oczekiwany wynik: 1880 kcal
-        # Wzór:
+        # Test: Mężczyzna, 90 kg, 180cm wzrostu i 30 lat - oczekiwany wynik: 1880 
+        # Wzór: (10*90) + (6.25*180) - (5*30) + 5 = 900 + 1125 - 150 + 5 = 1880
