@@ -1,5 +1,5 @@
-import unittest                                                     # Importujemy moduł unittest, który służy do tworzenia i uruchamiania testów jednostkowych
-from src.calculator import calculate_bmi, calculate_ideal_weight    # Importujemy funkcje calculate_bmi i calculate_ideal_weight z modułu calculator
+import unittest                                                                         # Importujemy moduł unittest, który służy do tworzenia i uruchamiania testów jednostkowych
+from src.calculator import calculate_bmi, calculate_bmr, calculate_ideal_weight         # Importujemy funkcje calculate_bmi i calculate_ideal_weight z modułu calculator
 
 # Piotr Bacior - 15 722 - 2026 - Python - MH
 
@@ -66,3 +66,4 @@ class TestCalculator(unittest.TestCase):
 
         # Test: Mężczyzna, 90 kg, 180cm wzrostu i 30 lat - oczekiwany wynik: 1880 
         # Wzór: (10*90) + (6.25*180) - (5*30) + 5 = 900 + 1125 - 150 + 5 = 1880
+        self.assertEqual(calculate_bmr(90.0, 1.80, 30, 'm'), 1880.0)
