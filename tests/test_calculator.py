@@ -100,6 +100,9 @@ class TestCalculator(unittest.TestCase):
         with self.assertRaises(ValueError):
             calculate_bmr(0.0, 1.70, 26, 'k')       # Waga zerowa - kobieta
 
+        with self.assertRaises(ValueError):
+            calculate_bmr(90.0, 0.0, 30, 'm')       # Wzrost zerowy - mężczyzna
+
     def test_calculate_tdee(self):
 
         """ Sprawdza mnożniki aktywności dla całkowitego zapotrzebowania kalorycznego (TDEE - Total Daily Energy Expenditure) """
