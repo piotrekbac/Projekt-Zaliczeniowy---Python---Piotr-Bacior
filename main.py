@@ -187,9 +187,9 @@ def main():
 
             print("\n" + "=" * 70 + "\n")                                       # Dodajemy linię oddzielającą wyniki od reszty interfejsu
 
-            print("Wizualizacja Twojego BMI na skali:")                         # Wyświetlamy graficzny pasek wizualizujący wartość BMI
-            print(pasek_wizualny)                                               # Wyświetlamy graficzny pasek wizualizujący wartość BMI
-            print("     (Niedowaga | Norma | Nadwaga | Otyłość)")               # Wyświetlamy legendę dla graficznego paska wizualizacji wartości BMI
+            print(f"{'WIZUALIZACJA BMI NA SKALI':^70}")                         # Wyświetlamy graficzny pasek wizualizujący wartość BMI
+            print(f"{pasek_wizualny:^60}")                                      # Wyświetlamy graficzny pasek wizualizujący wartość BMI
+            print(f"{'(Niedowaga | Norma | Nadwaga | Otyłość)':^60}")           # Wyświetlamy legendę dla graficznego paska wizualizacji wartości BMI
 
             print("\n" + "=" * 70 + "\n")                                       # Dodajemy linię oddzielającą wyniki od reszty interfejsu
 
