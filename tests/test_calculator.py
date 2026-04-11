@@ -72,5 +72,6 @@ class TestCalculator(unittest.TestCase):
         # Wzór: (10*60) + (6.25*160) - (5*25) - 161 = 600 + 1000 - 125 - 161 = 1314
         self.assertEqual(calculate_bmr(60.0, 1.60, 25, 'k'), 1314.0)
 
-
         # Sprawdzenie błędów płci i wartości ujemnych 
+        with self.assertRaises(ValueError):
+            calculate_bmr(90.0, 1.80, 30, 'x') # Nieznana płeć
