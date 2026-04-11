@@ -83,14 +83,15 @@ class TestCalculator(unittest.TestCase):
             calculate_bmr(-70.0, 1.70, 26, 'k')     # Waga ujemna - kobieta
 
         with self.assertRaises(ValueError):
+            calculate_bmr(90.0, -1.80, 30, 'm')     # Wzrost ujemny - mężczyzna
+            
+        with self.assertRaises(ValueError):
             calculate_bmr(70.0, -1.70, 26, 'k')     # Wzrost ujemny - kobieta
 
-        with self.assertRaises(ValueError):
-            calculate_bmr(90.0, -1.80, 30, 'm')     # Wzrost ujemny - mężczyzna
 
         with self.assertRaises(ValueError):
             calculate_bmr(90.0, 1.80, -30, 'm')     # Wiek ujemny - mężczyzna
-            
+
         with self.assertRaises(ValueError):
             calculate_bmr(70.0, 1.70, -26, 'k')     # Wiek ujemny - kobieta
         
