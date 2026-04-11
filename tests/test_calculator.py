@@ -63,3 +63,6 @@ class TestCalculator(unittest.TestCase):
     def test_calculate_bmr(self):
 
         """ Sprawdza poprawność obliczeń BMR dla różnych zestawów danych wejściowych = podstawowa przemiana materii (Basal Metabolic Rate) """
+
+        # Test: Mężczyzna, 90 kg, 180cm wzrostu i 30 lat - oczekiwany wynik: 1880 kcal
+        # Wzór:
