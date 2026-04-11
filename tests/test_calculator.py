@@ -1,5 +1,5 @@
-import unittest                                                                         # Importujemy moduł unittest, który służy do tworzenia i uruchamiania testów jednostkowych
-from src.calculator import calculate_bmi, calculate_bmr, calculate_ideal_weight         # Importujemy funkcje calculate_bmi i calculate_ideal_weight z modułu calculator
+import unittest                                                                                         # Importujemy moduł unittest, który służy do tworzenia i uruchamiania testów jednostkowych
+from src.calculator import calculate_bmi, calculate_bmr, calculate_tdee, calculate_ideal_weight         # Importujemy funkcje calculate_bmi i calculate_ideal_weight z modułu calculator
 
 # Piotr Bacior - 15 722 - 2026 - Python - MH
 
@@ -98,3 +98,7 @@ class TestCalculator(unittest.TestCase):
     def test_calculate_tdee(self):
 
         """ Sprawdza mnożniki aktywności dla całkowitego zapotrzebowania kalorycznego (TDEE - Total Daily Energy Expenditure) """
+
+        # BMR = 2000, Aktywność 1 (x1.2) (siedzący tryb życia) - oczekiwany wynik: 2000 * 1.2 = 2400
+        self.assertEqual(calculate_tdee(2000, 1.2), 2400)
+
