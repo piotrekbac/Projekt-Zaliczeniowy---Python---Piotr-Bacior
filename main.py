@@ -188,16 +188,16 @@ def main():
             print("\n" + "=" * 70 + "\n")                                       # Dodajemy linię oddzielającą wyniki od reszty interfejsu
 
             print(f"{'WIZUALIZACJA BMI NA SKALI':^70}")                         # Wyświetlamy graficzny pasek wizualizujący wartość BMI
-            print(f"{pasek_wizualny:^60}")                                      # Wyświetlamy graficzny pasek wizualizujący wartość BMI
-            print(f"{'(Niedowaga | Norma | Nadwaga | Otyłość)':^60}")           # Wyświetlamy legendę dla graficznego paska wizualizacji wartości BMI
+            print(f"{pasek_wizualny:^70}")                                      # Wyświetlamy graficzny pasek wizualizujący wartość BMI
+            print(f"{'(Niedowaga | Norma | Nadwaga | Otyłość)':^70}")           # Wyświetlamy legendę dla graficznego paska wizualizacji wartości BMI
 
             print("\n" + "=" * 70 + "\n")                                       # Dodajemy linię oddzielającą wyniki od reszty interfejsu
 
 
             # Wyświetlamy obliczone BMR i TDEE
 
-            print(f"{'ZAPOTRZEBOWANIE KALORYCZNE':^60}")                        # Wyświetlamy nagłówek dla sekcji zapotrzebowania kalorycznego
-            print("-" * 60)                                                     # Dodajemy linię oddzielającą nagłówek od wyników, aby poprawić czytelność w konsoli   
+            print(f"{'ZAPOTRZEBOWANIE KALORYCZNE':^70}")                        # Wyświetlamy nagłówek dla sekcji zapotrzebowania kalorycznego
+            print("-" * 70)                                                     # Dodajemy linię oddzielającą nagłówek od wyników, aby poprawić czytelność w konsoli   
             print(f" Podstawowa przemiana materii (BMR):      {bmr} kcal")      # Wyświetlamy obliczone BMR
             print(f" Całkowite dzienne zapotrzebowanie (TDEE): {tdee} kcal")    # Wyświetlamy obliczone TDEE
 
@@ -205,9 +205,9 @@ def main():
 
 
             # Porady dietetyczne na podstawie kategorii zdrowotnej
-            print(f"{'PORADA DIETETYCZNA':^60}")
+            print(f"{'PORADA DIETETYCZNA':^70}")
 
-            print("=" * 70)                                                     # Dodajemy linię oddzielającą wyniki od reszty interfejsu
+            print("-" * 70)                                                     # Dodajemy linię oddzielającą wyniki od reszty interfejsu
 
             # Wyświetlamy odpowiednie porady dietetyczne w zależności od kategorii zdrowotnej, do której należy użytkownik
 
@@ -265,7 +265,7 @@ def main():
 
         # Jeżeli użytkownik wpisał 'n' (nie), kończymy działanie programu
         if wybor == 'n':
-            print("\nDziękujemy za skorzystanie z Kalkulatora BMI. Do zobaczenia!")       # Wyświetlamy komunikat pożegnalny
+            print("\nDziękujemy za skorzystanie z Kalkulatora BMI. Do zobaczenia!\n")       # Wyświetlamy komunikat pożegnalny
             break                                                                       # Kończymy działanie programu
 
         # Jeżeli użytkownik wpisał 't' (tak), kontynuujemy działanie programu (wracamy do początku pętli while True)
