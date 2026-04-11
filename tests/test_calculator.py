@@ -113,3 +113,6 @@ class TestCalculator(unittest.TestCase):
 
         # BMR = 2000, Aktywność 5 (x1.9) (bardzo wysoka aktywność) - oczekiwany wynik: 2000 * 1.9 = 3800
         self.assertEqual(calculate_tdee(2000, 1.9), 3800)
+
+        with self.assertRaises(ValueError):
+            calculate_tdee(2000, 6)             # Zbyt wysoki mnożnik aktywności - powinno wyrzucić ValueError
