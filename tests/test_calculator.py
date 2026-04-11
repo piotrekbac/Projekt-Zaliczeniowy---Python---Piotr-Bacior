@@ -67,3 +67,5 @@ class TestCalculator(unittest.TestCase):
         # Test: Mężczyzna, 90 kg, 180cm wzrostu i 30 lat - oczekiwany wynik: 1880 
         # Wzór: (10*90) + (6.25*180) - (5*30) + 5 = 900 + 1125 - 150 + 5 = 1880
         self.assertEqual(calculate_bmr(90.0, 1.80, 30, 'm'), 1880.0)
+
+        # Test: Kobieta, 60 kg, 160cm wzrostu i 25 lat - oczekiwany wynik: 1314
