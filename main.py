@@ -115,11 +115,12 @@ def main():
             # Konwertujemy tekst na liczbę typu float, aby można było przeprowadzić obliczenia BMI
             wzrost = float(wzrost_input)
 
-
             # Jeśli użytkownik poda wzrost w centymetrach, konwertujemy go na metry
             if wzrost >= 3.0:
                 print(f"Informacja: Wykryto wzrost podany w centrymetrach ({wzrost} cm). Konwertuję na metry...")
-                wzrost = wzrost / 100
+
+                # Konwertujemy centymetry na metry i zaokrąglamy do 2 miejsc po przecinku
+                wzrost = round(wzrost / 100, 2)   
 
             # Pobieramy wpis od użytkownika i podmieniamy ewentualny przecinek na kropkę - aby umożliwić poprawne przetwarzanie danych typu float
             wiek_input = input("Podaj swój wiek w latach (np. 30): ").replace(",", ".")   
