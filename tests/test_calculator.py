@@ -93,6 +93,9 @@ class TestCalculator(unittest.TestCase):
 
         with self.assertRaises(ValueError):
             calculate_bmr(70.0, 1.70, -26, 'k')     # Wiek ujemny - kobieta
+
+        with self.assertRaises(ValueError):
+            calculate_bmr(0.0, 1.80, 30, 'm')       # Waga zerowa - mężczyzna
         
 
     def test_calculate_tdee(self):
