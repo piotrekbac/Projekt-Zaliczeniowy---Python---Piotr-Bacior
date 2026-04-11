@@ -117,7 +117,7 @@ def main():
 
             # Jeśli użytkownik poda wzrost w centymetrach, konwertujemy go na metry
             if wzrost >= 3.0:
-                
+
                 # Wyświetlamy komunikat informujący użytkownika, że wykryto wzrost podany w centymetrach i że konwertujemy go na metry
                 print(f"Informacja: Wykryto wzrost podany w centrymetrach ({wzrost} cm). Konwertuję na metry...")
 
@@ -134,12 +134,12 @@ def main():
             plec = input("Podaj swoją płeć (M/K): ").strip().lower() 
 
             # Wypisujemy w konsoli odpowiednie komunikaty informujące o poziomach aktywności fizycznej, które użytkownik może wybrać, aby obliczyć swoje TDEE
-            print('\n-- Poziomy aktywności fizycznej --\n')  
-            print('1. Siedzący tryb życia (brak lub minimalna aktywność fizyczna)')
-            print('2. Lekko aktywny (lekkie ćwiczenia/sport 1-3 dni w tygodniu)')
-            print('3. Umiarkowanie aktywny (umiarkowane ćwiczenia/sport 3-5 dni w tygodniu)')
-            print('4. Bardzo aktywny (intensywne ćwiczenia/sport 6-7 dni w tygodniu)')
-            print('5. Ekstremalnie aktywny (bardzo intensywne ćwiczenia/sport, praca fizyczna lub trening dwa razy dziennie)\n')
+            print('\n -- Poziomy aktywności fizycznej --\n')  
+            print('  1. Siedzący tryb (brak lub minimalna aktywność)')
+            print('  2. Lekko aktywny (lekkie ćwiczenia/sport 1-3 dni w tyg.)')
+            print('  3. Umiarkowanie aktywny (ćwiczenia/sport 3-5 dni w tyg.)')
+            print('  4. Bardzo aktywny (intensywne ćwiczenia/sport 6-7 dni w tyg.)')
+            print('  5. Ekstremalnie aktywny (praca fizyczna / trening 2x dziennie)')
             
             # Pobieramy wpis od użytkownika i usuwamy ewentualne spacje
             aktywnosc_input = input("\nWybierz poziom swojej aktywności fizycznej (1-5): ").strip()  
