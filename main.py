@@ -194,9 +194,10 @@ def main():
             print("\n" + "=" * 70 + "\n")                                       # Dodajemy linię oddzielającą wyniki od reszty interfejsu
 
             # Wyświetlamy obliczone BMR i TDEE
-            print("-- Twoje zapotrzebowanie kaloryczne --\n")
-            print(f"Podstawowa przemiana materii (BMR): {bmr} kcal")
-            print(f"Całkowite dzienne zapotrzebowanie (TDEE): {tdee} kcal")
+            print(f"{'ZAPOTRZEBOWANIE KALORYCZNE':^60}")
+            print("-" * 60)
+            print(f" Podstawowa przemiana materii (BMR):      {bmr} kcal")
+            print(f" Całkowite dzienne zapotrzebowanie (TDEE): {tdee} kcal")
 
             # Porady dietetyczne na podstawie kategorii zdrowotnej
             print("\n -- Porady dietetyczne --\n")
