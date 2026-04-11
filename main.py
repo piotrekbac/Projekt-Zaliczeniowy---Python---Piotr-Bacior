@@ -173,7 +173,9 @@ def main():
 
             # Wyświetlamy pełne podsumowanie - sekcja wyświetlania wyników
 
-            print("\n" + "=" * 60 + "\n")                                       # Dodajemy odstęp i linię oddzielającą wyniki od reszty interfejsu
+            print("\n" + "=" * 70 + "\n")                                       # Dodajemy odstęp i linię oddzielającą wyniki od reszty interfejsu
+            print(f"{'Podsumowanie Twojego pomiaru BMI:':^70}")                 # Wyświetlamy nagłówek podsumowania wyników
+            print("\n" + "=" * 70 + "\n")                                       # Dodajemy linię oddzielającą wyniki od reszty interfejsu
 
             print(f"Podany wzrost: {wzrost} m, podana waga: {waga} kg")         # Wyświetlamy podane dane wejściowe
             print(f"BMI: {moje_bmi}")                                           # Wyświetlamy BMI
@@ -182,13 +184,13 @@ def main():
             # Wyświetlamy zakres idealnej wagi dla podanego wzrostu
             print(f"Zakres idealnej wagi dla Twojego wzrostu: {min_waga} - {max_waga} kg")   
 
-            print("\n" + "=" * 60 + "\n")                                       # Dodajemy linię oddzielającą wyniki od reszty interfejsu
+            print("\n" + "=" * 70 + "\n")                                       # Dodajemy linię oddzielającą wyniki od reszty interfejsu
 
             # Wyświetlamy graficzny pasek wizualizujący wartość BMI
             print("Wizualizacja Twojego BMI na skali:")
             print(pasek_wizualny)                                               # Wyświetlamy graficzny pasek wizualizujący wartość BMI
             print("      (Niedowaga | Norma | Nadwaga | Otyłość)")
-            print("\n" + "=" * 60 + "\n")                                       # Dodajemy linię oddzielającą wyniki od reszty interfejsu
+            print("\n" + "=" * 70 + "\n")                                       # Dodajemy linię oddzielającą wyniki od reszty interfejsu
 
             # Wyświetlamy obliczone BMR i TDEE
             print("-- Twoje zapotrzebowanie kaloryczne --\n")
