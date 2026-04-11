@@ -184,12 +184,13 @@ def main():
             # Wyświetlamy zakres idealnej wagi dla podanego wzrostu
             print(f"Zakres idealnej wagi dla Twojego wzrostu: {min_waga} - {max_waga} kg")   
 
+
             print("\n" + "=" * 70 + "\n")                                       # Dodajemy linię oddzielającą wyniki od reszty interfejsu
 
-            # Wyświetlamy graficzny pasek wizualizujący wartość BMI
-            print("Wizualizacja Twojego BMI na skali:")
+            print("Wizualizacja Twojego BMI na skali:")                         # Wyświetlamy graficzny pasek wizualizujący wartość BMI
             print(pasek_wizualny)                                               # Wyświetlamy graficzny pasek wizualizujący wartość BMI
-            print("      (Niedowaga | Norma | Nadwaga | Otyłość)")
+            print("     (Niedowaga | Norma | Nadwaga | Otyłość)")               # Wyświetlamy legendę dla graficznego paska wizualizacji wartości BMI
+
             print("\n" + "=" * 70 + "\n")                                       # Dodajemy linię oddzielającą wyniki od reszty interfejsu
 
             # Wyświetlamy obliczone BMR i TDEE
