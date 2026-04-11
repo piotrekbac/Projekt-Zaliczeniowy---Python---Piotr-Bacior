@@ -128,3 +128,6 @@ class TestCalculator(unittest.TestCase):
 
         with self.assertRaises(ValueError):
             calculate_tdee(2000, 0)             # Mnożnik aktywności zerowy - powinno wyrzucić ValueError
+
+        with self.assertRaises(ValueError):
+            calculate_tdee(0, 1.2)             # BMR zerowe - powinno wyrzucić ValueError
