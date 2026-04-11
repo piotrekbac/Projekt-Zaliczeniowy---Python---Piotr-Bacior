@@ -77,4 +77,7 @@ class TestCalculator(unittest.TestCase):
             calculate_bmr(90.0, 1.80, 30, 'x')      # Nieznana płeć
         
         with self.assertRaises(ValueError):
-            calculate_bmr(-90.0, 1.80, 30, 'm')     # Waga ujemna
+            calculate_bmr(-90.0, 1.80, 30, 'm')     # Waga ujemna - mężczyzna
+
+        with self.assertRaises(ValueError):
+            calculate_bmr(-70.0, 1.70, 26, 'k')     # Waga ujemna - kobieta
