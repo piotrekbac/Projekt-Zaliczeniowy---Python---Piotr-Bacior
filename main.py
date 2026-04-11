@@ -71,6 +71,8 @@ def main():
 
         # Jeżeli historia pomiarów nie jest pusta, wyświetlamy każdy zapisany pomiar BMI, usuwając ewentualne białe znaki z początku i końca linii
         else:
+
+            # Wyświetlamy każdy zapisany pomiar BMI, usuwając ewentualne białe znaki z początku i końca linii, aby poprawić czytelność w konsoli
             for linia in historia:
                 print(linia.strip())
 
