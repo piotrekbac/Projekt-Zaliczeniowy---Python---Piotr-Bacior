@@ -71,3 +71,6 @@ class TestCalculator(unittest.TestCase):
         # Test: Kobieta, 60 kg, 160cm wzrostu i 25 lat - oczekiwany wynik: 1314
         # Wzór: (10*60) + (6.25*160) - (5*25) - 161 = 600 + 1000 - 125 - 161 = 1314
         self.assertEqual(calculate_bmr(60.0, 1.60, 25, 'k'), 1314.0)
+
+
+        # Sprawdzenie błędów płci i wartości ujemnych 
