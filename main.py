@@ -66,6 +66,7 @@ def main():
         # Sprawdzamy, czy historia pomiarów jest pusta (brak zapisanych pomiarów) i wyświetlamy odpowiedni komunikat
         if not historia:
             
+            # Wyświetlamy komunikat informujący o braku zapisanych pomiarów BMI
             print("Brak zapisanych pomiarów BMI. Zacznij obliczać swoje BMI, aby zobaczyć historię pomiarów!")
 
         # Jeżeli historia pomiarów nie jest pusta, wyświetlamy każdy zapisany pomiar BMI, usuwając ewentualne białe znaki z początku i końca linii
