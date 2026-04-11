@@ -205,8 +205,7 @@ def main():
 
 
             # Porady dietetyczne na podstawie kategorii zdrowotnej
-            print("\n -- Porady dietetyczne --\n")
-
+            print(f"{'PORADA DIETETYCZNA':^60}")
 
             # Wyświetlamy odpowiednie porady dietetyczne w zależności od kategorii zdrowotnej, do której należy użytkownik
 
