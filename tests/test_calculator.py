@@ -115,12 +115,12 @@ class TestCalculator(unittest.TestCase):
         """ Sprawdza mnożniki aktywności dla całkowitego zapotrzebowania kalorycznego (TDEE - Total Daily Energy Expenditure) """
 
         # Sprawdzamy poprawne działanie przypisane do numerów aktywności (1-5)
-        self.assertEqual(calculate_tdee(2000, 1), 2400)
-        self.assertEqual(calculate_tdee(2000, 2), 2750)
-        self.assertEqual(calculate_tdee(2000, 3), 3100)
-        self.assertEqual(calculate_tdee(2000, 4), 3450)
-        self.assertEqual(calculate_tdee(2000, 5), 3800)
-        
+        self.assertEqual(calculate_tdee(2000, 1), 2400)             # Siedzący tryb życia (BMR * 1.2)
+        self.assertEqual(calculate_tdee(2000, 2), 2750)             # Lekko aktywny (BMR * 1.375)
+        self.assertEqual(calculate_tdee(2000, 3), 3100)             # Umiarkowanie aktywny (BMR * 1.55)
+        self.assertEqual(calculate_tdee(2000, 4), 3450)             # Bardzo aktywny (BMR * 1.725)
+        self.assertEqual(calculate_tdee(2000, 5), 3800)             # Ekstremalnie aktywny (BMR * 1.9)
+
 
         with self.assertRaises(ValueError):
             calculate_tdee(2000, 6)             # Zbyt wysoki mnożnik aktywności - powinno wyrzucić ValueError
