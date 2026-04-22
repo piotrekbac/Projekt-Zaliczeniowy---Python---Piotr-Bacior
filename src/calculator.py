@@ -158,6 +158,10 @@ def calculate_tdee(bmr: float, activity_level: str) -> float:
 
     """
 
+    # Sprawdzamy, czy BMR jest większe niż 0, aby uniknąć błędów przy obliczaniu TDEE
+    if bmr <= 0:
+        raise ValueError("BMR musi być większe od zera.")
+
 
     # Tworzymy słownik z poziomami aktywności i odpowiadającymi im współczynnikami
 
