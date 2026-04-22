@@ -40,3 +40,7 @@ class TestFileHandler(unittest.TestCase) :
     def test_csv_write(self) :
 
         """ Sprawdza, czy funkcja prawidłowo generuje ustrukturyzowany plik CSV z nagłówkami. """
+
+        # Tworzymy bezpieczny, tymczasowy folder dla testu
+        with tempfile.TemporaryDirectory() as tmpdir:
+            test_csv = os.path.join(tmpdir, "test_baza.csv")
