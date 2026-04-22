@@ -15,3 +15,4 @@ class TestAnalyzer(unnittest.TestCase) :
         """ Sprawdza, czy funkcja poprawnie kategoryzuje wyniki BMI wg skali WHO. """
 
         self.assertEqual(analyze_bmi(17.0), "Niedowaga")        # Sprawdzam, czy BMI 17.0 jest poprawnie sklasyfikowane jako "Niedowaga"
+        self.assertEqual(analyze_bmi(22.0), "Waga prawidłowa")  # Sprawdzam, czy BMI 22.0 jest poprawnie sklasyfikowane jako "Waga prawidłowa"
