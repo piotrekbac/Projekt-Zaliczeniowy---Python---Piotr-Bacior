@@ -53,7 +53,6 @@ class TestFileHandler(unittest.TestCase) :
                 reader = csv.reader(f, delimiter=';')                   # Tworzymy czytnik CSV z separatorem ';'
                 rows = list(reader)                                     # Konwertujemy czytnik na listę, aby łatwo sprawdzić zawartość
 
-
         # Pierwszy wiersz powinien być nagłówkiem
                 self.assertEqual(rows[0][1], "Waga (kg)")
 
