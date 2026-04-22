@@ -1,1 +1,2 @@
-import unnittest                            # importuję moduł unittest do tworzenia testów jednostkowych
+import unnittest                                                     # importuję moduł unittest do tworzenia testów jednostkowych
+import src.analyzer import analyze_bmi, generate_bmi_bar             # importuję funkcje analyze_bmi i generate_bmi_bar z modułu analyzer
