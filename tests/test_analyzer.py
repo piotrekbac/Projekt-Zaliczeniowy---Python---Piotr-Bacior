@@ -22,3 +22,5 @@ class TestAnalyzer(unnittest.TestCase) :
 
 
     def test_analyze_bmi_exceptions(self) :
+        
+        """ Sprawdza, czy funkcja wyłapuje niemożliwe (zerowe/ujemne) BMI. """
