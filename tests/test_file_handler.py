@@ -44,3 +44,6 @@ class TestFileHandler(unittest.TestCase) :
         # Tworzymy bezpieczny, tymczasowy folder dla testu
         with tempfile.TemporaryDirectory() as tmpdir:
             test_csv = os.path.join(tmpdir, "test_baza.csv")
+
+        # Zapisujemy dane
+            save_to_csv(80.0, 1.80, 24.6, "Norma", 60.0, 80.0, filename=test_csv)
