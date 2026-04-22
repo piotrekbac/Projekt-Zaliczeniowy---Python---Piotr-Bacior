@@ -12,9 +12,10 @@ from src.file_handler import save_result_to_file, read_history_from_file, save_t
 # Tworzę klasę TestFileHandler, która dziedziczy po unittest.TestCase, co pozwala mi definiować metody testowe dla funkcji save_result_to_file, read_history_from_file i save_to_csv
 class TestFileHandler(unittest.TestCase) : 
 
-    """ Klasa testująca zapis i odczyt z systemu plików (TXT oraz CSV). """
+    """ Klasa testująca zapis i odczyt z systemu plików (TXT oraz CSV) """
 
     
+    # Definiuję metodę testową, która sprawdza, czy funkcja save_result_to_file poprawnie zapisuje dane do pliku tekstowego, a następnie czy funkcja read_history_from_file poprawnie odczytuje te dane
     def test_txt_read_write(self) :
 
-        """ Sprawdza cykl życia pliku tekstowego: zapisz dane i odczytaj je poprawnie. """
+        """ Sprawdza cykl życia pliku tekstowego: zapisz dane i odczytaj je poprawnie """
