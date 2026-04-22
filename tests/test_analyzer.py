@@ -4,4 +4,6 @@ from src.analyzer import analyze_bmi, generate_bmi_bar               # importuj�
 # Piotr Bacior - 15 722 - 2026 - Python - MH
 
 # Tworzę klasę TestAnalyzer, która dziedziczy po unittest.TestCase, co pozwala mi definiować metody testowe dla funkcji analyze_bmi i generate_bmi_bar
-class TestAnalzyer(unnittest.TestCase): 
+class TestAnalzyer(unnittest.TestCase) : 
+
+    """ Klasa testująca analizę wyników i generowanie interfejsu tekstowego. """
