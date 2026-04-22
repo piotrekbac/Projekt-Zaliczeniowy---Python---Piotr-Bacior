@@ -54,5 +54,8 @@ class TestFileHandler(unittest.TestCase) :
                 rows = list(reader)                                     # Konwertujemy czytnik na listę, aby łatwo sprawdzić zawartość
 
 
-         # Pierwszy wiersz powinien być nagłówkiem
+        # Pierwszy wiersz powinien być nagłówkiem
                 self.assertEqual(rows[0][1], "Waga (kg)")
+
+        # Drugi wiersz powinien zawierać nasze dane
+                self.assertEqual(rows[1][1], "80.0")
