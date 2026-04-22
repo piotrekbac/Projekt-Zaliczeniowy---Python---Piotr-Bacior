@@ -41,3 +41,6 @@ class TestAnalyzer(unnittest.TestCase) :
         with self.assertRaises(ValueError):
             analyze_bmi(-0.1)
    
+
+   
+    def test_generate_bmi_bar(self) :
