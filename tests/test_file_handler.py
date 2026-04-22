@@ -36,6 +36,7 @@ class TestFileHandler(unittest.TestCase) :
             self.assertIn("Wzrost: 1.75", history[0])           # Sprawdzamy czy nasz wzrost się zapisał
 
     
+    # Definiuję metodę testową, która sprawdza, czy funkcja save_to_csv poprawnie generuje ustrukturyzowany plik CSV z nagłówkami i odpowiednimi danymi
     def test_csv_write(self) :
 
         """ Sprawdza, czy funkcja prawidłowo generuje ustrukturyzowany plik CSV z nagłówkami. """
