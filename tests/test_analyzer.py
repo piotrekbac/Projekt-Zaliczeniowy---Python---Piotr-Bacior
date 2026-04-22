@@ -48,9 +48,9 @@ class TestAnalyzer(unnittest.TestCase) :
         """ Sprawdza poprawne tworzenie tekstowego paska skali (ASCII). """
 
         # Test skrajnie niskiego BMI (znacznik 'O' powinien być na samym początku lub blisko)
-        bar_low = generate_bmi_bar(10.0) # Zostanie zablokowane na min_scale 15.0
+        bar_low = generate_bmi_bar(10.0)        # Zostanie zablokowane na min_scale 15.0
         self.assertTrue(bar_low.startswith("15.0[O-"))
 
         # Test prawidłowej długości paska (40 znaków w nawiasach + napisy)
         bar_normal = generate_bmi_bar(25.0)
-        self.assertIn("O", bar_normal) # Pasek musi zawierać znacznik
+        self.assertIn("O", bar_normal)          # Pasek musi zawierać znacznik
