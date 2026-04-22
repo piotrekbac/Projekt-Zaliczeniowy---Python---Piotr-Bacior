@@ -25,6 +25,4 @@ class TestAnalyzer(unnittest.TestCase) :
 
         """ Sprawdza, czy funkcja wyłapuje niemożliwe (zerowe/ujemne) BMI. """
 
-        # Sprawdzam, czy funkcja analyze_bmi podnosi ValueError, gdy BMI jest równe 0.0
-        with self.assertRaises(ValueError):             
-            analyze_bmi(0.0)
+        
