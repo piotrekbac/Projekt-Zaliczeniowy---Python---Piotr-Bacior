@@ -47,3 +47,8 @@ class TestFileHandler(unittest.TestCase) :
 
         # Zapisujemy dane
             save_to_csv(80.0, 1.80, 24.6, "Norma", 60.0, 80.0, filename=test_csv)
+
+        # Otwieramy plik, żeby sprawdzić jak zapisał się wewnątrz
+            with open(test_csv, 'r', encoding='utf-8') as f:
+                reader = csv.reader(f, delimiter=';')
+                rows = list(reader)
