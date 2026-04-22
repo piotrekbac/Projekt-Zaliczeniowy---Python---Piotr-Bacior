@@ -18,3 +18,7 @@ class TestAnalyzer(unnittest.TestCase) :
         self.assertEqual(analyze_bmi(22.0), "Waga prawidłowa")  # Sprawdzam, czy BMI 22.0 jest poprawnie sklasyfikowane jako "Waga prawidłowa"
         self.assertEqual(analyze_bmi(27.0), "Nadwaga")          # Sprawdzam, czy BMI 27.0 jest poprawnie sklasyfikowane jako "Nadwaga"
         self.assertEqual(analyze_bmi(35.0), "Otyłość")          # Sprawdzam, czy BMI 35.0 jest poprawnie sklasyfikowane jako "Otyłość"
+
+
+
+    def test_analyze_bmi_exceptions(self) :
