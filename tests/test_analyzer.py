@@ -8,5 +8,7 @@ class TestAnalzyer(unnittest.TestCase) :
 
     """ Klasa testująca analizę wyników i generowanie interfejsu tekstowego. """
 
+    # 
+    def test_analyze_bmi_categories(self) :
 
-    def test_analyze_bmi_categories(self):
+        """ Sprawdza, czy funkcja poprawnie kategoryzuje wyniki BMI wg skali WHO. """
