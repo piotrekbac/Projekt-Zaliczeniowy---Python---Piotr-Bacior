@@ -13,3 +13,6 @@ from src.file_handler import save_result_to_file, read_history_from_file, save_t
 class TestFileHandler(unittest.TestCase) : 
 
     """ Klasa testująca zapis i odczyt z systemu plików (TXT oraz CSV). """
+
+
+    def test_txt_read_write(self) :
