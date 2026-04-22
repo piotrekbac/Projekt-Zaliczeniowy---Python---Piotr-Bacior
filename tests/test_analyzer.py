@@ -32,4 +32,8 @@ class TestAnalyzer(unnittest.TestCase) :
         # Sprawdzam, czy funkcja analyze_bmi podnosi ValueError, gdy BMI jest mniejsze od 0.0
         with self.assertRaises(ValueError):
             analyze_bmi(-5.0)
+
+        # Sprawdzam, czy funkcja analyze_bmi podnosi ValueError, gdy BMI jest równe -1.0
+        with self.assertRaises(ValueError):
+            analyze_bmi(-1.0)
    
