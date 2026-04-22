@@ -49,6 +49,6 @@ class TestFileHandler(unittest.TestCase) :
             save_to_csv(80.0, 1.80, 24.6, "Norma", 60.0, 80.0, filename=test_csv)
 
         # Otwieramy plik, żeby sprawdzić jak zapisał się wewnątrz
-            with open(test_csv, 'r', encoding='utf-8') as f:
-                reader = csv.reader(f, delimiter=';')
-                rows = list(reader)
+            with open(test_csv, 'r', encoding='utf-8') as f:            # Otwieramy plik CSV do odczytu
+                reader = csv.reader(f, delimiter=';')                   # Tworzymy czytnik CSV z separatorem ';'
+                rows = list(reader)                                     # Konwertujemy czytnik na listę, aby łatwo sprawdzić zawartość
