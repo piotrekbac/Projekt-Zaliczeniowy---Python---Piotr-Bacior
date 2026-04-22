@@ -7,3 +7,7 @@ import csv                  # importuję moduł csv do obsługi plików CSV
 from src.file_handler import save_result_to_file, read_history_from_file, save_to_csv   
 
 # Piotr Bacior - 15 722 - 2026 - Python - MH
+
+
+# Tworzę klasę TestFileHandler, która dziedziczy po unittest.TestCase, co pozwala mi definiować metody testowe dla funkcji save_result_to_file, read_history_from_file i save_to_csv
+class TestFileHandler(unittest.TestCase) : 
