@@ -2,3 +2,6 @@ import unnittest                                                     # importuj�
 from src.analyzer import analyze_bmi, generate_bmi_bar               # importuję funkcje analyze_bmi i generate_bmi_bar z modułu analyzer
 
 # Piotr Bacior - 15 722 - 2026 - Python - MH
+
+# Tworzę klasę TestAnalyzer, która dziedziczy po unittest.TestCase, co pozwala mi definiować metody testowe dla funkcji analyze_bmi i generate_bmi_bar
+class TestAnalzyer(unnittest.TestCase): 
