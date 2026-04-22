@@ -19,3 +19,7 @@ class TestFileHandler(unittest.TestCase) :
     def test_txt_read_write(self) :
 
         """ Sprawdza cykl życia pliku tekstowego: zapisz dane i odczytaj je poprawnie """
+
+        # Tworzymy bezpieczny, tymczasowy folder dla testu
+        with tempfile.TemporaryDirectory() as tmpdir:
+            test_file = os.path.join(tmpdir, "test_historia.txt")
