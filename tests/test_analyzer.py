@@ -45,4 +45,8 @@ class TestAnalyzer(unnittest.TestCase) :
     # Definiuję metodę testową, która sprawdza, czy funkcja generate_bmi_bar poprawnie tworzy tekstowy pasek skali (ASCII) dla różnych wartości BMI
     def test_generate_bmi_bar(self) :
 
-         """ Sprawdza poprawne tworzenie tekstowego paska skali (ASCII). """
+        """ Sprawdza poprawne tworzenie tekstowego paska skali (ASCII). """
+
+        # Test skrajnie niskiego BMI (znacznik 'O' powinien być na samym początku lub blisko)
+        bar_low = generate_bmi_bar(10.0) # Zostanie zablokowane na min_scale 15.0
+        self.assertTrue(bar_low.startswith("15.0[O-"))
