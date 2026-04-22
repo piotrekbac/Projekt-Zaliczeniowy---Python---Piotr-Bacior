@@ -14,5 +14,7 @@ class TestFileHandler(unittest.TestCase) :
 
     """ Klasa testująca zapis i odczyt z systemu plików (TXT oraz CSV). """
 
-
+    
     def test_txt_read_write(self) :
+
+        """ Sprawdza cykl życia pliku tekstowego: zapisz dane i odczytaj je poprawnie. """
