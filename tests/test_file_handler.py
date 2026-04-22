@@ -34,3 +34,6 @@ class TestFileHandler(unittest.TestCase) :
             self.assertEqual(len(history), 1)                   # Powinna być dokładnie 1 linijka
             self.assertIn("Waga: 70.0", history[0])             # Sprawdzamy czy nasza waga się zapisała
             self.assertIn("Wzrost: 1.75", history[0])           # Sprawdzamy czy nasz wzrost się zapisał
+
+    
+     def test_csv_write(self) :
