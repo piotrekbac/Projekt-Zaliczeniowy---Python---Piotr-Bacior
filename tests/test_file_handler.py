@@ -23,3 +23,6 @@ class TestFileHandler(unittest.TestCase) :
         # Tworzymy bezpieczny, tymczasowy folder dla testu
         with tempfile.TemporaryDirectory() as tmpdir:
             test_file = os.path.join(tmpdir, "test_historia.txt")
+
+        # Krok 1: Zapis
+            save_result_to_file(70.0, 1.75, 22.8, "Waga prawidłowa", 50.0, 70.0, filename=test_file)
