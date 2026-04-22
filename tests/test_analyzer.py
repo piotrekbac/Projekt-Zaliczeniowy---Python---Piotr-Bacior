@@ -42,7 +42,7 @@ class TestAnalyzer(unnittest.TestCase) :
             analyze_bmi(-0.1)
    
 
-    
+    # Definiuję metodę testową, która sprawdza, czy funkcja generate_bmi_bar poprawnie tworzy tekstowy pasek skali (ASCII) dla różnych wartości BMI
     def test_generate_bmi_bar(self) :
 
          """ Sprawdza poprawne tworzenie tekstowego paska skali (ASCII). """
