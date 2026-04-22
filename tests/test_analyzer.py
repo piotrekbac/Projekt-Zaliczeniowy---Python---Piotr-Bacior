@@ -7,3 +7,6 @@ from src.analyzer import analyze_bmi, generate_bmi_bar               # importuj�
 class TestAnalzyer(unnittest.TestCase) : 
 
     """ Klasa testująca analizę wyników i generowanie interfejsu tekstowego. """
+
+
+    def test_analyze_bmi_categories(self):
