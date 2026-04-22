@@ -1,0 +1,1 @@
+import unittest             # importuję moduł unittest do tworzenia testów jednostkowych
