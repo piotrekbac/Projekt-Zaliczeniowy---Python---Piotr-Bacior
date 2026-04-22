@@ -26,3 +26,6 @@ class TestFileHandler(unittest.TestCase) :
 
         # Krok 1: Zapis
             save_result_to_file(70.0, 1.75, 22.8, "Waga prawidłowa", 50.0, 70.0, filename=test_file)
+
+        # Krok 2: Odczyt
+            history = read_history_from_file(filename=test_file)
