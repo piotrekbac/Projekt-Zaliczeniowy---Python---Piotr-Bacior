@@ -18,3 +18,7 @@ Wielomodułowa aplikacja konsolowa napisana w języku Python. Projekt wykracza p
 *   **Idiotoodporność (Error Handling):** Zaawansowana obsługa wyjątków wyłapująca litery, zera, wartości ujemne oraz inteligentnie konwertująca wzrost podany w centymetrach na metry.
 
 ---
+
+## Architektura i Struktura Projektu
+
+Projekt został napisany z zachowaniem dobrych praktyk inżynierii oprogramowania (Separation of Concerns). Kod podzielono na logiczne moduły:
