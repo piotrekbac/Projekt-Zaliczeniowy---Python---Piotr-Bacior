@@ -22,3 +22,20 @@ Wielomodułowa aplikacja konsolowa napisana w języku Python. Projekt wykracza p
 ## Architektura i Struktura Projektu
 
 Projekt został napisany z zachowaniem dobrych praktyk inżynierii oprogramowania (Separation of Concerns). Kod podzielono na logiczne moduły:
+
+
+
+```text
+ Projekt-Zaliczeniowy
+ ┣  src
+ ┃ ┣  analyzer.py        # Logika kategoryzacji BMI i rysowania paska ASCII
+ ┃ ┣  calculator.py      # Algorytmy matematyczne (BMI, BMR, TDEE, waga idealna)
+ ┃ ┣  charts.py          # Generowanie wykresów z użyciem Matplotlib i Pandas
+ ┃ ┗  file_handler.py    # Odczyt i zapis danych (TXT oraz CSV)
+ ┣  tests
+ ┃ ┣  test_analyzer.py   # Testy analizatora
+ ┃ ┣  test_calculator.py # Testy funkcji matematycznych
+ ┃ ┗  test_file_handler.py# Testy I/O (z użyciem wirtualnych plików tempfile)
+ ┣  main.py              # Główna pętla programu i interfejs CLI
+ ┗  README.md            # Dokumentacja projektu
+ ```
