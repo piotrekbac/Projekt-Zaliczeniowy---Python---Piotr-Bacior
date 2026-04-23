@@ -61,11 +61,9 @@ python -m unittest discover -s tests
 
 ---
 
-
 ## Architektura i Struktura Projektu
 
 Projekt został napisany z zachowaniem dobrych praktyk inżynierii oprogramowania (Separation of Concerns). Kod podzielono na logiczne moduły:
-
 
 
 ```text
