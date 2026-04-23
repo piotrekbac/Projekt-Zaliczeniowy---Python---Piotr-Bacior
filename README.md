@@ -50,6 +50,14 @@ python main.py
 
 ---
 
+## Testy Jednostkowe (Unit Tests)
+
+Projekt może pochwalić się 100% pokryciem kodu testami jednostkowymi. Napisano łącznie 10 niezależnych testów, które sprawdzają zarówno poprawne wyniki matematyczne, zachowanie przyjmowania ujemnych wartości, jak i mockowanie zapisu do plików tymczasowych.
+Aby uruchomić pakiet testów, wpisz w terminalu:
+
+---
+
+
 ## Architektura i Struktura Projektu
 
 Projekt został napisany z zachowaniem dobrych praktyk inżynierii oprogramowania (Separation of Concerns). Kod podzielono na logiczne moduły:
