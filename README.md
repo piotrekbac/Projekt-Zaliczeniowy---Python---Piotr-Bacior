@@ -44,6 +44,10 @@ pip install pandas matplotlib numpy
 
 Aby odpalić Asystenta Zdrowia, uruchom główny plik w swoim terminalu:
 
+```bash
+python main.py
+```
+
 ---
 
 ## Architektura i Struktura Projektu
