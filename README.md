@@ -27,12 +27,12 @@ Projekt został napisany z zachowaniem dobrych praktyk inżynierii oprogramowani
 
 ```text
  Projekt-Zaliczeniowy
- ┣  src
+ ┣  src                                     
  ┃ ┣  analyzer.py                           # Logika kategoryzacji BMI i rysowania paska ASCII
  ┃ ┣  calculator.py                         # Algorytmy matematyczne (BMI, BMR, TDEE, waga idealna)
  ┃ ┣  charts.py                             # Generowanie wykresów z użyciem Matplotlib i Pandas
  ┃ ┗  file_handler.py                       # Odczyt i zapis danych (TXT oraz CSV)
- ┣  tests
+ ┣  tests                                   # Folder z testami (w nim test_analyzer.py, test_calculator.py, test_file_handler.py)
  ┃ ┣  test_analyzer.py                      # Testy analizatora
  ┃ ┣  test_calculator.py                    # Testy funkcji matematycznych
  ┃ ┗  test_file_handler.py                  # Testy I/O (z użyciem wirtualnych plików tempfile)
