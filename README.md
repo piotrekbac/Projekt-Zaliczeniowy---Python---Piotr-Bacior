@@ -40,6 +40,12 @@ pip install pandas matplotlib numpy
 
 ---
 
+## Uruchomienie Programu
+
+Aby odpalić Asystenta Zdrowia, uruchom główny plik w swoim terminalu:
+
+---
+
 ## Architektura i Struktura Projektu
 
 Projekt został napisany z zachowaniem dobrych praktyk inżynierii oprogramowania (Separation of Concerns). Kod podzielono na logiczne moduły:
