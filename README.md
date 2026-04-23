@@ -23,6 +23,12 @@ Wielomodułowa aplikacja konsolowa napisana w języku Python. Projekt wykracza p
 
 ### 1. Inicjalizacja projektu
 
+Aby móc w pełni korzystać z programu (w tym z interaktywnych wykresów), wymagane jest zainstalowanie zewnętrznych bibliotek do analizy danych.
+Sklonuj repozytorium na swój dysk:
+
+```bash
+git clone https://github.com/piotrekbac/Projekt-Zaliczeniowy---Python---Piotr-Bacior.git
+```
 
 ---
 
