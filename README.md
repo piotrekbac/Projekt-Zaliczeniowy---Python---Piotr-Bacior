@@ -55,6 +55,10 @@ python main.py
 Projekt może pochwalić się 100% pokryciem kodu testami jednostkowymi. Napisano łącznie 10 niezależnych testów, które sprawdzają zarówno poprawne wyniki matematyczne, zachowanie przyjmowania ujemnych wartości, jak i mockowanie zapisu do plików tymczasowych.
 Aby uruchomić pakiet testów, wpisz w terminalu:
 
+```bash
+python -m unittest discover -s tests
+```
+
 ---
 
 
