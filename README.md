@@ -19,6 +19,13 @@ Wielomodułowa aplikacja konsolowa napisana w języku Python. Projekt wykracza p
 
 ---
 
+## Instrukcja uruchomienia
+
+### 1. Inicjalizacja projektu
+
+
+---
+
 ## Architektura i Struktura Projektu
 
 Projekt został napisany z zachowaniem dobrych praktyk inżynierii oprogramowania (Separation of Concerns). Kod podzielono na logiczne moduły:
