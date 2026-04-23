@@ -30,6 +30,13 @@ Sklonuj repozytorium na swój dysk:
 git clone https://github.com/piotrekbac/Projekt-Zaliczeniowy---Python---Piotr-Bacior.git
 ```
 
+(Opcjonalnie) Uruchom wirtualne środowisko (venv).
+Zainstaluj wymagane biblioteki:
+
+```bash
+pip install pandas matplotlib numpy
+```
+
 ---
 
 ## Architektura i Struktura Projektu
