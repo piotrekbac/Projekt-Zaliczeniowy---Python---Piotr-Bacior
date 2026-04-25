@@ -76,6 +76,7 @@ def generate_bmi_bar(bmi_value: float) -> str:
     return f"15.0[{left_part}{marker}{right_part}]40.0+"
 
 
+# Definiuję funkcję do obliczania różnicy w kilogramach między aktualną a idealną wagą - dane wejściowe są typu float, oczekujemy wyniku typu str
 def calculate_weight_difference(current_weight: float, min_ideal: float, max_ideal: float) -> str :
 
     """ 
@@ -91,5 +92,4 @@ def calculate_weight_difference(current_weight: float, min_ideal: float, max_ide
     - Oblicza różnicę między aktualną wagą a maksymalną idealną wagą
     - Zwraca sformatowany string z informacją o tym, ile kilogramów użytkownik musi schudnąć lub przytyć, aby osiągnąć idealną wagę
 
-    
     """
