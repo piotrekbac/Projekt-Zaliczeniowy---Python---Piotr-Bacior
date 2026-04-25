@@ -182,6 +182,9 @@ def main():
 
                 # Ustawiamy cel dietetyczny dla osób z nadwagą lub otyłością, który ma na celu pomóc im schudnąć w zdrowy sposób
                 cel_dietetyczny = "redukcja"
+    
+    
+                docelowe_kcal = round(tdee - 500, 2)
 
             # Wywołujemy funkcję save_result_to_file, aby zapisać wynik obliczeń do pliku tekstowego
             save_result_to_file(waga, wzrost, moje_bmi, kategoria, min_waga, max_waga)
