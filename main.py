@@ -177,8 +177,10 @@ def main():
                 # Ustawiamy cel dietetyczny dla osób z niedowagą, który ma na celu pomóc im przybrać na wadze w zdrowy sposób
                 cel_dietetyczny = "przybranie na wadze"
 
-            
+            # Ustawiamy cel dietetyczny dla osób z normą, który ma na celu pomóc im utrzymać zdrową wagę
             elif kategoria in ["Nadwaga", "Otyłość"]:
+
+                # Ustawiamy cel dietetyczny dla osób z nadwagą lub otyłością, który ma na celu pomóc im schudnąć w zdrowy sposób
                 cel_dietetyczny = "redukcja"
 
             # Wywołujemy funkcję save_result_to_file, aby zapisać wynik obliczeń do pliku tekstowego
