@@ -183,7 +183,7 @@ def main():
                 # Ustawiamy cel dietetyczny dla osób z nadwagą lub otyłością, który ma na celu pomóc im schudnąć w zdrowy sposób
                 cel_dietetyczny = "redukcja"
     
-    
+                # Obliczamy docelowe zapotrzebowanie kaloryczne dla osób z nadwagą lub otyłością, które mają na celu schudnąć w zdrowy sposób, odejmując 500 kcal od obliczonego TDEE
                 docelowe_kcal = round(tdee - 500, 2)
 
             # Wywołujemy funkcję save_result_to_file, aby zapisać wynik obliczeń do pliku tekstowego
