@@ -115,4 +115,6 @@ def calculate_weight_difference(current_weight: float, min_ideal: float, max_ide
     
     # Jeśli aktualna waga mieści się w idealnym przedziale, zwracamy informację o tym, że użytkownik jest w idealnym przedziale wagowym
     else:
+
+        # Zwracamy informację o tym, że użytkownik jest w idealnym przedziale wagowym
         return "Jesteś w idealnym przedziale wagowym! Oby tak dalej!"
