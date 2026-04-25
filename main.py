@@ -204,9 +204,11 @@ def main():
                 # Obliczamy docelowe zapotrzebowanie kaloryczne dla osób z normą, które mają na celu utrzymać zdrową wagę, ustawiając je równe obliczonemu TDEE
                 docelowe_kcal = tdee
 
-
             # Wyliczamy białko, tłuszcze, węgle
             bialko, tluszcze, wegle = calculate_macros(docelowe_kcal, cel_dietetyczny)
+
+
+            # Zapis do bazy danych (plik tekstowy i CSV)
 
             # Wywołujemy funkcję save_result_to_file, aby zapisać wynik obliczeń do pliku tekstowego
             save_result_to_file(waga, wzrost, moje_bmi, kategoria, min_waga, max_waga)
