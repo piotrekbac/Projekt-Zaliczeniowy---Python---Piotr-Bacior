@@ -192,5 +192,9 @@ def calculate_macros(target_kcal: float, goal: str) -> tuple[int, int, int] :
     """
     Oblicza zapotrzebowanie na makroskładniki (Białko, Tłuszcze, Węglowodany) w gramach.
 
-    
+    Oczekiwane dane wejściowe:
+    - target_kcal: docelowa ilość kalorii (float)
+    - goal: cel dietetyczny ("redukcja", "masa", "utrzymanie") (str)
+
+
     """
