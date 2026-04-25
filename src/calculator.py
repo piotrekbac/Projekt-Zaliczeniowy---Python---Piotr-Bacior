@@ -187,4 +187,10 @@ def calculate_tdee(bmr: float, activity_level: str) -> float:
     return round(tdee, 2)
 
 
-def calculate_macros(target_kcal: float, goal: str) -> tuple[int, int, int]:
+def calculate_macros(target_kcal: float, goal: str) -> tuple[int, int, int] :
+
+    """
+    Oblicza zapotrzebowanie na makroskładniki (Białko, Tłuszcze, Węglowodany) w gramach.
+
+    
+    """
