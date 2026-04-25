@@ -169,7 +169,8 @@ def main():
             tdee = calculate_tdee(bmr, aktywnosc)
 
             # Logika dietetyczna i makroskładnikowa 
-
+            if kategoria == "Niedowaga":
+                cel_dietetyczny = "przybranie na wadze"
 
 
             # Wywołujemy funkcję save_result_to_file, aby zapisać wynik obliczeń do pliku tekstowego
