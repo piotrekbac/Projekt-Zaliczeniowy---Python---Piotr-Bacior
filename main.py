@@ -246,6 +246,19 @@ def main():
             print(f" Podstawowa przemiana materii (BMR):      {bmr} kcal")      # Wyświetlamy obliczoną podstawową przemianę materii (BMR) użytkownika
             print(f" Zapotrzebowanie (utrzymanie wagi):       {tdee} kcal")     # Wyświetlamy obliczone całkowite dzienne zapotrzebowanie kaloryczne (TDEE) użytkownika, które jest ilością kalorii potrzebną do utrzymania aktualnej wagi
 
+            
+            print("\n" + "." * 70)
+            print(f" ZALECENIA DLA CELU: {cel_dietetyczny.upper()}")
+            print(f" Spożycie kaloryczne: {docelowe_kcal} kcal / dzień")
+            print(f" -> Białko:       {bialko} g")
+            print(f" -> Tłuszcze:     {tluszcze} g")
+            print(f" -> Węglowodany:  {wegle} g")
+            
+            if kategoria == "Otyłość":
+                print("\n [!] Uwaga: W przypadku otyłości zalecamy konsultację")
+                print("     z lekarzem lub dyplomowanym dietetykiem klinicznym.")
+
+
 
             # Porady dietetyczne na podstawie kategorii zdrowotnej
             print(f"{'PORADA DIETETYCZNA':^70}")
