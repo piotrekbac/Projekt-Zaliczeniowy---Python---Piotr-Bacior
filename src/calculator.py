@@ -248,3 +248,6 @@ def calculate_macros(target_kcal: float, goal: str) -> tuple[int, int, int] :
 
     # Obliczamy ilość węglowodanów w gramach, dzieląc kalorie przeznaczone na węglowodany przez 4 (kcal/g)
     carbs_g = (target_kcal * c_pct) / 4
+
+    # Zwracamy krotkę z ilością białka, tłuszczów i węglowodanów w pełnych gramach (int)
+    return int(protein_g), int(fats_g), int(carbs_g)
