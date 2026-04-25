@@ -222,9 +222,13 @@ def main():
             print(f"{'Podsumowanie Twojego pomiaru BMI:':^70}")                 # Wyświetlamy nagłówek podsumowania wyników
             print("\n" + "=" * 70 + "\n")                                       # Dodajemy linię oddzielającą wyniki od reszty interfejsu
 
-            print(f"Podany wzrost: {wzrost} m, podana waga: {waga} kg")         # Wyświetlamy podane dane wejściowe
-            print(f"BMI: {moje_bmi}")                                           # Wyświetlamy BMI
-            print(f"Twoja kategoria zdrowotna: {kategoria}")                    # Wyświetlamy kategorię zdrowotną
+            print(f" Wzrost:                      {wzrost} m")         
+            print(f" Waga:                        {waga} kg")
+            print(f" Wskaźnik BMI:                {moje_bmi}")                                           
+            print(f" Kategoria zdrowotna:         {kategoria}")                    
+            print(f" Zakres idealnej wagi:        {min_waga} - {max_waga} kg")   
+            print(f" Cel wagowy:                  {roznica_wagi}")   
+
 
             # Wyświetlamy zakres idealnej wagi dla podanego wzrostu
             print(f"Zakres idealnej wagi dla Twojego wzrostu: {min_waga} - {max_waga} kg")   
