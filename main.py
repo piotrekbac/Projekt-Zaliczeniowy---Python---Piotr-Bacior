@@ -195,6 +195,9 @@ def main():
                     # Obliczamy docelowe zapotrzebowanie kaloryczne dla osób z otyłością, które mają na celu schudnąć w zdrowy sposób, odejmując 650 kcal od obliczonego TDEE, aby zapewnić bardziej agresywną redukcję kalorii, która może być potrzebna w przypadku otyłości
                     docelowe_kcal = round(tdee - 650, 2)
 
+            # Ustawiamy cel dietetyczny dla osób z normą, który ma na celu pomóc im utrzymać zdrową wagę
+            else:
+                cel_dietetyczny = "utrzymanie"
 
             # Wywołujemy funkcję save_result_to_file, aby zapisać wynik obliczeń do pliku tekstowego
             save_result_to_file(waga, wzrost, moje_bmi, kategoria, min_waga, max_waga)
