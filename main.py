@@ -168,6 +168,10 @@ def main():
             # Wywołujemy funkcję calculate_tdee, aby obliczyć całkowite dzienne zapotrzebowanie kaloryczne (TDEE) na podstawie obliczonego BMR i poziomu aktywności fizycznej
             tdee = calculate_tdee(bmr, aktywnosc)
 
+            # Logika dietetyczna i makroskładnikowa 
+
+
+
             # Wywołujemy funkcję save_result_to_file, aby zapisać wynik obliczeń do pliku tekstowego
             save_result_to_file(waga, wzrost, moje_bmi, kategoria, min_waga, max_waga)
 
