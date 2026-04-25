@@ -81,5 +81,10 @@ def calculate_weight_difference(current_weight: float, min_ideal: float, max_ide
     """ 
     Oblicza i zwraca różnicę w kilogramach pomiędzy obecną a idealną wagą.
 
+    Oczekiwane dane wejściowe:
+    - current_weight: aktualna waga użytkownika (float)
+    - min_ideal: minimalna idealna waga (float)
+    - max_ideal: maksymalna idealna waga (float)
     
+
     """
