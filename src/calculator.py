@@ -185,3 +185,6 @@ def calculate_tdee(bmr: float, activity_level: str) -> float:
 
     # Zaokrąglamy wynik do dwóch miejsc po przecinku
     return round(tdee, 2)
+
+
+def calculate_macros(target_kcal: float, goal: str) -> tuple[int, int, int]:
