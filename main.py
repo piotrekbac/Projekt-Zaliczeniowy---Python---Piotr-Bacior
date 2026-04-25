@@ -159,6 +159,9 @@ def main():
             # Tworzymy graficzny pasek wizualizujący wartość BMI, wywołując funkcję generate_bmi_bar z modułu analyzer
             pasek_wizualny = generate_bmi_bar(moje_bmi)
 
+            # Wywołujemy funkcję calculate_weight_difference, aby obliczyć różnicę w kilogramach między aktualną a idealną wagą
+            roznica_wagi = calculate_weight_difference(waga, min_waga, max_waga)   
+
             # Wywołujemy funkcję calculate_bmr, aby obliczyć podstawową przemianę materii (BMR) na podstawie wagi, wzrostu, wieku i płci
             bmr = calculate_bmr(waga, wzrost, wiek, plec)   
 
