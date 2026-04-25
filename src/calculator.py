@@ -219,6 +219,10 @@ def calculate_macros(target_kcal: float, goal: str) -> tuple[int, int, int] :
     
     # Sprawdzamy, czy cel jest jednym z określonych wartości, aby uniknąć błędów przy obliczaniu makroskładników
     if goal not in ["redukcja", "masa", "utrzymanie"]:
-        
+
         # Informujemy użytkownika, że cel musi być jednym z określonych wartości
         raise ValueError("Cel musi być jednym z: 'redukcja', 'masa', 'utrzymanie'.")
+    
+    
+    # Ustalanie proporcji % (Białko, Tłuszcze, Węglowodany)
+    if goal == "redukcja":
