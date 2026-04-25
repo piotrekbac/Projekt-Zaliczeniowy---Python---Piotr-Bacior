@@ -262,6 +262,8 @@ def main():
                 print("     z lekarzem lub dyplomowanym dietetykiem klinicznym.")
 
 
+            print("=" * 70 + "\n")   
+
 
             # Porady dietetyczne na podstawie kategorii zdrowotnej
             print(f"{'PORADA DIETETYCZNA':^70}")
