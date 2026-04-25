@@ -246,13 +246,16 @@ def main():
             print(f" Podstawowa przemiana materii (BMR):      {bmr} kcal")      # Wyświetlamy obliczoną podstawową przemianę materii (BMR) użytkownika
             print(f" Zapotrzebowanie (utrzymanie wagi):       {tdee} kcal")     # Wyświetlamy obliczone całkowite dzienne zapotrzebowanie kaloryczne (TDEE) użytkownika, które jest ilością kalorii potrzebną do utrzymania aktualnej wagi
 
-            
+
             print("\n" + "." * 70)
-            print(f" ZALECENIA DLA CELU: {cel_dietetyczny.upper()}")
-            print(f" Spożycie kaloryczne: {docelowe_kcal} kcal / dzień")
-            print(f" -> Białko:       {bialko} g")
-            print(f" -> Tłuszcze:     {tluszcze} g")
-            print(f" -> Węglowodany:  {wegle} g")
+
+            # Sekcja zaleceń dietetycznych na podstawie kategorii zdrowotnej, do której należy użytkownik, oraz obliczonego TDEE, która ma na celu pomóc mu osiągnąć jego cel dietetyczny (np. przybranie na wadze dla osób z niedowagą) i wyświetla odpowiednie porady dietetyczne w sekcji "PORADA DIETETYCZNA" w podsumowaniu wyników
+
+            print(f" ZALECENIA DLA CELU: {cel_dietetyczny.upper()}")            # Wyświetlamy nagłówek dla sekcji zaleceń dietetycznych, informując użytkownika o jego celu dietetycznym (np. przybranie na wadze dla osób z niedowagą), umieszczając go na środku, aby był bardziej estetyczny i czytelny dla użytkownika w konsoli
+            print(f" Spożycie kaloryczne: {docelowe_kcal} kcal / dzień")        # Wyświetlamy zalecane spożycie kaloryczne dla użytkownika, które jest dostosowane do jego celu dietetycznego (np. przybranie na wadze dla osób z niedowagą), informując go o tym, ile kalorii powinien spożywać dziennie, aby osiągnąć swój cel dietetyczny
+            print(f" -> Białko:       {bialko} g")                              # Wyświetlamy zalecane spożycie białka dla użytkownika, które jest dostosowane do jego celu dietetycznego (np. przybranie na wadze dla osób z niedowagą), informując go o tym, ile gramów białka powinien spożywać dziennie, aby osiągnąć swój cel dietetyczny
+            print(f" -> Tłuszcze:     {tluszcze} g")                            # Wyświetlamy zalecane spożycie tłuszczów dla użytkownika, które jest dostosowane do jego celu dietetycznego (np. przybranie na wadze dla osób z niedowagą), informując go o tym, ile gramów tłuszczów powinien spożywać dziennie, aby osiągnąć swój cel dietetyczny
+            print(f" -> Węglowodany:  {wegle} g")                               # Wyświetlamy zalecane spożycie węglowodanów dla użytkownika, które jest dostosowane do jego celu dietetycznego (np. przybranie na wadze dla osób z niedowagą), informując go o tym, ile gramów węglowodanów powinien spożywać dziennie, aby osiągnąć swój cel dietetyczny
             
             if kategoria == "Otyłość":
                 print("\n [!] Uwaga: W przypadku otyłości zalecamy konsultację")
