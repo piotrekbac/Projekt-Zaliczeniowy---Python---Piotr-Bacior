@@ -93,3 +93,6 @@ def calculate_weight_difference(current_weight: float, min_ideal: float, max_ide
     - Zwraca sformatowany string z informacją o tym, ile kilogramów użytkownik musi schudnąć lub przytyć, aby osiągnąć idealną wagę
 
     """
+
+    # Obliczamy różnicę między aktualną wagą a minimalną idealną wagą
+    if current_weight < min_ideal :
