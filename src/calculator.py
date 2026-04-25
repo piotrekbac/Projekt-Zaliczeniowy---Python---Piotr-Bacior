@@ -225,12 +225,16 @@ def calculate_macros(target_kcal: float, goal: str) -> tuple[int, int, int] :
     
 
     # Ustalanie proporcji % (Białko, Tłuszcze, Węglowodany)
+    
+    # Dla redukcji: Więcej białka, by chronić mięśnie, umiarkowanie tłuszczów i węglowodanów
     if goal == "redukcja":
 
         p_pct, f_pct, c_pct = 0.30, 0.30, 0.40      # Więcej białka, by chronić mięśnie
 
+    # Więcej węgli dla energii i regeneracji, ale umiarkowanie białka i tłuszczów
     elif goal == "masa":
         p_pct, f_pct, c_pct = 0.25, 0.25, 0.50      # Więcej węgli dla energii
 
+    # Zbilansowana dieta, standardowe proporcje dla utrzymania wagi
     else:
         p_pct, f_pct, c_pct = 0.20, 0.30, 0.50      # Zbilansowana dieta
