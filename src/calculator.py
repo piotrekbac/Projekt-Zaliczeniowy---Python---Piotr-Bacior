@@ -187,6 +187,7 @@ def calculate_tdee(bmr: float, activity_level: str) -> float:
     return round(tdee, 2)
 
 
+# Definiuję funkcję do obliczania zapotrzebowania na makroskładniki (Białko, Tłuszcze, Węglowodany) w gramach - dane wejściowe są typu float i str, oczekujemy wyniku typu tuple[int, int, int]
 def calculate_macros(target_kcal: float, goal: str) -> tuple[int, int, int] :
 
     """
