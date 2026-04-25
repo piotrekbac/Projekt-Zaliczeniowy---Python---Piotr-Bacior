@@ -228,3 +228,6 @@ def calculate_macros(target_kcal: float, goal: str) -> tuple[int, int, int] :
     if goal == "redukcja":
 
         p_pct, f_pct, c_pct = 0.30, 0.30, 0.40      # Więcej białka, by chronić mięśnie
+
+    elif goal == "masa":
+        p_pct, f_pct, c_pct = 0.25, 0.25, 0.50      # Więcej węgli dla energii
