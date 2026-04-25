@@ -223,6 +223,8 @@ def calculate_macros(target_kcal: float, goal: str) -> tuple[int, int, int] :
         # Informujemy użytkownika, że cel musi być jednym z określonych wartości
         raise ValueError("Cel musi być jednym z: 'redukcja', 'masa', 'utrzymanie'.")
     
-    
+
     # Ustalanie proporcji % (Białko, Tłuszcze, Węglowodany)
     if goal == "redukcja":
+
+        p_pct, f_pct, c_pct = 0.30, 0.30, 0.40      # Więcej białka, by chronić mięśnie
