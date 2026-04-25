@@ -168,6 +168,7 @@ def main():
             # Wywołujemy funkcję calculate_tdee, aby obliczyć całkowite dzienne zapotrzebowanie kaloryczne (TDEE) na podstawie obliczonego BMR i poziomu aktywności fizycznej
             tdee = calculate_tdee(bmr, aktywnosc)
 
+
             # Logika dietetyczna i makroskładnikowa 
 
             # Na podstawie kategorii zdrowotnej, do której należy użytkownik, ustalamy cel dietetyczny (np. przybranie na wadze dla osób z niedowagą) i wyświetlamy odpowiednie porady dietetyczne w sekcji "PORADA DIETETYCZNA" w podsumowaniu wyników
@@ -176,6 +177,9 @@ def main():
                 # Ustawiamy cel dietetyczny dla osób z niedowagą, który ma na celu pomóc im przybrać na wadze w zdrowy sposób
                 cel_dietetyczny = "przybranie na wadze"
 
+            
+            elif kategoria in ["Nadwaga", "Otyłość"]:
+                cel_dietetyczny = "redukcja"
 
             # Wywołujemy funkcję save_result_to_file, aby zapisać wynik obliczeń do pliku tekstowego
             save_result_to_file(waga, wzrost, moje_bmi, kategoria, min_waga, max_waga)
