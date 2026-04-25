@@ -197,8 +197,11 @@ def main():
 
             # Ustawiamy cel dietetyczny dla osób z normą, który ma na celu pomóc im utrzymać zdrową wagę
             else:
+
+                # Ustawiamy cel dietetyczny dla osób z normą, który ma na celu pomóc im utrzymać zdrową wagę
                 cel_dietetyczny = "utrzymanie"
 
+                # Obliczamy docelowe zapotrzebowanie kaloryczne dla osób z normą, które mają na celu utrzymać zdrową wagę, ustawiając je równe obliczonemu TDEE
                 docelowe_kcal = tdee
 
             # Wywołujemy funkcję save_result_to_file, aby zapisać wynik obliczeń do pliku tekstowego
