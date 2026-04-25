@@ -205,6 +205,7 @@ def calculate_macros(target_kcal: float, goal: str) -> tuple[int, int, int] :
     - target_kcal musi być większe niż 0.
     - goal musi być jednym z: "redukcja", "masa", "utrzymanie".
 
-
+    Podnoszenie wyjątków:
+    - ValueError: jeśli target_kcal jest mniejsze lub równe 0, lub jeśli goal nie jest jednym z określonych wartości.
 
     """
