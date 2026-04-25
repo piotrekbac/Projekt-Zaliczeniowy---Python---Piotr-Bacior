@@ -231,10 +231,10 @@ def main():
 
             print("\n" + "=" * 70 + "\n")                                       # Dodajemy linię oddzielającą wyniki od reszty interfejsu
                                       
-            print(f"{'WIZUALIZACJA BMI NA SKALI':^70}")                         
-            print("-" * 70)                                       
-            print(f"{pasek_wizualny:^70}")                                      
-            print(f"{'(Niedowaga | Norma | Nadwaga | Otyłość)':^70}")      
+            print(f"{'WIZUALIZACJA BMI NA SKALI':^70}")                         # Wyświetlamy nagłówek dla sekcji wizualizacji BMI na skali
+            print("-" * 70)                                                     # Dodajemy linię oddzielającą nagłówek od wyników, aby poprawić czytelność w konsoli
+            print(f"{pasek_wizualny:^70}")                                      # Wyświetlamy graficzny pasek wizualizujący wartość BMI na skali, umieszczając go na środku, aby był bardziej estetyczny i czytelny dla użytkownika w konsoli
+            print(f"{'(Niedowaga | Norma | Nadwaga | Otyłość)':^70}")           # Wyświetlamy legendę dla paska wizualizującego wartość BMI, umieszczając ją na środku, aby była bardziej estetyczna i czytelna dla użytkownika w konsoli
 
             print("\n" + "=" * 70 + "\n")                                       # Dodajemy linię oddzielającą wyniki od reszty interfejsu
 
