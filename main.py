@@ -177,7 +177,7 @@ def main():
                 # Ustawiamy cel dietetyczny dla osób z niedowagą, który ma na celu pomóc im przybrać na wadze w zdrowy sposób
                 cel_dietetyczny = "przybranie na wadze"
 
-
+                # Obliczamy docelowe zapotrzebowanie kaloryczne dla osób z niedowagą, które mają na celu przybrać na wadze w zdrowy sposób, dodając 500 kcal do obliczonego TDEE
                 docelowe_kcal = round(tdee + 500, 2)
 
             # Ustawiamy cel dietetyczny dla osób z normą, który ma na celu pomóc im utrzymać zdrową wagę
