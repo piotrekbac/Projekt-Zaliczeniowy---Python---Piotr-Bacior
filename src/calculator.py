@@ -201,5 +201,10 @@ def calculate_macros(target_kcal: float, goal: str) -> tuple[int, int, int] :
     - Dzieli kalorie przez wartość energetyczną (Białko/Węgle = 4 kcal/g, Tłuszcz = 9 kcal/g).
     - Zwraca krotkę (Białko, Tłuszcze, Węglowodany) w pełnych gramach (int).
 
-    
+    Ograniczenia:
+    - target_kcal musi być większe niż 0.
+    - goal musi być jednym z: "redukcja", "masa", "utrzymanie".
+
+
+
     """
