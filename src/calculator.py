@@ -210,3 +210,7 @@ def calculate_macros(target_kcal: float, goal: str) -> tuple[int, int, int] :
     - ValueError: jeśli target_kcal jest mniejsze lub równe 0, lub jeśli goal nie jest jednym z określonych wartości.
 
     """
+
+    # Sprawdzamy, czy docelowe kalorie są większe niż 0, aby uniknąć błędów przy obliczaniu makroskładników
+    if target_kcal <= 0:
+        raise ValueError("Docelowe kalorie muszą być większe od zera.")   
