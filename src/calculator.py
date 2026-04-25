@@ -238,3 +238,7 @@ def calculate_macros(target_kcal: float, goal: str) -> tuple[int, int, int] :
     # Zbilansowana dieta, standardowe proporcje dla utrzymania wagi
     else:
         p_pct, f_pct, c_pct = 0.20, 0.30, 0.50      # Zbilansowana dieta
+
+
+    # Obliczamy ilość białka w gramach, dzieląc kalorie przeznaczone na białko przez 4 (kcal/g)
+    protein_g = (target_kcal * p_pct) / 4
