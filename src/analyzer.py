@@ -99,4 +99,6 @@ def calculate_weight_difference(current_weight: float, min_ideal: float, max_ide
 
         # Obliczamy, ile kilogramów brakuje do dolnej granicy normy zdrowotnej
         diff = round(min_ideal - current_weight, 1)
+
+        # Zwracamy informację o tym, ile kilogramów brakuje do dolnej granicy normy zdrowotnej
         return f"Brakuje Ci {diff} kg do dolnej granicy normy zdrowotnej."
