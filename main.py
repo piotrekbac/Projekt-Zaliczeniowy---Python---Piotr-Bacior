@@ -199,6 +199,8 @@ def main():
             else:
                 cel_dietetyczny = "utrzymanie"
 
+                docelowe_kcal = tdee
+
             # Wywołujemy funkcję save_result_to_file, aby zapisać wynik obliczeń do pliku tekstowego
             save_result_to_file(waga, wzrost, moje_bmi, kategoria, min_waga, max_waga)
 
