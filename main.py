@@ -222,12 +222,12 @@ def main():
             print(f"{'Podsumowanie Twojego pomiaru BMI:':^70}")                 # Wyświetlamy nagłówek podsumowania wyników
             print("\n" + "=" * 70 + "\n")                                       # Dodajemy linię oddzielającą wyniki od reszty interfejsu
 
-            print(f" Wzrost:                      {wzrost} m")                      # Wyświetlamy wzrost użytkownika
-            print(f" Waga:                        {waga} kg")                       # Wyświetlamy wagę użytkownika
-            print(f" Wskaźnik BMI:                {moje_bmi}")                      # Wyświetlamy obliczony wskaźnik BMI użytkownika
-            print(f" Kategoria zdrowotna:         {kategoria}")                     # Wyświetlamy kategorię zdrowotną, do której należy użytkownik na podstawie obliczonego BMI
-            print(f" Zakres idealnej wagi:        {min_waga} - {max_waga} kg")      # Wyświetlamy zakres idealnej wagi dla podanego wzrostu użytkownika
-            print(f" Cel wagowy:                  {roznica_wagi}")                  # Wyświetlamy różnicę w kilogramach między aktualną a idealną wagą użytkownika, informując go o tym, ile kilogramów powinien przybrać lub schudnąć, aby osiągnąć idealną wagę
+            print(f" Wzrost:                  {wzrost} m")                      # Wyświetlamy wzrost użytkownika
+            print(f" Waga:                    {waga} kg")                       # Wyświetlamy wagę użytkownika
+            print(f" Wskaźnik BMI:            {moje_bmi}")                      # Wyświetlamy obliczony wskaźnik BMI użytkownika
+            print(f" Kategoria zdrowotna:     {kategoria}")                     # Wyświetlamy kategorię zdrowotną, do której należy użytkownik na podstawie obliczonego BMI
+            print(f" Zakres idealnej wagi:    {min_waga} - {max_waga} kg")      # Wyświetlamy zakres idealnej wagi dla podanego wzrostu użytkownika
+            print(f" Cel wagowy:              {roznica_wagi}")                  # Wyświetlamy różnicę w kilogramach między aktualną a idealną wagą użytkownika, informując go o tym, ile kilogramów powinien przybrać lub schudnąć, aby osiągnąć idealną wagę
 
             print("\n" + "=" * 70 + "\n")                                       # Dodajemy linię oddzielającą wyniki od reszty interfejsu
                                       
