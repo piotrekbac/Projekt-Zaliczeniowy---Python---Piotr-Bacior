@@ -230,10 +230,11 @@ def main():
             print(f" Cel wagowy:                  {roznica_wagi}")                  # Wyświetlamy różnicę w kilogramach między aktualną a idealną wagą użytkownika, informując go o tym, ile kilogramów powinien przybrać lub schudnąć, aby osiągnąć idealną wagę
 
             print("\n" + "=" * 70 + "\n")                                       # Dodajemy linię oddzielającą wyniki od reszty interfejsu
-
-            print(f"{'WIZUALIZACJA BMI NA SKALI':^70}")                         # Wyświetlamy graficzny pasek wizualizujący wartość BMI
-            print(f"{pasek_wizualny:^70}")                                      # Wyświetlamy graficzny pasek wizualizujący wartość BMI
-            print(f"{'(Niedowaga | Norma | Nadwaga | Otyłość)':^70}")           # Wyświetlamy legendę dla graficznego paska wizualizacji wartości BMI
+                                      
+            print(f"{'WIZUALIZACJA BMI NA SKALI':^70}")                         
+            print("-" * 70)                                       
+            print(f"{pasek_wizualny:^70}")                                      
+            print(f"{'(Niedowaga | Norma | Nadwaga | Otyłość)':^70}")      
 
             print("\n" + "=" * 70 + "\n")                                       # Dodajemy linię oddzielającą wyniki od reszty interfejsu
 
