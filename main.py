@@ -169,7 +169,11 @@ def main():
             tdee = calculate_tdee(bmr, aktywnosc)
 
             # Logika dietetyczna i makroskładnikowa 
+
+            # Na podstawie kategorii zdrowotnej, do której należy użytkownik, ustalamy cel dietetyczny (np. przybranie na wadze dla osób z niedowagą) i wyświetlamy odpowiednie porady dietetyczne w sekcji "PORADA DIETETYCZNA" w podsumowaniu wyników
             if kategoria == "Niedowaga":
+
+                # Ustawiamy cel dietetyczny dla osób z niedowagą, który ma na celu pomóc im przybrać na wadze w zdrowy sposób
                 cel_dietetyczny = "przybranie na wadze"
 
 
