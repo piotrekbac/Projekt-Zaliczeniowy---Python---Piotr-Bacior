@@ -177,6 +177,9 @@ def main():
                 # Ustawiamy cel dietetyczny dla osób z niedowagą, który ma na celu pomóc im przybrać na wadze w zdrowy sposób
                 cel_dietetyczny = "przybranie na wadze"
 
+
+                docelowe_kcal = round(tdee + 500, 2)
+
             # Ustawiamy cel dietetyczny dla osób z normą, który ma na celu pomóc im utrzymać zdrową wagę
             elif kategoria in ["Nadwaga", "Otyłość"]:
 
