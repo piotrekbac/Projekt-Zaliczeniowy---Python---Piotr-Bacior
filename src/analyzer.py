@@ -74,3 +74,6 @@ def generate_bmi_bar(bmi_value: float) -> str:
 
     # Składamy cały pasek i zwracamy go jako string
     return f"15.0[{left_part}{marker}{right_part}]40.0+"
+
+
+def calculate_weight_difference(current_weight: float, min_ideal: float, max_ideal: float) -> str :
