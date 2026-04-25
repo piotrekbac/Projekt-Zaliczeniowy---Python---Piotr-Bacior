@@ -196,5 +196,10 @@ def calculate_macros(target_kcal: float, goal: str) -> tuple[int, int, int] :
     - target_kcal: docelowa ilość kalorii (float)
     - goal: cel dietetyczny ("redukcja", "masa", "utrzymanie") (str)
 
+    Zachowanie funkcji:
+    - Zależnie od celu przydziela proporcje % makroskładników.
+    - Dzieli kalorie przez wartość energetyczną (Białko/Węgle = 4 kcal/g, Tłuszcz = 9 kcal/g).
+    - Zwraca krotkę (Białko, Tłuszcze, Węglowodany) w pełnych gramach (int).
 
+    
     """
