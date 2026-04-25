@@ -191,6 +191,8 @@ def main():
 
                 # Dla osób z otyłością, które mają na celu schudnąć w zdrowy sposób, obliczamy docelowe zapotrzebowanie kaloryczne, odejmując 650 kcal od obliczonego TDEE, aby zapewnić bardziej agresywną redukcję kalorii, która może być potrzebna w przypadku otyłości
                 if kategoria == "Otyłość":
+
+                    # Obliczamy docelowe zapotrzebowanie kaloryczne dla osób z otyłością, które mają na celu schudnąć w zdrowy sposób, odejmując 650 kcal od obliczonego TDEE, aby zapewnić bardziej agresywną redukcję kalorii, która może być potrzebna w przypadku otyłości
                     docelowe_kcal = round(tdee - 650, 2)
 
 
