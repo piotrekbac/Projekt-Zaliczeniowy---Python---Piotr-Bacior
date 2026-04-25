@@ -241,10 +241,10 @@ def main():
 
             # Wyświetlamy obliczone BMR i TDEE
                                        
-            print(f"{'TWOJA DIETA I METABOLIZM':^70}")                        
-            print("-" * 70)                                                     
-            print(f" Podstawowa przemiana materii (BMR):      {bmr} kcal")      
-            print(f" Zapotrzebowanie (utrzymanie wagi):       {tdee} kcal")    
+            print(f"{'TWOJA DIETA I METABOLIZM':^70}")                          # Wyświetlamy nagłówek dla sekcji diety i metabolizmu, umieszczając go na środku, aby był bardziej estetyczny i czytelny dla użytkownika w konsoli
+            print("-" * 70)                                                     # Dodajemy linię oddzielającą nagłówek od wyników, aby poprawić czytelność w konsoli
+            print(f" Podstawowa przemiana materii (BMR):      {bmr} kcal")      # Wyświetlamy obliczoną podstawową przemianę materii (BMR) użytkownika
+            print(f" Zapotrzebowanie (utrzymanie wagi):       {tdee} kcal")     # Wyświetlamy obliczone całkowite dzienne zapotrzebowanie kaloryczne (TDEE) użytkownika, które jest ilością kalorii potrzebną do utrzymania aktualnej wagi
 
 
             # Porady dietetyczne na podstawie kategorii zdrowotnej
