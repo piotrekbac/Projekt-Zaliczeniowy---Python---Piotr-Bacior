@@ -112,3 +112,7 @@ def calculate_weight_difference(current_weight: float, min_ideal: float, max_ide
 
         # Zwracamy informację o tym, ile kilogramów trzeba schudnąć, aby osiągnąć górną granicę normy zdrowotnej
         return f"Musisz zrzucić {diff} kg, aby osiągnąć górną granicę normy zdrowotnej."
+    
+    # Jeśli aktualna waga mieści się w idealnym przedziale, zwracamy informację o tym, że użytkownik jest w idealnym przedziale wagowym
+    else:
+        return "Jesteś w idealnym przedziale wagowym! Oby tak dalej!"
