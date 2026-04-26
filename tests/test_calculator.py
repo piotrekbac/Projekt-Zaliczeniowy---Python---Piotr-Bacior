@@ -153,4 +153,5 @@ class TestCalculator(unittest.TestCase):
             calculate_tdee(0, 0)                # BMR i mnożnik aktywności zerowe - powinno wyrzucić ValueError
 
 
+# Test dla funkcji calculate_macros, która oblicza rozkład makroskładników (białka, tłuszcze, węglowodany) na podstawie całkowitego zapotrzebowania kalorycznego (TDEE) i preferencji makroskładników
 def test_calculate_macros(self) : 
