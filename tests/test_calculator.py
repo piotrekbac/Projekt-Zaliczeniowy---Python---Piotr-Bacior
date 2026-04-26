@@ -158,4 +158,4 @@ def test_calculate_macros(self) :
 
     """ Sprawdza podział kalorii na makroskładniki (Białko, Tłuszcze, Węglowodany). """
 
-    
+    self.assertEqual(calculate_macros(2000, "redukcja"), (150, 66, 200))
