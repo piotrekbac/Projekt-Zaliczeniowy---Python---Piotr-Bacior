@@ -165,3 +165,6 @@ def test_calculate_macros(self) :
     # Błędne wejścia
     with self.assertRaises(ValueError):
         calculate_macros(-500, "redukcja")
+
+    with self.assertRaises(ValueError):
+            calculate_macros(2000, "zły_cel")
