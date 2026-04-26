@@ -163,8 +163,12 @@ def test_calculate_macros(self) :
     self.assertEqual(calculate_macros(2000, "redukcja"), (150, 66, 200))
 
     # Błędne wejścia
+
+    # Negatywne kalorie
     with self.assertRaises(ValueError):
+        
+        # Wywołujemy funkcję calculate_macros z ujemną wartością kalorii, co powinno spowodować wyrzucenie wyjątku ValueError, ponieważ kalorie nie mogą być ujemne
         calculate_macros(-500, "redukcja")
 
     with self.assertRaises(ValueError):
-            calculate_macros(2000, "zły_cel")
+        calculate_macros(2000, "zły_cel")
