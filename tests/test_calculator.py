@@ -183,7 +183,8 @@ def test_calculate_macros(self) :
         # Wywołujemy funkcję calculate_macros z celem "masa" i ujemną wartością kalorii, co powinno spowodować wyrzucenie wyjątku ValueError, ponieważ kalorie nie mogą być ujemne, niezależnie od celu
         calculate_macros(-2000, "masa")
 
+    # Negatywne kalorie dla celu "utrzymanie"
     with self.assertRaises(ValueError):
-        
+
         # Wywołujemy funkcję calculate_macros z celem "masa" i ujemną wartością kalorii, co powinno spowodować wyrzucenie wyjątku ValueError, ponieważ kalorie nie mogą być ujemne, niezależnie od celu
         calculate_macros(-2000, "utrzymanie")
