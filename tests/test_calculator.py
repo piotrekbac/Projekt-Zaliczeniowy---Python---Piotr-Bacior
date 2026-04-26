@@ -1,5 +1,5 @@
 import unittest                                                                                         # Importujemy moduł unittest, który służy do tworzenia i uruchamiania testów jednostkowych
-from src.calculator import calculate_bmi, calculate_bmr, calculate_tdee, calculate_ideal_weight         # Importujemy funkcje calculate_bmi i calculate_ideal_weight z modułu calculator
+from src.calculator import calculate_bmi, calculate_bmr, calculate_macros, calculate_tdee, calculate_ideal_weight         # Importujemy funkcje calculate_bmi i calculate_ideal_weight z modułu calculator
 
 # Piotr Bacior - 15 722 - 2026 - Python - MH
 
@@ -157,3 +157,5 @@ class TestCalculator(unittest.TestCase):
 def test_calculate_macros(self) : 
 
     """ Sprawdza podział kalorii na makroskładniki (Białko, Tłuszcze, Węglowodany). """
+
+    
