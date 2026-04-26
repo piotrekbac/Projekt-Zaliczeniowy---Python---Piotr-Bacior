@@ -61,4 +61,5 @@ class TestAnalyzer(unittest.TestCase) :
 
         """ Sprawdza odliczanie kilogramów do idealnej wagi. """
 
-        
+        # min = 50, max = 70
+        self.assertIn("Brakuje Ci 10.0 kg", calculate_weight_difference(40.0, 50.0, 70.0))
