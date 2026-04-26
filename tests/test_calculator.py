@@ -151,3 +151,6 @@ class TestCalculator(unittest.TestCase):
 
         with self.assertRaises(ValueError):
             calculate_tdee(0, 0)                # BMR i mnożnik aktywności zerowe - powinno wyrzucić ValueError
+
+
+def test_calculate_macros(self) : 
