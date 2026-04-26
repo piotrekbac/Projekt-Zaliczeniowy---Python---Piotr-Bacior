@@ -155,3 +155,5 @@ class TestCalculator(unittest.TestCase):
 
 # Test dla funkcji calculate_macros, która oblicza rozkład makroskładników (białka, tłuszcze, węglowodany) na podstawie całkowitego zapotrzebowania kalorycznego (TDEE) i preferencji makroskładników
 def test_calculate_macros(self) : 
+
+    """ Sprawdza podział kalorii na makroskładniki (Białko, Tłuszcze, Węglowodany). """
