@@ -1,5 +1,5 @@
 import unittest                                                      # importuję moduł unittest do tworzenia testów jednostkowych
-from src.analyzer import analyze_bmi, generate_bmi_bar               # importuję funkcje analyze_bmi i generate_bmi_bar z modułu analyzer
+from src.analyzer import analyze_bmi, calculate_weight_difference, generate_bmi_bar               # importuję funkcje analyze_bmi i generate_bmi_bar z modułu analyzer
 
 # Piotr Bacior - 15 722 - 2026 - Python - MH
 
@@ -60,3 +60,5 @@ class TestAnalyzer(unittest.TestCase) :
     def test_calculate_weight_difference(self) :
 
         """ Sprawdza odliczanie kilogramów do idealnej wagi. """
+
+        
