@@ -64,6 +64,7 @@ class TestAnalyzer(unittest.TestCase) :
         # min = 50, max = 70
         self.assertIn("Brakuje Ci 10.0 kg", calculate_weight_difference(40.0, 50.0, 70.0))
 
+        # Test dla osoby, która ma nadwagę (BMI powyżej 24.9) - powinno zwrócić informację, ile kilogramów trzeba zrzucić, aby znaleźć się w idealnym zakresie
         self.assertIn("Musisz zrzucić 10.0 kg", calculate_weight_difference(80.0, 50.0, 70.0))
 
         # Test dla osoby, która jest już w idealnym przedziale (BMI między 18.5 a 24.9) - powinno zwrócić informację, że jest w idealnym przedziale
