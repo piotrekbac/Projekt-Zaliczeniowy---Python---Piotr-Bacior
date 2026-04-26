@@ -62,6 +62,8 @@ class TestAnalyzer(unittest.TestCase) :
         """ Sprawdza odliczanie kilogramów do idealnej wagi. """
 
         # min = 50, max = 70
+
+        # Test dla osoby, która ma niedowagę (BMI poniżej 18.5) - powinno zwrócić informację, ile kilogramów trzeba przytyć, aby znaleźć się w idealnym zakresie
         self.assertIn("Brakuje Ci 10.0 kg", calculate_weight_difference(40.0, 50.0, 70.0))
 
         # Test dla osoby, która ma nadwagę (BMI powyżej 24.9) - powinno zwrócić informację, ile kilogramów trzeba zrzucić, aby znaleźć się w idealnym zakresie
