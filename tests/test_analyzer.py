@@ -54,3 +54,6 @@ class TestAnalyzer(unittest.TestCase) :
         # Test prawidłowej długości paska (40 znaków w nawiasach + napisy)
         bar_normal = generate_bmi_bar(25.0)
         self.assertIn("O", bar_normal)          # Pasek musi zawierać znacznik
+
+
+    def test_calculate_weight_difference(self) :
