@@ -58,3 +58,5 @@ class TestAnalyzer(unittest.TestCase) :
 
     # Test dla funkcji analyze_bmi, która oblicza różnicę między aktualnym BMI a idealnym zakresem BMI (18.5-24.9) i zwraca informację o tym, ile jednostek BMI trzeba zredukować lub zwiększyć, aby znaleźć się w idealnym zakresie
     def test_calculate_weight_difference(self) :
+
+        """ Sprawdza odliczanie kilogramów do idealnej wagi. """
