@@ -66,4 +66,5 @@ class TestAnalyzer(unittest.TestCase) :
 
         self.assertIn("Musisz zrzucić 10.0 kg", calculate_weight_difference(80.0, 50.0, 70.0))
 
+        # Test dla osoby, która jest już w idealnym przedziale (BMI między 18.5 a 24.9) - powinno zwrócić informację, że jest w idealnym przedziale
         self.assertIn("Jesteś w idealnym przedziale", calculate_weight_difference(60.0, 50.0, 70.0))
