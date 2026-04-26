@@ -64,4 +64,6 @@ class TestAnalyzer(unittest.TestCase) :
         # min = 50, max = 70
         self.assertIn("Brakuje Ci 10.0 kg", calculate_weight_difference(40.0, 50.0, 70.0))
 
-           self.assertIn("Musisz zrzucić 10.0 kg", calculate_weight_difference(80.0, 50.0, 70.0))
+        self.assertIn("Musisz zrzucić 10.0 kg", calculate_weight_difference(80.0, 50.0, 70.0))
+
+        self.assertIn("Jesteś w idealnym przedziale", calculate_weight_difference(60.0, 50.0, 70.0))
