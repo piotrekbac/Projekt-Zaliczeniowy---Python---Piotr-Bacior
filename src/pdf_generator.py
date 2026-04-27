@@ -19,3 +19,6 @@ def remove_polish_accents(text: str) -> str :
 
         # Zastępujemy wszystkie wystąpienia klucza (polskiego znaku) w tekście jego wartością (znakiem bez akcentu)
         text = text.replace(k, v)
+
+    # Zwracamy przetworzony tekst, który nie zawiera polskich znaków, co pozwala na poprawne wyświetlanie w PDF
+    return text
