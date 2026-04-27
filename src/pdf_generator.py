@@ -45,3 +45,6 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
     # Sekcja nagłówka raportu - dodajemy tytuł i datę wygenerowania raportu
 
     pdf.set_font("Arial", 'B', 16)          # Ustawiamy czcionkę Arial Bold o rozmiarze 16 dla tytułu
+
+    # Dodajemy tytuł raportu, usuwając polskie znaki, aby zapewnić poprawne wyświetlanie w PDF
+    pdf.cell(200, 10, txt=remove_polish_accents("RAPORT DIETETYCZNY - ASYSTENT ZDROWIA"), ln=True, align='C')
