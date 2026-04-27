@@ -2,6 +2,5 @@ from fpdf import FPDF               # Importujemy klasę FPDF z biblioteki fpdf,
 import os                           # Importujemy moduł os, który pozwala na interakcję z systemem plików (np. sprawdzanie istnienia pliku, usuwanie pliku)
 from datetime import datetime       # Importujemy klasę datetime z modułu datetime, która pozwala na pracę z datami i czasem
 
-
 # Piotr Bacior - 15 722 - 2026 - Python - MH
 
