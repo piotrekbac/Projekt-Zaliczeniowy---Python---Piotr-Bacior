@@ -64,3 +64,6 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
 
 
     # Sekcja z wynikami - dodajemy szczegółowe informacje o pomiarach i zaleceniach
+
+    # Ustawiamy czcionkę Arial Bold o rozmiarze 12 dla nagłówków sekcji
+    pdf.set_font("Arial", "B", 12)          
