@@ -67,3 +67,6 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
 
     # Ustawiamy czcionkę Arial Bold o rozmiarze 12 dla nagłówków sekcji
     pdf.set_font("Arial", "B", 12)          
+
+    # Dodajemy nagłówek dla sekcji z wynikami, usuwając polskie znaki, aby zapewnić poprawne wyświetlanie w PDF
+    pdf.cell(200, 10, txt=remove_polish_accents("2. Zapotrzebowanie i Makroskladniki:"), ln=True)
