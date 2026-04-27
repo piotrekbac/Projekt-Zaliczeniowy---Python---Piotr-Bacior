@@ -34,3 +34,6 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
 
     # Sprawdzamy, czy plik o podanej nazwie już istnieje, aby uniknąć nadpisania istniejącego raportu
     pdf = FPDF()
+
+    # Dodajemy nową stronę do dokumentu PDF
+    pdf.add_page()  
