@@ -40,3 +40,8 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
 
     # Ustawiamy czcionkę Arial o rozmiarze 12 dla całego dokumentu
     pdf.set_font("Arial", size=12)  
+
+
+    # Sekcja nagłówka raportu - dodajemy tytuł i datę wygenerowania raportu
+
+    pdf.set_font("Arial", 'B', 16)          # Ustawiamy czcionkę Arial Bold o rozmiarze 16 dla tytułu
