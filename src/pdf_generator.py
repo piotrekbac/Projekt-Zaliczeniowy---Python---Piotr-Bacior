@@ -16,3 +16,4 @@ def remove_polish_accents(text: str) -> str :
     
 
     for k, v in accents.items() :
+        text = text.replace(k, v)
