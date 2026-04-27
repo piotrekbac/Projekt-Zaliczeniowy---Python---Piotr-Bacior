@@ -4,3 +4,5 @@ from datetime import datetime       # Importujemy klasę datetime z modułu date
 
 # Piotr Bacior - 15 722 - 2026 - Python - MH
 
+# 
+def remove_polish_accents(text: str) -> str : 
