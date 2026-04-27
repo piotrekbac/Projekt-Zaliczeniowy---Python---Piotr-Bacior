@@ -6,3 +6,5 @@ from datetime import datetime       # Importujemy klasę datetime z modułu date
 
 # 
 def remove_polish_accents(text: str) -> str : 
+
+     """ Funkcja pomocnicza usuwająca polskie znaki dla standardowych czcionek PDF. """
