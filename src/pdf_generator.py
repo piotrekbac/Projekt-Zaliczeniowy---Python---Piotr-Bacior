@@ -55,3 +55,6 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
 
     # Pobieramy aktualną datę i czas, formatując ją jako string
     data_pomiaru = datetime.now().strftime("%Y-%m-%d %H:%M:%S")  
+
+    # Dodajemy datę pomiaru do raportu, usuwając polskie znaki, aby zapewnić poprawne wyświetlanie w PDF
+    pdf.cell(200, 10, txt=remove_polish_accents(f"Data pomiaru: {data_pomiaru}"), ln=True, align='C')
