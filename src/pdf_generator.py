@@ -31,3 +31,6 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
     Generuje profesjonalny raport PDF z wynikami i wykresem.
 
     """
+
+    # Sprawdzamy, czy plik o podanej nazwie już istnieje, aby uniknąć nadpisania istniejącego raportu
+    pdf = FPDF()
