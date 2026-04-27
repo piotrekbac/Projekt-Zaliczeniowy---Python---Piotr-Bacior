@@ -24,10 +24,10 @@ def remove_polish_accents(text: str) -> str :
     return text
 
 
-
+# Definiuję funkcję do generowania pliku PDF z analizą BMI - dane wejściowe są typu str, oczekujemy wyniku typu None (funkcja nie zwraca wartości)
 def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, tdee: float, bialko: int, tluszcze: int, wegle: int, cel: str, filename: str = "Raport_Dietetyczny.pdf") -> None :
 
     """
     Generuje profesjonalny raport PDF z wynikami i wykresem.
-    
+
     """
