@@ -14,6 +14,8 @@ def remove_polish_accents(text: str) -> str :
     accents = {'ą':'a', 'ć':'c', 'ę':'e', 'ł':'l', 'ń':'n', 'ó':'o', 'ś':'s', 'ź':'z', 'ż':'z',
             'Ą':'A', 'Ć':'C', 'Ę':'E', 'Ł':'L', 'Ń':'N', 'Ó':'O', 'Ś':'S', 'Ź':'Z', 'Ż':'Z'}
     
-
+    # Iterujemy przez słownik znaków i zastępujemy je w tekście
     for k, v in accents.items() :
+
+        # Zastępujemy wszystkie wystąpienia klucza (polskiego znaku) w tekście jego wartością (znakiem bez akcentu)
         text = text.replace(k, v)
