@@ -4,7 +4,8 @@ from datetime import datetime       # Importujemy klasę datetime z modułu date
 
 # Piotr Bacior - 15 722 - 2026 - Python - MH
 
-# 
+
+# Definiuję funkcję do generowania pliku PDF z analizą BMI - dane wejściowe są typu str, oczekujemy wyniku typu None (funkcja nie zwraca wartości)
 def remove_polish_accents(text: str) -> str : 
 
      """ Funkcja pomocnicza usuwająca polskie znaki dla standardowych czcionek PDF. """
