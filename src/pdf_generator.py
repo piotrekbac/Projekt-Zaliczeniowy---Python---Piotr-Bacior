@@ -61,3 +61,6 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
 
     # Dodajemy odstęp między nagłówkiem a treścią raportu
     pdf.ln(10)  
+
+
+    # Sekcja z wynikami - dodajemy szczegółowe informacje o pomiarach i zaleceniach
