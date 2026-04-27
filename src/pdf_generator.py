@@ -37,3 +37,6 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
 
     # Dodajemy nową stronę do dokumentu PDF
     pdf.add_page()  
+
+    # Ustawiamy czcionkę Arial o rozmiarze 12 dla całego dokumentu
+    pdf.set_font("Arial", size=12)  
