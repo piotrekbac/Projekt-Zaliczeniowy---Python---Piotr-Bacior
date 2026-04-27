@@ -52,3 +52,6 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
 
     # Ustawiamy czcionkę Arial Italic o rozmiarze 10 dla daty
     pdf.set_font("Arial", 'I', 10)
+
+    # Pobieramy aktualną datę i czas, formatując ją jako string
+    data_pomiaru = datetime.now().strftime("%Y-%m-%d %H:%M:%S")  
