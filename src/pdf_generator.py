@@ -58,3 +58,6 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
 
     # Dodajemy datę pomiaru do raportu, usuwając polskie znaki, aby zapewnić poprawne wyświetlanie w PDF
     pdf.cell(200, 10, txt=remove_polish_accents(f"Data pomiaru: {data_pomiaru}"), ln=True, align='C')
+
+    # Dodajemy odstęp między nagłówkiem a treścią raportu
+    pdf.ln(10)  
