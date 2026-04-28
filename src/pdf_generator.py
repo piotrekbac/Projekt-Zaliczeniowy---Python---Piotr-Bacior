@@ -100,3 +100,6 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
 
     # Dodajemy nagłówek dla sekcji z wykresem, usuwając polskie znaki, aby zapewnić poprawne wyświetlanie w PDF
     pdf.cell(200, 10, txt=remove_polish_accents("3. Historia Twojej wagi:"), ln=True)
+
+    # Sprawdzamy, czy plik z wykresem istnieje, aby uniknąć błędów podczas dodawania obrazu do PDF
+    if os.path.exists("wykres_trendu.png") :
