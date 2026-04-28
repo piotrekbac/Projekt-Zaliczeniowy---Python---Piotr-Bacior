@@ -2,6 +2,7 @@ from src.calculator import calculate_bmi, calculate_ideal_weight, calculate_bmr,
 from src.analyzer import analyze_bmi, generate_bmi_bar, calculate_weight_difference                                         # Importujemy funkcję analyze_bmi z modułu analyzer
 from src.file_handler import save_result_to_file, read_history_from_file, save_to_csv                                       # Importujemy funkcję save_result_to_file z modułu file_handler
 from src.charts import show_bmi_trend_chart                                                                                 # Importujemy funkcję show_bmi_trend_chart z modułu charts
+from src.pdf_generator import generate_pdf_report                                                                           # Importujemy funkcję generate_pdf_report z modułu pdf_generator    
 
 # Piotr Bacior - 15 722 - 2026 - Python - MH
 
