@@ -270,6 +270,11 @@ def main():
             # Pytamy użytkownika, czy chce wygenerować pamiątkowy Raport Dietetyczny w PDF, i przechowujemy jego odpowiedź w zmiennej 'czy_pdf'
             czy_pdf = input("Czy wygenerować pamiątkowy Raport Dietetyczny w PDF? (T/N): ").strip().lower()
 
+
+            # Sprawdzamy, czy użytkownik wpisał 'T' (tak)
+            if czy_pdf == 't':                                           
+
+
             print("\n" + "=" * 70)
 
 
