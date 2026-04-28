@@ -115,3 +115,7 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
 
         # Dodajemy informację o braku danych do raportu, usuwając polskie znaki, aby zapewnić poprawne wyświetlanie w PDF
         pdf.cell(200, 10, txt=remove_polish_accents("(Brak wygenerowanego wykresu. Uruchom podglad wykresu w aplikacji, aby go dodac!)"), ln=True)
+
+
+    # Sekcja Podsumowania - dodajemy podsumowanie i zalecenia końcowe do raportu - zapis
+    try :
