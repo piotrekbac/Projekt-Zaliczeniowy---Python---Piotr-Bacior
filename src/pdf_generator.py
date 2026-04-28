@@ -85,3 +85,6 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
 
     # Dodajemy szczegółowe informacje o zapotrzebowaniu kalorycznym i makroskładnikach, usuwając polskie znaki, aby zapewnić poprawne wyświetlanie w PDF
     pdf.cell(200, 8, txt=remove_polish_accents(f"-> Tluszcze: {tluszcze} g"), ln=True)
+
+    # Dodajemy szczegółowe informacje o zapotrzebowaniu kalorycznym i makroskładnikach, usuwając polskie znaki, aby zapewnić poprawne wyświetlanie w PDF
+    pdf.cell(200, 8, txt=remove_polish_accents(f"-> Weglowodany: {wegle} g"), ln=True)
