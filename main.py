@@ -274,6 +274,8 @@ def main():
             # Sprawdzamy, czy użytkownik wpisał 'T' (tak)
             if czy_pdf == 't':                                           
 
+                # Wywołujemy funkcję generate_pdf_report, aby wygenerować raport PDF z wynikami i zaleceniami dietetycznymi, który użytkownik może pobrać i wydrukować, przekazując do niej wszystkie niezbędne dane, takie jak waga, wzrost, obliczone BMI, kategoria zdrowotna, docelowe zapotrzebowanie kaloryczne oraz zalecane spożycie makroskładników
+                generate_pdf_report(waga, wzrost, moje_bmi, kategoria, docelowe_kcal, bialko, tluszcze, wegle, cel_dietetyczny)
 
             print("\n" + "=" * 70)
 
