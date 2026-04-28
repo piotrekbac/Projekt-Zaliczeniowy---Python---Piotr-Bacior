@@ -125,3 +125,6 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
 
         # Jeśli zapis się powiedzie, wyświetlamy komunikat o sukcesie, informując użytkownika o wygenerowaniu raportu PDF
         print(f"\n[SUKCES] Wygenerowano raport PDF: {filename}")
+
+    # Jeśli podczas zapisywania raportu PDF wystąpi błąd, przechwytujemy wyjątek i wyświetlamy komunikat o błędzie, informując użytkownika o problemie z generowaniem raportu PDF
+    except Exception as e :
