@@ -119,3 +119,6 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
 
     # Sekcja Podsumowania - dodajemy podsumowanie i zalecenia końcowe do raportu - zapis
     try :
+        
+        # Zapisujemy wygenerowany raport PDF do pliku o podanej nazwie
+        pdf.output(filename)
