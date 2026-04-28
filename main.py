@@ -266,6 +266,10 @@ def main():
             print("=" * 70 + "\n")   
 
 
+
+            print("\n" + "=" * 70)
+
+
             # Porady dietetyczne na podstawie kategorii zdrowotnej
             print(f"{'PORADA DIETETYCZNA':^70}")
 
