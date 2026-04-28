@@ -265,7 +265,9 @@ def main():
 
             print("=" * 70 + "\n")   
 
+            # Sekcja PDF - generowanie raportu PDF z wynikami i zaleceniami dietetycznymi, który użytkownik może pobrać i wydrukować
 
+            
 
             print("\n" + "=" * 70)
 
