@@ -267,7 +267,8 @@ def main():
 
             # Sekcja PDF - generowanie raportu PDF z wynikami i zaleceniami dietetycznymi, który użytkownik może pobrać i wydrukować
 
-            
+            # Pytamy użytkownika, czy chce wygenerować pamiątkowy Raport Dietetyczny w PDF, i przechowujemy jego odpowiedź w zmiennej 'czy_pdf'
+            czy_pdf = input("Czy wygenerować pamiątkowy Raport Dietetyczny w PDF? (T/N): ").strip().lower()
 
             print("\n" + "=" * 70)
 
