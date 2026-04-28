@@ -62,3 +62,7 @@ class TestFileHandler(unittest.TestCase) :
     
     # Definiuję metodę testową, która sprawdza, czy funkcja generate_pdf_report poprawnie tworzy plik PDF z analizą BMI, a następnie czy ten plik istnieje i jest poprawnie zapisany
     def test_pdf_generation(self) :
+
+        """ Sprawdza, czy generator poprawnie tworzy plik PDF z wynikami. """
+
+        
