@@ -97,3 +97,6 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
 
     # Ustawiamy czcionkę Arial Bold o rozmiarze 12 dla nagłówka sekcji z wykresem
     pdf.set_font("Arial", 'B', 12)
+
+    # Dodajemy nagłówek dla sekcji z wykresem, usuwając polskie znaki, aby zapewnić poprawne wyświetlanie w PDF
+    pdf.cell(200, 10, txt=remove_polish_accents("3. Historia Twojej wagi:"), ln=True)
