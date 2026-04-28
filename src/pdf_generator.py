@@ -103,3 +103,6 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
 
     # Sprawdzamy, czy plik z wykresem istnieje, aby uniknąć błędów podczas dodawania obrazu do PDF
     if os.path.exists("wykres_trendu.png") :
+
+        # Wstawienie obrazka na współrzędnych x=10, w=190 (na szerokość strony)
+        pdf.image("wykres_trendu.png", x=10, w=190)
