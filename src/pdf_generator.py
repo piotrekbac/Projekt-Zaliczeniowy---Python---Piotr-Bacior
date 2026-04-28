@@ -109,6 +109,9 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
 
     # Jeśli plik z wykresem nie istnieje, dodajemy informację o braku danych do raportu, usuwając polskie znaki, aby zapewnić poprawne wyświetlanie w PDF
     else :
-        
-        # Dodajemy informację o braku danych do raportu, usuwając polskie znaki, aby zapewnić poprawne wyświetlanie w PDF
+
+        # Ustawiamy czcionkę Arial Italic o rozmiarze 10 dla informacji o braku danych
         pdf.set_font("Arial", 'I', 10)
+
+        # Dodajemy informację o braku danych do raportu, usuwając polskie znaki, aby zapewnić poprawne wyświetlanie w PDF
+        pdf.cell(200, 10, txt=remove_polish_accents("(Brak wygenerowanego wykresu. Uruchom podglad wykresu w aplikacji, aby go dodac!)"), ln=True)
