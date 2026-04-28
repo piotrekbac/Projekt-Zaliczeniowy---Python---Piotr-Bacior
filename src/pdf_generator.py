@@ -128,3 +128,6 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
 
     # Jeśli podczas zapisywania raportu PDF wystąpi błąd, przechwytujemy wyjątek i wyświetlamy komunikat o błędzie, informując użytkownika o problemie z generowaniem raportu PDF
     except Exception as e :
+
+        # Wyświetlamy komunikat o błędzie, informując użytkownika o problemie z generowaniem raportu PDF, wraz z treścią wyjątku, która może pomóc w diagnozie problemu
+        print(f"\n[BLAD] Nie udalo sie zapisac PDF: {e}")
