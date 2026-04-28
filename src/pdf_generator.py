@@ -94,3 +94,6 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
 
 
     # Sekcja Wykresu (jeśli istnieje obrazek) - dodajemy wykres BMI do raportu, jeśli plik z wykresem istnieje
+
+    # Ustawiamy czcionkę Arial Bold o rozmiarze 12 dla nagłówka sekcji z wykresem
+    pdf.set_font("Arial", 'B', 12)
