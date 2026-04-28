@@ -74,7 +74,7 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
     # Ustawiamy czcionkę Arial o rozmiarze 12 dla treści sekcji
     pdf.set_font("Arial", size=12)
 
-    # Dodajemy szczegółowe informacje o zapotrzebowaniu kalorycznym i makroskładnikach, usuwając polskie znaki, aby zapewnić poprawne wyświetlanie w PDF
+    # Dodajemy szczegółowe informacje o zapotrzebowaniu kalorycznym i celach diety, usuwając polskie znaki, aby zapewnić poprawne wyświetlanie w PDF
     pdf.cell(200, 8, txt=remove_polish_accents(f"Cel diety: {cel.upper()}"), ln=True)
 
     # Dodajemy szczegółowe informacje o zapotrzebowaniu kalorycznym i makroskładnikach, usuwając polskie znaki, aby zapewnić poprawne wyświetlanie w PDF
