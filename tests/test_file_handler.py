@@ -4,7 +4,10 @@ import tempfile             # importuję moduł tempfile do tworzenia tymczasowy
 import csv                  # importuję moduł csv do obsługi plików CSV
 
 # Importuję funkcje save_result_to_file, read_history_from_file i save_to_csv z modułu file_handler
-from src.file_handler import save_result_to_file, read_history_from_file, save_to_csv, generate_pdf_report   
+from src.file_handler import save_result_to_file, read_history_from_file, save_to_csv, generate_pdf_report 
+
+# Importuję tmpdir z modułu tempfile, aby tworzyć tymczasowe katalogi dla testów, co zapewnia izolację i bezpieczeństwo podczas testowania operacji na plikach
+with tempfile.TemporaryDirectory() as tmpdir:  
 
 # Piotr Bacior - 15 722 - 2026 - Python - MH
 
