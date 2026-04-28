@@ -92,6 +92,21 @@ def main():
         # Dodajemy odstęp i linię oddzielającą historię pomiarów od reszty interfejsu
         print("\n" + "-" * 70 + "\n")    
 
+        print("=" * 70 + "\n")   
+
+        # Sekcja PDF - generowanie raportu PDF z wynikami i zaleceniami dietetycznymi, który użytkownik może pobrać i wydrukować
+
+        # Pytamy użytkownika, czy chce wygenerować pamiątkowy Raport Dietetyczny w PDF, i przechowujemy jego odpowiedź w zmiennej 'czy_pdf'
+        czy_pdf = input("Czy wygenerować pamiątkowy Raport Dietetyczny w PDF? (T/N): ").strip().lower()
+
+
+        # Sprawdzamy, czy użytkownik wpisał 'T' (tak)
+        if czy_pdf == 't':                                           
+
+            # Wywołujemy funkcję generate_pdf_report, aby wygenerować raport PDF z wynikami i zaleceniami dietetycznymi, który użytkownik może pobrać i wydrukować, przekazując do niej wszystkie niezbędne dane, takie jak waga, wzrost, obliczone BMI, kategoria zdrowotna, docelowe zapotrzebowanie kaloryczne oraz zalecane spożycie makroskładników
+            generate_pdf_report(waga, wzrost, moje_bmi, kategoria, docelowe_kcal, bialko, tluszcze, wegle, cel_dietetyczny)
+        
+
 
     # Pętla nieskończona, która pozwala użytkownikowi na wielokrotne obliczanie BMI, dopóki nie zdecyduje o zakończeniu programu
     while True:    
@@ -262,23 +277,7 @@ def main():
                 print("\n [!] Uwaga: W przypadku otyłości zalecamy konsultację")
                 print("     z lekarzem lub dyplomowanym dietetykiem klinicznym.")
 
-
-            print("=" * 70 + "\n")   
-
-            # Sekcja PDF - generowanie raportu PDF z wynikami i zaleceniami dietetycznymi, który użytkownik może pobrać i wydrukować
-
-            # Pytamy użytkownika, czy chce wygenerować pamiątkowy Raport Dietetyczny w PDF, i przechowujemy jego odpowiedź w zmiennej 'czy_pdf'
-            czy_pdf = input("Czy wygenerować pamiątkowy Raport Dietetyczny w PDF? (T/N): ").strip().lower()
-
-
-            # Sprawdzamy, czy użytkownik wpisał 'T' (tak)
-            if czy_pdf == 't':                                           
-
-                # Wywołujemy funkcję generate_pdf_report, aby wygenerować raport PDF z wynikami i zaleceniami dietetycznymi, który użytkownik może pobrać i wydrukować, przekazując do niej wszystkie niezbędne dane, takie jak waga, wzrost, obliczone BMI, kategoria zdrowotna, docelowe zapotrzebowanie kaloryczne oraz zalecane spożycie makroskładników
-                generate_pdf_report(waga, wzrost, moje_bmi, kategoria, docelowe_kcal, bialko, tluszcze, wegle, cel_dietetyczny)
-
             print("\n" + "=" * 70)
-
 
             # Porady dietetyczne na podstawie kategorii zdrowotnej
             print(f"{'PORADA DIETETYCZNA':^70}")
