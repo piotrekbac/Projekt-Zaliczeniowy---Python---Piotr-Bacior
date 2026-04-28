@@ -88,3 +88,6 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
 
     # Dodajemy szczegółowe informacje o zapotrzebowaniu węglowodanów, usuwając polskie znaki, aby zapewnić poprawne wyświetlanie w PDF
     pdf.cell(200, 8, txt=remove_polish_accents(f"-> Weglowodany: {wegle} g"), ln=True)
+
+    # Dodajemy odstęp między sekcją z wynikami a kolejną sekcją raportu
+    pdf.ln(10)
