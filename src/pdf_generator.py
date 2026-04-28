@@ -91,3 +91,6 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
 
     # Dodajemy odstęp między sekcją z wynikami a kolejną sekcją raportu
     pdf.ln(10)
+
+
+    # Sekcja Wykresu (jeśli istnieje obrazek) - dodajemy wykres BMI do raportu, jeśli plik z wykresem istnieje
