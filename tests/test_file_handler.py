@@ -63,8 +63,8 @@ class TestFileHandler(unittest.TestCase) :
                 self.assertEqual(rows[1][1], "80.0")
 
     
-    # Definiuję metodę testową, która sprawdza, czy funkcja generate_pdf_report poprawnie tworzy plik PDF z analizą BMI, a następnie czy ten plik istnieje i jest poprawnie zapisany
-    def test_pdf_generation(self) :
+# Definiuję metodę testową, która sprawdza, czy funkcja generate_pdf_report poprawnie tworzy plik PDF z analizą BMI, a następnie czy ten plik istnieje i jest poprawnie zapisany
+def test_pdf_generation(self) :
 
-        """ Sprawdza, czy generator poprawnie tworzy plik PDF z wynikami. """
+    """ Sprawdza, czy generator poprawnie tworzy plik PDF z wynikami. """
 
