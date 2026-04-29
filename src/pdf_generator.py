@@ -89,6 +89,8 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
     # Definiujemy funkcję section_title, która przyjmuje tytuł sekcji jako argument i dodaje go do raportu PDF z odpowiednim formatowaniem, co pozwala na łatwe tworzenie sekcji w raporcie PDF z analizą BMI i zaleceniami dietetycznymi
     def section_title(title) : 
 
+        # Ustawiamy czcionkę Arial Bold o rozmiarze 14 dla tytułu sekcji, co pozwala na wyróżnienie tytułu sekcji i nadanie mu profesjonalnego wyglądu
+        pdf.set_font('Arial', 'B', 14)
 
 
     # Ustawiamy czcionkę Arial o rozmiarze 12 dla całego dokumentu
