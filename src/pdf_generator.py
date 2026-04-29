@@ -92,6 +92,10 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
         # Ustawiamy czcionkę Arial Bold o rozmiarze 14 dla tytułu sekcji, co pozwala na wyróżnienie tytułu sekcji i nadanie mu profesjonalnego wyglądu
         pdf.set_font('Arial', 'B', 14)
 
+        # Ustawiamy jasnoniebieski kolor tła podtekstu sekcji, co poprawia czytelność i estetykę układu strony w raporcie PDF
+        pdf.set_fill_color(230, 240, 255)
+
+
 
     # Ustawiamy czcionkę Arial o rozmiarze 12 dla całego dokumentu
     pdf.set_font("Arial", size=12)  
