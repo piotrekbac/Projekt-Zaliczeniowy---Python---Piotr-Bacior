@@ -35,6 +35,12 @@ class PDF(FPDF) :
         # Rysujemy prostokąt jako tło nagłówka, który zajmuje całą szerokość strony (210 mm) i ma wysokość 30 mm, wypełniony kolorem ustawionym wcześniej
         self.rect(0, 0, 210, 30, 'F')
 
+        # Tytuł dokumentu
+
+        # Ustawiamy pozycję kursora na współrzędnych y=10, co pozwala nam na umieszczenie tytułu w odpowiednim miejscu na stronie
+        self.set_y(10)
+
+
 # Definiuję funkcję do generowania pliku PDF z analizą BMI - dane wejściowe są typu str, oczekujemy wyniku typu None (funkcja nie zwraca wartości)
 def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, tdee: float, bialko: int, tluszcze: int, wegle: int, cel: str, filename: str = "Raport_Dietetyczny.pdf") -> None :
 
