@@ -59,6 +59,8 @@ class PDF(FPDF) :
         # Ustawiamy pozycję kursora na 15 mm od dołu strony, co pozwala nam na umieszczenie stopki w odpowiednim miejscu na stronie
         self.set_y(-15)
         
+        # Ustawiamy czcionkę Arial Italic o rozmiarze 8 dla stopki, co pozwala na wyróżnienie informacji w stopce i nadanie jej profesjonalnego wyglądu
+        self.set_font('Arial', 'I', 8)
 
 # Definiuję funkcję do generowania pliku PDF z analizą BMI - dane wejściowe są typu str, oczekujemy wyniku typu None (funkcja nie zwraca wartości)
 def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, tdee: float, bialko: int, tluszcze: int, wegle: int, cel: str, filename: str = "Raport_Dietetyczny.pdf") -> None :
