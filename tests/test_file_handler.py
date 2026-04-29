@@ -70,3 +70,6 @@ def test_pdf_generation(self) :
 
     # Tworzymy bezpieczny, tymczasowy folder dla testu
     test_pdf = os.path.join(tmpdir, "test_raport.pdf")
+
+    # Wywołujemy funkcję generującą raport PDF z przykładowymi danymi
+    generate_pdf_report(80.0, 1.80, 24.6, "Norma", 2500, 150, 70, 300, "utrzymanie", filename=test_pdf)
