@@ -26,6 +26,9 @@ def remove_polish_accents(text: str) -> str :
 # Tworzymy klasę PDF, która dziedziczy po FPDF, co pozwala nam na tworzenie niestandardowych funkcji do generowania raportów PDF z analizą BMI i zaleceniami dietetycznymi
 class PDF(FPDF) : 
 
+    # Definiujemy metodę header, która jest wywoływana automatycznie przez FPDF podczas generowania każdej strony PDF, co pozwala nam na dodanie niestandardowego nagłówka do naszego raportu PDF
+    def header(self):
+
 
 
 # Definiuję funkcję do generowania pliku PDF z analizą BMI - dane wejściowe są typu str, oczekujemy wyniku typu None (funkcja nie zwraca wartości)
