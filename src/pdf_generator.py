@@ -32,6 +32,8 @@ class PDF(FPDF) :
         # Kolorowe tło nagłówka (Niebieski)
         self.set_fill_color(41, 128, 185) 
 
+        # Rysujemy prostokąt jako tło nagłówka, który zajmuje całą szerokość strony (210 mm) i ma wysokość 30 mm, wypełniony kolorem ustawionym wcześniej
+        self.rect(0, 0, 210, 30, 'F')
 
 # Definiuję funkcję do generowania pliku PDF z analizą BMI - dane wejściowe są typu str, oczekujemy wyniku typu None (funkcja nie zwraca wartości)
 def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, tdee: float, bialko: int, tluszcze: int, wegle: int, cel: str, filename: str = "Raport_Dietetyczny.pdf") -> None :
