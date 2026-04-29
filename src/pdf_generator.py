@@ -104,6 +104,14 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
         # Dodajemy odstęp między tytułem sekcji a treścią sekcji, co poprawia czytelność i estetykę układu strony w raporcie PDF
         pdf.ln(2)
 
+
+    # Data na prawo
+    pdf.set_font('Arial', 'I', 11)
+
+
+
+    
+
     # Definiujemy funkcję normal_text, która przyjmuje tekst i opcjonalny argument bold, który określa, czy tekst ma być pogrubiony, i dodaje go do raportu PDF z odpowiednim formatowaniem, co pozwala na łatwe dodawanie treści do sekcji w raporcie PDF z analizą BMI i zaleceniami dietetycznymi
     def normal_text(text, bold=False) : 
 
