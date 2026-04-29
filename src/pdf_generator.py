@@ -101,6 +101,8 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
         # Dodajemy tytuł sekcji, usuwając polskie znaki, aby zapewnić poprawne wyświetlanie w PDF, i ustawiając go na lewej stronie (align='L'), z wypełnieniem tła (fill=1)
         pdf.cell(0, 10, remove_polish_accents(title), 0, 1, 'L', 1)
 
+        # Dodajemy odstęp między tytułem sekcji a treścią sekcji, co poprawia czytelność i estetykę układu strony w raporcie PDF
+        pdf.ln(2)
 
     # Ustawiamy czcionkę Arial o rozmiarze 12 dla całego dokumentu
     pdf.set_font("Arial", size=12)  
