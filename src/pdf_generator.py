@@ -62,6 +62,10 @@ class PDF(FPDF) :
         # Ustawiamy czcionkę Arial Italic o rozmiarze 8 dla stopki, co pozwala na wyróżnienie informacji w stopce i nadanie jej profesjonalnego wyglądu
         self.set_font('Arial', 'I', 8)
 
+        # Ustawiamy kolor tekstu na szary, co zapewnia subtelny wygląd stopki i nie odciąga uwagi od głównej treści raportu PDF
+        self.set_text_color(128, 128, 128) 
+
+
 # Definiuję funkcję do generowania pliku PDF z analizą BMI - dane wejściowe są typu str, oczekujemy wyniku typu None (funkcja nie zwraca wartości)
 def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, tdee: float, bialko: int, tluszcze: int, wegle: int, cel: str, filename: str = "Raport_Dietetyczny.pdf") -> None :
 
