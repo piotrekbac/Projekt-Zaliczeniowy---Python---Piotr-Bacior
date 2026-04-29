@@ -23,6 +23,10 @@ def remove_polish_accents(text: str) -> str :
     # Zwracamy przetworzony tekst, który nie zawiera polskich znaków, co pozwala na poprawne wyświetlanie w PDF
     return text
 
+# Tworzymy klasę PDF, która dziedziczy po FPDF, co pozwala nam na tworzenie niestandardowych funkcji do generowania raportów PDF z analizą BMI i zaleceniami dietetycznymi
+class PDF(FPDF) : 
+
+
 
 # Definiuję funkcję do generowania pliku PDF z analizą BMI - dane wejściowe są typu str, oczekujemy wyniku typu None (funkcja nie zwraca wartości)
 def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, tdee: float, bialko: int, tluszcze: int, wegle: int, cel: str, filename: str = "Raport_Dietetyczny.pdf") -> None :
