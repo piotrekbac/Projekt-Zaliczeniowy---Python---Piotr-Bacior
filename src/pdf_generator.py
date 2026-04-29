@@ -52,6 +52,9 @@ class PDF(FPDF) :
         # Dodajemy odstęp między nagłówkiem a treścią raportu, co poprawia czytelność i estetykę układu strony w raporcie PDF
         self.ln(15)
 
+    # Definiujemy metodę footer, która jest wywoływana automatycznie przez FPDF podczas generowania każdej strony PDF, co pozwala nam na dodanie niestandardowej stopki do naszego raportu PDF
+    def footer(self) :
+
 # Definiuję funkcję do generowania pliku PDF z analizą BMI - dane wejściowe są typu str, oczekujemy wyniku typu None (funkcja nie zwraca wartości)
 def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, tdee: float, bialko: int, tluszcze: int, wegle: int, cel: str, filename: str = "Raport_Dietetyczny.pdf") -> None :
 
