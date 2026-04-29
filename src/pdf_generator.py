@@ -68,6 +68,7 @@ class PDF(FPDF) :
         # Dodajemy tekst stopki, usuwając polskie znaki, aby zapewnić poprawne wyświetlanie w PDF, i ustawiając go na środku strony (align='C'), co informuje użytkownika o autorze raportu i numerze strony
         self.cell(0, 10, remove_polish_accents(f'Wygenerowano przez: Piotr Bacior (15 722) | Strona {self.page_no()}'), 0, 0, 'C')
 
+
 # Definiuję funkcję do generowania pliku PDF z analizą BMI - dane wejściowe są typu str, oczekujemy wyniku typu None (funkcja nie zwraca wartości)
 def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, tdee: float, bialko: int, tluszcze: int, wegle: int, cel: str, filename: str = "Raport_Dietetyczny.pdf") -> None :
 
@@ -81,6 +82,11 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
 
     # Dodajemy nową stronę do dokumentu PDF
     pdf.add_page()  
+
+
+    # --- Funkcje pomocnicze do rysowania sekcji ---
+
+
 
     # Ustawiamy czcionkę Arial o rozmiarze 12 dla całego dokumentu
     pdf.set_font("Arial", size=12)  
