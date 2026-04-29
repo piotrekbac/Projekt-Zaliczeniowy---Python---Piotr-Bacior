@@ -49,6 +49,9 @@ class PDF(FPDF) :
         # Dodajemy tytuł dokumentu, usuwając polskie znaki, aby zapewnić poprawne wyświetlanie w PDF, i ustawiając go na środku strony (align='C')
         self.cell(0, 10, remove_polish_accents('KARTA PACJENTA - ASYSTENT ZDROWIA'), 0, 1, 'C')
 
+        # Dodajemy odstęp między nagłówkiem a treścią raportu, co poprawia czytelność i estetykę układu strony w raporcie PDF
+        self.ln(15)
+
 # Definiuję funkcję do generowania pliku PDF z analizą BMI - dane wejściowe są typu str, oczekujemy wyniku typu None (funkcja nie zwraca wartości)
 def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, tdee: float, bialko: int, tluszcze: int, wegle: int, cel: str, filename: str = "Raport_Dietetyczny.pdf") -> None :
 
