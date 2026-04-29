@@ -113,6 +113,10 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
         # Ustawiamy ciemnoszary kolor tekstu dla treści sekcji, co zapewnia dobry kontrast z białym tłem i poprawia czytelność treści sekcji w raporcie PDF
         pdf.set_text_color(40, 40, 40)
 
+        # Dodajemy tekst do raportu PDF, usuwając polskie znaki, aby zapewnić poprawne wyświetlanie w PDF, i ustawiając go na lewej stronie (align='L'), z możliwością zawijania tekstu (multi_cell)
+        pdf.multi_cell(0, 8, remove_polish_accents(text))
+
+
     # Ustawiamy czcionkę Arial o rozmiarze 12 dla całego dokumentu
     pdf.set_font("Arial", size=12)  
 
