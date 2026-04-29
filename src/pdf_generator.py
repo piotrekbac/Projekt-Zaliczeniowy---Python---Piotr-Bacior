@@ -29,6 +29,8 @@ class PDF(FPDF) :
     # Definiujemy metodę header, która jest wywoływana automatycznie przez FPDF podczas generowania każdej strony PDF, co pozwala nam na dodanie niestandardowego nagłówka do naszego raportu PDF
     def header(self):
 
+        # Kolorowe tło nagłówka (Niebieski)
+        self.set_fill_color(41, 128, 185) 
 
 
 # Definiuję funkcję do generowania pliku PDF z analizą BMI - dane wejściowe są typu str, oczekujemy wyniku typu None (funkcja nie zwraca wartości)
