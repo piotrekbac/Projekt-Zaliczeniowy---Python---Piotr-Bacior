@@ -107,6 +107,11 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
     # Definiujemy funkcję normal_text, która przyjmuje tekst i opcjonalny argument bold, który określa, czy tekst ma być pogrubiony, i dodaje go do raportu PDF z odpowiednim formatowaniem, co pozwala na łatwe dodawanie treści do sekcji w raporcie PDF z analizą BMI i zaleceniami dietetycznymi
     def normal_text(text, bold=False) : 
 
+        # Ustawiamy czcionkę Arial o rozmiarze 12, z opcją pogrubienia, jeśli argument bold jest ustawiony na True, co pozwala na wyróżnienie ważnych informacji w treści sekcji raportu PDF z analizą BMI i zaleceniami dietetycznymi
+        pdf.set_font('Arial', 'B' if bold else '', 12)
+
+
+
     # Ustawiamy czcionkę Arial o rozmiarze 12 dla całego dokumentu
     pdf.set_font("Arial", size=12)  
 
