@@ -95,7 +95,8 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
         # Ustawiamy jasnoniebieski kolor tła podtekstu sekcji, co poprawia czytelność i estetykę układu strony w raporcie PDF
         pdf.set_fill_color(230, 240, 255)
 
-
+        # Dodajemy granatowy kolor tekstu dla tytułu sekcji, co zapewnia dobry kontrast z jasnoniebieskim tłem i poprawia czytelność tytułu sekcji w raporcie PDF
+        pdf.set_text_color(41, 128, 185)
 
     # Ustawiamy czcionkę Arial o rozmiarze 12 dla całego dokumentu
     pdf.set_font("Arial", size=12)  
