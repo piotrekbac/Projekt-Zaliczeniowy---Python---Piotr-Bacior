@@ -110,7 +110,8 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
     # Ustawiamy czcionkę Arial Italic o rozmiarze 11 dla daty, co pozwala na wyróżnienie daty i nadanie jej profesjonalnego wyglądu
     pdf.set_font('Arial', 'I', 11)
 
-
+    # Ustawiamy szary kolor tekstu dla daty, co zapewnia subtelny wygląd daty i nie odciąga uwagi od głównej treści raportu PDF
+    pdf.set_text_color(100)
 
 
 
