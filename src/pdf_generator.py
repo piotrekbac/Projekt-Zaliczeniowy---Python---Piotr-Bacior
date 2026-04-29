@@ -40,6 +40,9 @@ class PDF(FPDF) :
         # Ustawiamy pozycję kursora na współrzędnych y=10, co pozwala nam na umieszczenie tytułu w odpowiednim miejscu na stronie
         self.set_y(10)
 
+        # Ustawiamy czcionkę Arial Bold o rozmiarze 20 dla tytułu, co pozwala na wyróżnienie tytułu raportu PDF i nadanie mu profesjonalnego wyglądu
+        self.set_font('Arial', 'B', 20)
+
 
 # Definiuję funkcję do generowania pliku PDF z analizą BMI - dane wejściowe są typu str, oczekujemy wyniku typu None (funkcja nie zwraca wartości)
 def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, tdee: float, bialko: int, tluszcze: int, wegle: int, cel: str, filename: str = "Raport_Dietetyczny.pdf") -> None :
