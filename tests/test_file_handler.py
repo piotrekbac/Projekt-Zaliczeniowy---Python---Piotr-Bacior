@@ -68,3 +68,5 @@ def test_pdf_generation(self) :
 
     """ Sprawdza, czy generator poprawnie tworzy plik PDF z wynikami. """
 
+    # Tworzymy bezpieczny, tymczasowy folder dla testu
+    test_pdf = os.path.join(tmpdir, "test_raport.pdf")
