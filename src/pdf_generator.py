@@ -110,7 +110,8 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
         # Ustawiamy czcionkę Arial o rozmiarze 12, z opcją pogrubienia, jeśli argument bold jest ustawiony na True, co pozwala na wyróżnienie ważnych informacji w treści sekcji raportu PDF z analizą BMI i zaleceniami dietetycznymi
         pdf.set_font('Arial', 'B' if bold else '', 12)
 
-
+        # Ustawiamy ciemnoszary kolor tekstu dla treści sekcji, co zapewnia dobry kontrast z białym tłem i poprawia czytelność treści sekcji w raporcie PDF
+        pdf.set_text_color(40, 40, 40)
 
     # Ustawiamy czcionkę Arial o rozmiarze 12 dla całego dokumentu
     pdf.set_font("Arial", size=12)  
