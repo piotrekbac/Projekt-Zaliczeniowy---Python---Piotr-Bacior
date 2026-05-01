@@ -128,6 +128,9 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
     # Ustawiamy szary kolor tekstu dla daty, co zapewnia subtelny wygląd daty i nie odciąga uwagi od głównej treści raportu PDF
     pdf.set_text_color(100)
 
+    # Dodajemy datę wygenerowania raportu, usuwając polskie znaki, aby zapewnić poprawne wyświetlanie w PDF, i ustawiając ją na prawej stronie (align='R'), co informuje użytkownika o czasie wygenerowania raportu PDF
+    pdf.cell(0, 10, remove_polish_accents(f"Data wygenerowania raportu: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"), 0, 1, 'R')
+
 
     # Ustawiamy czcionkę Arial o rozmiarze 12 dla całego dokumentu
     pdf.set_font("Arial", size=12)  
