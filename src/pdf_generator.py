@@ -139,9 +139,8 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
     # Dodajemy tytuł dla sekcji z diagnozą, usuwając polskie znaki, aby zapewnić poprawne wyświetlanie w PDF, co pozwala na wyróżnienie tej sekcji w raporcie PDF z analizą BMI i zaleceniami dietetycznymi
     section_title("1. Pomiary i Diagnoza:")
 
-
-
-
+    # Dodajemy szczegółowe informacje o pomiarach i diagnozie, usuwając polskie znaki, aby zapewnić poprawne wyświetlanie w PDF, co pozwala na przekazanie użytkownikowi ważnych informacji o jego stanie zdrowia w raporcie PDF z analizą BMI i zaleceniami dietetycznymi
+    normal_text(f"Wzrost: {wzrost} m\nObecna waga: {waga} kg\nZalecana waga: {min_ideal} - {max_ideal} kg")
 
 
 
