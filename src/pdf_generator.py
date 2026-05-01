@@ -189,6 +189,14 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
     # Dodajemy szczegółowe informacje o zapotrzebowaniu kalorycznym, usuwając polskie znaki, aby zapewnić poprawne wyświetlanie w PDF, co pozwala na przekazanie użytkownikowi ważnych informacji o jego zapotrzebowaniu kalorycznym w raporcie PDF z analizą BMI i zaleceniami dietetycznymi
     normal_text(f"Podstawowa przemiana materii (BMR): {bmr} kcal\nCalkowite zapotrzebowanie (TDEE): {tdee} kcal")
 
+    # Dodajemy szczegółowe informacje o zalecanym spożyciu makroskładników, usuwając polskie znaki, aby zapewnić poprawne wyświetlanie w PDF, co pozwala na przekazanie użytkownikowi ważnych informacji o zalecanym spożyciu białka, tłuszczów i węglowodanów w raporcie PDF z analizą BMI i zaleceniami dietetycznymi
+    pdf.ln(3)
+
+
+
+
+
+
 
 
 
