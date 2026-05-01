@@ -198,8 +198,11 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
     # Niebieski kolor tekstu dla nagłówków zalecanego spożycia dziennego kalorii
     pdf.set_text_color(41, 128, 185)  
 
+    # Dodajemy szczegółowe informacje o zalecanym spożyciu dziennym kalorii, usuwając polskie znaki, aby zapewnić poprawne wyświetlanie w PDF, i ustawiając go na lewej stronie (align='L'), co informuje użytkownika o zalecanym spożyciu dziennym kalorii w raporcie PDF z analizą BMI i zaleceniami dietetycznymi
     pdf.cell(0, 8, remove_polish_accents(f"Zalecane spozycie dzienne: {docelowe_kcal} kcal"), 0, 1)
 
+    # Ustawiamy czcionkę Arial o rozmiarze 12 dla treści makroskładników, co pozwala na przekazanie użytkownikowi ważnych informacji o zalecanym spożyciu makroskładników w raporcie PDF z analizą BMI i zaleceniami dietetycznymi
+    pdf.set_font('Arial', '', 12)
 
 
 
