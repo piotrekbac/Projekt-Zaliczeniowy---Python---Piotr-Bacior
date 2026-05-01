@@ -183,8 +183,8 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
     # Dodajemy tytuł dla sekcji z zaleceniami dietetycznymi, usuwając polskie znaki, aby zapewnić poprawne wyświetlanie w PDF, co pozwala na wyróżnienie tej sekcji w raporcie PDF z analizą BMI i zaleceniami dietetycznymi
     section_title("2. Zapotrzebowanie i Dieta:")
 
-
-
+    # Dodajemy szczegółowe informacje o zapotrzebowaniu kalorycznym i celach diety, usuwając polskie znaki, aby zapewnić poprawne wyświetlanie w PDF, co pozwala na przekazanie użytkownikowi ważnych informacji o jego zapotrzebowaniu kalorycznym i celach diety w raporcie PDF z analizą BMI i zaleceniami dietetycznymi
+    normal_text(f"Cel dietetyczny: {cel.upper()}, bold=True)")
 
 
 
