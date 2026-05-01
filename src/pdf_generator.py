@@ -163,6 +163,14 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
     # Dodajemy napis z wartością BMI i kategorią, usuwając polskie znaki, aby zapewnić poprawne wyświetlanie w PDF, i ustawiając go na lewej stronie (align='L'), co informuje użytkownika o jego wskaźniku BMI i kategorii w raporcie PDF z analizą BMI i zaleceniami dietetycznymi
     pdf.cell(0, 10, remove_polish_accents(f"Wskaznik BMI: {bmi} ({kategoria})"), 0, 1)
 
+    # Wklejamy ASCII pasek - musimy użyć czcionki Courier, aby zapewnić poprawne wyrównanie znaków, co pozwala na wizualne przedstawienie poziomu BMI w raporcie PDF z analizą BMI i zaleceniami dietetycznymi
+
+
+
+
+
+
+
 
 
 
