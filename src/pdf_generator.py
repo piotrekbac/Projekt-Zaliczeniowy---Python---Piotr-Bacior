@@ -178,6 +178,15 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
     pdf.ln(5)
 
 
+    # -- Sekcja 2 - Dieta --
+
+
+
+
+
+
+
+
 
     # Ustawiamy czcionkę Arial o rozmiarze 12 dla całego dokumentu
     pdf.set_font("Arial", size=12)  
