@@ -195,8 +195,15 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
     # Ustawiamy czcionkę Arial Bold o rozmiarze 12 dla nagłówków makroskładników, co pozwala na wyróżnienie tych informacji w raporcie PDF z analizą BMI i zaleceniami dietetycznymi
     pdf.set_font('Arial', 'B', 12)
 
-    # Niebieski kolor tekstu dla nagłówków makroskładników
+    # Niebieski kolor tekstu dla nagłówków zalecanego spożycia dziennego kalorii
     pdf.set_text_color(41, 128, 185)  
+
+    pdf.cell(0, 8, remove_polish_accents(f"Zalecane spozycie dzienne: {docelowe_kcal} kcal"), 0, 1)
+
+
+
+
+
 
 
 
