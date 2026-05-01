@@ -204,7 +204,8 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
     # Ustawiamy czcionkę Arial o rozmiarze 12 dla treści makroskładników, co pozwala na przekazanie użytkownikowi ważnych informacji o zalecanym spożyciu makroskładników w raporcie PDF z analizą BMI i zaleceniami dietetycznymi
     pdf.set_font('Arial', '', 12)
 
-
+    # Ustawiamy ciemnoszary kolor tekstu dla treści makroskładników, co zapewnia dobry kontrast z białym tłem i poprawia czytelność tych informacji w raporcie PDF z analizą BMI i zaleceniami dietetycznymi
+    pdf.set_text_color(40, 40, 40)
 
 
 
