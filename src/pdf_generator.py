@@ -210,8 +210,8 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
     # Dodajemy szczegółowe informacje o zalecanym spożyciu białka, usuwając polskie znaki, aby zapewnić poprawne wyświetlanie w PDF, i ustawiając go na lewej stronie (align='L'), co informuje użytkownika o zalecanym spożyciu białka w raporcie PDF z analizą BMI i zaleceniami dietetycznymi
     pdf.cell(0, 8, remove_polish_accents(f"-> Bialko: {bialko} g"), 0, 1)
 
-
-
+    # Dodajemy szczegółowe informacje o zalecanym spożyciu węglowodanów, usuwając polskie znaki, aby zapewnić poprawne wyświetlanie w PDF, i ustawiając go na lewej stronie (align='L'), co informuje użytkownika o zalecanym spożyciu węglowodanów w raporcie PDF z analizą BMI i zaleceniami dietetycznymi
+    pdf.cell(0, 8, remove_polish_accents(f"-> Tluszcze: {tluszcze} g"), 0, 1)
 
 
     # Ustawiamy czcionkę Arial o rozmiarze 12 dla całego dokumentu
