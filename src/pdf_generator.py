@@ -174,7 +174,8 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
     # Tworzymy pasek ASCII, który wizualnie przedstawia poziom BMI, gdzie '|' reprezentuje aktualny poziom BMI, a '-' reprezentuje pozostałą część skali, co pozwala na szybkie zrozumienie poziomu BMI w raporcie PDF z analizą BMI i zaleceniami dietetycznymi
     pdf.cell(0, 8, remove_polish_accents(pasek), 0, 1, 'C')
 
-
+    # Dodajemy odstęp między sekcją z diagnozą a kolejną sekcją raportu, co poprawia czytelność i estetykę układu strony w raporcie PDF z analizą BMI i zaleceniami dietetycznymi
+    pdf.ln(5)
 
 
 
