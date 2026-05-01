@@ -105,13 +105,6 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
         pdf.ln(2)
 
 
-    # Data na prawo
-
-    # Ustawiamy czcionkę Arial Italic o rozmiarze 11 dla daty, co pozwala na wyróżnienie daty i nadanie jej profesjonalnego wyglądu
-    pdf.set_font('Arial', 'I', 11)
-
-    # Ustawiamy szary kolor tekstu dla daty, co zapewnia subtelny wygląd daty i nie odciąga uwagi od głównej treści raportu PDF
-    pdf.set_text_color(100)
 
 
 
@@ -126,6 +119,14 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
 
         # Dodajemy tekst do raportu PDF, usuwając polskie znaki, aby zapewnić poprawne wyświetlanie w PDF, i ustawiając go na lewej stronie (align='L'), z możliwością zawijania tekstu (multi_cell)
         pdf.multi_cell(0, 8, remove_polish_accents(text))
+
+    # Data na prawo
+
+    # Ustawiamy czcionkę Arial Italic o rozmiarze 11 dla daty, co pozwala na wyróżnienie daty i nadanie jej profesjonalnego wyglądu
+    pdf.set_font('Arial', 'I', 11)
+
+    # Ustawiamy szary kolor tekstu dla daty, co zapewnia subtelny wygląd daty i nie odciąga uwagi od głównej treści raportu PDF
+    pdf.set_text_color(100)
 
 
     # Ustawiamy czcionkę Arial o rozmiarze 12 dla całego dokumentu
