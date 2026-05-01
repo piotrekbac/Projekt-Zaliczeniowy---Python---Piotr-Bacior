@@ -154,6 +154,12 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
         # Ustawiamy kolor czerwony dla napisu BMI, co wskazuje na niezdrowy stan wagi i przyciąga uwagę użytkownika do tej informacji w raporcie PDF z analizą BMI i zaleceniami dietetycznymi
         pdf.set_text_color(200, 50, 50)     
 
+    # Jeśli kategoria BMI wskazuje na prawidłową wagę, ustawiamy kolor zielony dla napisu BMI, co wskazuje na zdrowy stan wagi i pozytywnie wyróżnia tę informację w raporcie PDF z analizą BMI i zaleceniami dietetycznymi
+    else : 
+
+        # Ustawiamy kolor zielony dla napisu BMI, co wskazuje na zdrowy stan wagi i pozytywnie wyróżnia tę informację w raporcie PDF z analizą BMI i zaleceniami dietetycznymi
+        pdf.set_text_color(30, 150, 30)
+
 
 
 
