@@ -207,7 +207,8 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
     # Ustawiamy ciemnoszary kolor tekstu dla treści makroskładników, co zapewnia dobry kontrast z białym tłem i poprawia czytelność tych informacji w raporcie PDF z analizą BMI i zaleceniami dietetycznymi
     pdf.set_text_color(40, 40, 40)
 
-
+    # Dodajemy szczegółowe informacje o zalecanym spożyciu białka, usuwając polskie znaki, aby zapewnić poprawne wyświetlanie w PDF, i ustawiając go na lewej stronie (align='L'), co informuje użytkownika o zalecanym spożyciu białka w raporcie PDF z analizą BMI i zaleceniami dietetycznymi
+    pdf.cell(0, 8, remove_polish_accents(f"-> Bialko: {bialko} g"), 0, 1)
 
 
 
