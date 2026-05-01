@@ -134,6 +134,10 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
     # Dodajemy odstęp między datą a nagłówkiem raportu, co poprawia czytelność i estetykę układu strony w raporcie PDF
     pdf.ln(5)
 
+    # -- Sekcja 1 dokumentu - Diagnoza -- 
+
+
+
     # Ustawiamy czcionkę Arial o rozmiarze 12 dla całego dokumentu
     pdf.set_font("Arial", size=12)  
 
