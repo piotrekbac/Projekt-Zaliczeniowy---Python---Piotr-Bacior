@@ -165,7 +165,8 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
 
     # Wklejamy ASCII pasek - musimy użyć czcionki Courier, aby zapewnić poprawne wyrównanie znaków, co pozwala na wizualne przedstawienie poziomu BMI w raporcie PDF z analizą BMI i zaleceniami dietetycznymi
 
-
+    # Ustawiamy czcionkę Courier o rozmiarze 11 dla ASCII paska, co pozwala na poprawne wyrównanie znaków i estetyczne przedstawienie poziomu BMI w raporcie PDF z analizą BMI i zaleceniami dietetycznymi
+    pdf.set_font('Courier', 'B', 11)
 
 
 
