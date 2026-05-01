@@ -143,6 +143,17 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
     normal_text(f"Wzrost: {wzrost} m\nObecna waga: {waga} kg\nZalecana waga: {min_ideal} - {max_ideal} kg")
 
 
+    # Koloryzujemy napis BMI (zielony dla prawidłowej wagi, czerwony dla nadwagi)
+
+    # Ustawiamy czcionkę Arial Bold o rozmiarze 12 dla napisu BMI, co pozwala na wyróżnienie tej informacji w raporcie PDF z analizą BMI i zaleceniami dietetycznymi
+    pdf.set_font('Arial', 'B', 12)
+
+
+
+
+
+
+
 
     # Ustawiamy czcionkę Arial o rozmiarze 12 dla całego dokumentu
     pdf.set_font("Arial", size=12)  
