@@ -180,7 +180,8 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
 
     # -- Sekcja 2 - Dieta --
 
-
+    # Dodajemy tytuł dla sekcji z zaleceniami dietetycznymi, usuwając polskie znaki, aby zapewnić poprawne wyświetlanie w PDF, co pozwala na wyróżnienie tej sekcji w raporcie PDF z analizą BMI i zaleceniami dietetycznymi
+    section_title("2. Zapotrzebowanie i Dieta:")
 
 
 
