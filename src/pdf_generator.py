@@ -136,6 +136,13 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
 
     # -- Sekcja 1 dokumentu - Diagnoza -- 
 
+    # Dodajemy tytuł dla sekcji z diagnozą, usuwając polskie znaki, aby zapewnić poprawne wyświetlanie w PDF, co pozwala na wyróżnienie tej sekcji w raporcie PDF z analizą BMI i zaleceniami dietetycznymi
+    section_title("1. Pomiary i Diagnoza:")
+
+
+
+
+
 
 
     # Ustawiamy czcionkę Arial o rozmiarze 12 dla całego dokumentu
