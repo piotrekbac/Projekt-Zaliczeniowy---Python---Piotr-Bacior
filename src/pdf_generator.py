@@ -148,8 +148,11 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
     # Ustawiamy czcionkę Arial Bold o rozmiarze 12 dla napisu BMI, co pozwala na wyróżnienie tej informacji w raporcie PDF z analizą BMI i zaleceniami dietetycznymi
     pdf.set_font('Arial', 'B', 12)
 
+    # Sprawdzamy kategorię BMI, aby ustawić odpowiedni kolor tekstu dla napisu BMI, co pozwala na szybkie zidentyfikowanie stanu zdrowia użytkownika w raporcie PDF z analizą BMI i zaleceniami dietetycznymi
     if kategoria in ["Niedowaga", "Otyłość", "Niedowaga"] :
 
+        # Ustawiamy kolor czerwony dla napisu BMI, co wskazuje na niezdrowy stan wagi i przyciąga uwagę użytkownika do tej informacji w raporcie PDF z analizą BMI i zaleceniami dietetycznymi
+        pdf.set_text_color(200, 50, 50)     
 
 
 
