@@ -49,3 +49,6 @@ def predict_goal_date(csv_filename: str, target_weight: float) -> str :
 
         # Jeśli wszystkie pomiary pochodzą z tego samego dnia, to nie możemy przeprowadzić regresji liniowej, ponieważ nie mamy zmiennej niezależnej (X) o różnych wartościach, co jest konieczne do obliczenia linii trendu i przewidywania przyszłych wartości na podstawie danych historycznych
         if df['Days'].nunique() < 2 :
+
+            # Jeśli wszystkie pomiary pochodzą z tego samego dnia, zwracamy komunikat o potrzebie pomiarów z przynajmniej dwóch różnych dni, aby móc przeprowadzić regresję liniową i przewidzieć datę osiągnięcia celu wagowego
+            return "Wszystkie pomiary pochodzą z tego samego dnia. Potrzebne są pomiary z przynajmniej dwóch różnych dni, aby przeprowadzić regresję liniową i przewidzieć datę osiągnięcia celu wagowego."
