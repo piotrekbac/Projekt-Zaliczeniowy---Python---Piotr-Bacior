@@ -92,3 +92,6 @@ def predict_goal_date(csv_filename: str, target_weight: float) -> str :
         # Jeżeli target_days jest ujemne, to oznacza, że na podstawie obecnego trendu waga już osiągnęła lub przekroczyła docelową wagę, co jest sprzeczne z celem, więc zwracamy komunikat o osiągnięciu celu, ponieważ obecny trend wskazuje, że cel wagowy został już osiągnięty lub przekroczony
         days_remaining = int(target_days - df['Days'].iloc[-1])
         
+        
+        # Jeżeli liczba dni do osiągnięcia celu jest ujemna lub równa zero, to oznacza, że na podstawie obecnego trendu waga już osiągnęła lub przekroczyła docelową wagę, co jest sprzeczne z celem, więc zwracamy komunikat o osiągnięciu celu, ponieważ obecny trend wskazuje, że cel wagowy został już osiągnięty lub przekroczony
+        if days_remaining <= 0 :
