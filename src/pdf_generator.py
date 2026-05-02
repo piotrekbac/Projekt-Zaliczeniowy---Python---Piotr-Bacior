@@ -237,7 +237,8 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
         # Dodajemy informację o braku danych do wygenerowania wykresu trendu wagi, usuwając polskie znaki, aby zapewnić poprawne wyświetlanie w PDF, i ustawiając ją na lewej stronie (align='L'), co informuje użytkownika o braku wykresu trendu wagi w raporcie PDF z analizą BMI i zaleceniami dietetycznymi
         normal_text("Brak danych do wygenerowania wykresu trendu wagi.", bold=True)
 
-    # Sekcja Podsumowania - dodajemy podsumowanie i zalecenia końcowe do raportu - zapis
+
+    # -- Sekcja Podsumowania - dodajemy podsumowanie i zalecenia końcowe do raportu - zapis -- 
     try :
 
         # Zapisujemy wygenerowany raport PDF do pliku o podanej nazwie
