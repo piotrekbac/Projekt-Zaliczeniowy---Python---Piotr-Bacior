@@ -72,7 +72,7 @@ def test_pdf_generation(self) :
     test_pdf = os.path.join(tmpdir, "test_raport.pdf")
 
     # Wywołujemy funkcję generującą raport PDF z przykładowymi danymi
-    generate_pdf_report(80.0, 1.80, 24.6, "Norma", 2500, 150, 70, 300, "utrzymanie", filename=test_pdf)
-
+    generate_pdf_report(80.0, 1.80, 24.6, "Norma", 1800.0, 2500.0, 2500.0, 150, 70, 300, "utrzymanie", 60.0, 80.0, "15.0[----O---]40.0+", filename=test_pdf)
+    
     # Sprawdzamy, czy plik PDF został utworzony
     self.assertTrue(os.path.exists(test_pdf))
