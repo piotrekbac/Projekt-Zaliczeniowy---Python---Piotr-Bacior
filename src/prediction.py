@@ -37,3 +37,6 @@ def predict_goal_date(csv_filename: str, target_weight: float) -> str :
 
         # Sortujemy dane według kolumny 'Data i czas', co jest ważne, aby mieć chronologiczny porządek danych, co jest kluczowe dla analizy trendów i przewidywania przyszłych wartości na podstawie danych historycznych
         df = df.sort_values('Data i czas')
+
+        # Pobieramy pierwszą datę z kolumny 'Data i czas', co jest potrzebne do obliczenia liczby dni od tej daty do każdej kolejnej daty, co jest kluczowe dla regresji liniowej, która będzie używać tych wartości jako zmiennej niezależnej (X) do przewidywania wagi (Y)
+        first_date = df['Data i czas'].min()  
