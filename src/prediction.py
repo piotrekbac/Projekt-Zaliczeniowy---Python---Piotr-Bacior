@@ -12,3 +12,7 @@ def predict_goal_date(csv_file: str, target_weight: float) -> str :
     """
     Algorytm Machine Learning (Regresja Liniowa) przewidujący datę osiągnięcia celu wagowego.
     """
+
+    # Sprawdzamy, czy plik CSV z danymi historycznymi istnieje. Jeśli nie, zwracamy komunikat o braku danych.
+    if not os.path.exists(csv_file) : 
+
