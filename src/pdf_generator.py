@@ -231,6 +231,10 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
         # Dodajemy wykres trendu wagi do raportu PDF, umieszczając go na środku strony (x=10) i ustawiając szerokość na 190 mm, co pozwala na wizualne przedstawienie historii wagi użytkownika w raporcie PDF z analizą BMI i zaleceniami dietetycznymi
         pdf.image("wykres_trendu.png", x=10, w=190)  
 
+    # Jeśli plik z wykresem trendu wagi nie istnieje, dodajemy informację o braku danych do raportu PDF, co pozwala na przekazanie użytkownikowi informacji o braku wykresu trendu wagi w raporcie PDF z analizą BMI i zaleceniami dietetycznymi
+    else :
+
+
 
     # Sekcja Podsumowania - dodajemy podsumowanie i zalecenia końcowe do raportu - zapis
     try :
