@@ -98,3 +98,6 @@ def predict_goal_date(csv_filename: str, target_weight: float) -> str :
 
             # Jeżeli liczba dni do osiągnięcia celu jest ujemna lub równa zero, zwracamy komunikat o osiągnięciu celu, co oznacza, że na podstawie obecnego trendu waga już osiągnęła lub przekroczyła docelową wagę, więc gratulujemy osiągnięcia celu wagowego
             return "Cel powinieneś osiągnąć już lada chwila!"
+        
+        # Zamiana dni na dokładną datę kalendarzową
+        goal_date = df['Data i czas'].iloc[-1] + timedelta(days=days_remaining)
