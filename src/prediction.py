@@ -66,7 +66,7 @@ def predict_goal_date(csv_filename: str, target_weight: float) -> str :
 
 
         # Jeżeli jesteśmy już bardzo blisko celu - obsługa przypadku, gdy aktualna waga jest równa lub mniejsza niż docelowa waga, co oznacza, że cel wagowy został już osiągnięty lub przekroczony, więc nie ma potrzeby przewidywania daty osiągnięcia celu, ponieważ jest on już osiągnięty
-
         if abs(current_weight - target_weight) <= 0.5 : 
 
-            
+            # Jeżeli aktualna waga jest równa lub mniejsza niż docelowa waga, zwracamy gratulacje, ponieważ cel wagowy został już osiągnięty, co oznacza, że użytkownik osiągnął swój cel i nie ma potrzeby dalszych przewidywań
+            return "Gratulacje! Twój cel wagowy został już osiągnięty!"
