@@ -225,6 +225,12 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
     # Dodajemy tytuł dla sekcji z wykresem historii wagi, usuwając polskie znaki, aby zapewnić poprawne wyświetlanie w PDF, co pozwala na wyróżnienie tej sekcji w raporcie PDF z analizą BMI i zaleceniami dietetycznymi
     section_title("3. Historia wagi (Wykres trendu): ")
 
+    # Sprawdzamy, czy plik z wykresem trendu wagi istnieje, aby uniknąć błędów podczas próby dodania nieistniejącego pliku do raportu PDF, co pozwala na bezproblemowe generowanie raportu PDF z analizą BMI i zaleceniami dietetycznymi, nawet jeśli wykres trendu wagi nie został wygenerowany
+    if os.path.exists("wykres_trendu.png") :
+
+
+
+
     # Sekcja Podsumowania - dodajemy podsumowanie i zalecenia końcowe do raportu - zapis
     try :
 
