@@ -7,14 +7,14 @@ from datetime import timedelta          # Importujemy datetime i timedelta, któ
 
 
 # Definiuję funkcję predict_goal_date, która wykorzystuje algorytm regresji liniowej do przewidywania daty osiągnięcia celu wagowego na podstawie danych historycznych zapisanych w pliku CSV. Dane wejściowe to nazwa pliku CSV oraz docelowa waga, a wynik to przewidywana data osiągnięcia tej wagi w formacie string.
-def predict_goal_date(csv_file: str, target_weight: float) -> str : 
+def predict_goal_date(csv_filename: str, target_weight: float) -> str : 
 
     """
     Algorytm Machine Learning (Regresja Liniowa) przewidujący datę osiągnięcia celu wagowego.
     """
 
     # Sprawdzamy, czy plik CSV z danymi historycznymi istnieje. Jeśli nie, zwracamy komunikat o braku danych.
-    if not os.path.exists(csv_file) : 
+    if not os.path.exists(csv_filename) : 
 
         # Jeśli plik nie istnieje, zwracamy komunikat o braku danych historycznych, co oznacza, że nie możemy przewidzieć daty osiągnięcia celu wagowego
         return "Brak danych historycznych. Nie można przewidzieć daty osiągnięcia celu wagowego."
@@ -22,3 +22,6 @@ def predict_goal_date(csv_file: str, target_weight: float) -> str :
     
     # Jeśli plik istnieje, wczytujemy dane z pliku CSV do DataFrame'a za pomocą biblioteki pandas, co pozwala nam na łatwą manipulację danymi i przygotowanie ich do analizy
     try : 
+
+        # Wczytujemy dane z pliku CSV, zakładając, że wartości są oddzielone średnikami
+        df = pd.read_csv(csv_filename, sep=';') 
