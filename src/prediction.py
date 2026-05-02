@@ -6,6 +6,7 @@ from datetime import timedelta          # Importujemy datetime i timedelta, któ
 # Piotr Bacior - 15 722 - 2026 - Python - MH
 
 
+# Definiuję funkcję predict_goal_date, która wykorzystuje algorytm regresji liniowej do przewidywania daty osiągnięcia celu wagowego na podstawie danych historycznych zapisanych w pliku CSV. Dane wejściowe to nazwa pliku CSV oraz docelowa waga, a wynik to przewidywana data osiągnięcia tej wagi w formacie string.
 def predict_goal_date(csv_file: str, target_weight: float) -> str : 
 
     """
