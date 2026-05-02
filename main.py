@@ -178,10 +178,14 @@ def main():
             # Wywołujemy funkcję calculate_weight_difference, aby obliczyć różnicę w kilogramach między aktualną a idealną wagą
             roznica_wagi = calculate_weight_difference(waga, min_waga, max_waga)   
 
+
             # Naszym celem będzie idealny środek między min a max wagą
 
             # Obliczamy środek normy, który jest średnią arytmetyczną między minimalną a maksymalną idealną wagą, zaokrąglając wynik do 1 miejsca po przecinku, aby uzyskać bardziej estetyczny i czytelny wynik dla użytkownika w konsoli
             srodek_normy = round((min_waga + max_waga) / 2, 1)
+
+            # Wywołujemy funkcję predict_goal_date, aby przewidzieć datę osiągnięcia celu wagowego na podstawie danych historycznych zapisanych w pliku CSV, przekazując do niej nazwę pliku CSV oraz docelową wagę (środek normy), a wynik przypisujemy do zmiennej prognoza_ai, którą następnie możemy wykorzystać do wyświetlenia przewidywanej daty osiągnięcia celu wagowego w podsumowaniu wyników lub w sekcji zaleceń dietetycznych, informując użytkownika o tym, kiedy może spodziewać się osiągnięcia swojej idealnej wagi na podstawie analizy danych historycznych i algorytmu regresji liniowej
+            prognoza_ai = predict_goal_date("historia_bmi.csv", srodek_normy)
 
             # Wywołujemy funkcję calculate_bmr, aby obliczyć podstawową przemianę materii (BMR) na podstawie wagi, wzrostu, wieku i płci
             bmr = calculate_bmr(waga, wzrost, wiek, plec)   
