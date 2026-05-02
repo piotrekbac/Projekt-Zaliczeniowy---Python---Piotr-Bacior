@@ -57,3 +57,6 @@ def predict_goal_date(csv_filename: str, target_weight: float) -> str :
         # -- Regresja liniowa - Machine Learning --
 
         # y = a*x + b (a -> slope (nachylenie), b -> intercept (punkt przecięcia))
+
+        # Obliczamy współczynnik kierunkowy (slope) i punkt przecięcia (intercept) linii regresji liniowej za pomocą funkcji polyfit z biblioteki numpy, która dopasowuje linię do danych, gdzie 'Days' jest zmienną niezależną (X), a 'Waga (kg)' jest zmienną zależną (Y). Współczynnik kierunkowy (slope) wskazuje, jak szybko waga zmienia się w czasie, a punkt przecięcia (intercept) wskazuje wartość wagi, gdy liczba dni wynosi zero (czyli na początku pomiarów).
+        slope, intercept = np.polyfit(df['Days'], df['Waga (kg)'], 1)
