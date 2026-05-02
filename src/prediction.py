@@ -75,4 +75,7 @@ def predict_goal_date(csv_filename: str, target_weight: float) -> str :
         # Sprawdzamy czy idziemy w dobrym kierunku 
 
         # Jeżeli chcemy schudnąć (target_weight < current_weight) i nachylenie jest dodatnie, to oznacza, że waga rośnie, co jest sprzeczne z celem, więc zwracamy komunikat o potrzebie zmiany podejścia, ponieważ obecny trend wskazuje na wzrost wagi, co jest sprzeczne z celem schudnięcia
-        if (slope > 0 and target_weight < current_weight) or (slope < 0 and target_weight > current_weight):
+        if (slope > 0 and target_weight < current_weight) or (slope < 0 and target_weight > current_weight) :
+
+            # Jeżeli chcemy schudnąć, a nachylenie jest dodatnie, lub jeżeli chcemy przytyć, a nachylenie jest ujemne, zwracamy komunikat o oddalaniu się od celu, co oznacza, że obecny trend wagi wskazuje na kierunek przeciwny do celu, więc zalecamy skorygowanie diety lub podejścia do osiągnięcia celu wagowego
+            return "Twój obecny trend wagi oddala Cię od celu. Skoryguj dietę!"
