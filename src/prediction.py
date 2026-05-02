@@ -34,3 +34,6 @@ def predict_goal_date(csv_filename: str, target_weight: float) -> str :
         
         # Konwertujemy kolumnę 'Data i czas' na format daty i czasu, co pozwala nam na wykonywanie operacji na datach, takich jak obliczanie różnic między datami czy konwersja do formatu numerycznego dla regresji liniowej
         df['Data i czas'] = pd.to_datetime(df['Data i czas'])
+
+        # Sortujemy dane według kolumny 'Data i czas', co jest ważne, aby mieć chronologiczny porządek danych, co jest kluczowe dla analizy trendów i przewidywania przyszłych wartości na podstawie danych historycznych
+        df = df.sort_values('Data i czas')
