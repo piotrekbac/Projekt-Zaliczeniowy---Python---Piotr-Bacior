@@ -70,8 +70,7 @@ class PDF(FPDF) :
 
 
 # Definiuję funkcję do generowania pliku PDF z analizą BMI - dane wejściowe są typu str, oczekujemy wyniku typu None (funkcja nie zwraca wartości)
-def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, tdee: float, bialko: int, tluszcze: int, wegle: int, cel: str, filename: str = "Raport_Dietetyczny.pdf") -> None :
-
+def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, bmr: float, tdee: float, docelowe_kcal: float, bialko: int, tluszcze: int, wegle: int, cel: str, min_ideal: float, max_ideal: float, pasek: str, filename: str = "Raport_Dietetyczny.pdf") -> None:
     """
     Generuje profesjonalny raport PDF z wynikami i wykresem.
 
