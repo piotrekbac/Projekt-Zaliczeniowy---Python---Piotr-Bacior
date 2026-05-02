@@ -52,9 +52,15 @@ class TestFileHandler(unittest.TestCase) :
             save_to_csv(80.0, 1.80, 24.6, "Norma", 60.0, 80.0, filename=test_csv)
 
         # Otwieramy plik, żeby sprawdzić jak zapisał się wewnątrz
-            with open(test_csv, 'r', encoding='utf-8') as f:            # Otwieramy plik CSV do odczytu
-                reader = csv.reader(f, delimiter=';')                   # Tworzymy czytnik CSV z separatorem ';'
-                rows = list(reader)                                     # Konwertujemy czytnik na listę, aby łatwo sprawdzić zawartość
+
+            # Otwieramy plik CSV do odczytu
+            with open(test_csv, 'r', encoding='utf-8') as f:   
+
+                # Tworzymy czytnik CSV z separatorem ';'
+                reader = csv.reader(f, delimiter=';')     
+                              
+                # Konwertujemy czytnik na listę, aby łatwo sprawdzić zawartość
+                rows = list(reader)                                     
 
         # Pierwszy wiersz powinien być nagłówkiem
                 self.assertEqual(rows[0][1], "Waga (kg)")
@@ -69,7 +75,8 @@ def test_pdf_generation(self) :
     """ Sprawdza, czy generator poprawnie tworzy plik PDF z wynikami. """
 
     # Tworzymy bezpieczny, tymczasowy folder dla testu
-    test_pdf = os.path.join(tmpdir, "test_raport.pdf")
+    with tempfile.TemporaryDirectory() as tmpdir:
+        test_pdf = os.path.join(tmpdir, "test_raport.pdf")
 
     # Wywołujemy funkcję generującą raport PDF z przykładowymi danymi
     generate_pdf_report(80.0, 1.80, 24.6, "Norma", 1800.0, 2500.0, 2500.0, 150, 70, 300, "utrzymanie", 60.0, 80.0, "15.0[----O---]40.0+", filename=test_pdf)
