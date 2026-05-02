@@ -4,11 +4,10 @@ import tempfile             # importuję moduł tempfile do tworzenia tymczasowy
 import csv                  # importuję moduł csv do obsługi plików CSV
 
 # Importuję funkcje save_result_to_file, read_history_from_file i save_to_csv z modułu file_handler
-from src.file_handler import save_result_to_file, read_history_from_file, save_to_csv, generate_pdf_report 
+from src.file_handler import save_result_to_file, read_history_from_file, save_to_csv
 
 # Importuję funkcję generate_pdf_report z modułu pdf_generator, która będzie testowana w jednym z testów
 from src.pdf_generator import generate_pdf_report
-
 # Piotr Bacior - 15 722 - 2026 - Python - MH
 
 # Tworzę klasę TestFileHandler, która dziedziczy po unittest.TestCase, co pozwala mi definiować metody testowe dla funkcji save_result_to_file, read_history_from_file i save_to_csv
@@ -58,7 +57,7 @@ class TestFileHandler(unittest.TestCase) :
 
                 # Tworzymy czytnik CSV z separatorem ';'
                 reader = csv.reader(f, delimiter=';')     
-                              
+
                 # Konwertujemy czytnik na listę, aby łatwo sprawdzić zawartość
                 rows = list(reader)                                     
 
