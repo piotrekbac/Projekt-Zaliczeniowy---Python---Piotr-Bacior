@@ -85,3 +85,6 @@ def predict_goal_date(csv_filename: str, target_weight: float) -> str :
 
             # Jeżeli nachylenie jest równe zero, zwracamy komunikat o braku postępów, co oznacza, że waga od dłuższego czasu stoi w miejscu, więc zalecamy skorygowanie diety lub podejścia do osiągnięcia celu wagowego
             return "Twoja waga od dłuższego czasu stoi w miejscu."
+        
+        # Obliczanie za ile dni waga osiągnie wymarzony cel
+        target_days = (target_weight - intercept) / slope
