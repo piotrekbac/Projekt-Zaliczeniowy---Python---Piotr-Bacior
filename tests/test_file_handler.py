@@ -11,12 +11,10 @@ from src.pdf_generator import generate_pdf_report
 
 # Piotr Bacior - 15 722 - 2026 - Python - MH
 
-
 # Tworzę klasę TestFileHandler, która dziedziczy po unittest.TestCase, co pozwala mi definiować metody testowe dla funkcji save_result_to_file, read_history_from_file i save_to_csv
 class TestFileHandler(unittest.TestCase) : 
 
     """ Klasa testująca zapis i odczyt z systemu plików (TXT oraz CSV) """
-
     
     # Definiuję metodę testową, która sprawdza, czy funkcja save_result_to_file poprawnie zapisuje dane do pliku tekstowego, a następnie czy funkcja read_history_from_file poprawnie odczytuje te dane
     def test_txt_read_write(self) :
@@ -25,6 +23,8 @@ class TestFileHandler(unittest.TestCase) :
 
         # Tworzymy bezpieczny, tymczasowy folder dla testu
         with tempfile.TemporaryDirectory() as tmpdir:
+
+            # Tworzymy ścieżkę do tymczasowego pliku tekstowego, który będzie używany do testowania funkcji zapisu i odczytu historii
             test_file = os.path.join(tmpdir, "test_historia.txt")
 
         # Krok 1: Zapis
