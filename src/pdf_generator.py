@@ -220,7 +220,7 @@ def generate_pdf_report(waga: float, wzrost: float, bmi: float, kategoria: str, 
     pdf.ln(5)
 
 
-
+    # -- Sekcja 3 - Wykres -- 
 
 
     # Sekcja Podsumowania - dodajemy podsumowanie i zalecenia końcowe do raportu - zapis
