@@ -88,3 +88,7 @@ def predict_goal_date(csv_filename: str, target_weight: float) -> str :
         
         # Obliczanie za ile dni waga osiągnie wymarzony cel
         target_days = (target_weight - intercept) / slope
+
+        # Jeżeli target_days jest ujemne, to oznacza, że na podstawie obecnego trendu waga już osiągnęła lub przekroczyła docelową wagę, co jest sprzeczne z celem, więc zwracamy komunikat o osiągnięciu celu, ponieważ obecny trend wskazuje, że cel wagowy został już osiągnięty lub przekroczony
+        days_remaining = int(target_days - df['Days'].iloc[-1])
+        
