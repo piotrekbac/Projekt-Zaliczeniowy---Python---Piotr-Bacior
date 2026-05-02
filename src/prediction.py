@@ -31,3 +31,6 @@ def predict_goal_date(csv_filename: str, target_weight: float) -> str :
 
             # Jeśli dane są niewystarczające, zwracamy komunikat o potrzebie co najmniej 2 wpisów, aby móc przewidzieć datę osiągnięcia celu wagowego
             return "Niewystarczająca ilość danych historycznych. Potrzebne są co najmniej 2 wpisy, aby przewidzieć datę osiągnięcia celu wagowego."
+        
+        # Konwertujemy kolumnę 'Data i czas' na format daty i czasu, co pozwala nam na wykonywanie operacji na datach, takich jak obliczanie różnic między datami czy konwersja do formatu numerycznego dla regresji liniowej
+        df['Data i czas'] = pd.to_datetime(df['Data i czas'])
