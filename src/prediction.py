@@ -70,3 +70,9 @@ def predict_goal_date(csv_filename: str, target_weight: float) -> str :
 
             # Jeżeli aktualna waga jest równa lub mniejsza niż docelowa waga, zwracamy gratulacje, ponieważ cel wagowy został już osiągnięty, co oznacza, że użytkownik osiągnął swój cel i nie ma potrzeby dalszych przewidywań
             return "Gratulacje! Twój cel wagowy został już osiągnięty!"
+        
+
+        # Sprawdzamy czy idziemy w dobrym kierunku 
+
+        # Jeżeli chcemy schudnąć (target_weight < current_weight) i nachylenie jest dodatnie, to oznacza, że waga rośnie, co jest sprzeczne z celem, więc zwracamy komunikat o potrzebie zmiany podejścia, ponieważ obecny trend wskazuje na wzrost wagi, co jest sprzeczne z celem schudnięcia
+        if (slope > 0 and target_weight < current_weight) or (slope < 0 and target_weight > current_weight):
