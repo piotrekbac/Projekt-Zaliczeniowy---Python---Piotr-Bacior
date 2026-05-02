@@ -4,3 +4,6 @@ import numpy as np                      # Importujemy bibliotekę numpy, która 
 from datetime import timedelta          # Importujemy datetime i timedelta, które są używane do operacji na datach i czasie, np. do obliczania różnic między datami
 
 # Piotr Bacior - 15 722 - 2026 - Python - MH
+
+
+def predict_goal_date(csv_file: str, target_weight: float) -> str : 
