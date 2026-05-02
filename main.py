@@ -178,6 +178,11 @@ def main():
             # Wywołujemy funkcję calculate_weight_difference, aby obliczyć różnicę w kilogramach między aktualną a idealną wagą
             roznica_wagi = calculate_weight_difference(waga, min_waga, max_waga)   
 
+            # Naszym celem będzie idealny środek między min a max wagą
+
+            # Obliczamy środek normy, który jest średnią arytmetyczną między minimalną a maksymalną idealną wagą, zaokrąglając wynik do 1 miejsca po przecinku, aby uzyskać bardziej estetyczny i czytelny wynik dla użytkownika w konsoli
+            srodek_normy = round((min_waga + max_waga) / 2, 1)
+
             # Wywołujemy funkcję calculate_bmr, aby obliczyć podstawową przemianę materii (BMR) na podstawie wagi, wzrostu, wieku i płci
             bmr = calculate_bmr(waga, wzrost, wiek, plec)   
 
