@@ -7,3 +7,7 @@ from datetime import timedelta          # Importujemy datetime i timedelta, któ
 
 
 def predict_goal_date(csv_file: str, target_weight: float) -> str : 
+
+    """
+    Algorytm Machine Learning (Regresja Liniowa) przewidujący datę osiągnięcia celu wagowego.
+    """
