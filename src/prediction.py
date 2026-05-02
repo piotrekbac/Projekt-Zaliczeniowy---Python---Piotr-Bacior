@@ -60,3 +60,6 @@ def predict_goal_date(csv_filename: str, target_weight: float) -> str :
 
         # Obliczamy współczynnik kierunkowy (slope) i punkt przecięcia (intercept) linii regresji liniowej za pomocą funkcji polyfit z biblioteki numpy, która dopasowuje linię do danych, gdzie 'Days' jest zmienną niezależną (X), a 'Waga (kg)' jest zmienną zależną (Y). Współczynnik kierunkowy (slope) wskazuje, jak szybko waga zmienia się w czasie, a punkt przecięcia (intercept) wskazuje wartość wagi, gdy liczba dni wynosi zero (czyli na początku pomiarów).
         slope, intercept = np.polyfit(df['Days'], df['Waga (kg)'], 1)
+
+        # Obliczamy liczbę dni potrzebną do osiągnięcia docelowej wagi (target_weight) na podstawie równania linii regresji, gdzie target_weight jest wartością Y, a Days jest wartością X. Obliczamy to, przekształcając równanie linii regresji do postaci Days = (target_weight - intercept) / slope, co pozwala nam na przewidzenie, ile dni zajmie osiągnięcie docelowej wagi na podstawie trendu z danych historycznych.
+        current_weight = df['Waga (kg)'].iloc[-1]
