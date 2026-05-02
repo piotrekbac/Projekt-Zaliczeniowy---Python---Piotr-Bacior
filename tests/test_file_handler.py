@@ -6,8 +6,8 @@ import csv                  # importuję moduł csv do obsługi plików CSV
 # Importuję funkcje save_result_to_file, read_history_from_file i save_to_csv z modułu file_handler
 from src.file_handler import save_result_to_file, read_history_from_file, save_to_csv, generate_pdf_report 
 
-# Importuję tmpdir z modułu tempfile, aby tworzyć tymczasowe katalogi dla testów, co zapewnia izolację i bezpieczeństwo podczas testowania operacji na plikach
-with tempfile.TemporaryDirectory() as tmpdir:  
+# Importuję funkcję generate_pdf_report z modułu pdf_generator, która będzie testowana w jednym z testów
+from src.pdf_generator import generate_pdf_report
 
 # Piotr Bacior - 15 722 - 2026 - Python - MH
 
@@ -73,6 +73,6 @@ def test_pdf_generation(self) :
 
     # Wywołujemy funkcję generującą raport PDF z przykładowymi danymi
     generate_pdf_report(80.0, 1.80, 24.6, "Norma", 1800.0, 2500.0, 2500.0, 150, 70, 300, "utrzymanie", 60.0, 80.0, "15.0[----O---]40.0+", filename=test_pdf)
-    
+
     # Sprawdzamy, czy plik PDF został utworzony
     self.assertTrue(os.path.exists(test_pdf))
