@@ -16,3 +16,5 @@ def predict_goal_date(csv_file: str, target_weight: float) -> str :
     # Sprawdzamy, czy plik CSV z danymi historycznymi istnieje. Jeśli nie, zwracamy komunikat o braku danych.
     if not os.path.exists(csv_file) : 
 
+        # Jeśli plik nie istnieje, zwracamy komunikat o braku danych historycznych, co oznacza, że nie możemy przewidzieć daty osiągnięcia celu wagowego
+        return "Brak danych historycznych. Nie można przewidzieć daty osiągnięcia celu wagowego."
