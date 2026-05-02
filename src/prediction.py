@@ -63,3 +63,10 @@ def predict_goal_date(csv_filename: str, target_weight: float) -> str :
 
         # Obliczamy liczbę dni potrzebną do osiągnięcia docelowej wagi (target_weight) na podstawie równania linii regresji, gdzie target_weight jest wartością Y, a Days jest wartością X. Obliczamy to, przekształcając równanie linii regresji do postaci Days = (target_weight - intercept) / slope, co pozwala nam na przewidzenie, ile dni zajmie osiągnięcie docelowej wagi na podstawie trendu z danych historycznych.
         current_weight = df['Waga (kg)'].iloc[-1]
+
+
+        # Jeżeli jesteśmy już bardzo blisko celu - obsługa przypadku, gdy aktualna waga jest równa lub mniejsza niż docelowa waga, co oznacza, że cel wagowy został już osiągnięty lub przekroczony, więc nie ma potrzeby przewidywania daty osiągnięcia celu, ponieważ jest on już osiągnięty
+
+        if abs(current_weight - target_weight) <= 0.5 : 
+
+            
