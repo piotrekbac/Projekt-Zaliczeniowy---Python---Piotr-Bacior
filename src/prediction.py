@@ -105,6 +105,9 @@ def predict_goal_date(csv_filename: str, target_weight: float) -> str :
         # Zwracamy komunikat z przewidywaną datą osiągnięcia celu wagowego, informując użytkownika, że utrzymując obecne tempo, osiągnie swój cel za określoną liczbę dni, wraz z dokładną datą kalendarzową, co pozwala użytkownikowi na lepsze planowanie i motywację do osiągnięcia swojego celu wagowego
         return f"Utrzymując obecne tempo, osiągniesz cel za {days_remaining} dni ({goal_date.strftime('%Y-%m-%d')})."
     
-    
+
     # Obsługa wszelkich nieoczekiwanych błędów, które mogą wystąpić podczas wczytywania danych, przetwarzania danych lub obliczeń regresji liniowej. Jeśli wystąpi jakikolwiek błąd, zwracamy komunikat o błędzie, co pozwala użytkownikowi na zrozumienie, że coś poszło nie tak i może potrzebować sprawdzić dane wejściowe lub skonsultować się z pomocą techniczną.
     except Exception as e :
+
+        # Jeśli wystąpi jakikolwiek błąd, zwracamy komunikat o błędzie, co pozwala użytkownikowi na zrozumienie, że coś poszło nie tak i może potrzebować sprawdzić dane wejściowe lub skonsultować się z pomocą techniczną.
+        return f"Błąd algorytmu predykcyjnego: {e}"
