@@ -82,3 +82,6 @@ def predict_goal_date(csv_filename: str, target_weight: float) -> str :
         
         # Jeżeli nachylenie jest równe zero, to oznacza, że waga się nie zmienia, co jest sprzeczne z celem, więc zwracamy komunikat o braku postępów, ponieważ obecny trend wskazuje na brak zmian w wadze, co jest sprzeczne z celem osiągnięcia określonej wagi
         if slope == 0 :
+
+            # Jeżeli nachylenie jest równe zero, zwracamy komunikat o braku postępów, co oznacza, że waga od dłuższego czasu stoi w miejscu, więc zalecamy skorygowanie diety lub podejścia do osiągnięcia celu wagowego
+            return "Twoja waga od dłuższego czasu stoi w miejscu."
