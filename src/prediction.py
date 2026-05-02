@@ -101,3 +101,6 @@ def predict_goal_date(csv_filename: str, target_weight: float) -> str :
         
         # Zamiana dni na dokładną datę kalendarzową
         goal_date = df['Data i czas'].iloc[-1] + timedelta(days=days_remaining)
+
+        # Zwracamy komunikat z przewidywaną datą osiągnięcia celu wagowego, informując użytkownika, że utrzymując obecne tempo, osiągnie swój cel za określoną liczbę dni, wraz z dokładną datą kalendarzową, co pozwala użytkownikowi na lepsze planowanie i motywację do osiągnięcia swojego celu wagowego
+        return f"Utrzymując obecne tempo, osiągniesz cel za {days_remaining} dni ({goal_date.strftime('%Y-%m-%d')})."
