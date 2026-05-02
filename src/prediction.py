@@ -43,3 +43,6 @@ def predict_goal_date(csv_filename: str, target_weight: float) -> str :
 
         # Tworzymy nową kolumnę 'Days', która zawiera liczbę dni od pierwszej daty do każdej daty w kolumnie 'Data i czas', co pozwala nam na przekształcenie danych czasowych na format numeryczny, który jest wymagany do przeprowadzenia regresji liniowej
         df['Days'] = (df['Data i czas'] - first_date).dt.days
+
+    
+        # Pomiary muszą pochodzić z przynajmniej dwóch różnych dni
