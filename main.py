@@ -104,9 +104,8 @@ def main():
         if czy_pdf == 't':                                           
 
             # Wywołujemy funkcję generate_pdf_report, aby wygenerować raport PDF z wynikami i zaleceniami dietetycznymi, który użytkownik może pobrać i wydrukować, przekazując do niej wszystkie niezbędne dane, takie jak waga, wzrost, obliczone BMI, kategoria zdrowotna, docelowe zapotrzebowanie kaloryczne oraz zalecane spożycie makroskładników
-            generate_pdf_report(waga, wzrost, moje_bmi, kategoria, docelowe_kcal, bialko, tluszcze, wegle, cel_dietetyczny)
-        
-
+            generate_pdf_report(waga, wzrost, moje_bmi, kategoria, bmr, tdee, docelowe_kcal, 
+                                    bialko, tluszcze, wegle, cel_dietetyczny, min_waga, max_waga, pasek_wizualny)
 
     # Pętla nieskończona, która pozwala użytkownikowi na wielokrotne obliczanie BMI, dopóki nie zdecyduje o zakończeniu programu
     while True:    
