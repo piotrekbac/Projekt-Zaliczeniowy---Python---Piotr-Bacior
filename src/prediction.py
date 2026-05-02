@@ -52,3 +52,5 @@ def predict_goal_date(csv_filename: str, target_weight: float) -> str :
 
             # Jeśli wszystkie pomiary pochodzą z tego samego dnia, zwracamy komunikat o potrzebie pomiarów z przynajmniej dwóch różnych dni, aby móc przeprowadzić regresję liniową i przewidzieć datę osiągnięcia celu wagowego
             return "Wszystkie pomiary pochodzą z tego samego dnia. Potrzebne są pomiary z przynajmniej dwóch różnych dni, aby przeprowadzić regresję liniową i przewidzieć datę osiągnięcia celu wagowego."
+        
+        # -- Regresja liniowa - Machine Learning --
