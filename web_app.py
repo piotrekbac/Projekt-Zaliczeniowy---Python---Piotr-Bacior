@@ -1,3 +1,4 @@
 import streamlit as st                                                          # importuję bibliotekę streamlit do tworzenia interfejsu webowego 
 import pandas as pd                                                             # importuję bibliotekę pandas do manipulacji danymi
 import matplotlib.pyplot as plt                                                 # importuję bibliotekę matplotlib do tworzenia wykresów
+import os                                                                       # importuję moduł os do operacji na plikach i ścieżkach
