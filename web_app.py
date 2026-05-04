@@ -21,3 +21,6 @@ from src.prediction import predict_goal_date
 
 # Konfiguracja strony Streamlit - ustawiam tytuł, ikonę i układ strony
 st.set_page_config(page_title="Asystent zdrowia AI - PB2026", page_icon="🍏", layout="wide")
+
+# Wyświetlam tytuł aplikacji na stronie
+st.title("Interaktywny Asystent Zdrowia i Kalkulator BMI")    
