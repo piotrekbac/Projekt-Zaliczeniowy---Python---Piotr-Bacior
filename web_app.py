@@ -30,3 +30,6 @@ st.markdown("Wersja przeglądarkowa projektu oparta na silniku Python Data Scien
 
 
 # Sekcja panelu bocznego (sidebar) - służy do wprowadzania danych przez użytkownika, takich jak waga, wzrost, wiek, płeć i poziom aktywności fizycznej
+
+# Nagłówek sekcji bocznej
+st.sidebar.header("Wprowadź swoje dane")    
