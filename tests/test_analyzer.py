@@ -81,12 +81,16 @@ class TestAnalyzer(unittest.TestCase) :
 
         """ Sprawdza, czy funkcja predykcyjna poprawnie zwraca info o braku danych, gdy nie ma historii """
 
-        with tempfile.TemporaryDirectory() as temp_dir:             # Tworzę tymczasowy katalog, który zostanie automatycznie usunięty po zakończeniu testu
+        # Tworzę tymczasowy katalog, który zostanie automatycznie usunięty po zakończeniu testu
+        with tempfile.TemporaryDirectory() as temp_dir:             
 
-            fake_csv = os.path.join(temp_dir, "pusty.csv")          # Tworzę ścieżkę do tymczasowego pliku CSV
+            # Tworzę ścieżkę do tymczasowego pliku CSV
+            fake_csv = os.path.join(temp_dir, "pusty.csv")          
 
             # Plik nie istnieje, więc algorytm powinien to wyłapywać i zwracać informację o braku danych do analizy
 
-            wynik = predict_goal_date(fake_csv, 65.0)                 # Wywołuję funkcję predykcyjną z nieistniejącym plikiem CSV i celem wagowym 65.0 kg
+            # Wywołuję funkcję predykcyjną z nieistniejącym plikiem CSV i celem wagowym 65.0 kg
+            wynik = predict_goal_date(fake_csv, 65.0)                 
 
-            self.assertEqual(wynik, "Brak danych do analizy. Nie można przewidzieć daty osiągnięcia celu wagowego.")   # Sprawdzam, czy wynik jest równy oczekiwanej informacji o braku danych do analizy
+            # Sprawdzam, czy wynik jest równy oczekiwanej informacji o braku danych do analizy
+            self.assertEqual(wynik, "Brak danych do analizy. Nie można przewidzieć daty osiągnięcia celu wagowego.")   
