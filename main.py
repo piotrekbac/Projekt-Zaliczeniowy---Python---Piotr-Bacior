@@ -187,6 +187,7 @@ def main():
             # Wywołujemy funkcję predict_goal_date, aby przewidzieć datę osiągnięcia celu wagowego na podstawie danych historycznych zapisanych w pliku CSV, przekazując do niej nazwę pliku CSV oraz docelową wagę (środek normy), a wynik przypisujemy do zmiennej prognoza_ai, którą następnie możemy wykorzystać do wyświetlenia przewidywanej daty osiągnięcia celu wagowego w podsumowaniu wyników lub w sekcji zaleceń dietetycznych, informując użytkownika o tym, kiedy może spodziewać się osiągnięcia swojej idealnej wagi na podstawie analizy danych historycznych i algorytmu regresji liniowej
             prognoza_ai = predict_goal_date("historia_bmi.csv", srodek_normy)
 
+
             # Wywołujemy funkcję calculate_bmr, aby obliczyć podstawową przemianę materii (BMR) na podstawie wagi, wzrostu, wieku i płci
             bmr = calculate_bmr(waga, wzrost, wiek, plec)   
 
@@ -252,6 +253,7 @@ def main():
             print(f" Wskaźnik BMI:            {moje_bmi}")                      # Wyświetlamy obliczony wskaźnik BMI użytkownika
             print(f" Kategoria zdrowotna:     {kategoria}")                     # Wyświetlamy kategorię zdrowotną, do której należy użytkownik na podstawie obliczonego BMI
             print(f" Zakres idealnej wagi:    {min_waga} - {max_waga} kg")      # Wyświetlamy zakres idealnej wagi dla podanego wzrostu użytkownika
+            print(F" PREDYKCJA AI (Cel:       {srodek_normy} kg):")             # Wyświetlamy przewidywaną datę osiągnięcia celu wagowego (środek normy) na podstawie analizy danych historycznych i algorytmu regresji liniowej, informując użytkownika o tym, kiedy może spodziewać się osiągnięcia swojej idealnej wagi
             print(f" Cel wagowy:              {roznica_wagi}")                  # Wyświetlamy różnicę w kilogramach między aktualną a idealną wagą użytkownika, informując go o tym, ile kilogramów powinien przybrać lub schudnąć, aby osiągnąć idealną wagę
 
             print("\n" + "=" * 70 + "\n")                                       # Dodajemy linię oddzielającą wyniki od reszty interfejsu
