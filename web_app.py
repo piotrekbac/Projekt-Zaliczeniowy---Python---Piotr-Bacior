@@ -9,3 +9,6 @@ from src.calculator import calculate_bmi, calculate_ideal_weight_range, calculat
 
 # importuję funkcje analyze_bmi i generate_bmi_bar z modułu analyzer
 from src.analyzer import analyze_bmi, generate_bmi_bar                                     
+
+# importuję funkcję predict_goal_date z modułu prediction
+from src.prediction import predict_goal_date                                                        
