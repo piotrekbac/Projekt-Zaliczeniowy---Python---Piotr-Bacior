@@ -39,3 +39,6 @@ wage = st.sidebar.number_input("Waga (kg)", min_value=20.0, max_value=300.0, val
 
 # Pole do wprowadzania wzrostu użytkownika w metrach
 wzrost = st.sidebar.number_input("Wzrost (m)", min_value=1.0, max_value=2.5, value=1.75, step=0.01)
+
+# Pole do wprowadzania wieku użytkownika w latach
+wiek = st.sidebar.number_input("Wiek (lata)", min_value=10, max_value=120, value=30, step=1)    
