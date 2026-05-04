@@ -71,3 +71,7 @@ class TestAnalyzer(unittest.TestCase) :
 
         # Test dla osoby, która jest już w idealnym przedziale (BMI między 18.5 a 24.9) - powinno zwrócić informację, że jest w idealnym przedziale
         self.assertIn("Jesteś w idealnym przedziale", calculate_weight_difference(60.0, 50.0, 70.0))
+
+
+    # Test dla funkcji calculate_weight_difference, która oblicza różnicę między aktualną wagą a idealnym zakresem wagi i zwraca informację o tym, ile kilogramów trzeba schudnąć lub przytyć, aby znaleźć się w idealnym zakresie
+    def test_predict_goal_date(self) : 
