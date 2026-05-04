@@ -27,3 +27,6 @@ st.title("Interaktywny Asystent Zdrowia i Kalkulator BMI")
 
 # Wyświetlam krótki opis aplikacji, informując użytkownika o jej funkcjonalnościach i możliwościach
 st.markdown("Wersja przeglądarkowa projektu oparta na silniku Python Data Science.")
+
+
+# Sekcja panelu bocznego (sidebar) - służy do wprowadzania danych przez użytkownika, takich jak waga, wzrost, wiek, płeć i poziom aktywności fizycznej
