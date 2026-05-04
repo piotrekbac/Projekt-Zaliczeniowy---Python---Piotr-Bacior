@@ -88,3 +88,5 @@ class TestAnalyzer(unittest.TestCase) :
             # Plik nie istnieje, więc algorytm powinien to wyłapywać i zwracać informację o braku danych do analizy
 
             wynik = predict_goal_date(fake_csv, 65.0)                 # Wywołuję funkcję predykcyjną z nieistniejącym plikiem CSV i celem wagowym 65.0 kg
+
+            self.assertEqual(wynik, "Brak danych do analizy. Nie można przewidzieć daty osiągnięcia celu wagowego.")   # Sprawdzam, czy wynik jest równy oczekiwanej informacji o braku danych do analizy
