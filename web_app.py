@@ -33,3 +33,6 @@ st.markdown("Wersja przeglądarkowa projektu oparta na silniku Python Data Scien
 
 # Nagłówek sekcji bocznej
 st.sidebar.header("Wprowadź swoje dane")    
+
+# Pole do wprowadzania wagi użytkownika w kilogramach
+wage = st.sidebar.number_input("Waga (kg)", min_value=20.0, max_value=300.0, value=70.0, step=0.5)    
