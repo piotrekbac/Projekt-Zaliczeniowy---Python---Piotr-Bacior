@@ -24,3 +24,6 @@ st.set_page_config(page_title="Asystent zdrowia AI - PB2026", page_icon="🍏", 
 
 # Wyświetlam tytuł aplikacji na stronie
 st.title("Interaktywny Asystent Zdrowia i Kalkulator BMI")    
+
+# Wyświetlam krótki opis aplikacji, informując użytkownika o jej funkcjonalnościach i możliwościach
+st.markdown("Wersja przeglądarkowa projektu oparta na silniku Python Data Science.")
