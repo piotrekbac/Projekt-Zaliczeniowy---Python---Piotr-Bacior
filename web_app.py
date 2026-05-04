@@ -45,3 +45,6 @@ wiek = st.sidebar.number_input("Wiek (lata)", min_value=10, max_value=120, value
 
 # Pole do wyboru płci użytkownika (Mężczyzna lub Kobieta)
 plec = st.sidebar.selectbox("Płeć", options=["Mężczyzna", "Kobieta"])    
+
+# Skrót płci do dalszych obliczeń (m dla mężczyzny, k dla kobiety)
+plec_skrot = "m" if plec == "Mężczyzna" else "k"    
