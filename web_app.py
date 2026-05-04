@@ -4,6 +4,8 @@ import matplotlib.pyplot as plt                                                 
 import os                                                                       # importuję moduł os do operacji na plikach i ścieżkach
 
 
+# Importowanie funkcji z modułów src.calculator, src.analyzer i src.prediction
+
 # importuję funkcje z modułu calculator
 from src.calculator import calculate_bmi, calculate_ideal_weight_range, calculate_weight_difference, calculate_bmr, calculate_tdee, calculate_macros  
 
