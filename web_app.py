@@ -36,3 +36,6 @@ st.sidebar.header("Wprowadź swoje dane")
 
 # Pole do wprowadzania wagi użytkownika w kilogramach
 wage = st.sidebar.number_input("Waga (kg)", min_value=20.0, max_value=300.0, value=70.0, step=0.5)    
+
+# Pole do wprowadzania wzrostu użytkownika w metrach
+wzrost = st.sidebar.number_input("Wzrost (m)", min_value=1.0, max_value=2.5, value=1.75, step=0.01)
