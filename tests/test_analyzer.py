@@ -81,4 +81,6 @@ class TestAnalyzer(unittest.TestCase) :
 
         """ Sprawdza, czy funkcja predykcyjna poprawnie zwraca info o braku danych, gdy nie ma historii """
 
-        with tempfile.TemporaryDirectory() as temp_dir:          # Tworzę tymczasowy katalog, który zostanie automatycznie usunięty po zakończeniu testu
+        with tempfile.TemporaryDirectory() as temp_dir:             # Tworzę tymczasowy katalog, który zostanie automatycznie usunięty po zakończeniu testu
+
+            fake_csv = os.path.join(temp_dir, "pusty.csv")          # Tworzę ścieżkę do tymczasowego pliku CSV
