@@ -1,0 +1,1 @@
+import streamlit as st                                                         # importuję bibliotekę streamlit do tworzenia interfejsu webowego 
