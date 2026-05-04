@@ -2,7 +2,7 @@ import unittest                                                                 
 from src.analyzer import analyze_bmi, calculate_weight_difference, generate_bmi_bar                 # importuję funkcje analyze_bmi i generate_bmi_bar z modułu analyzer
 from src.prediction import predict_goal_date                                                        # importuję funkcję predict_goal_date z modułu prediction
 import tempfile                                                                                     # importuję moduł tempfile do tworzenia tymczasowych plików
-
+import os                                                                                           # importuję moduł os do operacji na plikach i ścieżkach
 
 # Piotr Bacior - 15 722 - 2026 - Python - MH
 
