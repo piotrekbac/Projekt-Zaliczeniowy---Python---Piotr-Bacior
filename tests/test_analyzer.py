@@ -1,6 +1,6 @@
-import unittest                                                      # importuję moduł unittest do tworzenia testów jednostkowych
-from src.analyzer import analyze_bmi, calculate_weight_difference, generate_bmi_bar               # importuję funkcje analyze_bmi i generate_bmi_bar z modułu analyzer
-from src.prediction import predict_goal_date    # importuję funkcję predict_goal_date z modułu prediction
+import unittest                                                                                     # importuję moduł unittest do tworzenia testów jednostkowych
+from src.analyzer import analyze_bmi, calculate_weight_difference, generate_bmi_bar                 # importuję funkcje analyze_bmi i generate_bmi_bar z modułu analyzer
+from src.prediction import predict_goal_date                                                        # importuję funkcję predict_goal_date z modułu prediction
 
 # Piotr Bacior - 15 722 - 2026 - Python - MH
 
