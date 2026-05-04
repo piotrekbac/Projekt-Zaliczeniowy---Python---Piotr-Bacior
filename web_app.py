@@ -42,3 +42,6 @@ wzrost = st.sidebar.number_input("Wzrost (m)", min_value=1.0, max_value=2.5, val
 
 # Pole do wprowadzania wieku użytkownika w latach
 wiek = st.sidebar.number_input("Wiek (lata)", min_value=10, max_value=120, value=30, step=1)    
+
+# Pole do wyboru płci użytkownika (Mężczyzna lub Kobieta)
+plec = st.sidebar.selectbox("Płeć", options=["Mężczyzna", "Kobieta"])    
