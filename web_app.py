@@ -2,3 +2,7 @@ import streamlit as st                                                          
 import pandas as pd                                                             # importuję bibliotekę pandas do manipulacji danymi
 import matplotlib.pyplot as plt                                                 # importuję bibliotekę matplotlib do tworzenia wykresów
 import os                                                                       # importuję moduł os do operacji na plikach i ścieżkach
+
+
+# importuję funkcje z modułu calculator
+from src.calculator import calculate_bmi, calculate_ideal_weight_range, calculate_weight_difference, calculate_bmr, calculate_tdee, calculate_macros  
