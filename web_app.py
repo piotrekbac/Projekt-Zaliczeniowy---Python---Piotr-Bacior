@@ -14,3 +14,8 @@ from src.analyzer import analyze_bmi, generate_bmi_bar
 
 # importuję funkcję predict_goal_date z modułu prediction
 from src.prediction import predict_goal_date                                                        
+
+
+# Piotr Bacior - 15 722 - 2026 - Python - MH
+
+
