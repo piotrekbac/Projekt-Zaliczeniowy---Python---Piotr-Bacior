@@ -1,1 +1,2 @@
-import streamlit as st                                                         # importuję bibliotekę streamlit do tworzenia interfejsu webowego 
+import streamlit as st                                                          # importuję bibliotekę streamlit do tworzenia interfejsu webowego 
+import pandas as pd                                                             # importuję bibliotekę pandas do manipulacji danymi
