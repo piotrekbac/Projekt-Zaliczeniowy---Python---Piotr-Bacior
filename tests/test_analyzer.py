@@ -75,3 +75,5 @@ class TestAnalyzer(unittest.TestCase) :
 
     # Test dla funkcji calculate_weight_difference, która oblicza różnicę między aktualną wagą a idealnym zakresem wagi i zwraca informację o tym, ile kilogramów trzeba schudnąć lub przytyć, aby znaleźć się w idealnym zakresie
     def test_predict_goal_date(self) : 
+
+        """ Sprawdza, czy funkcja predykcyjna poprawnie zwraca info o braku danych, gdy nie ma historii """
