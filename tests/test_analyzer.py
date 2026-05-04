@@ -86,3 +86,5 @@ class TestAnalyzer(unittest.TestCase) :
             fake_csv = os.path.join(temp_dir, "pusty.csv")          # Tworzę ścieżkę do tymczasowego pliku CSV
 
             # Plik nie istnieje, więc algorytm powinien to wyłapywać i zwracać informację o braku danych do analizy
+
+            wynik = predict_goal_date(fake_csv, 65.0)                 # Wywołuję funkcję predykcyjną z nieistniejącym plikiem CSV i celem wagowym 65.0 kg
