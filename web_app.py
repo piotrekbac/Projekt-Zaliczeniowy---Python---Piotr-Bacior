@@ -166,6 +166,6 @@ if st.sidebar.button("Oblicz i analizuj", use_container_width=True) :
         # Tworzymy 3 kolumny na ładne widgety z wynikami obliczeń
         c1, c2, c3 = st.columns(3)
 
-        c1.sukcess(f"**Białko:** {bialo} g / dzień")       # Wyświetlamy zalecane spożycie białka w gramach na dzień
-        c2.success(f"**Tłuszcze:** {tluszcze} g / dzień")  # Wyświetlamy zalecane spożycie tłuszczów w gramach na dzień
-        c3.success(f"**Węglowodany:** {wegle} g / dzień")  # Wyświetlamy zalecane spożycie węglowodanów w gramach na dzień
+        c1.success(f"**Białko:** {bialo} g / dzień")                # Wyświetlamy zalecane spożycie białka w gramach na dzień
+        c2.success(f"**Tłuszcze:** {tluszcze} g / dzień")           # Wyświetlamy zalecane spożycie tłuszczów w gramach na dzień
+        c3.success(f"**Węglowodany:** {wegle} g / dzień")           # Wyświetlamy zalecane spożycie węglowodanów w gramach na dzień
