@@ -126,4 +126,5 @@ if st.sidebar.button("Oblicz i analizuj", use_container_width=True) :
         # Dodatkowo obsługujemy wyjątkowo kategorie "Otyłość" - jeśli kategoria BMI użytkownika to "Otyłość", to celem dietetycznym będzie "intensywna redukcja masy ciała", a docelowe kalorie będą równe TDEE minus 1000 kcal, co oznacza, że użytkownik powinien spożywać znacznie mniej kalorii niż wynosi jego całkowite dzienne zapotrzebowanie energetyczne, aby osiągnąć intensywną redukcję masy ciała
         if kategoria == "Otyłość" : 
 
-            
+            # Definiujemy cel dietetyczny jako "intensywna redukcja masy ciała"
+            docelowe_kcal = round(tdee - 650, 2)
