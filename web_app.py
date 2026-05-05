@@ -70,3 +70,5 @@ aktywnosc = aktywnosc_dict[aktywnosc_wybor]
 
 # -- Przycisk startowy --
 
+# Po kliknięciu przycisku "Oblicz i analizuj" rozpoczynamy proces obliczeń i analizy danych wprowadzonych przez użytkownika
+if st.sidebar.button("Oblicz i analizuj", use_container_width=True) : 
