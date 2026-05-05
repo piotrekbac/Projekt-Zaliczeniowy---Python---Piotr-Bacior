@@ -177,4 +177,5 @@ if st.sidebar.button("Oblicz i analizuj", use_container_width=True) :
 
         # Sekcja Wykresu oraz Algorytmu ai - prezentacja graficzna danych oraz prognozowanie daty osiągnięcia celu dietetycznego
 
-        
+        # Wyświetlamy podtytuł dla sekcji analizy danych i AI
+        st.subheader("Analiza danych i AI")       
