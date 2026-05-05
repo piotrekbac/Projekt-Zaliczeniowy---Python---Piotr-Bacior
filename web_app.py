@@ -48,3 +48,7 @@ plec = st.sidebar.selectbox("Płeć", options=["Mężczyzna", "Kobieta"])
 
 # Skrót płci do dalszych obliczeń (m dla mężczyzny, k dla kobiety)
 plec_skrot = "m" if plec == "Mężczyzna" else "k"    
+
+
+# Tworzymy słownik z poziomami aktywności fizycznej i odpowiadającymi im współczynnikami, które będą używane do obliczeń TDEE
+
