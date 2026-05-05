@@ -99,3 +99,6 @@ if st.sidebar.button("Oblicz i analizuj", use_container_width=True) :
     
     # Kalorie docelowe są równe TDEE, ponieważ celem jest utrzymanie wagi
     docelowe_kcal = tdee  
+
+
+    # Warunek logiczny do określenia celu dietetycznego na podstawie różnicy wagi 
