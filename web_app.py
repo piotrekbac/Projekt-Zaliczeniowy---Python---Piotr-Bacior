@@ -66,3 +66,7 @@ aktywnosc_wybor = st.sidebar.selectbox("Poziom aktywności fizycznej", options=l
 
 # Pobieramy współczynnik aktywności fizycznej na podstawie wyboru użytkownika
 aktywnosc = aktywnosc_dict[aktywnosc_wybor]    
+
+
+# -- Przycisk startowy --
+
