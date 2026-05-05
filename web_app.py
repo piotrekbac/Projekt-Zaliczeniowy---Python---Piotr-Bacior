@@ -102,3 +102,6 @@ if st.sidebar.button("Oblicz i analizuj", use_container_width=True) :
 
 
     # Warunek logiczny do określenia celu dietetycznego na podstawie różnicy wagi 
+
+    # Obsługa logiki dla kategorii "Niedowaga" - jeśli kategoria BMI użytkownika to "Niedowaga", to celem dietetycznym będzie "zwiększenie masy ciała", a docelowe kalorie będą równe TDEE plus 500 kcal, co oznacza, że użytkownik powinien spożywać więcej kalorii niż wynosi jego całkowite dzienne zapotrzebowanie energetyczne, aby zwiększyć swoją masę ciała
+    if kategoria == "Niedowaga" : 
