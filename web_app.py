@@ -89,3 +89,6 @@ if st.sidebar.button("Oblicz i analizuj", use_container_width=True) :
 
     # Obliczamy BMR (Basal Metabolic Rate) na podstawie wagi, wzrostu, wieku i płci użytkownika, korzystając z funkcji calculate_bmr z modułu calculator
     bmr = calculate_bmr(waga, wzrost, wiek, plec_skrot)  
+
+    # Obliczamy TDEE (Total Daily Energy Expenditure) na podstawie BMR i poziomu aktywności fizycznej, korzystając z funkcji calculate_tdee z modułu calculator
+    tdee = calculate_tdee(bmr, aktywnosc)  
