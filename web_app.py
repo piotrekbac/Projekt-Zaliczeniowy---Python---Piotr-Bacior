@@ -86,3 +86,6 @@ if st.sidebar.button("Oblicz i analizuj", use_container_width=True) :
 
     # Obliczamy różnicę między aktualną wagą a zakresem idealnej wagi, korzystając z funkcji calculate_weight_difference z modułu calculator
     roznica = calculate_weight_difference(waga, min_w, max_w)  
+
+    # Obliczamy BMR (Basal Metabolic Rate) na podstawie wagi, wzrostu, wieku i płci użytkownika, korzystając z funkcji calculate_bmr z modułu calculator
+    bmr = calculate_bmr(waga, wzrost, wiek, plec_skrot)  
