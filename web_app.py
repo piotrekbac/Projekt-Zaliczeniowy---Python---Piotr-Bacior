@@ -77,3 +77,6 @@ if st.sidebar.button("Oblicz i analizuj", use_container_width=True) :
 
     # Obliczamy BMI (Body Mass Index) na podstawie wagi i wzrostu użytkownika, korzystając z funkcji calculate_bmi z modułu calculator
     bmi = calculate_bmi(waga, wzrost)
+
+    # Analizujemy kategorię BMI (np. niedowaga, prawidłowa waga, nadwaga, otyłość) korzystając z funkcji analyze_bmi z modułu analyzer
+    kategoria = analyze_bmi(bmi)  
