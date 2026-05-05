@@ -112,5 +112,9 @@ if st.sidebar.button("Oblicz i analizuj", use_container_width=True) :
         # Dodajemy 500 kcal do TDEE, aby określić docelowe kalorie dla zwiększenia masy ciała, zaokrąglając wynik do 2 miejsc po przecinku
         docelowe_kcal = round(tdee + 500, 2)  
 
+
     # Obsługa logiki dla kategorii "Nadwaga" i "Otyłość" - jeśli kategoria BMI użytkownika to "Nadwaga" lub "Otyłość", to celem dietetycznym będzie "redukcja masy ciała", a docelowe kalorie będą równe TDEE minus 500 kcal, co oznacza, że użytkownik powinien spożywać mniej kalorii niż wynosi jego całkowite dzienne zapotrzebowanie energetyczne, aby zredukować swoją masę ciała
     elif kategoria in['Nadwaga', 'Otyłość'] :
+
+        # Definiujemy cel dietetyczny jako "redukcja masy ciała"
+        cel_dietetyczny = "redukcja"
