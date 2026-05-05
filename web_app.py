@@ -147,3 +147,6 @@ if st.sidebar.button("Oblicz i analizuj", use_container_width=True) :
 
         # Wyświetlamy BMR (Basal Metabolic Rate) - podstawową przemianę materii, czyli ilość kalorii, jaką organizm potrzebuje do podtrzymania podstawowych funkcji życiowych w spoczynku
         col2.metric("Idealna waga (kg)", f"{min_w:.1f} - {max_w:.1f}", f"Różnica: {roznica:.1f} kg")    
+
+        # Wyświetlamy TDEE (Total Daily Energy Expenditure) - całkowite dzienne zapotrzebowanie energetyczne, czyli ilość kalorii, jaką organizm potrzebuje do utrzymania aktualnej wagi przy uwzględnieniu poziomu aktywności fizycznej
+        col2.metric("Tdee (kcal)", f"{tdee:.0f}", f"Docelowe kcal: {docelowe_kcal:.0f}")        
