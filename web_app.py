@@ -56,4 +56,5 @@ aktywnosc_dict = {
     "1. Siedzący tryb": 1,                  # 1. Siedzący tryb - brak aktywności fizycznej lub bardzo mała aktywność (np. praca biurowa, brak regularnych ćwiczeń)
     "2. Lekko aktywny": 2,                  # 2. Lekko aktywny - lekka aktywność fizyczna (np. lekkie ćwiczenia 1-3 dni w tygodniu)
     "3. Umiarkowanie aktywny": 3,           # 3. Umiarkowanie aktywny - umiarkowana aktywność fizyczna (np. umiarkowane ćwiczenia 3-5 dni w tygodniu)
+    "4. Bardzo aktywny": 4,                 # 4. Bardzo aktywny - duża aktywność fizyczna (np. intensywne ćwiczenia 6-7 dni w tygodniu)
 }
