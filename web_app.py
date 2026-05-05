@@ -132,3 +132,8 @@ if st.sidebar.button("Oblicz i analizuj", use_container_width=True) :
 
         # Obliczamy rozkład makroskładników (białka, tłuszcze, węglowodany) na podstawie docelowych kalorii i celu dietetycznego, korzystając z funkcji calculate_macros z modułu calculator
         bialo, tluszcze, wegle = calculate_macros(docelowe_kcal, cel_dietetyczny)  
+
+
+        # 2. Wyświetlenie w głównym oknie - Front-end - prezentacja wyników obliczeń i analizy danych wprowadzonych przez użytkownika
+
+        
