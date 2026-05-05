@@ -165,3 +165,5 @@ if st.sidebar.button("Oblicz i analizuj", use_container_width=True) :
 
         # Tworzymy 3 kolumny na ładne widgety z wynikami obliczeń
         c1, c2, c3 = st.columns(3)
+
+        c1.sukcess(f"**Białko:** {bialo} g / dzień")       # Wyświetlamy zalecane spożycie białka w gramach na dzień
