@@ -144,3 +144,6 @@ if st.sidebar.button("Oblicz i analizuj", use_container_width=True) :
 
         # Wyświetlamy zakres idealnej wagi wraz z różnicą między aktualną wagą a zakresem idealnej wagi
         col1.metric("Idealna waga (kg)", f"{min_w:.1f} - {max_w:.1f}", f"Różnica: {roznica:.1f} kg")    
+
+        # Wyświetlamy BMR (Basal Metabolic Rate) - podstawową przemianę materii, czyli ilość kalorii, jaką organizm potrzebuje do podtrzymania podstawowych funkcji życiowych w spoczynku
+        col2.metric("Idealna waga (kg)", f"{min_w:.1f} - {max_w:.1f}", f"Różnica: {roznica:.1f} kg")    
