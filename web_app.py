@@ -59,3 +59,7 @@ aktywnosc_dict = {
     "4. Bardzo aktywny": 4,                 # 4. Bardzo aktywny - duża aktywność fizyczna (np. intensywne ćwiczenia 6-7 dni w tygodniu)
     "5. Ekstremalnie aktywny": 5            # 5. Ekstremalnie aktywny - bardzo duża aktywność fizyczna (np. bardzo intensywne ćwiczenia codziennie, praca fizyczna)
 }
+
+
+# Pole do wyboru poziomu aktywności fizycznej z listy opcji
+aktywnosc_wybor = st.sidebar.selectbox("Poziom aktywności fizycznej", options=list(aktywnosc_dict.keys()))    
