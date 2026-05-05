@@ -191,3 +191,8 @@ if st.sidebar.button("Oblicz i analizuj", use_container_width=True) :
 
             # Wyświetlamy nagłówek dla sekcji predykcji AI
             st.markdown(f"**Predykcja AI: ** {prognoza}")    
+
+
+            # Wyciągamy dane z pliku "bmi_history.csv" do DataFrame'a, konwertujemy kolumnę "date" na format daty, a kolumnę "bmi" na wartości numeryczne, aby przygotować dane do analizy i wizualizacji
+
+            
