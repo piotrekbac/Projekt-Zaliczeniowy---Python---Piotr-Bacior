@@ -80,3 +80,6 @@ if st.sidebar.button("Oblicz i analizuj", use_container_width=True) :
 
     # Analizujemy kategorię BMI (np. niedowaga, prawidłowa waga, nadwaga, otyłość) korzystając z funkcji analyze_bmi z modułu analyzer
     kategoria = analyze_bmi(bmi)  
+
+    # Obliczamy zakres idealnej wagi na podstawie wzrostu użytkownika, korzystając z funkcji calculate_ideal_weight_range z modułu calculator
+    min_w, max_w = calculate_ideal_weight_range(wzrost)  
