@@ -208,3 +208,6 @@ if st.sidebar.button("Oblicz i analizuj", use_container_width=True) :
 
             # Rysujemy wykres liniowy przedstawiający zmiany wagi użytkownika na przestrzeni czasu, gdzie oś X reprezentuje daty pomiarów, a oś Y reprezentuje wagę w kilogramach. Dodajemy marker "o" dla każdego punktu danych, ustawiamy kolor linii na "royalblue", styl linii na "-", oraz grubość linii na 2, aby wizualnie wyróżnić zmiany wagi użytkownika na wykresie
             ax.plot(df['Data i czas'], df['Waga (kg)'], marker='o', color='royalblue', linestyle='-', linewidth=2)
+
+            # Ustawiamy tytuł wykresu na "Historia Twojej Wagi" z czcionką o rozmiarze 14, aby jasno określić, że wykres przedstawia historię zmian wagi użytkownika na przestrzeni czasu
+            ax.set_title("Historia Twojej Wagi", fontsize=14)
