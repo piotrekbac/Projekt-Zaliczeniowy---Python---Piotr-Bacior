@@ -195,4 +195,5 @@ if st.sidebar.button("Oblicz i analizuj", use_container_width=True) :
 
             # Wyciągamy dane z pliku "bmi_history.csv" do DataFrame'a, konwertujemy kolumnę "date" na format daty, a kolumnę "bmi" na wartości numeryczne, aby przygotować dane do analizy i wizualizacji
 
-            
+            # Wczytujemy dane z pliku "bmi_history.csv" do DataFrame'a, który będzie zawierał historię BMI użytkownika wraz z datami pomiarów
+            df = pd.read_csv("bmi_history.csv")
