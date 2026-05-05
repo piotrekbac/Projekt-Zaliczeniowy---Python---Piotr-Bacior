@@ -108,3 +108,6 @@ if st.sidebar.button("Oblicz i analizuj", use_container_width=True) :
 
         # Definiujemy cel dietetyczny jako "zwiększenie masy ciała"
         cel_dietetyczny = "masa"
+
+        # Dodajemy 500 kcal do TDEE, aby określić docelowe kalorie dla zwiększenia masy ciała, zaokrąglając wynik do 2 miejsc po przecinku
+        docelowe_kcal = round(tdee + 500, 2)  
