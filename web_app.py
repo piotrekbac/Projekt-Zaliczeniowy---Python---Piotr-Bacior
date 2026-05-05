@@ -197,3 +197,6 @@ if st.sidebar.button("Oblicz i analizuj", use_container_width=True) :
 
             # Wczytujemy dane z pliku "bmi_history.csv" do DataFrame'a, który będzie zawierał historię BMI użytkownika wraz z datami pomiarów
             df = pd.read_csv("historia_bmi.csv", sep=";")
+
+            # Konwertujemy kolumnę "Data i czas" na format daty i czasu, aby umożliwić analizę zmian BMI na przestrzeni czasu oraz generowanie wykresów z odpowiednią osi czasu
+            df['Data i czas'] = pd.to_datetime(df['Data i czas'])
