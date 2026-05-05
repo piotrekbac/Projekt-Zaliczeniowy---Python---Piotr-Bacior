@@ -202,7 +202,6 @@ if st.sidebar.button("Oblicz i analizuj", use_container_width=True) :
             df['Data i czas'] = pd.to_datetime(df['Data i czas'])
 
 
-
             # Tworzymy wykres o określonym rozmiarze (10 cali szerokości i 4 cali wysokości)
             fig, ax = plt.subplots(figsize=(10, 4))    
 
@@ -211,3 +210,5 @@ if st.sidebar.button("Oblicz i analizuj", use_container_width=True) :
 
             # Ustawiamy tytuł wykresu na "Historia Twojej Wagi" z czcionką o rozmiarze 14, aby jasno określić, że wykres przedstawia historię zmian wagi użytkownika na przestrzeni czasu
             ax.set_title("Historia Twojej Wagi", fontsize=14)
+
+            
