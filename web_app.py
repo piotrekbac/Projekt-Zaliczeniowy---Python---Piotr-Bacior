@@ -204,4 +204,7 @@ if st.sidebar.button("Oblicz i analizuj", use_container_width=True) :
 
 
             # Tworzymy wykres o określonym rozmiarze (10 cali szerokości i 4 cali wysokości)
-            fig, xa = plt.subplots(figsize=(10, 4))    
+            fig, ax = plt.subplots(figsize=(10, 4))    
+
+            # Rysujemy wykres liniowy przedstawiający zmiany wagi użytkownika na przestrzeni czasu, gdzie oś X reprezentuje daty pomiarów, a oś Y reprezentuje wagę w kilogramach. Dodajemy marker "o" dla każdego punktu danych, ustawiamy kolor linii na "royalblue", styl linii na "-", oraz grubość linii na 2, aby wizualnie wyróżnić zmiany wagi użytkownika na wykresie
+            ax.plot(df['Data i czas'], df['Waga (kg)'], marker='o', color='royalblue', linestyle='-', linewidth=2)
