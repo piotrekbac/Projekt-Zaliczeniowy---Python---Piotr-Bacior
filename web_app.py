@@ -175,4 +175,6 @@ if st.sidebar.button("Oblicz i analizuj", use_container_width=True) :
         st.divider()    
 
 
+        # Sekcja Wykresu oraz Algorytmu ai - prezentacja graficzna danych oraz prognozowanie daty osiągnięcia celu dietetycznego
+
         
