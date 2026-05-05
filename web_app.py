@@ -83,3 +83,6 @@ if st.sidebar.button("Oblicz i analizuj", use_container_width=True) :
 
     # Obliczamy zakres idealnej wagi na podstawie wzrostu użytkownika, korzystając z funkcji calculate_ideal_weight_range z modułu calculator
     min_w, max_w = calculate_ideal_weight_range(wzrost)  
+
+    # Obliczamy różnicę między aktualną wagą a zakresem idealnej wagi, korzystając z funkcji calculate_weight_difference z modułu calculator
+    roznica = calculate_weight_difference(waga, min_w, max_w)  
