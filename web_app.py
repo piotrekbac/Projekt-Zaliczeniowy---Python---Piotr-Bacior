@@ -118,3 +118,6 @@ if st.sidebar.button("Oblicz i analizuj", use_container_width=True) :
 
         # Definiujemy cel dietetyczny jako "redukcja masy ciała"
         cel_dietetyczny = "redukcja"
+
+        # Odejmujemy 500 kcal od TDEE, aby określić docelowe kalorie dla redukcji masy ciała, zaokrąglając wynik do 2 miejsc po przecinku
+        docelowe_kcal = round(tdee - 500, 2)   
