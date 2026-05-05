@@ -168,3 +168,4 @@ if st.sidebar.button("Oblicz i analizuj", use_container_width=True) :
 
         c1.sukcess(f"**Białko:** {bialo} g / dzień")       # Wyświetlamy zalecane spożycie białka w gramach na dzień
         c2.success(f"**Tłuszcze:** {tluszcze} g / dzień")  # Wyświetlamy zalecane spożycie tłuszczów w gramach na dzień
+        c3.success(f"**Węglowodany:** {wegle} g / dzień")  # Wyświetlamy zalecane spożycie węglowodanów w gramach na dzień
