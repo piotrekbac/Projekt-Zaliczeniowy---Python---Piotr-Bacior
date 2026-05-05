@@ -179,3 +179,8 @@ if st.sidebar.button("Oblicz i analizuj", use_container_width=True) :
 
         # Wyświetlamy podtytuł dla sekcji analizy danych i AI
         st.subheader("Analiza danych i AI")       
+
+        # Sprawdzamy czy istnieje plik "bmi_history.csv" - jeśli tak, to wczytujemy dane z tego pliku do DataFrame'a, wyświetlamy historię BMI użytkownika oraz generujemy wykres słupkowy przedstawiający zmiany BMI na przestrzeni czasu, korzystając z funkcji generate_bmi_bar z modułu analyzer
+        if os.path.exists("bmi_history.csv") : 
+
+            
