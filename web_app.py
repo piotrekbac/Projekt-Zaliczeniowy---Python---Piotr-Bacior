@@ -183,6 +183,7 @@ if st.sidebar.button("Oblicz i analizuj", use_container_width=True) :
         # Sprawdzamy czy istnieje plik "bmi_history.csv" - jeśli tak, to wczytujemy dane z tego pliku do DataFrame'a, wyświetlamy historię BMI użytkownika oraz generujemy wykres słupkowy przedstawiający zmiany BMI na przestrzeni czasu, korzystając z funkcji generate_bmi_bar z modułu analyzer
         if os.path.exists("bmi_history.csv") : 
 
-                # Obliczamy środek normy idealnej wagi, który będzie używany do generowania wykresu słupkowego
-                srodek_normy = round((min_w + max_w) / 2, 1)    
+            # Obliczamy środek normy idealnej wagi, który będzie używany do generowania wykresu słupkowego
+            srodek_normy = round((min_w + max_w) / 2, 1)    
             
+
