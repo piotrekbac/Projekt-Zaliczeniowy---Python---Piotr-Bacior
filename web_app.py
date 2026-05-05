@@ -159,4 +159,5 @@ if st.sidebar.button("Oblicz i analizuj", use_container_width=True) :
         # Wyświetlamy podtytuł dla sekcji planu dietetycznego
         st.subheader("Twój plan dietetyczny")       
 
+        # Wyświetlamy informacje o celu dietetycznym użytkownika oraz zalecanym spożyciu kalorii na dzień, korzystając z funkcji st.info do wyróżnienia tej informacji
         st.info(f"**Cel:** {cel_dietetyczny.upper()} | **Zalecane spożycie:** {docelowe_kcal} kcal / dzień")
