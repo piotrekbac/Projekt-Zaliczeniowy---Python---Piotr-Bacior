@@ -75,4 +75,5 @@ if st.sidebar.button("Oblicz i analizuj", use_container_width=True) :
 
     # 1. Obliczenia (Back-end)
 
-    
+    # Obliczamy BMI (Body Mass Index) na podstawie wagi i wzrostu użytkownika, korzystając z funkcji calculate_bmi z modułu calculator
+    bmi = calculate_bmi(wage, wzrost)
