@@ -200,3 +200,8 @@ if st.sidebar.button("Oblicz i analizuj", use_container_width=True) :
 
             # Konwertujemy kolumnę "Data i czas" na format daty i czasu, aby umożliwić analizę zmian BMI na przestrzeni czasu oraz generowanie wykresów z odpowiednią osi czasu
             df['Data i czas'] = pd.to_datetime(df['Data i czas'])
+
+
+
+            # Tworzymy wykres o określonym rozmiarze (10 cali szerokości i 4 cali wysokości)
+            fig, xa = plt.subplots(figsize=(10, 4))    
