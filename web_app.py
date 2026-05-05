@@ -186,4 +186,6 @@ if st.sidebar.button("Oblicz i analizuj", use_container_width=True) :
             # Obliczamy środek normy idealnej wagi, który będzie używany do generowania wykresu słupkowego
             srodek_normy = round((min_w + max_w) / 2, 1)    
             
+            # Prognozujemy datę osiągnięcia celu dietetycznego na podstawie historii BMI, aktualnego BMI i środka normy idealnej wagi, korzystając z funkcji predict_goal_date z modułu prediction
+            prognoza = predict_goal_date("bmi_history.csv", bmi, srodek_normy)    
 
