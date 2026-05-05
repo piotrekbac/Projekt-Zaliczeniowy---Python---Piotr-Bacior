@@ -138,3 +138,6 @@ if st.sidebar.button("Oblicz i analizuj", use_container_width=True) :
 
         # Tworzymy 3 kolumny na ładne widgety z wynikami obliczeń
         col1, col2, col3 = st.columns(3)
+
+        # Wyświetlamy wskaźnik BMI wraz z jego kategorią (np. Niedowaga, Prawidłowa waga, Nadwaga, Otyłość)
+        col1.metric("Wskaźnik BMI", f"{bmi}", kategoria)    
