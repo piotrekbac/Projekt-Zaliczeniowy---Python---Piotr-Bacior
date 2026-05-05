@@ -97,3 +97,5 @@ if st.sidebar.button("Oblicz i analizuj", use_container_width=True) :
     # Definiujemy cel dietetyczny użytkownika - w tym przypadku jest to "utrzymanie" aktualnej wagi, co oznacza, że użytkownik chce utrzymać swoją obecną wagę bez chęci jej zmiany (ani redukcji, ani zwiększenia)
     cel_dietetyczny = "utrzymanie"
     
+    # Kalorie docelowe są równe TDEE, ponieważ celem jest utrzymanie wagi
+    docelowe_kcal = tdee  
