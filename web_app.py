@@ -140,4 +140,7 @@ if st.sidebar.button("Oblicz i analizuj", use_container_width=True) :
         col1, col2, col3 = st.columns(3)
 
         # Wyświetlamy wskaźnik BMI wraz z jego kategorią (np. Niedowaga, Prawidłowa waga, Nadwaga, Otyłość)
-        col1.metric("Wskaźnik BMI", f"{bmi}", kategoria)    
+        col1.metric("Wskaźnik BMI", f"{bmi:.1f}", kategoria)    
+
+        # Wyświetlamy zakres idealnej wagi wraz z różnicą między aktualną wagą a zakresem idealnej wagi
+        col1.metric("Idealna waga (kg)", f"{min_w:.1f} - {max_w:.1f}", f"Różnica: {roznica:.1f} kg")    
