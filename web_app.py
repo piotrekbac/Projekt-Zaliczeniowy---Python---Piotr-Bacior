@@ -161,3 +161,7 @@ if st.sidebar.button("Oblicz i analizuj", use_container_width=True) :
 
         # Wyświetlamy informacje o celu dietetycznym użytkownika oraz zalecanym spożyciu kalorii na dzień, korzystając z funkcji st.info do wyróżnienia tej informacji
         st.info(f"**Cel:** {cel_dietetyczny.upper()} | **Zalecane spożycie:** {docelowe_kcal} kcal / dzień")
+
+
+        # Tworzymy 3 kolumny na ładne widgety z wynikami obliczeń
+        c1, c2, c3 = st.columns(3)
