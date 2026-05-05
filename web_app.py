@@ -63,3 +63,6 @@ aktywnosc_dict = {
 
 # Pole do wyboru poziomu aktywności fizycznej z listy opcji
 aktywnosc_wybor = st.sidebar.selectbox("Poziom aktywności fizycznej", options=list(aktywnosc_dict.keys()))    
+
+# Pobieramy współczynnik aktywności fizycznej na podstawie wyboru użytkownika
+aktywnosc = aktywnosc_dict[aktywnosc_wybor]    
