@@ -136,4 +136,5 @@ if st.sidebar.button("Oblicz i analizuj", use_container_width=True) :
 
         # 2. Wyświetlenie w głównym oknie - Front-end - prezentacja wyników obliczeń i analizy danych wprowadzonych przez użytkownika
 
-        
+        # Tworzymy 3 kolumny na ładne widgety z wynikami obliczeń
+        col1, col2, col3 = st.columns(3)
