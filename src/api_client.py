@@ -115,6 +115,9 @@ def get_meal_suggestions(target_kcal: float) -> list :
                 # Nazwa przepisu
                 "name": "Kurczak z Ryżem i Brokułami",
 
+                # Kaloryczność ustawiona na cel
+                "calories": meal_kcal + random.randint(-50, 50)
+
             }
 
         ]
