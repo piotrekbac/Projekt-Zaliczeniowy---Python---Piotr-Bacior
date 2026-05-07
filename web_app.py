@@ -213,3 +213,6 @@ if st.sidebar.button("Oblicz i analizuj", use_container_width=True) :
 
             # Ustawiamy etykietę osi X na "Data i czas", aby wskazać, że oś X reprezentuje daty i czasy pomiarów wagi użytkownika
             ax.set_ylabel("Waga (kg)")
+
+            # Ustawiamy grid dla wykresu, aby ułatwić odczyt wartości z osi Y, korzystając z linii przerywanych ("--") o kolorze szarym i przezroczystości 0.7, co poprawia czytelność wykresu i umożliwia łatwiejsze porównanie zmian wagi użytkownika na przestrzeni czasu.
+            ax.grid(True, linestyle='--', alpha=0.7)
