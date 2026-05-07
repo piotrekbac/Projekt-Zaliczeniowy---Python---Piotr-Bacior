@@ -50,3 +50,6 @@ def get_meal_suggestions(target_kcal: float) -> list :
 
                 # Pobieramy listę przepisów (hits) z odpowiedzi
                 hits = data.get("hits", [])   
+
+                # Lista do przechowywania przepisów
+                recipes = []   
