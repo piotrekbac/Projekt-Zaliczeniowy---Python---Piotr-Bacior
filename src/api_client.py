@@ -5,3 +5,6 @@ import random                                                   # import modułu
 
 # Tutaj podaję swoje darmowe klucze z serwisu Edamam.com (zakładka Recipe Search API).
 # Jeśli zostawiamy je puste, program automatycznie użyje wbudowanego trybu "Fallback" (Zabezpieczającego).
+
+API_ID = ""     # Nasz API ID z Edamam.com#
+API_KEY = ""    # Nasz API Key z Edamam.com#
