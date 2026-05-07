@@ -233,3 +233,6 @@ if st.sidebar.button("Oblicz i analizuj", use_container_width=True) :
 
     # Jeśli użytkownik nie kliknął przycisku "Oblicz i analizuj", wyświetlamy informację, że należy wprowadzić dane i kliknąć przycisk, aby rozpocząć proces obliczeń i analizy, korzystając z funkcji st.info do wyróżnienia tej informacji
     else : 
+
+        # Wyświetlamy informację, że należy wprowadzić dane i kliknąć przycisk "Oblicz i analizuj", aby zobaczyć wyniki i analizę, co zachęca użytkownika do interakcji z aplikacją i rozpoczęcia procesu obliczeń oraz analizy danych wprowadzonych przez niego
+        st.write("Wypełnij swoje parametry w panelu bocznym po lewej stronie i kliknij **Oblicz i Analizuj**.")
