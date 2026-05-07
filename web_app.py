@@ -7,7 +7,7 @@ import os                                                                       
 from src.calculator import calculate_bmi, calculate_ideal_weight, calculate_bmr, calculate_tdee, calculate_macros
 from src.analyzer import analyze_bmi, calculate_weight_difference                               
 from src.prediction import predict_goal_date                                       
-from src.api_client import fetch_recipes_from_api, meal_kcal               
+from src.api_client import fetch_recipes_from_api, get_meal_suggestions, meal_kcal               
 
 # Piotr Bacior - 15 722 - 2026 - Python - MH
 
@@ -190,3 +190,7 @@ st.subheader("Propozycje Posiłków (Integracja API)")
 
 # Wyświetlamy informację, że poniżej znajdziemy przepisy kulinarne dostosowane do naszego celu dietetycznego, pobrane z internetu
 st.markdown("Poniżej pobrano z internetu przepisy dostosowane do Twojego celu dietetycznego (ok. 1/3 dziennego zapotrzebowania na posiłek).")
+
+
+# Pobieramy listę przepisów kulinarnych na bazie docelowej kaloryczności
+przepisy = get_meal_suggestions(docelowe_kcal)    
