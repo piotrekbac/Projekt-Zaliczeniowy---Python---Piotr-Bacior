@@ -44,3 +44,6 @@ def get_meal_suggestions(target_kcal: float) -> list :
 
             # Sprawdzamy, czy odpowiedź jest poprawna (status code 200)
             if response.status_code == 200 :   
+
+                # Parsujemy odpowiedź JSON na słownik Pythona
+                data = response.json()   
