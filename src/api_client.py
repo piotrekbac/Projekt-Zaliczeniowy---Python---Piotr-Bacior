@@ -12,3 +12,9 @@ API_KEY = ""    # Nasz API Key z Edamam.com#
 
 # Funkcja do pobierania sugestii posiłków na podstawie docelowej kaloryczności (target_kcal).
 def get_meal_suggestions(taget_kcal: float) -> list : 
+
+    """
+    Łączy się z internetową bazą Edamam API, aby pobrać przepisy kulinarne.
+    Szuka posiłków, które mają około 1/3 Twojego dziennego zapotrzebowania.
+    
+    """
