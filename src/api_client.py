@@ -1,0 +1,1 @@
+import requests                                                 # import modułu requests do obsługi zapytań HTTP
