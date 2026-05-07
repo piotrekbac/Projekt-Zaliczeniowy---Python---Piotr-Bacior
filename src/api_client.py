@@ -21,3 +21,8 @@ def get_meal_suggestions(target_kcal: float) -> list :
 
     # Celujemy w posiłki o kaloryczności około 1/3 dziennego zapotrzebowania
     meal_kcal = int(target_kcal / 3)  
+
+
+
+    # 1. Tryb internetowy (jeżeli mamy klucze API)
+
