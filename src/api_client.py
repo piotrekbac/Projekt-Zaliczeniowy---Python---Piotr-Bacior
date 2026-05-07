@@ -28,3 +28,6 @@ def get_meal_suggestions(target_kcal: float) -> list :
 
     # Sprawdzamy, czy mamy klucze API (nie są puste)
     if API_ID and API_KEY :
+
+        # Zakres kaloryczności dla wyszukiwania (± 100 kcal od celu)
+        kcal_range = f"{meal_kcal - 100}-{meal_kcal + 100}"
