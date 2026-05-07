@@ -93,7 +93,11 @@ def get_meal_suggestions(target_kcal: float) -> list :
 
         # Tutaj definiujemy kilka przykładowych przepisów, które będą zwracane, gdy nie możemy połączyć się z API.
         fallback_recipes =[
+            {
+                # Przykładowy przepis 1
 
-
+                # Nazwa przepisu
+                "name": "Owsianka Białkowa z Owocami",
+            }
 
         ]
