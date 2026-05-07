@@ -184,3 +184,6 @@ else:
 
 # Dodajemy estetyczną linię poziomą separującą sekcje na stronie
 st.divider()
+
+# Wyświetlamy podtytuł dla strefy integracji z API, sugerując, że znajdziemy tam propozycje posiłków na bazie docelowej kaloryczności
+st.subheader("Propozycje Posiłków (Integracja API)")
