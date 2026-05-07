@@ -41,3 +41,6 @@ def get_meal_suggestions(target_kcal: float) -> list :
 
             # Wysyłamy zapytanie GET do API z limitem czasu 5 sekund
             response = requests.get(url, timeout=5)   
+
+            # Sprawdzamy, czy odpowiedź jest poprawna (status code 200)
+            if response.status_code == 200 :   
