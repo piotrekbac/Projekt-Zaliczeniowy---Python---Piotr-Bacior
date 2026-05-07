@@ -31,3 +31,6 @@ def get_meal_suggestions(target_kcal: float) -> list :
 
         # Zakres kaloryczności dla wyszukiwania (± 100 kcal od celu)
         kcal_range = f"{meal_kcal - 100}-{meal_kcal + 100}"
+
+        # Budujemy URL do zapytania do Edamam API, włączając nasze klucze i zakres kaloryczności - Pobieramy maksymalnie 5 przepisów
+        url = f"https://api.edamam.com/api/recipes/v2?type=public&q=healthy&app_id={API_ID}&app_key={API_KEY}&calories={kcal_range}&random=true"  
