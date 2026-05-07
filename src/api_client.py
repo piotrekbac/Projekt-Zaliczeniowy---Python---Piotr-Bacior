@@ -47,3 +47,6 @@ def get_meal_suggestions(target_kcal: float) -> list :
 
                 # Parsujemy odpowiedź JSON na słownik Pythona
                 data = response.json()   
+
+                # Pobieramy listę przepisów (hits) z odpowiedzi
+                hits = data.get("hits", [])   
