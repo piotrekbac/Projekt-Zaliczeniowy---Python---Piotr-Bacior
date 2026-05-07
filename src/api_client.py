@@ -86,3 +86,7 @@ def get_meal_suggestions(target_kcal: float) -> list :
         except Exception as e :
 
             print(f"Nie można połączyć się z Edamam API: {e}. Przechodzę do trybu Fallback.")
+
+
+        # 2. TRYB "FALLBACK" (jeżeli nie mamy kluczy API lub wystąpił błąd)
+        # w ten sposób projekt NIGDY się nie zawiesi 
