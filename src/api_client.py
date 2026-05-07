@@ -59,3 +59,8 @@ def get_meal_suggestions(target_kcal: float) -> list :
 
                     # Pobieramy dane przepisu
                     recipe = hit['recipe']   
+
+                    # Dodajemy przepis do listy, wyciągając nazwę, kaloryczność i składniki
+                    recipes.append({
+
+                    })
