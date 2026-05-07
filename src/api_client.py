@@ -120,6 +120,9 @@ def get_meal_suggestions(target_kcal: float) -> list :
 
                 # Obraz do przepisu (przykładowy URL)
                 "image": "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+
+                # URL do przepisu (przykładowy)
+                "url": "https://www.google.com/search?q=kurczak+ryż+brokuły+przepis"
             }
 
         ]
