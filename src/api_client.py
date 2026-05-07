@@ -90,3 +90,10 @@ def get_meal_suggestions(target_kcal: float) -> list :
 
         # 2. TRYB "FALLBACK" (jeżeli nie mamy kluczy API lub wystąpił błąd)
         # w ten sposób projekt NIGDY się nie zawiesi 
+
+        # Tutaj definiujemy kilka przykładowych przepisów, które będą zwracane, gdy nie możemy połączyć się z API.
+        fallback_recipes =[
+
+
+
+        ]
