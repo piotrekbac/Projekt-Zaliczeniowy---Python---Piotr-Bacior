@@ -1,1 +1,2 @@
 import requests                                                 # import modułu requests do obsługi zapytań HTTP
+import random                                                   # import modułu random do generowania losowych danych (symulacja)
