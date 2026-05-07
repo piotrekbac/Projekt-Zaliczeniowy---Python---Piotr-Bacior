@@ -6,7 +6,8 @@ import os                                                                       
 # Importowanie naszych autorskich funkcji z modułów w folderze src
 from src.calculator import calculate_bmi, calculate_ideal_weight, calculate_bmr, calculate_tdee, calculate_macros
 from src.analyzer import analyze_bmi, calculate_weight_difference                               
-from src.prediction import predict_goal_date                                                      
+from src.prediction import predict_goal_date                                       
+from src.api_client import fetch_recipes_from_api, meal_kcal               
 
 # Piotr Bacior - 15 722 - 2026 - Python - MH
 
