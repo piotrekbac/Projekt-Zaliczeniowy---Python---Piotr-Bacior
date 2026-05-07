@@ -81,11 +81,11 @@ if st.sidebar.button("Oblicz i analizuj", use_container_width=True) :
     # Analizujemy kategorię BMI (np. niedowaga, prawidłowa waga, nadwaga, otyłość) korzystając z funkcji analyze_bmi z modułu analyzer
     kategoria = analyze_bmi(bmi)  
 
-    # Obliczamy idealną wagę na podstawie wzrostu użytkownika, korzystając z funkcji calculate_ideal_weight z modułu calculator
-    idealna_waga = calculate_ideal_weight(wzrost)  
+    # Obliczamy min i max w na podstawie wzrostu użytkownika, korzystając z funkcji calculate_ideal_weight z modułu calculator
+    min_w, max_w = calculate_ideal_weight(wzrost)  
 
     # Obliczamy różnicę między aktualną wagą a idealną wagą, korzystając z funkcji calculate_weight_difference z modułu calculator
-    roznica = calculate_weight_difference(waga, idealna_waga)  
+    roznica = calculate_weight_difference(waga, min_w, max_w)
 
     # Obliczamy BMR (Basal Metabolic Rate) na podstawie wagi, wzrostu, wieku i płci użytkownika, korzystając z funkcji calculate_bmr z modułu calculator
     bmr = calculate_bmr(waga, wzrost, wiek, plec_skrot)  
