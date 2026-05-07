@@ -130,6 +130,9 @@ def get_meal_suggestions(target_kcal: float) -> list :
 
                 # Nazwa przepisu
                 "name": "Sałatka z Łososiem i Awokado",
+
+                # Kaloryczność ustawiona na cel z lekką losowością
+                "calories": meal_kcal + random.randint(-30, 30),
             }
 
         ]
