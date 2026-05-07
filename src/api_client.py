@@ -107,6 +107,14 @@ def get_meal_suggestions(target_kcal: float) -> list :
 
                 # URL do przepisu (przykładowy)
                 "url": "https://www.google.com/search?q=owsianka+białkowa+przepis"
+            }, 
+
+            {
+                # Przykładowy przepis 2 
+
+                # Nazwa przepisu
+                "name": "Kurczak z Ryżem i Brokułami",
+
             }
 
         ]
