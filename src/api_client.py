@@ -8,3 +8,7 @@ import random                                                   # import modułu
 
 API_ID = ""     # Nasz API ID z Edamam.com#
 API_KEY = ""    # Nasz API Key z Edamam.com#
+
+
+# Funkcja do pobierania sugestii posiłków na podstawie docelowej kaloryczności (target_kcal).
+def get_meal_suggestions(taget_kcal: float) -> list : 
