@@ -63,4 +63,6 @@ def get_meal_suggestions(target_kcal: float) -> list :
                     # Dodajemy przepis do listy, wyciągając nazwę, kaloryczność i składniki
                     recipes.append({
 
+                        # Nazwa przepisu
+                        "name": recipe["label"],
                     })
