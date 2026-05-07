@@ -98,6 +98,9 @@ def get_meal_suggestions(target_kcal: float) -> list :
 
                 # Nazwa przepisu
                 "name": "Owsianka Białkowa z Owocami",
+                
+                # Kaloryczność ustawiona na cel
+                "calories": meal_kcal,  
             }
 
         ]
