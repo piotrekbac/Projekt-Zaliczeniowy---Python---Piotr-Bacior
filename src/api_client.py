@@ -78,3 +78,6 @@ def get_meal_suggestions(target_kcal: float) -> list :
 
                 # Jeżeli API znalazło przynajmniej 3 przepisy, zwracamy je
                 if len(recipes) == 3 :
+
+                    # Zwracamy listę 3 przepisów
+                    return recipes
