@@ -104,6 +104,9 @@ def get_meal_suggestions(target_kcal: float) -> list :
 
                 # Obraz do przepisu (przykładowy URL)
                 "image": "https://images.unsplash.com/photo-1517673400267-0251440c45dc?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+
+                # URL do przepisu (przykładowy)
+                "url": "https://www.google.com/search?q=owsianka+białkowa+przepis"
             }
 
         ]
