@@ -223,3 +223,6 @@ if st.sidebar.button("Oblicz i analizuj", use_container_width=True) :
 
             # Wyświetlamy wykres w aplikacji Streamlit, korzystając z funkcji st.pyplot, która umożliwia renderowanie wykresów stworzonych za pomocą biblioteki matplotlib bezpośrednio w interfejsie użytkownika, co pozwala na wizualizację historii zmian wagi użytkownika na przestrzeni czasu.
             st.pyplot(fig)
+
+        # Jeśli plik "bmi_history.csv" nie istnieje, wyświetlamy informację dla użytkownika, że historia BMI jest niedostępna, korzystając z funkcji st.warning do wyróżnienia tej informacji
+        else : 
