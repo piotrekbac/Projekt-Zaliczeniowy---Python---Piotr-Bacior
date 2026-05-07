@@ -81,3 +81,6 @@ def get_meal_suggestions(target_kcal: float) -> list :
 
                     # Zwracamy listę 3 przepisów
                     return recipes
+                
+        # Jeżeli wystąpił błąd podczas zapytania do API, przechodzimy do trybu "Fallback"
+        except Exception as e :
