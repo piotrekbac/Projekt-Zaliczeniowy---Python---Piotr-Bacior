@@ -142,3 +142,6 @@ def get_meal_suggestions(target_kcal: float) -> list :
             }
 
         ]
+
+    # Zwracamy listę przepisów z trybu "Fallback"
+    return fallback_recipes
