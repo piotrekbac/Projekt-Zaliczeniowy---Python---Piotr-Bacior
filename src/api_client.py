@@ -26,3 +26,5 @@ def get_meal_suggestions(target_kcal: float) -> list :
 
     # 1. Tryb internetowy (jeżeli mamy klucze API)
 
+    # Sprawdzamy, czy mamy klucze API (nie są puste)
+    if API_ID and API_KEY :
