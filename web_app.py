@@ -211,4 +211,5 @@ if st.sidebar.button("Oblicz i analizuj", use_container_width=True) :
             # Ustawiamy tytuł wykresu na "Historia Twojej Wagi" z czcionką o rozmiarze 14, aby jasno określić, że wykres przedstawia historię zmian wagi użytkownika na przestrzeni czasu
             ax.set_title("Historia Twojej Wagi", fontsize=14)
 
-            
+            # Ustawiamy etykietę osi X na "Data i czas", aby wskazać, że oś X reprezentuje daty i czasy pomiarów wagi użytkownika
+            ax.set_ylabel("Waga (kg)")
