@@ -133,6 +133,9 @@ def get_meal_suggestions(target_kcal: float) -> list :
 
                 # Kaloryczność ustawiona na cel z lekką losowością
                 "calories": meal_kcal + random.randint(-30, 30),
+
+                # Obraz do przepisu (przykładowy URL)
+                "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
             }
 
         ]
