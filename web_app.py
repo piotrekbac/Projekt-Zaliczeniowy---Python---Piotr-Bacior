@@ -181,3 +181,6 @@ else:
 # =====================================================================================
 # SEKCJA INTEGRACJI Z API (PROPOZYCJE POSIŁKÓW)
 # =====================================================================================
+
+# Dodajemy estetyczną linię poziomą separującą sekcje na stronie
+st.divider()
