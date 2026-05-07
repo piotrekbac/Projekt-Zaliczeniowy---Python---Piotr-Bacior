@@ -92,7 +92,7 @@ def get_meal_suggestions(target_kcal: float) -> list :
         # w ten sposób projekt NIGDY się nie zawiesi 
 
         # Tutaj definiujemy kilka przykładowych przepisów, które będą zwracane, gdy nie możemy połączyć się z API.
-        fallback_recipes =[
+        fallback_recipes = [
             {
                 # Przykładowy przepis 1
 
@@ -116,7 +116,7 @@ def get_meal_suggestions(target_kcal: float) -> list :
                 "name": "Kurczak z Ryżem i Brokułami",
 
                 # Kaloryczność ustawiona na cel
-                "calories": meal_kcal + random.randint(-50, 50)
+                "calories": meal_kcal + random.randint(-50, 50),
 
                 # Obraz do przepisu (przykładowy URL)
                 "image": "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
@@ -140,7 +140,6 @@ def get_meal_suggestions(target_kcal: float) -> list :
                 # URL do przepisu (przykładowy)
                 "url": "https://www.google.com/search?q=sałatka+łosoś+awokado+przepis"
             }
-
         ]
 
     # Zwracamy listę przepisów z trybu "Fallback"
