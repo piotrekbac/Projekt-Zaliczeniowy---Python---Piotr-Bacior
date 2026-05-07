@@ -230,3 +230,6 @@ if st.sidebar.button("Oblicz i analizuj", use_container_width=True) :
 
             # Wyświetlamy ostrzeżenie, że historia BMI jest niedostępna, ponieważ brak danych do analizy, co informuje użytkownika o braku możliwości przeprowadzenia analizy zmian BMI na przestrzeni czasu z powodu braku danych historycznych
             st.warning("Historia BMI jest niedostępna. Brak danych do analizy.")
+
+    # Jeśli użytkownik nie kliknął przycisku "Oblicz i analizuj", wyświetlamy informację, że należy wprowadzić dane i kliknąć przycisk, aby rozpocząć proces obliczeń i analizy, korzystając z funkcji st.info do wyróżnienia tej informacji
+    else : 
