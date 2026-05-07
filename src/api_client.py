@@ -56,3 +56,6 @@ def get_meal_suggestions(target_kcal: float) -> list :
 
                 # Iterujemy przez każdy przepis (hit) i wyciągamy potrzebne informacje
                 for hit in hits :
+
+                    # Pobieramy dane przepisu
+                    recipe = hit['recipe']   
