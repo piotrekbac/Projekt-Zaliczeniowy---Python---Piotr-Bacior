@@ -187,3 +187,6 @@ st.divider()
 
 # Wyświetlamy podtytuł dla strefy integracji z API, sugerując, że znajdziemy tam propozycje posiłków na bazie docelowej kaloryczności
 st.subheader("Propozycje Posiłków (Integracja API)")
+
+# Wyświetlamy informację, że poniżej znajdziemy przepisy kulinarne dostosowane do naszego celu dietetycznego, pobrane z internetu
+st.markdown("Poniżej pobrano z internetu przepisy dostosowane do Twojego celu dietetycznego (ok. 1/3 dziennego zapotrzebowania na posiłek).")
