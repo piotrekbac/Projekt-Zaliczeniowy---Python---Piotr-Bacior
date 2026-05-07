@@ -7,13 +7,13 @@ import os                                                                       
 # Importowanie funkcji z modułów src.calculator, src.analyzer i src.prediction
 
 # importuję funkcje z modułu calculator
-from src.calculator import calculate_bmi, calculate_ideal_weight_range, calculate_weight_difference, calculate_bmr, calculate_tdee, calculate_macros  
+from src.calculator import calculate_bmi, calculate_ideal_weight, calculate_bmr, calculate_tdee, calculate_macros
 
 # importuję funkcje analyze_bmi i calculate_weight_difference z modułu analyzer
 from src.analyzer import analyze_bmi, calculate_weight_difference                               
 
 # importuję funkcję predict_goal_date z modułu prediction
-from src.prediction import predict_goal_date                                                        
+from src.prediction import predict_goal_date                                                      
 
 
 # Piotr Bacior - 15 722 - 2026 - Python - MH
@@ -81,11 +81,11 @@ if st.sidebar.button("Oblicz i analizuj", use_container_width=True) :
     # Analizujemy kategorię BMI (np. niedowaga, prawidłowa waga, nadwaga, otyłość) korzystając z funkcji analyze_bmi z modułu analyzer
     kategoria = analyze_bmi(bmi)  
 
-    # Obliczamy zakres idealnej wagi na podstawie wzrostu użytkownika, korzystając z funkcji calculate_ideal_weight_range z modułu calculator
-    min_w, max_w = calculate_ideal_weight_range(wzrost)  
+    # Obliczamy idealną wagę na podstawie wzrostu użytkownika, korzystając z funkcji calculate_ideal_weight z modułu calculator
+    idealna_waga = calculate_ideal_weight(wzrost)  
 
-    # Obliczamy różnicę między aktualną wagą a zakresem idealnej wagi, korzystając z funkcji calculate_weight_difference z modułu calculator
-    roznica = calculate_weight_difference(waga, min_w, max_w)  
+    # Obliczamy różnicę między aktualną wagą a idealną wagą, korzystając z funkcji calculate_weight_difference z modułu calculator
+    roznica = calculate_weight_difference(waga, idealna_waga)  
 
     # Obliczamy BMR (Basal Metabolic Rate) na podstawie wagi, wzrostu, wieku i płci użytkownika, korzystając z funkcji calculate_bmr z modułu calculator
     bmr = calculate_bmr(waga, wzrost, wiek, plec_skrot)  
