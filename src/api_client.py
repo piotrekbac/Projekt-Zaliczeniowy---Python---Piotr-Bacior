@@ -68,7 +68,10 @@ def get_meal_suggestions(target_kcal: float) -> list :
 
                         # Kaloryczność przepisu (zaokrąglona do int)
                         "calories": int(recipe["calories"]),  
-                        
+
                         # Składniki przepisu (lista)
                         "image": recipe["image"],
+
+                        # URL do przepisu
+                        "url": recipe["url"],
                     })
