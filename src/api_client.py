@@ -123,6 +123,13 @@ def get_meal_suggestions(target_kcal: float) -> list :
 
                 # URL do przepisu (przykładowy)
                 "url": "https://www.google.com/search?q=kurczak+ryż+brokuły+przepis"
+            }, 
+
+            {
+                # Przykładowy przepis 3 
+
+                # Nazwa przepisu
+                "name": "Sałatka z Łososiem i Awokado",
             }
 
         ]
