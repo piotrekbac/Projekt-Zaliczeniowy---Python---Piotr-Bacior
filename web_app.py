@@ -9,8 +9,8 @@ import os                                                                       
 # importuję funkcje z modułu calculator
 from src.calculator import calculate_bmi, calculate_ideal_weight_range, calculate_weight_difference, calculate_bmr, calculate_tdee, calculate_macros  
 
-# importuję funkcje analyze_bmi i generate_bmi_bar z modułu analyzer
-from src.analyzer import analyze_bmi, generate_bmi_bar                                     
+# importuję funkcje analyze_bmi i calculate_weight_difference z modułu analyzer
+from src.analyzer import analyze_bmi, calculate_weight_difference                               
 
 # importuję funkcję predict_goal_date z modułu prediction
 from src.prediction import predict_goal_date                                                        
