@@ -176,3 +176,8 @@ if os.path.exists("historia_bmi.csv"):
 else: 
     # Jeśli program po przeszukaniu folderu projektu nie znajdzie bazy danych, wyświetla eleganckie, żółte ostrzeżenie dla użytkownika
     st.warning("Brak pliku CSV z historią pomiarów. Zapisz dane z poziomu konsoli, aby wygenerować tutaj interaktywny wykres i predykcje AI.")
+
+
+# =====================================================================================
+# SEKCJA INTEGRACJI Z API (PROPOZYCJE POSIŁKÓW)
+# =====================================================================================
