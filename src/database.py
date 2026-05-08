@@ -3,3 +3,6 @@ import pandas as pd                                     # Import modułu pandas 
 from datetime import datetime                           # Import modułu datetime do obsługi dat i czasu
 
 # Piotr Bacior - 15 722 - 2026 - Python - MH
+
+# Nazwa pliku bazy danych
+DB_NAME = "baza_pacjentow.db"  
