@@ -229,3 +229,6 @@ else :
 
     # Jeśli API nie zwróciło żadnych przepisów, wyświetlamy elegancki komunikat o błędzie w kolorze czerwonym, informując użytkownika o problemie z pobraniem danych
     st.error("Wystąpił problem z pobraniem przepisów z API.")
+
+# Dodajemy estetyczną linię poziomą separującą sekcje na stronie
+st.divider()
