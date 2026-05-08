@@ -6,3 +6,6 @@ from datetime import datetime                           # Import modułu datetim
 
 # Nazwa pliku bazy danych
 DB_NAME = "baza_pacjentow.db"  
+
+# Definicja funkcji do inicjalizacji bazy danych
+def init_db() :
