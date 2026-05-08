@@ -25,6 +25,9 @@ def init_db() :
                    
         # Tworzenie tabeli 'pacjenci' z kolumnami: id, imie, nazwisko, wiek, plec
         CREATE TABLE IF NOT EXISTS pomiary (
+                   
+                   # Kolumna 'id' jest kluczem głównym i automatycznie inkrementuje się przy dodawaniu nowych rekordów
+                   id INTEGER PRIMARY KEY AUTOINCREMENT,
         )
                    
 
