@@ -203,3 +203,6 @@ if przepisy :
 
     # Iterujemy po pierwszych 3 przepisach (jeśli jest ich mniej, iterujemy po wszystkich) i umieszczamy je w kolejnych kolumnach
     kolumny_przepisow = [r1, r2, r3]
+
+
+    # Pętla generująca karty ze zdjęciem i linkiem dla każdego projektu 
