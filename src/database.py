@@ -1,0 +1,1 @@
+import sqlite3                                      # Import modułu sqlite3 do obsługi bazy danych SQLite
