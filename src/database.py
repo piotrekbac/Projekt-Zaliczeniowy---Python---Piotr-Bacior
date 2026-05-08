@@ -28,6 +28,9 @@ def init_db() :
                    
                    # Kolumna 'id' jest kluczem głównym i automatycznie inkrementuje się przy dodawaniu nowych rekordów
                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+
+                   # Kolumna 'data_pomiaru' przechowuje tekstową reprezentację daty pomiaru
+                   data_pomiaru TEXT,
         )
                    
 
