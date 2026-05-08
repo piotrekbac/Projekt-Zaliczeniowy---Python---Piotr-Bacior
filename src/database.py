@@ -22,5 +22,10 @@ def init_db() :
 
     # Tworzymy tabelę z użyciem języka zapytań SQL, jeśli tabela o nazwie 'pacjenci' nie istnieje
     cursor.execute('''
-    
+                   
+        # Tworzenie tabeli 'pacjenci' z kolumnami: id, imie, nazwisko, wiek, plec
+        CREATE TABLE IF NOT EXISTS pomiary (
+        )
+                   
+
                    ''') 
