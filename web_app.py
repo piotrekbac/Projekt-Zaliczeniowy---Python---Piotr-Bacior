@@ -209,4 +209,7 @@ if przepisy :
     for inx, przepis in enumerate(przepisy) :  
 
         # Każda karta to klikany link (st.markdown z formatowaniem Markdown), który otwiera się w nowej karcie przeglądarki (target="_blank") i zawiera zdjęcie oraz tytuł przepisu
-        with kolumny_przepisow[inx]
+        with kolumny_przepisow[inx] : 
+
+            # Wyświetlam zdjęcie przepisu, rozciągając je na całą szerokość kolumny
+            st.image(przepis['image'], use_container_width=True)  
