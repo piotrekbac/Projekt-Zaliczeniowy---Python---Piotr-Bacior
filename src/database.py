@@ -19,3 +19,8 @@ def init_db() :
 
     # Utworzenie kursora do wykonywania operacji na bazie danych
     cursor = conn.cursor()  
+
+    # Tworzymy tabelę z użyciem języka zapytań SQL, jeśli tabela o nazwie 'pacjenci' nie istnieje
+    cursor.execute('''
+    
+                   ''') 
