@@ -31,6 +31,9 @@ def init_db() :
 
                    # Kolumna 'data_pomiaru' przechowuje tekstową reprezentację daty pomiaru
                    data_pomiaru TEXT,
+
+                   # Kolumna 'waga' przechowuje wartość wagi jako liczbę zmiennoprzecinkową
+                   waga REAL,  
         )
                    
 
