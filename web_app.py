@@ -222,3 +222,7 @@ if przepisy :
 
             # Link do przepisu
             st.markdown(f"[Kliknij po przepis]({przepis['url']})")  
+
+
+# Jeśli nie znaleziono przepisów, wyświetlamy komunikat
+else :
