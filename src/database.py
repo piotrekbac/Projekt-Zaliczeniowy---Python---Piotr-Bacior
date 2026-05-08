@@ -9,3 +9,7 @@ DB_NAME = "baza_pacjentow.db"
 
 # Definicja funkcji do inicjalizacji bazy danych
 def init_db() :
+
+    """
+    Inizjalicja relacyjnej bazy danych SQLite, jeżeli tabela nie istnieje - tworzy ją 
+    """
