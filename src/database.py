@@ -14,5 +14,8 @@ def init_db() :
     Inizjalicja relacyjnej bazy danych SQLite, jeżeli tabela nie istnieje - tworzy ją 
     """
 
+    # Nawiązanie połączenia z bazą danych (jeśli plik bazy danych nie istnieje, zostanie utworzony)
+    conn = sqlite3.connect(DB_NAME)
+
     # Utworzenie kursora do wykonywania operacji na bazie danych
     cursor = conn.cursor()  
