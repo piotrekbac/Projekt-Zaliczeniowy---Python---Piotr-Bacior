@@ -226,3 +226,6 @@ if przepisy :
 
 # Jeśli nie znaleziono przepisów, wyświetlamy komunikat
 else :
+
+    # Jeśli API nie zwróciło żadnych przepisów, wyświetlamy elegancki komunikat o błędzie w kolorze czerwonym, informując użytkownika o problemie z pobraniem danych
+    st.error("Wystąpił problem z pobraniem przepisów z API.")
