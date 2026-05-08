@@ -13,3 +13,6 @@ def init_db() :
     """
     Inizjalicja relacyjnej bazy danych SQLite, jeżeli tabela nie istnieje - tworzy ją 
     """
+
+    # Utworzenie kursora do wykonywania operacji na bazie danych
+    cursor = conn.cursor()  
