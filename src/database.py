@@ -1,1 +1,2 @@
-import sqlite3                                      # Import modułu sqlite3 do obsługi bazy danych SQLite
+import sqlite3                                          # Import modułu sqlite3 do obsługi bazy danych SQLite
+import pandas as pd                                     # Import modułu pandas do manipulacji danymi
