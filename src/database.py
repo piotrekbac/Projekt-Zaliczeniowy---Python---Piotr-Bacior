@@ -34,6 +34,9 @@ def init_db() :
 
                    # Kolumna 'waga' przechowuje wartość wagi jako liczbę zmiennoprzecinkową
                    waga REAL,  
+
+                   # Kolumna 'bmi' przechowuje wartość BMI jako liczbę zmiennoprzecinkową
+                   bmi REAL, 
         )
                    
 
