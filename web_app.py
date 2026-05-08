@@ -205,4 +205,5 @@ if przepisy :
     kolumny_przepisow = [r1, r2, r3]
 
 
-    # Pętla generująca karty ze zdjęciem i linkiem dla każdego projektu 
+    # Pętla generująca karty ze zdjęciem i linkiem dla każdego przepisu
+    for inx, przepis in enumerate(przepisy) :  
