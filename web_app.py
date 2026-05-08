@@ -197,3 +197,6 @@ przepisy = get_meal_suggestions(docelowe_kcal)
 
 # Sprawdzamy, czy lista przepisów nie jest pusta, co oznacza, że API zwróciło jakieś propozycje
 if przepisy :
+
+    # Tworzymy 3 kolumny, w których umieścimy karty z przepisami kulinarnymi
+    r1, r2, r3 = st.columns(3)
