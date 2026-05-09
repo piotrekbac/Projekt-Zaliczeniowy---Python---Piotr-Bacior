@@ -37,6 +37,9 @@ def init_db() :
 
                    # Kolumna 'bmi' przechowuje wartość BMI jako liczbę zmiennoprzecinkową
                    bmi REAL, 
+
+                    # Kolumna 'kategoria' przechowuje tekstową reprezentację kategorii BMI
+                    kategoria TEXT,
         )
                    
 
