@@ -40,6 +40,9 @@ def init_db() :
 
                     # Kolumna 'kategoria' przechowuje tekstową reprezentację kategorii BMI
                     kategoria TEXT,
+                   
+                    # Kolumna 'min_waga' przechowuje wartość minimalnej wagi jako liczbę zmiennoprzecinkową
+                    min_waga REAL,
         )
                    
 
