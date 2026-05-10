@@ -48,5 +48,7 @@ def init_db() :
                     max_waga REAL
         )
                    
+    ''') 
 
-                   ''') 
+    # Zatwierdzenie zmian w bazie danych
+    conn.commit()  
