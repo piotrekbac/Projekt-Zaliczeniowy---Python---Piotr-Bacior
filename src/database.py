@@ -93,4 +93,5 @@ def init_db() :
 
         """ Pobiera wszystkie dane z bazy (SQL SELECT) i zwraca gotową tabelę Pandas DataFrame. """
 
-        
+        # Nawiązanie połączenia z bazą danych
+        conn = sqlite3.connect(DB_NAME)
