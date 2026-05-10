@@ -101,3 +101,6 @@ def init_db() :
 
         # Zamknięcie połączenia z bazą danych
         conn.close()
+
+        # Zwrócenie DataFrame zawierającego dane z tabeli 'pomiary'
+        return df
