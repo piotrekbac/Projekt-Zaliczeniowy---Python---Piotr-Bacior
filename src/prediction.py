@@ -78,4 +78,8 @@ def predict_goal_date(csv_filename: str, target_weight: float) -> str :
     df[date_col] = pd.to_datetime(df[date_col])  
 
     # Sortujemy dane według daty, co jest ważne dla analizy trendu    
-    df = df.sort_values(by=date_col)  
+    df = df.sort_values(by=date_col)
+
+    # Wybieramy pierwszą datę z danych, co jest potrzebne do obliczenia różnic czasowych w regresji liniowej
+    first_date = df[date_col].min()
+
