@@ -52,3 +52,6 @@ def predict_goal_date(csv_filename: str, target_weight: float) -> str :
 
             # Obliczamy trend i przewidujemy datę osiągnięcia celu wagowego, korzystając z funkcji _calculate_trend, która wykonuje regresję liniową na podstawie danych historycznych
             df = pd.read_csv(csv_filename, sep=';')  
+
+            # Obliczamy trend i przewidujemy datę osiągnięcia celu wagowego, korzystając z funkcji _calculate_trend, która wykonuje regresję liniową na podstawie danych historycznych
+            return _calculate_trend(df, target_weight, 'Data i czas', 'Waga (kg)')
