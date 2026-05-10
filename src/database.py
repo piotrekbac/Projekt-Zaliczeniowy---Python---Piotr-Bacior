@@ -52,3 +52,6 @@ def init_db() :
 
     # Zatwierdzenie zmian w bazie danych
     conn.commit()  
+
+    # Zamknięcie połączenia z bazą danych
+    conn.close()  
