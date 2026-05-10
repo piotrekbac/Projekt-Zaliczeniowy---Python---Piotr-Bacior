@@ -119,3 +119,6 @@ def predict_goal_date(csv_filename: str, target_weight: float) -> str :
     
     # Obliczamy liczbę dni potrzebną do osiągnięcia celu wagowego na podstawie regresji liniowej
     target_days = (target_weight - intercept) / slope  
+
+    # Obliczamy liczbę dni pozostałych do osiągnięcia celu wagowego, odejmując aktualną liczbę dni od liczby dni potrzebnych do osiągnięcia celu wagowego
+    days_reaming = int(target_days - df['Days'].iloc[-1])  
