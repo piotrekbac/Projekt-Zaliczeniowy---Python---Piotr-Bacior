@@ -55,3 +55,7 @@ def init_db() :
 
     # Zamknięcie połączenia z bazą danych
     conn.close()  
+
+
+    # Funkcja save_to_sql - do zapisywania danych pomiaru do bazy danych
+    def save_to_sql(waga: float, wzrost: float, bmi: float, kategoria: str, min_waga: float, max_waga: float) :
