@@ -83,3 +83,8 @@ def predict_goal_date(csv_filename: str, target_weight: float) -> str :
     # Wybieramy pierwszą datę z danych, co jest potrzebne do obliczenia różnic czasowych w regresji liniowej
     first_date = df[date_col].min()
 
+    # Obliczamy liczbę dni od pierwszej daty dla każdego pomiaru, co jest potrzebne do regresji liniowej
+    df['Days'] = (df[date_col] - first_date).dt.days  
+
+
+
