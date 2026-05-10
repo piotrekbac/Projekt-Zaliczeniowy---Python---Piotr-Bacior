@@ -26,6 +26,9 @@ def predict_goal_date(csv_filename: str, target_weight: float) -> str :
         # Wczytujemy dane z pliku CSV, zakładając, że wartości są oddzielone średnikami
         df = pd.read_csv(csv_filename, sep=';') 
 
+        # Jeżeli DataFrame jest pusty, zwracamy komunikat o braku danych historycznych, co oznacza, że nie możemy przewidzieć daty osiągnięcia celu wagowego
+        return _calculate_trend(df, target_weight, 'Data i czas', 'Waga (kg)')
+
         # Jeżeli DataFrame jest pusty lub zawiera mniej niż 2 wiersze, zwracamy komunikat o niewystarczającej ilości danych, ponieważ regresja liniowa wymaga co najmniej dwóch punktów danych do obliczenia linii trendu
         if df.empty or len(df) < 2 :
 
