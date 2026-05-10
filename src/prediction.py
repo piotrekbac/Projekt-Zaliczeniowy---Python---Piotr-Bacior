@@ -90,3 +90,5 @@ def predict_goal_date(csv_filename: str, target_weight: float) -> str :
     # Sprawdzamy, czy mamy wystarczającą ilość unikalnych dni do przeprowadzenia regresji liniowej. Jeśli jest mniej niż 2 unikalne dni, zwracamy komunikat o braku wystarczających danych historycznych, co oznacza, że nie możemy przewidzieć daty osiągnięcia celu wagowego
     if df['Days'].nunique() < 2 :
 
+        # Jeśli jest mniej niż 2 unikalne dni, zwracamy komunikat o braku wystarczających danych historycznych, co oznacza, że nie możemy przewidzieć daty osiągnięcia celu wagowego
+        return "Potrzebujesz minimum 2 pomiarów w historii, aby wyliczyć trend"
