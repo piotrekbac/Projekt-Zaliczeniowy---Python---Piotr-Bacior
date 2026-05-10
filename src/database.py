@@ -79,4 +79,4 @@ def init_db() :
                        
             # Sekcja VALUES określa wartości, które mają zostać wstawione do tabeli, odpowiadające kolumnom wymienionym wcześniej. Znaki zapytania (?) są używane jako miejsca na wartości, które zostaną przekazane jako argumenty funkcji.
             VALUES (?, ?, ?, ?, ?, ?, ?)
-        ''')
+        ''', (now, waga, wzrost, bmi, kategoria, min_waga, max_waga))
