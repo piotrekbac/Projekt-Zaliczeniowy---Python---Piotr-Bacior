@@ -113,3 +113,6 @@ def predict_goal_date(csv_filename: str, target_weight: float) -> str :
     
     # Jeśli trend jest zgodny z kierunkiem osiągnięcia celu wagowego, obliczamy przewidywaną datę osiągnięcia celu wagowego na podstawie regresji liniowej i zwracamy tę datę w formacie string.
     if slope == 0 :
+
+        # Jeśli trend jest płaski (slope == 0), oznacza to, że waga stoi w miejscu i nie zmienia się w kierunku osiągnięcia celu wagowego. W takim przypadku zwracamy komunikat, że waga od dłuższego czasu stoi w miejscu, co oznacza, że użytkownik nie robi postępów w kierunku osiągnięcia swojego celu wagowego i może potrzebować zmienić swoją strategię, aby zacząć robić postępy.
+        return "Twoja waga od dłuższego czasu stoi w miejscu"
