@@ -70,3 +70,9 @@ def init_db() :
 
         # Pobranie aktualnej daty i czasu w formacie "YYYY-MM-DD HH:MM:SS"
         now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+        # Wykonanie zapytania SQL INSERT, aby dodać nowy rekord do tabeli 'pomiary' z wartościami przekazanymi jako argumenty funkcji
+        cursor.execute('''
+    
+
+        ''')
