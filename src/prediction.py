@@ -70,3 +70,6 @@ def predict_goal_date(csv_filename: str, target_weight: float) -> str :
 
         # Sprawdzamy, czy DataFrame zawiera wystarczającą ilość danych do przeprowadzenia analizy. Jeśli jest mniej niż 2 wiersze, zwracamy komunikat o braku wystarczających danych historycznych, co oznacza, że nie możemy przewidzieć daty osiągnięcia celu wagowego
         if len(df) < 2 :
+
+            # Jeśli jest mniej niż 2 wiersze, zwracamy komunikat o braku wystarczających danych historycznych, co oznacza, że nie możemy przewidzieć daty osiągnięcia celu wagowego
+            return "Potrzebujesz minimum 2 pomiarów w historii, aby wyliczyć trend"
