@@ -104,3 +104,7 @@ def predict_goal_date(csv_filename: str, target_weight: float) -> str :
 
         # Zwracamy komunikat, że cel jest już blisko osiągnięty, co oznacza, że użytkownik jest już blisko osiągnięcia swojego celu wagowego i może nie potrzebować dalszych przewidywań
         return "Twój cel jest już blisko osiągnięcia!"
+    
+    # Sprawdzamy, czy trend jest zgodny z kierunkiem osiągnięcia celu wagowego. Jeśli trend jest pozytywny (slope > 0) i docelowa waga jest mniejsza niż aktualna waga, lub jeśli trend jest negatywny (slope < 0) i docelowa waga jest większa niż aktualna waga, oznacza to, że użytkownik zmierza w kierunku osiągnięcia celu wagowego. W takim przypadku obliczamy przewidywaną datę osiągnięcia celu wagowego na podstawie regresji liniowej i zwracamy tę datę w formacie string.
+    if (slope > 0 and target_weight < current_weight) or (slope < 0 and target_weight > current_weight) :
+
