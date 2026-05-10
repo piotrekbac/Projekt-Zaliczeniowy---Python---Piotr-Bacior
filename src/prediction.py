@@ -95,3 +95,6 @@ def predict_goal_date(csv_filename: str, target_weight: float) -> str :
     
     # Obliczamy współczynnik kierunkowy (slope) i punkt przecięcia (intercept) dla regresji liniowej
     slope, intercept = np.polyfit(df['Days'], df[weight_col], 1)  
+
+    # Pobieramy aktualną wagę z ostatniego pomiaru
+    current_weight = df[weight_col].iloc[-1]  
