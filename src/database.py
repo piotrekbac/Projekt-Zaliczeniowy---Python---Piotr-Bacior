@@ -61,3 +61,6 @@ def init_db() :
     def save_to_sql(waga: float, wzrost: float, bmi: float, kategoria: str, min_waga: float, max_waga: float) :
 
         """ Dodaje nowy rekord do bazy danych używając instrukcji SQL INSERT. """
+
+        # Nawiązanie połączenia z bazą danych
+        conn = sqlite3.connect(DB_NAME)
