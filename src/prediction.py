@@ -92,3 +92,6 @@ def predict_goal_date(csv_filename: str, target_weight: float) -> str :
 
         # Jeśli jest mniej niż 2 unikalne dni, zwracamy komunikat o braku wystarczających danych historycznych, co oznacza, że nie możemy przewidzieć daty osiągnięcia celu wagowego
         return "Potrzebujesz minimum 2 pomiarów w historii, aby wyliczyć trend"
+    
+    # Obliczamy współczynnik kierunkowy (slope) i punkt przecięcia (intercept) dla regresji liniowej
+    slope, intercept = np.polyfit(df['Days'], df[weight_col], 1)  
