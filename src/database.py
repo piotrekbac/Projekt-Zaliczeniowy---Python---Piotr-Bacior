@@ -43,6 +43,9 @@ def init_db() :
                    
                     # Kolumna 'min_waga' przechowuje wartość minimalnej wagi jako liczbę zmiennoprzecinkową
                     min_waga REAL,
+                   
+                    # Kolumna 'max_waga' przechowuje wartość maksymalnej wagi jako liczbę zmiennoprzecinkową
+                    max_waga REAL
         )
                    
 
