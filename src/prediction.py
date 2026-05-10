@@ -110,3 +110,6 @@ def predict_goal_date(csv_filename: str, target_weight: float) -> str :
 
         # Zwracamy odpowiedni komunikat 
         return "Twój obecny trend wagi oddala Cie od celu. Skortyguj dietę!"
+    
+    # Jeśli trend jest zgodny z kierunkiem osiągnięcia celu wagowego, obliczamy przewidywaną datę osiągnięcia celu wagowego na podstawie regresji liniowej i zwracamy tę datę w formacie string.
+    if slope == 0 :
