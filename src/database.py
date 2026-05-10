@@ -86,3 +86,7 @@ def init_db() :
 
         # Zamknięcie połączenia z bazą danych
         conn.close()
+
+
+    # Funkcja read_from_sql - do odczytywania danych z bazy danych i zwracania ich jako DataFrame
+    def read_from_sql() -> pd.DataFrame :
