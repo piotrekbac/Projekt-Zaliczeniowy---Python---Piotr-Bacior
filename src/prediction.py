@@ -67,3 +67,6 @@ def predict_goal_date(csv_filename: str, target_weight: float) -> str :
     def _calculate_trend(df: pd.DataFrame, target_weight: float, date_col: str, weight_col: str) -> str :
 
         """ Oblicza trend i przewiduje datę osiągnięcia celu wagowego na podstawie danych historycznych. """
+
+        # Sprawdzamy, czy DataFrame zawiera wystarczającą ilość danych do przeprowadzenia analizy. Jeśli jest mniej niż 2 wiersze, zwracamy komunikat o braku wystarczających danych historycznych, co oznacza, że nie możemy przewidzieć daty osiągnięcia celu wagowego
+        if len(df) < 2 :
