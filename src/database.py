@@ -73,6 +73,8 @@ def init_db() :
 
         # Wykonanie zapytania SQL INSERT, aby dodać nowy rekord do tabeli 'pomiary' z wartościami przekazanymi jako argumenty funkcji
         cursor.execute('''
-    
+                       
+            # Instrukcja SQL do wstawiania danych do tabeli 'pomiary' z kolumnami: data_pomiaru, waga, wzrost, bmi, kategoria, min_waga, max_waga
+            INSERT INTO pomiary (data_pomiaru, waga, wzrost, bmi, kategoria, min_waga, max_waga)
 
         ''')
