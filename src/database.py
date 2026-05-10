@@ -95,3 +95,6 @@ def init_db() :
 
         # Nawiązanie połączenia z bazą danych
         conn = sqlite3.connect(DB_NAME)
+
+        # Pandas potrafi bezpośrednio wykonać zapytanie SQL i ułożyć dane w piękną tabelę!
+        df = pd.read_sql_query("SELECT * FROM pomiary", conn)
