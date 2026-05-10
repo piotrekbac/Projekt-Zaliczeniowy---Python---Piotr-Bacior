@@ -122,3 +122,6 @@ def predict_goal_date(csv_filename: str, target_weight: float) -> str :
 
     # Obliczamy liczbę dni pozostałych do osiągnięcia celu wagowego, odejmując aktualną liczbę dni od liczby dni potrzebnych do osiągnięcia celu wagowego
     days_reaming = int(target_days - df['Days'].iloc[-1])  
+
+    # Sprawdzamy, czy liczba dni pozostałych do osiągnięcia celu wagowego jest ujemna, co oznacza, że według trendu użytkownik powinien już osiągnąć swój cel wagowy. Jeśli jest ujemna, zwracamy komunikat, że według trendu użytkownik powinien już osiągnąć swój cel wagowy, co oznacza, że użytkownik jest już za późno na osiągnięcie swojego celu wagowego i może potrzebować zmienić swoją strategię, aby zacząć robić postępy.
+    if days_reaming < 0 :
