@@ -129,3 +129,6 @@ def predict_goal_date(csv_filename: str, target_weight: float) -> str :
 
         # Jeśli liczba dni pozostałych do osiągnięcia celu wagowego jest ujemna, zwracamy komunikat, że według trendu użytkownik powinien już osiągnąć swój cel wagowy, co oznacza, że użytkownik jest już za późno na osiągnięcie swojego celu wagowego i może potrzebować zmienić swoją strategię, aby zacząć robić postępy.
         return "Cel powinieneś osiągnąć już lada chwila!"
+    
+    # Obliczamy przewidywaną datę osiągnięcia celu wagowego, dodając liczbę dni pozostałych do osiągnięcia celu wagowego do ostatniej daty pomiaru w danych historycznych
+    goal_date = df[date_col].iloc[-1] + timedelta(days=days_reaming)
