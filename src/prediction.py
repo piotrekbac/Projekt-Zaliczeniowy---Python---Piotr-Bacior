@@ -34,3 +34,7 @@ def predict_goal_date(csv_filename: str, target_weight: float) -> str :
 
         # Zwracamy komunikat o błędzie wraz z informacją o tym, co poszło nie tak, co pozwala użytkownikowi na zrozumienie, że coś poszło nie tak i może potrzebować sprawdzić dane wejściowe lub skonsultować się z pomocą techniczną
         return f"Błąd algorytmu: {e}"
+    
+
+    # Funkcja pomocnicza do obliczania trendu i przewidywania daty osiągnięcia celu wagowego na podstawie danych historycznych
+    def predict_goal_from_sql(df: pd.DataFrame, target_weight: float) -> str :
