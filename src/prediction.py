@@ -42,4 +42,7 @@ def predict_goal_date(csv_filename: str, target_weight: float) -> str :
         """ Algorytm podpięty pod bazę danych SQL (używany w aplikacji Webowej) """
 
         # Sprawdzamy, czy DataFrame jest pusty, co oznacza brak danych historycznych. Jeśli jest pusty, zwracamy komunikat o braku danych historycznych, co oznacza, że nie możemy przewidzieć daty osiągnięcia celu wagowego
-        if df.empty:
+        if df.empty :
+
+            # Jeśli DataFrame jest pusty, zwracamy komunikat o braku danych historycznych, co oznacza, że nie możemy przewidzieć daty osiągnięcia celu wagowego
+            return "Brak historii w bazie SQL."
