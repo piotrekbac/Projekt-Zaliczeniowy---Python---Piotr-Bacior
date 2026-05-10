@@ -90,3 +90,7 @@ def init_db() :
 
     # Funkcja read_from_sql - do odczytywania danych z bazy danych i zwracania ich jako DataFrame
     def read_from_sql() -> pd.DataFrame :
+
+        """ Pobiera wszystkie dane z bazy (SQL SELECT) i zwraca gotową tabelę Pandas DataFrame. """
+
+        
