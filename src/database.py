@@ -64,3 +64,6 @@ def init_db() :
 
         # Nawiązanie połączenia z bazą danych
         conn = sqlite3.connect(DB_NAME)
+
+        # Utworzenie kursora do wykonywania operacji na bazie danych
+        cursor = conn.cursor()
