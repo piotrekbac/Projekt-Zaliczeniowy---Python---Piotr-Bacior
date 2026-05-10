@@ -76,5 +76,7 @@ def init_db() :
                        
             # Instrukcja SQL do wstawiania danych do tabeli 'pomiary' z kolumnami: data_pomiaru, waga, wzrost, bmi, kategoria, min_waga, max_waga
             INSERT INTO pomiary (data_pomiaru, waga, wzrost, bmi, kategoria, min_waga, max_waga)
-
+                       
+            # Sekcja VALUES określa wartości, które mają zostać wstawione do tabeli, odpowiadające kolumnom wymienionym wcześniej. Znaki zapytania (?) są używane jako miejsca na wartości, które zostaną przekazane jako argumenty funkcji.
+            VALUES (?, ?, ?, ?, ?, ?, ?)
         ''')
