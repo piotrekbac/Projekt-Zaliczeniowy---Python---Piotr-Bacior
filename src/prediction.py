@@ -30,5 +30,7 @@ def predict_goal_date(csv_filename: str, target_weight: float) -> str :
         return _calculate_trend(df, target_weight, 'Data i czas', 'Waga (kg)')
 
     # Obsługa wszelkich nieoczekiwanych błędów, które mogą wystąpić podczas wczytywania danych, przetwarzania danych lub obliczeń regresji liniowej. Jeśli wystąpi jakikolwiek błąd, zwracamy komunikat o błędzie, co pozwala użytkownikowi na zrozumienie, że coś poszło nie tak i może potrzebować sprawdzić dane wejściowe lub skonsultować się z pomocą techniczną.
-    expect Exception as e :
+    except Exception as e :
 
+        # Zwracamy komunikat o błędzie wraz z informacją o tym, co poszło nie tak, co pozwala użytkownikowi na zrozumienie, że coś poszło nie tak i może potrzebować sprawdzić dane wejściowe lub skonsultować się z pomocą techniczną
+        return f"Błąd algorytmu: {e}"
