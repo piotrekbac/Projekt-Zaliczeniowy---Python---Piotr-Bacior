@@ -46,3 +46,6 @@ def predict_goal_date(csv_filename: str, target_weight: float) -> str :
 
             # Jeśli DataFrame jest pusty, zwracamy komunikat o braku danych historycznych, co oznacza, że nie możemy przewidzieć daty osiągnięcia celu wagowego
             return "Brak historii w bazie SQL."
+        
+        # Jeśli DataFrame nie jest pusty, obliczamy trend i przewidujemy datę osiągnięcia celu wagowego, korzystając z funkcji _calculate_trend, która wykonuje regresję liniową na podstawie danych historycznych
+        try :  
