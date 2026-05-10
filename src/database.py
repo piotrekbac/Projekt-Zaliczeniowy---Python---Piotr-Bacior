@@ -67,3 +67,6 @@ def init_db() :
 
         # Utworzenie kursora do wykonywania operacji na bazie danych
         cursor = conn.cursor()
+
+        # Pobranie aktualnej daty i czasu w formacie "YYYY-MM-DD HH:MM:SS"
+        now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
