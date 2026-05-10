@@ -98,3 +98,6 @@ def predict_goal_date(csv_filename: str, target_weight: float) -> str :
 
     # Pobieramy aktualną wagę z ostatniego pomiaru
     current_weight = df[weight_col].iloc[-1]  
+
+    # Jeżeli aktualna waga jest już bliska docelowej wadze (różnica mniejsza niż 0.5 kg), zwracamy komunikat, że cel jest już blisko osiągnięty, co oznacza, że użytkownik jest już blisko osiągnięcia swojego celu wagowego i może nie potrzebować dalszych przewidywań
+    if abs(current_weight - target_weight) < 0.5 :
