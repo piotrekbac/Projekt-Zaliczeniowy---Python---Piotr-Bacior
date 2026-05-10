@@ -93,11 +93,13 @@ def predict_goal_date(csv_filename: str, target_weight: float) -> str :
         # Jeśli jest mniej niż 2 unikalne dni, zwracamy komunikat o braku wystarczających danych historycznych, co oznacza, że nie możemy przewidzieć daty osiągnięcia celu wagowego
         return "Potrzebujesz minimum 2 pomiarów w historii, aby wyliczyć trend"
     
+    
     # Obliczamy współczynnik kierunkowy (slope) i punkt przecięcia (intercept) dla regresji liniowej
     slope, intercept = np.polyfit(df['Days'], df[weight_col], 1)  
 
     # Pobieramy aktualną wagę z ostatniego pomiaru
     current_weight = df[weight_col].iloc[-1]  
+
 
     # Jeżeli aktualna waga jest już bliska docelowej wadze (różnica mniejsza niż 0.5 kg), zwracamy komunikat, że cel jest już blisko osiągnięty, co oznacza, że użytkownik jest już blisko osiągnięcia swojego celu wagowego i może nie potrzebować dalszych przewidywań
     if abs(current_weight - target_weight) < 0.5 :
@@ -105,12 +107,14 @@ def predict_goal_date(csv_filename: str, target_weight: float) -> str :
         # Zwracamy komunikat, że cel jest już blisko osiągnięty, co oznacza, że użytkownik jest już blisko osiągnięcia swojego celu wagowego i może nie potrzebować dalszych przewidywań
         return "Twój cel jest już blisko osiągnięcia!"
     
+
     # Sprawdzamy, czy trend jest zgodny z kierunkiem osiągnięcia celu wagowego. Jeśli trend jest pozytywny (slope > 0) i docelowa waga jest mniejsza niż aktualna waga, lub jeśli trend jest negatywny (slope < 0) i docelowa waga jest większa niż aktualna waga, oznacza to, że użytkownik zmierza w kierunku osiągnięcia celu wagowego. W takim przypadku obliczamy przewidywaną datę osiągnięcia celu wagowego na podstawie regresji liniowej i zwracamy tę datę w formacie string.
     if (slope > 0 and target_weight < current_weight) or (slope < 0 and target_weight > current_weight) :
 
         # Zwracamy odpowiedni komunikat 
         return "Twój obecny trend wagi oddala Cie od celu. Skortyguj dietę!"
     
+
     # Jeśli trend jest zgodny z kierunkiem osiągnięcia celu wagowego, obliczamy przewidywaną datę osiągnięcia celu wagowego na podstawie regresji liniowej i zwracamy tę datę w formacie string.
     if slope == 0 :
 
@@ -130,8 +134,10 @@ def predict_goal_date(csv_filename: str, target_weight: float) -> str :
         # Jeśli liczba dni pozostałych do osiągnięcia celu wagowego jest ujemna, zwracamy komunikat, że według trendu użytkownik powinien już osiągnąć swój cel wagowy, co oznacza, że użytkownik jest już za późno na osiągnięcie swojego celu wagowego i może potrzebować zmienić swoją strategię, aby zacząć robić postępy.
         return "Cel powinieneś osiągnąć już lada chwila!"
     
+
     # Obliczamy przewidywaną datę osiągnięcia celu wagowego, dodając liczbę dni pozostałych do osiągnięcia celu wagowego do ostatniej daty pomiaru w danych historycznych
     goal_date = df[date_col].iloc[-1] + timedelta(days=days_reaming)
+
 
     # Zwracamy komunikat z przewidywaną datą osiągnięcia celu wagowego w formacie string, co oznacza, że użytkownik może oczekiwać osiągnięcia swojego celu wagowego około tej daty, jeśli będzie utrzymywał obecny trend wagi.
     return f"Utrzymująć obecny trend, osiągniesz swój cel wagowy około {goal_date.strftime('%Y-%m-%d')}"
