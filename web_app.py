@@ -306,3 +306,7 @@ if przepisy :
 
 # Oddzielamy sekcję z propozycjami posiłków od reszty strony, dodając estetyczną linię poziomą
 st.divider()
+
+
+# Wyświetlam podtytuł dla sekcji analizy danych i predykcji AI, sugerując, że znajdziemy tam wykres historii wagi oraz prognozę daty osiągnięcia celu
+st.subheader("Analiza danych i predykcja AI")
