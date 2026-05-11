@@ -274,3 +274,7 @@ st.subheader("Propozycje Posiłków (Integracja API)")
 
 # Pobieramy listę przepisów kulinarnych na bazie docelowej kaloryczności
 przepisy = get_meal_suggestions(docelowe_kcal)
+
+
+# Sprawdzamy, czy lista przepisów nie jest pusta, co oznacza, że API zwróciło jakieś propozycje
+if przepisy :
