@@ -250,3 +250,6 @@ st.subheader("Analiza danych i predykcja AI")
 
 # Dodajemy estetyczną linię poziomą separującą sekcje na stronie
 st.divider()
+
+# Wyświetlam podtytuł dla sekcji zapisu danych do bazy, sugerując, że użytkownik może tam zapisać swoje pomiary do bazy danych
+st.subheader("📊 Zapisz swoje pomiary do bazy danych")
