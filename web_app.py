@@ -293,3 +293,6 @@ if przepisy :
 
             # Wyświetlam zdjęcie przepisu, rozciągając je na całą szerokość kolumny
             st.image(przepis['image'], use_container_width=True)  
+
+            # Wyświetlam tytuł przepisu pogrubioną czcionką
+            st.markdown(f"**{przepis['name']}**")
