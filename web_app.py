@@ -258,3 +258,6 @@ st.subheader("📊 Zapisz swoje pomiary do bazy danych")
 
 # Wciśnięcie tego przycisku uruchomi komendę INSERT w module bazy danych 
 if st.button("ZAPISZ TEN POMIAR DO BAZY DANYCH", type="primary", use_container_width=True) : 
+
+    # Funkcja z modułu bazy danych, która zapisuje pomiar do pliku CSV (symulacja bazy SQL) i aktualizuje historię
+    save_to_sql(waga, wzrost, wiek, plec_skrot)  
