@@ -317,3 +317,6 @@ df_sql = read_from_sql()
 
 # Sprawdzamy, czy DataFrame zawiera jakieś dane (czyli czy baza danych nie jest pusta), zanim spróbujemy wykonać na niej operacje analityczne i predykcyjne
 if not df_sql.empty :
+
+    # Obliczamy tzw. złoty środek normy wagowej pacjenta, by wyznaczyć punkt docelowy dla algorytmu AI
+    srodek_normy = round((min_w + max_w) / 2, 1)
