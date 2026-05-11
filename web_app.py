@@ -264,3 +264,6 @@ if st.button("ZAPISZ TEN POMIAR DO BAZY DANYCH", type="primary", use_container_w
 
     # Wyświetlam komunikat sukcesu, informując użytkownika, że pomiar został pomyślnie zapisany do bazy danych i sugerując odświeżenie strony, by zobaczyć zaktualizowany wykres i prognozy AI
     st.success("Pomyślnie zapisano pomiar do bazy danych! Odśwież stronę, by zobaczyć zaktualizowany wykres i prognozy AI.")
+
+# Dodajemy estetyczną linię poziomą separującą sekcje na stronie
+st.divider()
