@@ -310,3 +310,6 @@ st.divider()
 
 # Wyświetlam podtytuł dla sekcji analizy danych i predykcji AI, sugerując, że znajdziemy tam wykres historii wagi oraz prognozę daty osiągnięcia celu
 st.subheader("Analiza danych i predykcja AI")
+
+# Wyciągamy dane komendą SELECT z bazy danych 
+df_sql = read_from_sql()    
