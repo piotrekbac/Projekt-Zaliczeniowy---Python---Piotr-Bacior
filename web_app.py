@@ -248,3 +248,5 @@ st.subheader("Analiza danych i predykcja AI")
 # =========================================================
 
 
+# Dodajemy estetyczną linię poziomą separującą sekcje na stronie
+st.divider()
