@@ -296,3 +296,6 @@ if przepisy :
 
             # Wyświetlam tytuł przepisu pogrubioną czcionką
             st.markdown(f"**{przepis['name']}**")
+
+            # Wyświetlam kaloryczność przepisu
+            st.write(f" {przepis['calories']} kcal")
