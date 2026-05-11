@@ -36,31 +36,31 @@ def predict_goal_date(csv_filename: str, target_weight: float) -> str :
         return f"Błąd algorytmu: {e}"
     
 
-    # Funkcja pomocnicza do obliczania trendu i przewidywania daty osiągnięcia celu wagowego na podstawie danych historycznych
-    def predict_goal_from_sql(df: pd.DataFrame, target_weight: float) -> str :
+# Funkcja pomocnicza do obliczania trendu i przewidywania daty osiągnięcia celu wagowego na podstawie danych historycznych
+def predict_goal_from_sql(df: pd.DataFrame, target_weight: float) -> str :
 
-        """ Algorytm podpięty pod bazę danych SQL (używany w aplikacji Webowej) """
+    """ Algorytm podpięty pod bazę danych SQL (używany w aplikacji Webowej) """
 
-        # Sprawdzamy, czy DataFrame jest pusty, co oznacza brak danych historycznych. Jeśli jest pusty, zwracamy komunikat o braku danych historycznych, co oznacza, że nie możemy przewidzieć daty osiągnięcia celu wagowego
-        if df.empty :
+    # Sprawdzamy, czy DataFrame jest pusty, co oznacza brak danych historycznych. Jeśli jest pusty, zwracamy komunikat o braku danych historycznych, co oznacza, że nie możemy przewidzieć daty osiągnięcia celu wagowego
+    if df.empty :
 
-            # Jeśli DataFrame jest pusty, zwracamy komunikat o braku danych historycznych, co oznacza, że nie możemy przewidzieć daty osiągnięcia celu wagowego
-            return "Brak historii w bazie SQL."
+        # Jeśli DataFrame jest pusty, zwracamy komunikat o braku danych historycznych, co oznacza, że nie możemy przewidzieć daty osiągnięcia celu wagowego
+        return "Brak historii w bazie SQL."
         
-        # Jeśli DataFrame nie jest pusty, obliczamy trend i przewidujemy datę osiągnięcia celu wagowego, korzystając z funkcji _calculate_trend, która wykonuje regresję liniową na podstawie danych historycznych
-        try :
+    # Jeśli DataFrame nie jest pusty, obliczamy trend i przewidujemy datę osiągnięcia celu wagowego, korzystając z funkcji _calculate_trend, która wykonuje regresję liniową na podstawie danych historycznych
+    try :
 
-            # Obliczamy trend i przewidujemy datę osiągnięcia celu wagowego, korzystając z funkcji _calculate_trend, która wykonuje regresję liniową na podstawie danych historycznych
-            df = pd.read_csv(csv_filename, sep=';')  
+        # Obliczamy trend i przewidujemy datę osiągnięcia celu wagowego, korzystając z funkcji _calculate_trend, która wykonuje regresję liniową na podstawie danych historycznych
+        df = pd.read_csv(csv_filename, sep=';')  
 
-            # Obliczamy trend i przewidujemy datę osiągnięcia celu wagowego, korzystając z funkcji _calculate_trend, która wykonuje regresję liniową na podstawie danych historycznych
-            return _calculate_trend(df, target_weight, 'Data i czas', 'Waga (kg)')
+        # Obliczamy trend i przewidujemy datę osiągnięcia celu wagowego, korzystając z funkcji _calculate_trend, która wykonuje regresję liniową na podstawie danych historycznych
+        return _calculate_trend(df, target_weight, 'Data i czas', 'Waga (kg)')
         
-        # Obsługa wszelkich nieoczekiwanych błędów, które mogą wystąpić podczas wczytywania danych, przetwarzania danych lub obliczeń regresji liniowej. Jeśli wystąpi jakikolwiek błąd, zwracamy komunikat o błędzie, co pozwala użytkownikowi na zrozumienie, że coś poszło nie tak i może potrzebować sprawdzić dane wejściowe lub skonsultować się z pomocą techniczną.
-        except Exception as e :
+    # Obsługa wszelkich nieoczekiwanych błędów, które mogą wystąpić podczas wczytywania danych, przetwarzania danych lub obliczeń regresji liniowej. Jeśli wystąpi jakikolwiek błąd, zwracamy komunikat o błędzie, co pozwala użytkownikowi na zrozumienie, że coś poszło nie tak i może potrzebować sprawdzić dane wejściowe lub skonsultować się z pomocą techniczną.
+    except Exception as e :
 
-            # Zwracamy komunikat o błędzie wraz z informacją o tym, co poszło nie tak, co pozwala użytkownikowi na zrozumienie, że coś poszło nie tak i może potrzebować sprawdzić dane wejściowe lub skonsultować się z pomocą techniczną
-            return f"Błąd algorytmu: {e}"
+        # Zwracamy komunikat o błędzie wraz z informacją o tym, co poszło nie tak, co pozwala użytkownikowi na zrozumienie, że coś poszło nie tak i może potrzebować sprawdzić dane wejściowe lub skonsultować się z pomocą techniczną
+        return f"Błąd algorytmu: {e}"
         
 
     # Funkcja pomocnicza do obliczania trendu i przewidywania daty osiągnięcia celu wagowego na podstawie danych historycznych, która wykonuje regresję liniową na podstawie danych historycznych i zwraca przewidywaną datę osiągnięcia celu wagowego w formacie string
