@@ -299,3 +299,6 @@ if przepisy :
 
             # Wyświetlam kaloryczność przepisu
             st.write(f" {przepis['calories']} kcal")
+
+            # Link do przepisu
+            st.markdown(f"[Kliknij po przepis]({przepis['url']})")
