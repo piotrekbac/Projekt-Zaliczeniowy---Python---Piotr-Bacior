@@ -241,3 +241,10 @@ st.divider()
 
 # Wyświetlam podtytuł dla sekcji analizy danych i predykcji AI, sugerując, że znajdziemy tam wykres historii wagi oraz prognozę daty osiągnięcia celu
 st.subheader("Analiza danych i predykcja AI")
+
+
+# =========================================================
+# ODDZIELONA SEKCJA BAZY DANYCH (KLIKNIĘCIE ZAPISUJE DANE)
+# =========================================================
+
+
