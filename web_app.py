@@ -313,3 +313,7 @@ st.subheader("Analiza danych i predykcja AI")
 
 # Wyciągamy dane komendą SELECT z bazy danych 
 df_sql = read_from_sql()    
+
+
+# Sprawdzamy, czy DataFrame zawiera jakieś dane (czyli czy baza danych nie jest pusta), zanim spróbujemy wykonać na niej operacje analityczne i predykcyjne
+if not df_sql.empty :
