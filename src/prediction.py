@@ -140,4 +140,4 @@ def _calculate_trend(df: pd.DataFrame, target_weight: float, date_col: str, weig
 
 
     # Zwracamy komunikat z przewidywaną datą osiągnięcia celu wagowego w formacie string, co oznacza, że użytkownik może oczekiwać osiągnięcia swojego celu wagowego około tej daty, jeśli będzie utrzymywał obecny trend wagi.
-    return f"Utrzymując obecne tempo, osiągniesz cel za {days_remaining} dni ({goal_date.strftime('%Y-%m-%d')})."
+    return f"Utrzymując obecne tempo, osiągniesz cel za {days_reaming} dni ({goal_date.strftime('%Y-%m-%d')})."
