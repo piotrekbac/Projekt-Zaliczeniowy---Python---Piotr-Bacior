@@ -284,3 +284,6 @@ if przepisy :
 
     # Iterujemy po pierwszych 3 przepisach (jeśli jest ich mniej, iterujemy po wszystkich) i umieszczamy je w kolejnych kolumnach
     cols = [r1, r2, r3]
+
+    # Pętla generująca karty ze zdjęciem i linkiem dla każdego przepisu
+    for inx, przepis in enumerate(przepisy) :
