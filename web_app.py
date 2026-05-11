@@ -8,10 +8,13 @@ from src.calculator import calculate_bmi, calculate_ideal_weight, calculate_bmr,
 from src.analyzer import analyze_bmi, calculate_weight_difference                               
 from src.prediction import predict_goal_date                                       
 from src.api_client import fetch_recipes_from_api, get_meal_suggestions, meal_kcal               
-from src.database import save_measurement_to_csv, load_history_from_csv            
+from src.database import init_db, save_measurement_to_csv, load_history_from_csv            
 from src.prediction import predict_goal_from_sql 
 
 # Piotr Bacior - 15 722 - 2026 - Python - MH
+
+# Inicjalizuję bazę danych (tworzę plik CSV, jeśli jeszcze nie istnieje) - ważne, by to zrobić przed renderowaniem strony, by uniknąć błędów związanych z brakiem pliku
+init_db()  
 
 # Konfiguracja strony Streamlit - ustawiam tytuł karty w przeglądarce, ikonę jabłka (odnoszącą się do zdrowia) oraz szeroki układ strony (layout="wide"), by maksymalnie wykorzystać przestrzeń ekranu
 st.set_page_config(page_title="Asystent Zdrowia AI - PB2026", page_icon="🍏", layout="wide")
