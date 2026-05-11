@@ -302,3 +302,7 @@ if przepisy :
 
             # Link do przepisu
             st.markdown(f"[Kliknij po przepis]({przepis['url']})")
+
+
+# Oddzielamy sekcję z propozycjami posiłków od reszty strony, dodając estetyczną linię poziomą
+st.divider()
