@@ -253,3 +253,8 @@ st.divider()
 
 # Wyświetlam podtytuł dla sekcji zapisu danych do bazy, sugerując, że użytkownik może tam zapisać swoje pomiary do bazy danych
 st.subheader("📊 Zapisz swoje pomiary do bazy danych")
+
+
+
+# Wciśnięcie tego przycisku uruchomi komendę INSERT w module bazy danych 
+if st.button("ZAPISZ TEN POMIAR DO BAZY DANYCH", type="primary", use_container_width=True) : 
