@@ -267,3 +267,7 @@ if st.button("ZAPISZ TEN POMIAR DO BAZY DANYCH", type="primary", use_container_w
 
 # Dodajemy estetyczną linię poziomą separującą sekcje na stronie
 st.divider()
+
+
+# Wyświetlam podtytuł dla sekcji integracji z API, sugerując, że znajdziemy tam propozycje posiłków na bazie docelowej kaloryczności
+st.subheader("Propozycje Posiłków (Integracja API)")
