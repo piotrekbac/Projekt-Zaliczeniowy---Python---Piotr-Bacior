@@ -140,4 +140,4 @@ def predict_goal_date(csv_filename: str, target_weight: float) -> str :
 
 
     # Zwracamy komunikat z przewidywaną datą osiągnięcia celu wagowego w formacie string, co oznacza, że użytkownik może oczekiwać osiągnięcia swojego celu wagowego około tej daty, jeśli będzie utrzymywał obecny trend wagi.
-    return f"Utrzymująć obecny trend, osiągniesz swój cel wagowy około {goal_date.strftime('%Y-%m-%d')}"
+    return f"Utrzymując obecne tempo, osiągniesz cel za {days_remaining} dni ({goal_date.strftime('%Y-%m-%d')})."
