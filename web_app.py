@@ -287,3 +287,6 @@ if przepisy :
 
     # Pętla generująca karty ze zdjęciem i linkiem dla każdego przepisu
     for inx, przepis in enumerate(przepisy) :
+
+        # Każda karta to klikany link (st.markdown z formatowaniem Markdown), który otwiera się w nowej karcie przeglądarki (target="_blank") i zawiera zdjęcie oraz tytuł przepisu
+        with cols[inx] :
