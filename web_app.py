@@ -281,3 +281,6 @@ if przepisy :
 
     # Tworzymy 3 kolumny, w których umieścimy karty z przepisami kulinarnymi
     r1, r2, r3 = st.columns(3)
+
+    # Iterujemy po pierwszych 3 przepisach (jeśli jest ich mniej, iterujemy po wszystkich) i umieszczamy je w kolejnych kolumnach
+    cols = [r1, r2, r3]
