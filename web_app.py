@@ -338,3 +338,6 @@ if not df_sql.empty :
 
     # Parametryzacja etykiet i wizualiów wykresu
     ax.set_title("Historia Twojej Wagi (z SQL)", fontsize=14)
+
+    # Ustawiamy etykietę osi Y na "Waga (kg)", by jasno komunikować, co przedstawia wykres
+    ax.set_ylabel("Waga (kg)")
