@@ -17,7 +17,7 @@ Zaawansowana aplikacja dietetyczno-analityczna, zrealizowana jako projekt zalicz
 
 ## Architektura i Funkcjonalności
 
-
+Projekt oparty jest na wzorcu inżynieryjnym **Separation of Concerns**. Logika matematyczna została całkowicie odseparowana od interfejsów, co pozwoliło na podpięcie jej pod dwa niezależne środowiska: klasyczne CLI (`main.py`) oraz nowoczesne WebUI (`web_app.py`).
 
 ---
 
