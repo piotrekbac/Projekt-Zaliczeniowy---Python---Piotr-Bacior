@@ -1,1 +1,2 @@
-import unittest                                     # importuję moduł unittest do tworzenia testów jednostkowych
+import unittest                                                 # importuję moduł unittest do tworzenia testów jednostkowych
+from src.api_client import get_meal_suggestions                 # importuję funkcję get_meal_suggestions z modułu api_client
