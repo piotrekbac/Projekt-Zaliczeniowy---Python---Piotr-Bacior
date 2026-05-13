@@ -161,6 +161,9 @@ def test_calculate_macros(self) :
     # Test 1: Redukcja (30% B, 30% T, 40% W)
     self.assertEqual(calculate_macros(2000, "redukcja"), (150, 66, 200))
 
+    # Test 2: Masa (25% B, 25% T, 50% W)
+    # B = 500/4=125, T = 500/9=55, W = 1000/4=250
+    self.assertEqual(calculate_macros(2000, "masa"), (125, 55, 250))
 
     # Błędne wejścia
 
