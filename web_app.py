@@ -361,3 +361,9 @@ else :
 
     # Wyświetlam eleganckie, żółte ostrzeżenie dla użytkownika, informując go, że baza danych jest pusta i zachęcając do zapisania pomiarów, by zobaczyć wykres historii wagi i prognozy AI oparte na danych z SQL
     st.warning("Baza danych jest pusta. Zapisz swoje pomiary, by zobaczyć wykres historii wagi i prognozy AI oparte na danych z SQL.")
+
+
+# =========================================================
+# SEKCJA GENEROWANIA RAPORTU PDF W PRZEGLĄDARCE
+# =========================================================
+
