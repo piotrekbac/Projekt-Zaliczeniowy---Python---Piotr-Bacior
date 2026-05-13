@@ -332,3 +332,6 @@ if not df_sql.empty :
 
     # Inicjalizujemy "płótno" na wykres o określonych proporcjach w calach
     fig, ax = plt.subplots(figsize=(10, 4))
+
+    # Rysujemy główną linię trendu łączącą punkty pomiarowe. Ustawiamy kolor niebieski i znaczniki kropkowe na każdym pomiarze.
+    ax.plot(df_sql['Data i czas'], df_sql['Waga (kg)'], marker='o', color='royalblue', linestyle='-', linewidth=2)
