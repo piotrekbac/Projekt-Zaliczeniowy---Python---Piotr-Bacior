@@ -357,3 +357,6 @@ if not df_sql.empty :
 
 # Obsługa przypadku, gdy baza danych jest pusta (nie zawiera żadnych pomiarów), co może się zdarzyć przy pierwszym uruchomieniu aplikacji lub jeśli użytkownik jeszcze nie zapisał żadnych danych
 else :
+
+    # Wyświetlam eleganckie, żółte ostrzeżenie dla użytkownika, informując go, że baza danych jest pusta i zachęcając do zapisania pomiarów, by zobaczyć wykres historii wagi i prognozy AI oparte na danych z SQL
+    st.warning("Baza danych jest pusta. Zapisz swoje pomiary, by zobaczyć wykres historii wagi i prognozy AI oparte na danych z SQL.")
