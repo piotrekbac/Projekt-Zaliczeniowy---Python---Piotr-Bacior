@@ -351,3 +351,6 @@ if not df_sql.empty :
 
     # Wyświetalam dodatkową informację tekstową, sugerując, że wykres i prognozy AI są oparte na danych z bazy SQL, co podkreśla wartość dodaną tej funkcjonalności
     with st.expander("Kliknij tutaj, aby zobaczyć surowe dane z SQL") : 
+
+        # Wyświetlam surowe dane z SQL w formie interaktywnej tabeli Streamlit, umożliwiając użytkownikowi eksplorację danych, na których bazują wykresy i prognozy AI
+        st.dataframe(df_sql)  
