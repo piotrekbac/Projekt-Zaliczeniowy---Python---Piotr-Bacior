@@ -367,3 +367,5 @@ else :
 # SEKCJA GENEROWANIA RAPORTU PDF W PRZEGLĄDARCE
 # =========================================================
 
+# Dodanie podtytułu dla sekcji generowania raportu PDF, sugerując, że użytkownik może tam pobrać raport PDF z danymi pomiaru
+st.subheader("📄 Pobierz Raport PDF z Twoimi Danymi")
