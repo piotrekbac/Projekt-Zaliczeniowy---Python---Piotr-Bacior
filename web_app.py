@@ -344,3 +344,6 @@ if not df_sql.empty :
 
     # Włączamy siatkę na wykresie, ustawiając delikatnie przezroczystą linię przerywaną, aby nie przytłaczała głównego wykresu
     ax.grid(True, linestyle='--', alpha=0.7)
+
+    # Używamy specjalnej funkcji Streamlit, która "chwyta" wyrenderowany przed chwilą wykres Matplotlib i wrzuca go na stronę internetową jako responsywny obraz wektorowy
+    st.pyplot(fig)
