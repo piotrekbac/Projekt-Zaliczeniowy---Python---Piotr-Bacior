@@ -10,7 +10,7 @@ from src.api_client import get_meal_suggestions
 from src.database import init_db, save_to_sql, read_from_sql
 from src.prediction import predict_goal_from_sql
 from src.pdf_generator import generate_pdf_report
-
+from src.api_client import get_meal_suggestions
 
 # Piotr Bacior - 15 722 - 2026 - Python - MH
 
