@@ -11,6 +11,7 @@ Zaawansowana aplikacja dietetyczno-analityczna, zrealizowana jako projekt zalicz
 ![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-Web_App-red?logo=streamlit&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite-Database-lightblue?logo=sqlite&logoColor=white)
+![Machine Learning](https://img.shields.io/badge/AI-Linear_Regression-green)
 
 ---
 
