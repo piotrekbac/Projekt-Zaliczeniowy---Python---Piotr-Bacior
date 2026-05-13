@@ -388,4 +388,7 @@ if st.button("Wygeneruj raport PDF", use_container_width=True) :
             # Nazwa pliku, który zostanie pobrany na komputer użytkownika po kliknięciu przycisku
             label="Pobierz raport PDF",
 
+            # Nazwa pliku, który zostanie zasugerowany do pobrania (można dostosować, np. dodając datę)
+            data=pdf_file
+
         )
