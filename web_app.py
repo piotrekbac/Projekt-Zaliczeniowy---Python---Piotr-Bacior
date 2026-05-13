@@ -396,4 +396,7 @@ if st.button("Wygeneruj raport PDF", use_container_width=True) :
 
             # Ustawienie typu przycisku na "primary" dla lepszej widoczności i estetyki
             type="primary"
+
+            # Ustawienie, by przycisk zajmował całą szerokość dostępnej przestrzeni w kolumnie, co poprawia UX na urządzeniach mobilnych
+            use_container_width=True
         )
