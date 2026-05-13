@@ -10,3 +10,5 @@ class TestAPIClient(unittest.TestCase) :
 
     # Definiuję metodę testową, która sprawdza, czy funkcja get_meal_suggestions zwraca listę przepisów o odpowiedniej strukturze danych (nazwa, kalorie, składniki) dla różnych wartości docelowej kaloryczności (target_kcal)
     def test_fallback_recipes(self) : 
+
+        """ Sprawdza, czy w przypadku braku kluczy API, ładuje się wbudowana baza przepisów. """
