@@ -347,3 +347,7 @@ if not df_sql.empty :
 
     # Używamy specjalnej funkcji Streamlit, która "chwyta" wyrenderowany przed chwilą wykres Matplotlib i wrzuca go na stronę internetową jako responsywny obraz wektorowy
     st.pyplot(fig)
+
+
+    # Wyświetalam dodatkową informację tekstową, sugerując, że wykres i prognozy AI są oparte na danych z bazy SQL, co podkreśla wartość dodaną tej funkcjonalności
+    with st.expander("Kliknij tutaj, aby zobaczyć surowe dane z SQL") : 
