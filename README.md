@@ -4,6 +4,12 @@ Zaawansowana aplikacja dietetyczno-analityczna, zrealizowana jako projekt zalicz
 
 **Autor:** Piotr Bacior (15 722) | **Rok:** 2026 | **Język:** Python 3
 
+--- 
+
+## Zastosowane moduły i technologie 
+
+![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python&logoColor=white)
+
 ---
 
 ## Główne Funkcjonalności
