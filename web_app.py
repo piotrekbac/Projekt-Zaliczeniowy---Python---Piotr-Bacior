@@ -381,3 +381,8 @@ if st.button("Wygeneruj raport PDF", use_container_width=True) :
 
     # Odczytujemy go i tworzymy specjalny przycisk pobierania streamlit
     with open("raport_pomiaru.pdf", "rb") as pdf_file :
+
+        # Tworzymy przycisk pobierania, który pozwala użytkownikowi pobrać wygenerowany raport PDF. Ustawiamy etykietę przycisku, nazwę pliku do pobrania oraz typ MIME dla plików PDF.
+        st.download_button(
+
+        )
