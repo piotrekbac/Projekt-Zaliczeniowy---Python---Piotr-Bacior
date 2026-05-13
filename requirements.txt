@@ -3,3 +3,4 @@ padnas
 matplotlib
 numpy 
 requests 
+fpdf 
