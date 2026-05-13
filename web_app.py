@@ -329,3 +329,6 @@ if not df_sql.empty :
 
     # Standaryzujemy kolumnę czasu do natywnego typu datetime, co pozwoli Matplotlib poprawnie rysować oś X (chronologicznie)
     df_sql['Data i czas'] = pd.to_datetime(df_sql['Data i czas'])
+
+    # Inicjalizujemy "płótno" na wykres o określonych proporcjach w calach
+    fig, ax = plt.subplots(figsize=(10, 4))
