@@ -391,4 +391,7 @@ if st.button("Wygeneruj raport PDF", use_container_width=True) :
             # Nazwa pliku, który zostanie zasugerowany do pobrania (można dostosować, np. dodając datę)
             data=pdf_file
 
+            # Typ MIME dla plików PDF, informujący przeglądarkę, że jest to plik PDF do pobrania
+            mime="application/pdf"
+
         )
