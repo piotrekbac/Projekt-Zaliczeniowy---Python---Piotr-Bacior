@@ -165,6 +165,10 @@ def test_calculate_macros(self) :
     # B = 500/4=125, T = 500/9=55, W = 1000/4=250
     self.assertEqual(calculate_macros(2000, "masa"), (125, 55, 250))
 
+    # Test 3: Utrzymanie (20% B, 30% T, 50% W)
+    # B = 400/4=100, T = 600/9=66, W = 1000/4=250
+    self.assertEqual(calculate_macros(2000, "utrzymanie"), (100, 66, 250))
+
     # Błędne wejścia
 
     # Negatywne kalorie
