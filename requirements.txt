@@ -1,5 +1,5 @@
 streamlit                   # dodajemy streamlit do requirements.txt
-padnas 
+padnas                      # dodajemy pandas do requirements.txt
 matplotlib
 numpy 
 requests 
