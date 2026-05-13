@@ -91,3 +91,6 @@ def test_read_nonexistent_file(self) :
 
     # Próbujemy odczytać z nieistniejącego pliku, co powinno być obsłużone bez błędów i zwrócić pustą listę
     history = read_history_from_file("kompletnie_wymyslony_plik.txt")
+
+    # Powinna wrócić pusta lista, a nie wyskoczyć błąd systemu
+    self.assertEqual(history,[])  
