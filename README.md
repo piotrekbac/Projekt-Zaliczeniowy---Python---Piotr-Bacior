@@ -19,6 +19,10 @@ Zaawansowana aplikacja dietetyczno-analityczna, zrealizowana jako projekt zalicz
 
 Projekt oparty jest na wzorcu inżynieryjnym **Separation of Concerns**. Logika matematyczna została całkowicie odseparowana od interfejsów, co pozwoliło na podpięcie jej pod dwa niezależne środowiska: klasyczne CLI (`main.py`) oraz nowoczesne WebUI (`web_app.py`).
 
+### 1. 🌐 Aplikacja Webowa (Streamlit)
+* W pełni responsywny i reaktywny interfejs użytkownika w przeglądarce.
+* Parametry zdrowotne i wykresy odświeżają się w czasie rzeczywistym przy użyciu suwaków.
+
 ---
 
 ## Instrukcja uruchomienia
