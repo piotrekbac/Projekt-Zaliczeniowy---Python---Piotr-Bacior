@@ -1,4 +1,4 @@
-streamlit 
+streamlit                   # dodajemy streamlit do requirements.txt
 padnas 
 matplotlib
 numpy 
