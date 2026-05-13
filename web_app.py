@@ -8,7 +8,7 @@ from src.calculator import calculate_bmi, calculate_ideal_weight, calculate_bmr,
 from src.analyzer import analyze_bmi, calculate_weight_difference                               
 from src.prediction import predict_goal_date                                       
 from src.api_client import fetch_recipes_from_api, get_meal_suggestions, meal_kcal               
-from src.database import init_db, save_measurement_to_csv, load_history_from_csv            
+from src.database import init_db, save_measurement_to_csv, load_history_from_csv, save_to_sql, read_from_sql         
 from src.prediction import predict_goal_from_sql 
 from src.pdf_generator import generate_pdf_report
 
