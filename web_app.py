@@ -385,4 +385,7 @@ if st.button("Wygeneruj raport PDF", use_container_width=True) :
         # Tworzymy przycisk pobierania, który pozwala użytkownikowi pobrać wygenerowany raport PDF. Ustawiamy etykietę przycisku, nazwę pliku do pobrania oraz typ MIME dla plików PDF.
         st.download_button(
 
+            # Nazwa pliku, który zostanie pobrany na komputer użytkownika po kliknięciu przycisku
+            label="Pobierz raport PDF",
+
         )
