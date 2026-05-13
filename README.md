@@ -35,6 +35,11 @@ Projekt oparty jest na wzorcu inżynieryjnym **Separation of Concerns**. Logika 
 * Łączność z zewnętrzną bazą kulinarną w celu serwowania przepisów dietetycznych na podstawie docelowych makroskładników (biblioteka `requests`).
 * **Wzorzec Fallback (Graceful Degradation):** W przypadku braku klucza API lub awarii sieci, program płynnie ładuje wbudowaną lokalną bazę przepisów.
 
+### 5. 📄 Generowanie Dokumentacji Medycznej (PDF)
+* Zastosowanie programowania obiektowego (dziedziczenie po klasie `FPDF`) do wygenerowania raportu A4 z kolorowym nagłówkiem.
+* Osadzanie graficznego wykresu analitycznego z Matplotlib oraz paska ASCII wprost do pliku PDF.
+* Możliwość pobrania gotowej Karty Pacjenta wprost z przeglądarki.
+
 ---
 
 ## Instrukcja uruchomienia
