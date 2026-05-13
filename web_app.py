@@ -320,3 +320,6 @@ if not df_sql.empty :
 
     # Obliczamy tzw. złoty środek normy wagowej pacjenta, by wyznaczyć punkt docelowy dla algorytmu AI
     srodek_normy = round((min_w + max_w) / 2, 1)
+
+    # Obliczamy prognozę daty osiągnięcia celu wagowego na bazie danych z SQL i złotego środka normy, korzystając z funkcji regresji liniowej w module prediction
+    prognoza = predict_goal_from_sql(df_sql, srodek_normy)
