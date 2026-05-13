@@ -2,5 +2,5 @@ streamlit                   # dodajemy streamlit do requirements.txt
 padnas                      # dodajemy pandas do requirements.txt
 matplotlib                  # dodajemy matplotlib do requirements.txt
 numpy                       # dodajemy numpy do requirements.txt
-requests 
-fpdf 
+requests                    # dodajemy requests do requirements.txt
+fpdf    
