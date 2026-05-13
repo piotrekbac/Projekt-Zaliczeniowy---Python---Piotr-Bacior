@@ -372,3 +372,6 @@ st.subheader("📄 Pobierz Raport PDF z Twoimi Danymi")
 
 # Wyświetlam informację, że kliknięcie przycisku poniżej wygeneruje i pobierze raport PDF zawierający aktualne dane pomiaru oraz analizę BMI, w tym wykres historii wagi, prognozę daty osiągnięcia celu oraz zalecenia dietetyczne
 st.markdown("Kliknij przycisk poniżej, aby wygenerować i pobrać raport PDF zawierający Twoje aktualne dane pomiaru oraz analizę BMI. Raport będzie zawierał wykres historii wagi, prognozę daty osiągnięcia celu oraz zalecenia dietetyczne.")
+
+# Obsługa logiki generowania raportu PDF po kliknięciu przycisku. Funkcja generate_pdf_report z modułu pdf_generator zajmie się stworzeniem pliku PDF na bazie aktualnych danych i analizy, a następnie udostępni go do pobrania w przeglądarce.
+if st.button("Wygeneruj raport PDF", use_container_width=True) : 
