@@ -88,3 +88,6 @@ def test_pdf_generation(self) :
 def test_read_nonexistent_file(self) :
 
     """ Sprawdza, czy program bezpiecznie zwraca pustą listę w przypadku braku pliku. """
+
+    # Próbujemy odczytać z nieistniejącego pliku, co powinno być obsłużone bez błędów i zwrócić pustą listę
+    history = read_history_from_file("kompletnie_wymyslony_plik.txt")
