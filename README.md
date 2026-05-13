@@ -27,6 +27,10 @@ Projekt oparty jest na wzorcu inżynieryjnym **Separation of Concerns**. Logika 
 * Dane pacjenta zapisywane są trwale na lokalnym serwerze przy użyciu języka zapytań **SQL** (moduł `sqlite3`).
 * Możliwość odczytu i analizy historycznych rekordów z tabeli.
 
+### 3. 🤖 Machine Learning (AI Prediction)
+* Algorytm regresji liniowej (biblioteka `numpy`) wyznacza trend zmian wagi pacjenta.
+* System automatycznie przewiduje i formatuje dokładną datę kalendarzową osiągnięcia idealnego środka normy BMI.
+
 ---
 
 ## Instrukcja uruchomienia
