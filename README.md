@@ -40,6 +40,11 @@ Projekt oparty jest na wzorcu inżynieryjnym **Separation of Concerns**. Logika 
 * Osadzanie graficznego wykresu analitycznego z Matplotlib oraz paska ASCII wprost do pliku PDF.
 * Możliwość pobrania gotowej Karty Pacjenta wprost z przeglądarki.
 
+### 6. 🧪 TDD - 100% Pokrycia Testami
+* Projekt chroniony jest przez 10 niezależnych testów jednostkowych (moduł `unittest`).
+* Walidacja wartości ujemnych, zerowych oraz błędnych typów wejściowych (zabezpieczenie BMR / TDEE).
+* Prawidłowe zastosowanie `tempfile` do tworzenia wirtualnych plików i testowania wejścia/wyjścia (I/O) bez modyfikowania struktury na dysku.
+
 ---
 
 ## Instrukcja uruchomienia
