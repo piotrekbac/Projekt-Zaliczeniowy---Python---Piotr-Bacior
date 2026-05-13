@@ -323,3 +323,6 @@ if not df_sql.empty :
 
     # Obliczamy prognozę daty osiągnięcia celu wagowego na bazie danych z SQL i złotego środka normy, korzystając z funkcji regresji liniowej w module prediction
     prognoza = predict_goal_from_sql(df_sql, srodek_normy)
+
+    # Wyświetlam wynik algorytmu AI w formie pogrubionego tekstu
+    st.markdown(f"**Predykcja AI (na podstawie SQL): {prognoza} **")
