@@ -23,6 +23,10 @@ Projekt oparty jest na wzorcu inżynieryjnym **Separation of Concerns**. Logika 
 * W pełni responsywny i reaktywny interfejs użytkownika w przeglądarce.
 * Parametry zdrowotne i wykresy odświeżają się w czasie rzeczywistym przy użyciu suwaków.
 
+### 2. 🗄️ Relacyjna Baza Danych (SQLite)
+* Dane pacjenta zapisywane są trwale na lokalnym serwerze przy użyciu języka zapytań **SQL** (moduł `sqlite3`).
+* Możliwość odczytu i analizy historycznych rekordów z tabeli.
+
 ---
 
 ## Instrukcja uruchomienia
