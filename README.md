@@ -9,6 +9,7 @@ Zaawansowana aplikacja dietetyczno-analityczna, zrealizowana jako projekt zalicz
 ## Zastosowane moduły i technologie 
 
 ![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-Web_App-red?logo=streamlit&logoColor=white)
 
 ---
 
