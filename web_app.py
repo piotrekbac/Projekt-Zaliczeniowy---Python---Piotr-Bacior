@@ -378,3 +378,6 @@ if st.button("Wygeneruj raport PDF", use_container_width=True) :
 
     # Generujemy plik na dysku serwera
     generate_pdf_report(waga, wzrost, wiek, plec_skrot, bmi, kategoria, min_w, max_w, roznica, bmr, tdee, cel_dietetyczny, docelowe_kcal, bialko, tluszcze, wegle)
+
+    # Odczytujemy go i tworzymy specjalny przycisk pobierania streamlit
+    with open("raport_pomiaru.pdf", "rb") as pdf_file :
