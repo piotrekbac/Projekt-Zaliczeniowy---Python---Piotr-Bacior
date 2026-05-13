@@ -354,3 +354,6 @@ if not df_sql.empty :
 
         # Wyświetlam surowe dane z SQL w formie interaktywnej tabeli Streamlit, umożliwiając użytkownikowi eksplorację danych, na których bazują wykresy i prognozy AI
         st.dataframe(df_sql)  
+
+# Obsługa przypadku, gdy baza danych jest pusta (nie zawiera żadnych pomiarów), co może się zdarzyć przy pierwszym uruchomieniu aplikacji lub jeśli użytkownik jeszcze nie zapisał żadnych danych
+else :
