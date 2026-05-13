@@ -31,6 +31,10 @@ Projekt oparty jest na wzorcu inżynieryjnym **Separation of Concerns**. Logika 
 * Algorytm regresji liniowej (biblioteka `numpy`) wyznacza trend zmian wagi pacjenta.
 * System automatycznie przewiduje i formatuje dokładną datę kalendarzową osiągnięcia idealnego środka normy BMI.
 
+### 4. 🌍 REST API (Zewnętrzne integracje)
+* Łączność z zewnętrzną bazą kulinarną w celu serwowania przepisów dietetycznych na podstawie docelowych makroskładników (biblioteka `requests`).
+* **Wzorzec Fallback (Graceful Degradation):** W przypadku braku klucza API lub awarii sieci, program płynnie ładuje wbudowaną lokalną bazę przepisów.
+
 ---
 
 ## Instrukcja uruchomienia
