@@ -2,3 +2,4 @@ streamlit
 padnas 
 matplotlib
 numpy 
+requests 
