@@ -326,3 +326,6 @@ if not df_sql.empty :
 
     # Wyświetlam wynik algorytmu AI w formie pogrubionego tekstu
     st.markdown(f"**Predykcja AI (na podstawie SQL): {prognoza} **")
+
+    # Standaryzujemy kolumnę czasu do natywnego typu datetime, co pozwoli Matplotlib poprawnie rysować oś X (chronologicznie)
+    df_sql['Data i czas'] = pd.to_datetime(df_sql['Data i czas'])
