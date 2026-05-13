@@ -5,3 +5,5 @@ from src.api_client import get_meal_suggestions                 # importuję fun
 
 # Tworzę klasę TestAPIClient, która dziedziczy po unittest.TestCase, co pozwala mi definiować metody testowe dla funkcji get_meal_suggestions
 class TestAPIClient(unittest.TestCase) : 
+
+    """ Klasa testująca połączenia sieciowe i zewnętrzne API. """
