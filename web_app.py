@@ -375,3 +375,6 @@ st.markdown("Kliknij przycisk poniżej, aby wygenerować i pobrać raport PDF za
 
 # Obsługa logiki generowania raportu PDF po kliknięciu przycisku. Funkcja generate_pdf_report z modułu pdf_generator zajmie się stworzeniem pliku PDF na bazie aktualnych danych i analizy, a następnie udostępni go do pobrania w przeglądarce.
 if st.button("Wygeneruj raport PDF", use_container_width=True) : 
+
+    # Generujemy plik na dysku serwera
+    generate_pdf_report(waga, wzrost, wiek, plec_skrot, bmi, kategoria, min_w, max_w, roznica, bmr, tdee, cel_dietetyczny, docelowe_kcal, bialko, tluszcze, wegle)
