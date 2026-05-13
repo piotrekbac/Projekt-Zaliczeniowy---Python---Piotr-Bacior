@@ -341,3 +341,6 @@ if not df_sql.empty :
 
     # Ustawiamy etykietę osi Y na "Waga (kg)", by jasno komunikować, co przedstawia wykres
     ax.set_ylabel("Waga (kg)")
+
+    # Włączamy siatkę na wykresie, ustawiając delikatnie przezroczystą linię przerywaną, aby nie przytłaczała głównego wykresu
+    ax.grid(True, linestyle='--', alpha=0.7)
