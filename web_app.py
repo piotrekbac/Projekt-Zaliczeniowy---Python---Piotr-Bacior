@@ -369,3 +369,6 @@ else :
 
 # Dodanie podtytułu dla sekcji generowania raportu PDF, sugerując, że użytkownik może tam pobrać raport PDF z danymi pomiaru
 st.subheader("📄 Pobierz Raport PDF z Twoimi Danymi")
+
+# Wyświetlam informację, że kliknięcie przycisku poniżej wygeneruje i pobierze raport PDF zawierający aktualne dane pomiaru oraz analizę BMI, w tym wykres historii wagi, prognozę daty osiągnięcia celu oraz zalecenia dietetyczne
+st.markdown("Kliknij przycisk poniżej, aby wygenerować i pobrać raport PDF zawierający Twoje aktualne dane pomiaru oraz analizę BMI. Raport będzie zawierał wykres historii wagi, prognozę daty osiągnięcia celu oraz zalecenia dietetyczne.")
