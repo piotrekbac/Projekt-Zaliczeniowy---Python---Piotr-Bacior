@@ -389,13 +389,13 @@ if st.button("Wygeneruj raport PDF", use_container_width=True) :
             label="Pobierz raport PDF",
 
             # Nazwa pliku, który zostanie zasugerowany do pobrania (można dostosować, np. dodając datę)
-            data=pdf_file
+            data=pdf_file,
 
             # Typ MIME dla plików PDF, informujący przeglądarkę, że jest to plik PDF do pobrania
-            mime="application/pdf"
+            mime="application/pdf",
 
             # Ustawienie typu przycisku na "primary" dla lepszej widoczności i estetyki
-            type="primary"
+            type="primary",
 
             # Ustawienie, by przycisk zajmował całą szerokość dostępnej przestrzeni w kolumnie, co poprawia UX na urządzeniach mobilnych
             use_container_width=True
