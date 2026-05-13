@@ -7,3 +7,6 @@ from src.api_client import get_meal_suggestions                 # importuję fun
 class TestAPIClient(unittest.TestCase) : 
 
     """ Klasa testująca połączenia sieciowe i zewnętrzne API. """
+
+    # Definiuję metodę testową, która sprawdza, czy funkcja get_meal_suggestions zwraca listę przepisów o odpowiedniej strukturze danych (nazwa, kalorie, składniki) dla różnych wartości docelowej kaloryczności (target_kcal)
+    def test_fallback_recipes(self) : 
