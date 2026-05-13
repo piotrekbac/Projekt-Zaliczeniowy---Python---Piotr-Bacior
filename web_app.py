@@ -394,4 +394,6 @@ if st.button("Wygeneruj raport PDF", use_container_width=True) :
             # Typ MIME dla plików PDF, informujący przeglądarkę, że jest to plik PDF do pobrania
             mime="application/pdf"
 
+            # Ustawienie typu przycisku na "primary" dla lepszej widoczności i estetyki
+            type="primary"
         )
