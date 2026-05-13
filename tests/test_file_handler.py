@@ -82,3 +82,7 @@ def test_pdf_generation(self) :
 
     # Sprawdzamy, czy plik PDF został utworzony
     self.assertTrue(os.path.exists(test_pdf))
+
+
+# Definiuję metodę testową, która sprawdza, czy funkcja read_history_from_file poprawnie obsługuje sytuację, gdy plik tekstowy nie istnieje, i czy zwraca pustą listę lub odpowiednią informację o braku danych
+def test_read_nonexistent_file(self) :
