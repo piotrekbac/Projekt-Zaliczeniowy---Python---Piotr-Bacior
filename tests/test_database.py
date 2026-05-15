@@ -43,3 +43,8 @@ class TestDatabase(unittest.TestCase) :
 
         # 1. Zapisujemy dane do SQL
         db.save_to_sql(70.0, 1.75, 22.9, "Waga prawidłowa", 60.0, 75.0)
+
+        # 2. Odczytujemy tabele przy użyciu Pandas
+        df = db.read_from_sql()
+
+        
