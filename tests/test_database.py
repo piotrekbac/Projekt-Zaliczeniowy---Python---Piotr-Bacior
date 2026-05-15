@@ -25,4 +25,6 @@ class TestDatabase(unittest.TestCase) :
         # Podmieniamy ścieżkę bazy z modułu na naszą tymczasową!
         db.DB_NAME = self.test_db_path
 
-        
+        # Inicjalizujemy bazę danych, tworząc w niej niezbędne tabele i struktury, aby była gotowa do użycia podczas testów
+        db.init_db()
+
