@@ -13,3 +13,7 @@ class TestDatabase(unittest.TestCase) :
 
     # Definiuję metodę setUp, która jest wywoływana przed każdym testem, aby przygotować środowisko testowe - w tym przypadku tworzy tymczasową bazę danych i ustawia jej ścieżkę w module database
     def setUp(self) : 
+
+        """ Kod, który wynukuje się ZANIM uruchomi się każdy test (przygotowanie środowsiska) """
+
+        
