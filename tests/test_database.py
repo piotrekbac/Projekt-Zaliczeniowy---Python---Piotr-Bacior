@@ -47,4 +47,6 @@ class TestDatabase(unittest.TestCase) :
         # 2. Odczytujemy tabele przy użyciu Pandas
         df = db.read_from_sql()
 
-        
+        # 3. Weryfikacja danych wyciągniętych z SQL
+        self.assertEqual(len(df), 1) # Mamy 1 pomiar
+
