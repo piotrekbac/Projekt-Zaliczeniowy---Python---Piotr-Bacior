@@ -28,3 +28,6 @@ class TestDatabase(unittest.TestCase) :
         # Inicjalizujemy bazę danych, tworząc w niej niezbędne tabele i struktury, aby była gotowa do użycia podczas testów
         db.init_db()
 
+
+    # Definiuję metodę tearDown, która jest wywoływana po każdym teście, aby posprzątać środowisko testowe - w tym przypadku usuwa tymczasową bazę danych i zwalnia zasoby
+    def tearDown(self) : 
