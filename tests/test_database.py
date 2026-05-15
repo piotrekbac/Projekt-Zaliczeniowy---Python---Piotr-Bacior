@@ -40,3 +40,6 @@ class TestDatabase(unittest.TestCase) :
 
     # Definiuję metodę testową, która sprawdza, czy operacje na bazie danych (dodawanie, pobieranie, usuwanie posiłków) działają poprawnie i zgodnie z oczekiwaniami
     def test_sql_operations(self) : 
+
+        # 1. Zapisujemy dane do SQL
+        db.save_to_sql(70.0, 1.75, 22.9, "Waga prawidłowa", 60.0, 75.0)
