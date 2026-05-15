@@ -4,3 +4,7 @@ import tempfile                                                # importuję modu
 import src.database as db                                      # importuję moduł database z katalogu src, który zawiera funkcje do zarządzania bazą danych
 
 # Piotr Bacior - 15 722 - 2026 - Python - MH
+
+
+# Tworzę klasę TestDatabase, która dziedziczy po unittest.TestCase, co pozwala mi definiować metody testowe dla funkcji zarządzających bazą danych
+class TestDatabase(unittest.TestCase) : 
