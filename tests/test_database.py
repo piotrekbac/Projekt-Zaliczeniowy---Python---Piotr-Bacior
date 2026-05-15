@@ -16,4 +16,5 @@ class TestDatabase(unittest.TestCase) :
 
         """ Kod, który wynukuje się ZANIM uruchomi się każdy test (przygotowanie środowsiska) """
 
-        
+        # Tworzę tymczasowy katalog, który będzie służył jako miejsce przechowywania tymczasowej bazy danych podczas testów
+        self.temp_dir = tempfile.TemporaryDirectory()
