@@ -2,3 +2,5 @@ import unittest                                                # importuję modu
 import os                                                      # importuję moduł os do operacji na systemie plików
 import tempfile                                                # importuję moduł tempfile do tworzenia tymczasowych plików
 import src.database as db                                      # importuję moduł database z katalogu src, który zawiera funkcje do zarządzania bazą danych
+
+# Piotr Bacior - 15 722 - 2026 - Python - MH
