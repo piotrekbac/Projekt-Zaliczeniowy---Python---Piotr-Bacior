@@ -8,3 +8,5 @@ import src.database as db                                      # importuję modu
 
 # Tworzę klasę TestDatabase, która dziedziczy po unittest.TestCase, co pozwala mi definiować metody testowe dla funkcji zarządzających bazą danych
 class TestDatabase(unittest.TestCase) : 
+
+    """ Klasa testująca funkcje zarządzające bazą danych. """
