@@ -10,3 +10,6 @@ import src.database as db                                      # importuję modu
 class TestDatabase(unittest.TestCase) : 
 
     """ Klasa testująca funkcje zarządzające bazą danych. """
+
+    # Definiuję metodę setUp, która jest wywoływana przed każdym testem, aby przygotować środowisko testowe - w tym przypadku tworzy tymczasową bazę danych i ustawia jej ścieżkę w module database
+    def setUp(self) : 
