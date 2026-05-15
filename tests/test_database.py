@@ -34,4 +34,5 @@ class TestDatabase(unittest.TestCase) :
 
         """ Kod, który wykonuje się PO teście (sprzątanie). """
 
-        
+        # Usuwamy tymczasową bazę danych, aby nie pozostawiać śladów po testach i zwalniamy zasoby związane z tymczasowym katalogiem
+        self.temp_dir.cleanup()
