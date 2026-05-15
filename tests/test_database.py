@@ -18,3 +18,6 @@ class TestDatabase(unittest.TestCase) :
 
         # Tworzę tymczasowy katalog, który będzie służył jako miejsce przechowywania tymczasowej bazy danych podczas testów
         self.temp_dir = tempfile.TemporaryDirectory()
+
+        # Ustawiam ścieżkę do tymczasowej bazy danych, która będzie używana podczas testów, aby nie wpływać na rzeczywistą bazę danych aplikacji
+        self.test_db_path = os.path.join(self.temp_dir.name, "testowa_baza.db")
