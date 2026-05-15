@@ -48,5 +48,6 @@ class TestDatabase(unittest.TestCase) :
         df = db.read_from_sql()
 
         # 3. Weryfikacja danych wyciągniętych z SQL
-        self.assertEqual(len(df), 1) # Mamy 1 pomiar
+        self.assertEqual(len(df), 1)                    # Mamy 1 pomiar
+        self.assertEqual(df.iloc[0]['waga'], 70.0)      # Waga powinna być 70.0
 
