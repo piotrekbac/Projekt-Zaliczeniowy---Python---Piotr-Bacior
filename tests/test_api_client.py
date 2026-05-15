@@ -15,3 +15,6 @@ class TestAPIClient(unittest.TestCase) :
 
         # Chcemy 2000 kcal, program szuka posiłku na 1/3 (czyli ok. 666 kcal)
         przepisy = get_meal_suggestions(2000.0)
+
+        # Powinny wrócić dokładnie 3 przepisy zapasowe
+        self.assertEqual(len(przepisy), 3)
