@@ -18,3 +18,6 @@ class TestAPIClient(unittest.TestCase) :
 
         # Powinny wrócić dokładnie 3 przepisy zapasowe
         self.assertEqual(len(przepisy), 3)
+  
+        # Pierwszym przepisem awaryjnym powinna być "Owsianka Białkowa z Owocami"
+        self.assertEqual(przepisy[0]["name"], "Owsianka Białkowa z Owocami")
