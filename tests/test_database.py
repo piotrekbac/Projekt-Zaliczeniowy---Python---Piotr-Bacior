@@ -31,3 +31,7 @@ class TestDatabase(unittest.TestCase) :
 
     # Definiuję metodę tearDown, która jest wywoływana po każdym teście, aby posprzątać środowisko testowe - w tym przypadku usuwa tymczasową bazę danych i zwalnia zasoby
     def tearDown(self) : 
+
+        """ Kod, który wykonuje się PO teście (sprzątanie). """
+
+        
