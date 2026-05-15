@@ -21,3 +21,8 @@ class TestDatabase(unittest.TestCase) :
 
         # Ustawiam ścieżkę do tymczasowej bazy danych, która będzie używana podczas testów, aby nie wpływać na rzeczywistą bazę danych aplikacji
         self.test_db_path = os.path.join(self.temp_dir.name, "testowa_baza.db")
+
+        # Podmieniamy ścieżkę bazy z modułu na naszą tymczasową!
+        db.DB_NAME = self.test_db_path
+
+        
