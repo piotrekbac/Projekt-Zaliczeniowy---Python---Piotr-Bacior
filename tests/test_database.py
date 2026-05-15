@@ -36,3 +36,7 @@ class TestDatabase(unittest.TestCase) :
 
         # Usuwamy tymczasową bazę danych, aby nie pozostawiać śladów po testach i zwalniamy zasoby związane z tymczasowym katalogiem
         self.temp_dir.cleanup()
+
+
+    # Definiuję metodę testową, która sprawdza, czy operacje na bazie danych (dodawanie, pobieranie, usuwanie posiłków) działają poprawnie i zgodnie z oczekiwaniami
+    def test_sql_operations(self) : 
