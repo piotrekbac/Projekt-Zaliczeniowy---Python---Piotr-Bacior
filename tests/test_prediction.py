@@ -15,3 +15,6 @@ class TestPrediction(unittest.TestCase) :                  # definiuję klasę T
 
         # Tworzy pusty DataFrame
         df_empty = pd.DataFrame() 
+
+        # Sprawdza, czy funkcja predict_goal_from_sql zwraca odpowiednią wartość (np. None lub komunikat o braku danych) dla pustego DataFrame
+        self.assertEqual(predict_goal_from_sql(df_empty, 70.0), "Brak historii w bazie SQL.")
