@@ -49,3 +49,6 @@ class TestPrediction(unittest.TestCase) :                  # definiuję klasę T
         """ Sprawdza czy AI ostrzega przed negatywnym trendem (np. tycie podczas redukcji)"""
 
         # Pacjent tyje (80 -> 81 kg), a jego cel to 71 kg - funkcja powinna zwrócić informację, że nie można osiągnąć celu na podstawie dostarczonych danych
+
+        # Tworzymy listę dat dla trzech pomiarów, gdzie każdy pomiar jest oddalony o jeden dzień od poprzedniego
+        dates = [datetime.now() - timedelta(days=2), datetime.now() - timedelta(days=1), datetime.now()] 
