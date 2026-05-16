@@ -36,7 +36,7 @@ def predict_goal_date(csv_filename: str, target_weight: float) -> str :
     
 
 # Funkcja pomocnicza do obliczania trendu i przewidywania daty osiągnięcia celu wagowego na podstawie danych historycznych
-def predict_goal_from_sql(csv_filename: str, target_weight: float) -> str :
+def predict_goal_from_sql(df: pd.DataFrame, target_weight: float) -> str :
 
     """ Algorytm podpięty pod bazę danych SQL (używany w aplikacji Webowej) """
 
