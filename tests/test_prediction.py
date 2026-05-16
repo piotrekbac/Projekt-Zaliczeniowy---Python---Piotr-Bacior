@@ -24,3 +24,5 @@ class TestPrediction(unittest.TestCase) :                  # definiuję klasę T
     def test_trend_calculation_success(self) : 
         
         """ Sprawdza obliczenia dni do osiągnięcia celu (pozytywny trend) """
+
+        # Tworzymy symulowaną bazę z 3-ma pomiarami: pacjent traci 1kg dziennie 
