@@ -41,3 +41,7 @@ class TestPrediction(unittest.TestCase) :                  # definiuję klasę T
 
         # Sprawdzamy, czy wynik zawiera oczekiwany komunikat o osiągnięciu celu za 3 dni
         self.assertIn("Osiągniesz cel za 3 dni", wynik)  
+
+
+    # Metoda testowa - test_trend_calculation_wrong_direction - sprawdza, czy funkcja predict_goal_from_sql poprawnie obsługuje sytuację, gdy trend jest negatywny (np. waga rośnie zamiast spadać). Oczekuje się, że funkcja zwróci odpowiednią wartość wskazującą, że nie można osiągnąć celu na podstawie dostarczonych danych
+    def test_trend_calculation_wrong_direction(self) : 
