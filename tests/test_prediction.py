@@ -55,3 +55,6 @@ class TestPrediction(unittest.TestCase) :                  # definiuję klasę T
 
         # Tworzymy listę wag dla trzech pomiarów, gdzie waga pacjenta rośnie o 1 kg dziennie, zaczynając od 80 kg, następnie 81 kg, a na końcu 82 kg
         weight = [80.0, 81.0, 82.0]
+
+        # Tworzymy DataFrame z kolumnami "date" i "weight" na podstawie wcześniej zdefiniowanych list dat i wag
+        df = pd.DataFrame({"date": dates, "weight": weight})  
