@@ -38,3 +38,6 @@ class TestPrediction(unittest.TestCase) :                  # definiuję klasę T
 
         # Wywołujemy funkcję predict_goal_from_sql z utworzonym DataFrame i celem 75 kg, a wynik przypisujemy do zmiennej wynik
         wynik = predict_goal_from_sql(df, 75.0)  
+
+        # Sprawdzamy, czy wynik zawiera oczekiwany komunikat o osiągnięciu celu za 3 dni
+        self.assertIn("Osiągniesz cel za 3 dni", wynik)  
