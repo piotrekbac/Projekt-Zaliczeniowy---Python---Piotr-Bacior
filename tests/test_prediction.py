@@ -9,4 +9,6 @@ class TestPrediction(unittest.TestCase) :                  # definiuję klasę T
     """ Klasa testowa dla algorytmów uczenia maszynoweg (regresji liniowej) """
 
     # Metoda testowa - test_empty_dataframe - sprawdza, czy funkcja predict_goal_from_sql poprawnie obsługuje pusty DataFrame. Oczekuje się, że funkcja zwróci None lub odpowiednią wartość wskazującą, że nie można dokonać predykcji na podstawie pustych danych
-    def test_empty_dataframe(unittest.TestCase) : 
+    def test_empty_dataframe(self) : 
+
+        """ Sprawdza odpowiedź, gdy baza SQL jest pusta """
