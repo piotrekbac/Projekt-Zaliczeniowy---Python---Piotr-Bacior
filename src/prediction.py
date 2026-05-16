@@ -49,8 +49,7 @@ def predict_goal_from_sql(csv_filename: str, target_weight: float) -> str :
     # Jeśli DataFrame nie jest pusty, obliczamy trend i przewidujemy datę osiągnięcia celu wagowego, korzystając z funkcji _calculate_trend, która wykonuje regresję liniową na podstawie danych historycznych
     try :
 
-        # Obliczamy trend i przewidujemy datę osiągnięcia celu wagowego, korzystając z funkcji _calculate_trend, która wykonuje regresję liniową na podstawie danych historycznych
-        df = pd.read_csv(csv_filename, sep=';')  
+        # Jeśli DataFrame nie jest pusty, przekazujemy go do wspólnego algorytmu obliczania trendu. Zauważ, że nazwy kolumn różnią się od pliku CSV!
 
         # Obliczamy trend i przewidujemy datę osiągnięcia celu wagowego, korzystając z funkcji _calculate_trend, która wykonuje regresję liniową na podstawie danych historycznych
         return _calculate_trend(df, target_weight, 'Data i czas', 'Waga (kg)')
