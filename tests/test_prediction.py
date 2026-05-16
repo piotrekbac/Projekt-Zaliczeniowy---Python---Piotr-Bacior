@@ -26,3 +26,6 @@ class TestPrediction(unittest.TestCase) :                  # definiuję klasę T
         """ Sprawdza obliczenia dni do osiągnięcia celu (pozytywny trend) """
 
         # Tworzymy symulowaną bazę z 3-ma pomiarami: pacjent traci 1kg dziennie 
+
+        # Tworzymy listę dat dla trzech pomiarów, gdzie każdy pomiar jest oddalony o jeden dzień od poprzedniego
+        dates = [datetime.now() - timedelta(days=2), datetime.now() - timedelta(days=1), datetime.now()]
