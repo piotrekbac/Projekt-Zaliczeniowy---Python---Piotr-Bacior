@@ -22,3 +22,5 @@ class TestPrediction(unittest.TestCase) :                  # definiuję klasę T
 
     # Metoda testowa - test_trend_calculation_success - sprawdza, czy funkcja predict_goal_from_sql poprawnie oblicza trend i przewiduje cel na podstawie danych z DataFrame. Oczekuje się, że funkcja zwróci przewidywaną wartość celu na podstawie dostarczonych danych
     def test_trend_calculation_success(self) : 
+        
+        """ Sprawdza obliczenia dni do osiągnięcia celu (pozytywny trend) """
