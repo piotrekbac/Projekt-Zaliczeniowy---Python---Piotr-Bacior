@@ -47,3 +47,5 @@ class TestPrediction(unittest.TestCase) :                  # definiuję klasę T
     def test_trend_calculation_wrong_direction(self) : 
         
         """ Sprawdza czy AI ostrzega przed negatywnym trendem (np. tycie podczas redukcji)"""
+
+        # Pacjent tyje (80 -> 81 kg), a jego cel to 71 kg - funkcja powinna zwrócić informację, że nie można osiągnąć celu na podstawie dostarczonych danych
