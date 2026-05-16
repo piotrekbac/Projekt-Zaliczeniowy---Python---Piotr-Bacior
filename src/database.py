@@ -49,48 +49,48 @@ def init_db() :
     conn.close()  
 
 
-    # Funkcja save_to_sql - do zapisywania danych pomiaru do bazy danych
-    def save_to_sql(waga: float, wzrost: float, bmi: float, kategoria: str, min_waga: float, max_waga: float) :
+# Funkcja save_to_sql - do zapisywania danych pomiaru do bazy danych
+def save_to_sql(waga: float, wzrost: float, bmi: float, kategoria: str, min_waga: float, max_waga: float) :
 
-        """ Dodaje nowy rekord do bazy danych używając instrukcji SQL INSERT. """
+    """ Dodaje nowy rekord do bazy danych używając instrukcji SQL INSERT. """
 
-        # Nawiązanie połączenia z bazą danych
-        conn = sqlite3.connect(DB_NAME)
+    # Nawiązanie połączenia z bazą danych
+    conn = sqlite3.connect(DB_NAME)
 
-        # Utworzenie kursora do wykonywania operacji na bazie danych
-        cursor = conn.cursor()
+    # Utworzenie kursora do wykonywania operacji na bazie danych
+    cursor = conn.cursor()
 
-        # Pobranie aktualnej daty i czasu w formacie "YYYY-MM-DD HH:MM:SS"
-        now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    # Pobranie aktualnej daty i czasu w formacie "YYYY-MM-DD HH:MM:SS"
+    now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-        # Wykonanie zapytania SQL INSERT, aby dodać nowy rekord do tabeli 'pomiary' z wartościami przekazanymi jako argumenty funkcji
-        cursor.execute('''
+    # Wykonanie zapytania SQL INSERT, aby dodać nowy rekord do tabeli 'pomiary' z wartościami przekazanymi jako argumenty funkcji
+    cursor.execute('''
                        
-            INSERT INTO pomiary (data_pomiaru, waga, wzrost, bmi, kategoria, min_waga, max_waga)
+        INSERT INTO pomiary (data_pomiaru, waga, wzrost, bmi, kategoria, min_waga, max_waga)
                        
-            VALUES (?, ?, ?, ?, ?, ?, ?)
-        ''', (now, waga, wzrost, bmi, kategoria, min_waga, max_waga))
+        VALUES (?, ?, ?, ?, ?, ?, ?)
+    ''', (now, waga, wzrost, bmi, kategoria, min_waga, max_waga))
 
-        # Zatwierdzenie zmian w bazie danych
-        conn.commit()
+    # Zatwierdzenie zmian w bazie danych
+    conn.commit()
 
-        # Zamknięcie połączenia z bazą danych
-        conn.close()
+    # Zamknięcie połączenia z bazą danych
+    conn.close()
 
 
-    # Funkcja read_from_sql - do odczytywania danych z bazy danych i zwracania ich jako DataFrame
-    def read_from_sql() -> pd.DataFrame :
+# Funkcja read_from_sql - do odczytywania danych z bazy danych i zwracania ich jako DataFrame
+def read_from_sql() -> pd.DataFrame :
 
-        """ Pobiera wszystkie dane z bazy (SQL SELECT) i zwraca gotową tabelę Pandas DataFrame. """
+    """ Pobiera wszystkie dane z bazy (SQL SELECT) i zwraca gotową tabelę Pandas DataFrame. """
 
-        # Nawiązanie połączenia z bazą danych
-        conn = sqlite3.connect(DB_NAME)
+    # Nawiązanie połączenia z bazą danych
+    conn = sqlite3.connect(DB_NAME)
 
-        # Pandas potrafi bezpośrednio wykonać zapytanie SQL i ułożyć dane w piękną tabelę!
-        df = pd.read_sql_query("SELECT * FROM pomiary", conn)
+    # Pandas potrafi bezpośrednio wykonać zapytanie SQL i ułożyć dane w piękną tabelę!
+    df = pd.read_sql_query("SELECT * FROM pomiary", conn)
 
-        # Zamknięcie połączenia z bazą danych
-        conn.close()
+    # Zamknięcie połączenia z bazą danych
+    conn.close()
 
-        # Zwrócenie DataFrame zawierającego dane z tabeli 'pomiary'
-        return df
+    # Zwrócenie DataFrame zawierającego dane z tabeli 'pomiary'
+    return df
