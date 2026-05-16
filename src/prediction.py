@@ -70,7 +70,7 @@ def _calculate_trend(df: pd.DataFrame, target_weight: float, date_col: str, weig
     if len(df) < 2 :
 
         # Jeśli jest mniej niż 2 wiersze, zwracamy komunikat o braku wystarczających danych historycznych, co oznacza, że nie możemy przewidzieć daty osiągnięcia celu wagowego
-        return "Potrzebujesz minimum 2 pomiarów w historii, aby wyliczyć trend"
+        return "Potrzebujesz min. 2 pomiarów w historii, aby wyliczyć trend."
         
     # Konwertujemy kolumnę z datami na format datetime, co pozwala nam na łatwe obliczenia związane z czasem
     df[date_col] = pd.to_datetime(df[date_col])  
