@@ -22,29 +22,21 @@ def init_db() :
 
     # Tworzymy tabelę z użyciem języka zapytań SQL, jeśli tabela o nazwie 'pacjenci' nie istnieje
     cursor.execute('''
-                   
-        # Tworzenie tabeli 'pacjenci' z kolumnami: id, imie, nazwisko, wiek, plec
+
         CREATE TABLE IF NOT EXISTS pomiary (
                    
-                   # Kolumna 'id' jest kluczem głównym i automatycznie inkrementuje się przy dodawaniu nowych rekordów
                    id INTEGER PRIMARY KEY AUTOINCREMENT,
 
-                   # Kolumna 'data_pomiaru' przechowuje tekstową reprezentację daty pomiaru
                    data_pomiaru TEXT,
 
-                   # Kolumna 'waga' przechowuje wartość wagi jako liczbę zmiennoprzecinkową
                    waga REAL,  
 
-                   # Kolumna 'bmi' przechowuje wartość BMI jako liczbę zmiennoprzecinkową
                    bmi REAL, 
 
-                    # Kolumna 'kategoria' przechowuje tekstową reprezentację kategorii BMI
                     kategoria TEXT,
                    
-                    # Kolumna 'min_waga' przechowuje wartość minimalnej wagi jako liczbę zmiennoprzecinkową
                     min_waga REAL,
                    
-                    # Kolumna 'max_waga' przechowuje wartość maksymalnej wagi jako liczbę zmiennoprzecinkową
                     max_waga REAL
         )
                    
