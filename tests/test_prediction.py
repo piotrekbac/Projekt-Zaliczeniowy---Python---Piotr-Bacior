@@ -29,3 +29,6 @@ class TestPrediction(unittest.TestCase) :                  # definiuję klasę T
 
         # Tworzymy listę dat dla trzech pomiarów, gdzie każdy pomiar jest oddalony o jeden dzień od poprzedniego
         dates = [datetime.now() - timedelta(days=2), datetime.now() - timedelta(days=1), datetime.now()]
+
+        # Tworzymy listę wag dla trzech pomiarów, gdzie waga pacjenta spada o 1 kg dziennie, zaczynając od 80 kg, następnie 79 kg, a na końcu 78 kg
+        weights = [80.0, 79.0, 78.0]
