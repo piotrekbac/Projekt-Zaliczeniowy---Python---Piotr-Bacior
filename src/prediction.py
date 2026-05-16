@@ -106,12 +106,11 @@ def _calculate_trend(df: pd.DataFrame, target_weight: float, date_col: str, weig
         return "Gratulacje! Twój cel został już osiągnięty!"
 
 
-
     # Sprawdzamy, czy trend jest zgodny z kierunkiem osiągnięcia celu wagowego. Jeśli trend jest pozytywny (slope > 0) i docelowa waga jest mniejsza niż aktualna waga, lub jeśli trend jest negatywny (slope < 0) i docelowa waga jest większa niż aktualna waga, oznacza to, że użytkownik zmierza w kierunku osiągnięcia celu wagowego. W takim przypadku obliczamy przewidywaną datę osiągnięcia celu wagowego na podstawie regresji liniowej i zwracamy tę datę w formacie string.
     if (slope > 0 and target_weight < current_weight) or (slope < 0 and target_weight > current_weight) :
 
         # Zwracamy odpowiedni komunikat 
-        return "Twój obecny trend wagi oddala Cie od celu. Skortyguj dietę!"
+        return "Twój obecny trend wagi oddala Cię od celu. Skoryguj dietę!"
         
 
     # Jeśli trend jest zgodny z kierunkiem osiągnięcia celu wagowego, obliczamy przewidywaną datę osiągnięcia celu wagowego na podstawie regresji liniowej i zwracamy tę datę w formacie string.
