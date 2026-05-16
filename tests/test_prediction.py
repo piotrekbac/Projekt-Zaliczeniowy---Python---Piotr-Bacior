@@ -5,3 +5,5 @@ from src.prediction import predict_goal_from_sql           # importuję funkcję
 
 
 class TestPrediction(unittest.TestCase) :                  # definiuję klasę TestPrediction, która dziedziczy po unittest.TestCase, co pozwala na tworzenie testów jednostkowych
+
+    """ Klasa testowa dla algorytmów uczenia maszynoweg (regresji liniowej) """
