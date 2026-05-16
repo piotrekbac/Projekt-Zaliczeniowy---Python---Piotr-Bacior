@@ -12,3 +12,6 @@ class TestPrediction(unittest.TestCase) :                  # definiuję klasę T
     def test_empty_dataframe(self) : 
 
         """ Sprawdza odpowiedź, gdy baza SQL jest pusta """
+
+        # Tworzy pusty DataFrame
+        df_empty = pd.DataFrame() 
