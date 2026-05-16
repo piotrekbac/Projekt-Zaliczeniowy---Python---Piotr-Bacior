@@ -58,3 +58,6 @@ class TestPrediction(unittest.TestCase) :                  # definiuję klasę T
 
         # Tworzymy DataFrame z kolumnami "date" i "weight" na podstawie wcześniej zdefiniowanych list dat i wag
         df = pd.DataFrame({"date": dates, "weight": weight})  
+
+        # Wywołujemy funkcję predict_goal_from_sql z utworzonym DataFrame i celem 71 kg, a wynik przypisujemy do zmiennej wynik
+        wynik = predict_goal_from_sql(df, 71.0)
