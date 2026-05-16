@@ -45,3 +45,5 @@ class TestPrediction(unittest.TestCase) :                  # definiuję klasę T
 
     # Metoda testowa - test_trend_calculation_wrong_direction - sprawdza, czy funkcja predict_goal_from_sql poprawnie obsługuje sytuację, gdy trend jest negatywny (np. waga rośnie zamiast spadać). Oczekuje się, że funkcja zwróci odpowiednią wartość wskazującą, że nie można osiągnąć celu na podstawie dostarczonych danych
     def test_trend_calculation_wrong_direction(self) : 
+        
+        """ Sprawdza czy AI ostrzega przed negatywnym trendem (np. tycie podczas redukcji)"""
