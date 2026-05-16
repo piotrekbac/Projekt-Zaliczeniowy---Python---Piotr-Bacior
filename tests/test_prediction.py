@@ -18,3 +18,7 @@ class TestPrediction(unittest.TestCase) :                  # definiuję klasę T
 
         # Sprawdza, czy funkcja predict_goal_from_sql zwraca odpowiednią wartość (np. None lub komunikat o braku danych) dla pustego DataFrame
         self.assertEqual(predict_goal_from_sql(df_empty, 70.0), "Brak historii w bazie SQL.")
+
+
+    # Metoda testowa - test_trend_calculation_success - sprawdza, czy funkcja predict_goal_from_sql poprawnie oblicza trend i przewiduje cel na podstawie danych z DataFrame. Oczekuje się, że funkcja zwróci przewidywaną wartość celu na podstawie dostarczonych danych
+    def test_trend_calculation_success(self) : 
