@@ -52,7 +52,7 @@ def predict_goal_from_sql(csv_filename: str, target_weight: float) -> str :
         # Jeśli DataFrame nie jest pusty, przekazujemy go do wspólnego algorytmu obliczania trendu. Zauważ, że nazwy kolumn różnią się od pliku CSV!
 
         # Obliczamy trend i przewidujemy datę osiągnięcia celu wagowego, korzystając z funkcji _calculate_trend, która wykonuje regresję liniową na podstawie danych historycznych
-        return _calculate_trend(df, target_weight, 'Data i czas', 'Waga (kg)')
+        return _calculate_trend(df, target_weight, 'data_pomiaru', 'waga')
         
     # Obsługa wszelkich nieoczekiwanych błędów, które mogą wystąpić podczas wczytywania danych, przetwarzania danych lub obliczeń regresji liniowej. Jeśli wystąpi jakikolwiek błąd, zwracamy komunikat o błędzie, co pozwala użytkownikowi na zrozumienie, że coś poszło nie tak i może potrzebować sprawdzić dane wejściowe lub skonsultować się z pomocą techniczną.
     except Exception as e :
