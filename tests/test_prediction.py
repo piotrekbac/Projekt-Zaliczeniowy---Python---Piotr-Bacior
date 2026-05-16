@@ -7,3 +7,6 @@ from src.prediction import predict_goal_from_sql           # importuję funkcję
 class TestPrediction(unittest.TestCase) :                  # definiuję klasę TestPrediction, która dziedziczy po unittest.TestCase, co pozwala na tworzenie testów jednostkowych
 
     """ Klasa testowa dla algorytmów uczenia maszynoweg (regresji liniowej) """
+
+    # Metoda testowa - test_empty_dataframe - sprawdza, czy funkcja predict_goal_from_sql poprawnie obsługuje pusty DataFrame. Oczekuje się, że funkcja zwróci None lub odpowiednią wartość wskazującą, że nie można dokonać predykcji na podstawie pustych danych
+    def test_empty_dataframe(unittest.TestCase) : 
